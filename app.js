@@ -564,6 +564,9 @@
     }, { once: true });
     img.src = game.cover;
     box.appendChild(img);
+    // Cached images are complete before the listener can fire; mark them loaded
+    // now so reusing a row never flashes an empty cover.
+    if (img.complete && img.naturalWidth > 0) box.classList.add('thumb--loaded');
     return box;
   }
 
@@ -941,15 +944,53 @@
     row.focus();
   }
 
+  function updateRowState(li, item, index) {
+    li.dataset.index = String(index);
+    var pos = li.querySelector('.rank-row__pos');
+    if (pos) pos.textContent = String(index + 1);
+    var up = li.querySelector('button[data-act="up"]');
+    var down = li.querySelector('button[data-act="down"]');
+    if (up) up.disabled = index === 0;
+    if (down) down.disabled = index === state.ranking.length - 1;
+  }
+
   function renderRanking() {
     if (!els.listRanking) return;
-    els.listRanking.textContent = '';
 
-    var frag = document.createDocumentFragment();
-    for (var i = 0; i < state.ranking.length; i++) {
-      frag.appendChild(rankRow(state.ranking[i], i));
+    var existing = new Map();
+    var kids = els.listRanking.children;
+    for (var c = 0; c < kids.length; c++) {
+      var el = kids[c];
+      if (el.dataset && el.dataset.key) existing.set(el.dataset.key, el);
     }
-    els.listRanking.appendChild(frag);
+
+    var ordered = [];
+    for (var i = 0; i < state.ranking.length; i++) {
+      var item = state.ranking[i];
+      var li = existing.get(item.key);
+      if (li) {
+        existing.delete(item.key);
+        // A previous drag may have left a transform behind.
+        li.classList.remove('is-dragging', 'is-shifted');
+        li.style.transform = '';
+      } else {
+        li = rankRow(item, i);
+      }
+      updateRowState(li, item, i);
+      ordered.push(li);
+    }
+
+    existing.forEach(function (node) {
+      node.remove();
+    });
+
+    // Only move rows whose slot actually changed. Untouched rows keep their
+    // <img> elements, so covers are never re-decoded (that was the flicker).
+    for (var k = 0; k < ordered.length; k++) {
+      var node = ordered[k];
+      var at = els.listRanking.children[k];
+      if (at !== node) els.listRanking.insertBefore(node, at || null);
+    }
 
     var count = state.ranking.length;
     if (els.countPill) els.countPill.textContent = String(count);
