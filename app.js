@@ -6,10 +6,13 @@
   'use strict';
 
   var STORAGE = {
-    saves: 'gamerank.saves.v1',          // named save slots (ranking + customs each)
+    saves: 'gamerank.saves.v1',          // local save slots (ranking + customs each)
+    savesRemote: 'gamerank.saves.remote.v1', // cache of shared boards, never mixed with local
     ranking: 'gamerank.ranking.v1',      // legacy single-slot key, migrated once
     custom: 'gamerank.custom.v1',        // legacy single-slot key, migrated once
-    theme: 'gamerank.theme.v1'
+    theme: 'gamerank.theme.v1',
+    remote: 'gamerank.remote.v1',        // {base, token} of the shared-board server
+    remoteActive: 'gamerank.remoteActive.v1'
   };
   var HOT_SUGGESTIONS = 12;   // rows shown for an empty query
   var MAX_SUGGESTIONS = 50;   // hard cap for query results
@@ -66,6 +69,11 @@
     els.saveNameInput = document.getElementById('saveNameInput');
     els.saveNameErr = document.getElementById('saveNameErr');
     els.boardSaveName = document.getElementById('boardSaveName');
+    els.remoteForm = document.getElementById('remoteForm');
+    els.remoteBase = document.getElementById('remoteBase');
+    els.remoteToken = document.getElementById('remoteToken');
+    els.remoteOff = document.getElementById('remoteOff');
+    els.remoteStatus = document.getElementById('remoteStatus');
     els.customDialog = document.getElementById('customDialog');
     els.customForm = document.getElementById('customForm');
     els.cName = document.getElementById('cName');
@@ -98,7 +106,11 @@
     builtinCount: 0,
     customCount: 0,
     saves: [],          // [{ id, name, createdAt, updatedAt, ranking, customs }]
-    activeSaveId: ''    // id of the slot currently shown
+    activeSaveId: '',   // id of the slot currently shown
+    remote: { base: '', token: '' },
+    remoteOn: false,    // true once the shared server answered
+    remoteRev: 0,       // revision of the board currently loaded
+    remoteEditAt: 0     // timestamp of the last local change (guards polling)
   };
 
   var pendingFocus = null;
@@ -294,8 +306,12 @@
     return { saves: [save], activeId: save.id };
   }
 
+  function savesKey() {
+    return state.remoteOn ? STORAGE.savesRemote : STORAGE.saves;
+  }
+
   function readSaves() {
-    var raw = store.get(STORAGE.saves);
+    var raw = store.get(savesKey());
     var data = null;
     if (raw) {
       try { data = JSON.parse(raw); } catch (err) { data = null; }
@@ -323,7 +339,7 @@
       activeId: state.activeSaveId,
       saves: state.saves
     });
-    if (!store.set(STORAGE.saves, payload)) warnStorageOnce();
+    if (!store.set(savesKey(), payload)) warnStorageOnce();
   }
 
   function currentSave() {
@@ -346,6 +362,260 @@
     state.activeSaveId = loaded.activeId;
     // Always persist so the migrated slot becomes the canonical store.
     writeSaves();
+  }
+
+  /* ------------------------------------------------------------ shared board */
+
+  var REMOTE_POLL_MS = 8000;   // how often to look for the other person's edits
+  var REMOTE_PUSH_MS = 600;    // debounce before writing a board back
+  var remotePollTimer = 0;
+  var remotePushTimer = 0;
+
+  function normalizeBase(base) {
+    var value = String(base || '').trim().replace(/\/+$/, '');
+    if (!value) return '';
+    if (!/^https?:\/\//i.test(value)) value = 'https://' + value;
+    return value;
+  }
+
+  function loadRemoteConfig() {
+    var raw = store.get(STORAGE.remote);
+    if (!raw) return;
+    try {
+      var parsed = JSON.parse(raw);
+      if (parsed && parsed.base && parsed.token) {
+        state.remote = { base: normalizeBase(parsed.base), token: String(parsed.token) };
+      }
+    } catch (err) { /* ignore broken config */ }
+  }
+
+  function saveRemoteConfig() {
+    store.set(STORAGE.remote, state.remote.base && state.remote.token
+      ? JSON.stringify(state.remote) : '');
+  }
+
+  function remoteReady() {
+    return !!(state.remote.base && state.remote.token);
+  }
+
+  function remoteStatus(message, isError) {
+    if (!els.remoteStatus) return;
+    els.remoteStatus.textContent = message || '';
+    els.remoteStatus.classList.toggle('is-error', !!isError);
+  }
+
+  function apiFetch(path, options) {
+    var opts = options || {};
+    var headers = { 'X-GameRank-Token': state.remote.token };
+    if (opts.body !== undefined) headers['Content-Type'] = 'application/json';
+    return fetch(state.remote.base + '/api' + path, {
+      method: opts.method || 'GET',
+      headers: headers,
+      body: opts.body === undefined ? undefined : JSON.stringify(opts.body),
+      cache: 'no-store'
+    });
+  }
+
+  function apiJson(path, options) {
+    return apiFetch(path, options).then(function (res) {
+      if (res.status === 204) return null;
+      return res.json().catch(function () { return null; }).then(function (data) {
+        if (!res.ok) {
+          var error = new Error((data && data.error) || ('HTTP ' + res.status));
+          error.status = res.status;
+          throw error;
+        }
+        return data;
+      });
+    });
+  }
+
+  function applyRemoteBoards(boards) {
+    var prev = {};
+    state.saves.forEach(function (save) { prev[save.id] = save; });
+    state.saves = boards.map(function (board) {
+      var old = prev[board.id];
+      return {
+        id: board.id,
+        name: board.name,
+        createdAt: old ? old.createdAt : board.updatedAt,
+        updatedAt: board.updatedAt,
+        ranking: old ? old.ranking : [],
+        customs: old ? old.customs : [],
+        count: board.count,
+        revision: board.revision,
+        remote: true
+      };
+    });
+  }
+
+  function remoteOpen(id) {
+    return apiJson('/boards/' + encodeURIComponent(id)).then(function (data) {
+      var board = data.board;
+      state.remoteOn = true;
+      state.activeSaveId = board.id;
+      state.remoteRev = board.revision;
+      store.set(STORAGE.remoteActive, board.id);
+      var save = saveById(board.id);
+      if (save) {
+        save.ranking = board.ranking || [];
+        save.customs = board.customs || [];
+        save.count = (board.ranking || []).length;
+        save.updatedAt = board.updatedAt || save.updatedAt;
+        save.revision = board.revision;
+      }
+      refreshFromSave();
+      return board;
+    });
+  }
+
+  function refreshRemoteList() {
+    return apiJson('/boards').then(function (data) {
+      applyRemoteBoards((data && data.boards) || []);
+      renderSaveButton();
+      renderSaveList();
+    });
+  }
+
+  function remoteBootstrap() {
+    if (!remoteReady()) return Promise.resolve(false);
+    remoteStatus('正在连接…');
+    return apiJson('/boards').then(function (data) {
+      var boards = (data && data.boards) || [];
+      if (!boards.length) {
+        return apiJson('/boards', { method: 'POST', body: { name: '共享排行' } })
+          .then(remoteBootstrap);
+      }
+      applyRemoteBoards(boards);
+      state.remoteOn = true;
+      var wanted = store.get(STORAGE.remoteActive) || boards[0].id;
+      var exists = boards.some(function (board) { return board.id === wanted; });
+      return remoteOpen(exists ? wanted : boards[0].id).then(function () {
+        startRemotePoll();
+        remoteStatus('已连接 · ' + boards.length + ' 个共享存档');
+        toast('已连接共享服务器');
+        return true;
+      });
+    }).catch(function (error) {
+      state.remoteOn = false;
+      remoteStatus('连接失败：' + error.message, true);
+      toast('共享服务器连接失败');
+      return false;
+    });
+  }
+
+  function scheduleRemotePush() {
+    if (!state.remoteOn) return;
+    state.remoteEditAt = Date.now();
+    clearTimeout(remotePushTimer);
+    remotePushTimer = setTimeout(pushRemoteBoard, REMOTE_PUSH_MS);
+  }
+
+  function pushRemoteBoard() {
+    remotePushTimer = 0;
+    if (!state.remoteOn) return;
+    var save = currentSave();
+    if (!save) return;
+    var body = {
+      name: save.name,
+      ranking: state.ranking.map(function (item) {
+        return item.custom ? { key: item.key, custom: true } : { key: item.key };
+      }),
+      customs: state.customs
+    };
+    apiJson('/boards/' + encodeURIComponent(save.id), { method: 'PUT', body: body })
+      .then(function (data) {
+        var meta = data && data.board;
+        if (meta) {
+          state.remoteRev = meta.revision;
+          save.revision = meta.revision;
+          save.updatedAt = meta.updatedAt;
+          save.count = meta.count;
+          renderSaveList();
+        }
+        remoteStatus('已保存 · ' + formatSaveTime(save.updatedAt));
+      })
+      .catch(function (error) {
+        remoteStatus('保存失败：' + error.message, true);
+        toast('共享服务器保存失败，改动暂存在本地');
+      });
+  }
+
+  function startRemotePoll() {
+    stopRemotePoll();
+    remotePollTimer = setInterval(remoteTick, REMOTE_POLL_MS);
+  }
+
+  function stopRemotePoll() {
+    clearInterval(remotePollTimer);
+    remotePollTimer = 0;
+  }
+
+  function remoteTick() {
+    if (!state.remoteOn) return;
+    if (typeof document !== 'undefined' && document.visibilityState === 'hidden') return;
+    if (remotePushTimer) return;                       // a write is in flight
+    if (Date.now() - state.remoteEditAt < 2500) return; // just edited locally
+    apiJson('/boards').then(function (data) {
+      var boards = (data && data.boards) || [];
+      var active = null;
+      for (var i = 0; i < boards.length; i++) {
+        if (boards[i].id === state.activeSaveId) active = boards[i];
+      }
+      if (!active) return;
+      var localIds = state.saves.map(function (save) { return save.id; }).join(',');
+      var remoteIds = boards.map(function (board) { return board.id; }).join(',');
+      if (localIds !== remoteIds) {
+        applyRemoteBoards(boards);
+        renderSaveButton();
+        renderSaveList();
+        if (!saveById(state.activeSaveId) && boards.length) {
+          remoteOpen(boards[0].id).catch(function () { /* ignore */ });
+        }
+        return;
+      }
+      if (active.revision !== state.remoteRev) {
+        remoteOpen(active.id).then(function () {
+          toast('已同步「' + active.name + '」的最新改动');
+        }).catch(function () { /* ignore */ });
+        return;
+      }
+      boards.forEach(function (meta) {
+        var save = saveById(meta.id);
+        if (save) { save.count = meta.count; save.updatedAt = meta.updatedAt; save.revision = meta.revision; }
+      });
+      renderSaveList();
+    }).catch(function () { /* offline is fine, keep local edits */ });
+  }
+
+  function connectRemote(event) {
+    if (event) event.preventDefault();
+    var base = normalizeBase(els.remoteBase ? els.remoteBase.value : '');
+    var token = els.remoteToken ? els.remoteToken.value.trim() : '';
+    if (!base || !token) {
+      remoteStatus('请填写服务器地址和口令', true);
+      return;
+    }
+    state.remote = { base: base, token: token };
+    remoteStatus('正在连接…');
+    remoteBootstrap().then(function (ok) {
+      if (!ok) return;
+      saveRemoteConfig();
+      if (els.remoteBase) els.remoteBase.value = base;
+      if (els.remoteToken) els.remoteToken.value = token;
+    });
+  }
+
+  function disconnectRemote() {
+    stopRemotePoll();
+    state.remoteOn = false;
+    state.remote = { base: '', token: '' };
+    saveRemoteConfig();
+    store.set(STORAGE.remoteActive, '');
+    loadSaveSlots();
+    refreshFromSave();
+    remoteStatus('已断开，使用本地存档');
+    toast('已断开共享服务器');
   }
 
   function buildLibrary() {
@@ -413,6 +683,7 @@
     });
     save.updatedAt = nowIso();
     writeSaves();
+    scheduleRemotePush();
   }
 
   function persistCustoms() {
@@ -421,6 +692,7 @@
     save.customs = state.customs;
     save.updatedAt = nowIso();
     writeSaves();
+    scheduleRemotePush();
   }
 
   function warnStorageOnce() {
@@ -1451,9 +1723,12 @@
       pick.className = 'save-row__main';
       pick.setAttribute('aria-pressed', save.id === active ? 'true' : 'false');
       var body = textEl('span', 'save-row__body');
-      body.appendChild(textEl('span', 'save-row__name', save.name));
+      var nameLine = textEl('span', 'save-row__name', save.name);
+      if (save.remote || state.remoteOn) nameLine.appendChild(textEl('span', 'save-row__tag', '共享'));
+      body.appendChild(nameLine);
+      var total = save.count === undefined || save.count === null ? save.ranking.length : save.count;
       body.appendChild(textEl('span', 'save-row__meta',
-        save.ranking.length + ' 款 · 更新 ' + formatSaveTime(save.updatedAt) +
+        total + ' 款 · 更新 ' + formatSaveTime(save.updatedAt) +
         (save.id === active ? ' · 当前' : '')));
       pick.appendChild(body);
       pick.addEventListener('click', function () { setActiveSave(save.id); });
@@ -1491,6 +1766,10 @@
         save.name = next.slice(0, 40);
         save.updatedAt = nowIso();
         writeSaves();
+        if (state.remoteOn) {
+          apiJson('/boards/' + encodeURIComponent(save.id), { method: 'PUT', body: { name: save.name } })
+            .catch(function (error) { remoteStatus('重命名失败：' + error.message, true); });
+        }
         toast('已重命名为「' + save.name + '」');
       }
       renderSaveList();
@@ -1520,6 +1799,14 @@
 
   function setActiveSave(id) {
     if (id === state.activeSaveId || !saveById(id)) return;
+    if (state.remoteOn) {
+      remoteOpen(id).then(function () {
+        toast('已切换到存档「' + currentSave().name + '」');
+      }).catch(function (error) {
+        toast('切换失败：' + error.message);
+      });
+      return;
+    }
     state.activeSaveId = id;
     writeSaves();
     refreshFromSave();
@@ -1527,6 +1814,25 @@
   }
 
   function createSave(name) {
+    if (state.remoteOn) {
+      return apiJson('/boards', { method: 'POST', body: { name: name } })
+        .then(function (data) {
+          var board = data.board;
+          state.saves.push({
+            id: board.id, name: board.name, createdAt: board.updatedAt,
+            updatedAt: board.updatedAt, ranking: [], customs: [],
+            count: 0, revision: board.revision, remote: true
+          });
+          return remoteOpen(board.id).then(function () {
+            toast('已新建共享存档「' + board.name + '」');
+            return board;
+          });
+        })
+        .catch(function (error) {
+          remoteStatus('新建失败：' + error.message, true);
+          toast('新建共享存档失败');
+        });
+    }
     var save = normalizeSave({ id: newSaveId(), name: name, ranking: [], customs: [] });
     state.saves.push(save);
     state.activeSaveId = save.id;
@@ -1539,6 +1845,26 @@
   function duplicateSave(id) {
     var src = saveById(id);
     if (!src) return;
+    if (state.remoteOn) {
+      var copyName = (src.name + ' 副本').slice(0, 60);
+      apiJson('/boards', { method: 'POST', body: { name: copyName } })
+        .then(function (data) {
+          var copy = data.board;
+          return apiJson('/boards/' + encodeURIComponent(id)).then(function (full) {
+            var board = full.board;
+            return apiJson('/boards/' + encodeURIComponent(copy.id), {
+              method: 'PUT',
+              body: { name: copyName, ranking: board.ranking, customs: board.customs }
+            });
+          }).then(refreshRemoteList).then(function () {
+            toast('已复制为「' + copyName + '」');
+          });
+        })
+        .catch(function (error) {
+          remoteStatus('复制失败：' + error.message, true);
+        });
+      return;
+    }
     var copy = normalizeSave({
       id: newSaveId(),
       name: (src.name + ' 副本').slice(0, 40),
@@ -1558,6 +1884,23 @@
     var save = saveById(id);
     if (!save) return;
     if (!window.confirm('删除存档「' + save.name + '」？其中的排行无法恢复。')) return;
+
+    if (state.remoteOn) {
+      var remoteWasActive = id === state.activeSaveId;
+      apiJson('/boards/' + encodeURIComponent(id), { method: 'DELETE' })
+        .then(function () {
+          state.saves = state.saves.filter(function (item) { return item.id !== id; });
+          renderSaveButton();
+          renderSaveList();
+          if (remoteWasActive && state.saves.length) {
+            return remoteOpen(state.saves[0].id);
+          }
+          return null;
+        })
+        .then(function () { toast('已删除存档「' + save.name + '」'); })
+        .catch(function (error) { remoteStatus('删除失败：' + error.message, true); });
+      return;
+    }
 
     var wasActive = id === state.activeSaveId;
     state.saves = state.saves.filter(function (item) { return item.id !== id; });
@@ -1948,6 +2291,8 @@
 
     if (els.saveBtn) els.saveBtn.addEventListener('click', openSaveDialog);
     if (els.saveForm) els.saveForm.addEventListener('submit', submitSaveName);
+    if (els.remoteForm) els.remoteForm.addEventListener('submit', connectRemote);
+    if (els.remoteOff) els.remoteOff.addEventListener('click', disconnectRemote);
     if (els.saveNameInput) {
       els.saveNameInput.addEventListener('input', function () {
         setFieldError(els.saveNameInput, els.saveNameErr, '');
@@ -2055,6 +2400,7 @@
     cacheDom();
     if (!els.input || !els.list || !els.listRanking) return;
 
+    loadRemoteConfig();
     loadSaveSlots();
     state.customs = readCustomsRaw();
     buildLibrary();
@@ -2069,6 +2415,10 @@
     renderMeta();
     renderRanking();
     syncClearButton();
+
+    if (els.remoteBase && state.remote.base) els.remoteBase.value = state.remote.base;
+    if (els.remoteToken && state.remote.token) els.remoteToken.value = state.remote.token;
+    if (remoteReady()) remoteBootstrap();
   }
 
   if (document.readyState === 'loading') {

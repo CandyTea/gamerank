@@ -84,6 +84,45 @@ serve.cmd           Windows 下启动静态服务器
 - 旧版 `gamerank.ranking.v1` / `gamerank.custom.v1` 会在首次加载时迁移成一份「我的排行」。
 - 分享按钮导出的文本首行带 `【存档名】`，方便区分是谁的榜。
 
+## 共享服务器（两人互看）
+
+默认是纯本地模式。要看到对方的榜，在「存档 → 共享服务器」里填服务地址与口令，
+之后所有存档都读写服务器（每 8 秒拉取一次更新；本地模式的数据不受影响，断开即可回到本地）。
+
+服务端 `server/gamerank_server.py`：Python 标准库 + SQLite，零依赖。
+
+```bash
+# 生成口令
+TOKEN=$(openssl rand -hex 24)
+
+# 直接跑（也顺便把静态站发出去）
+GAMERANK_TOKEN=$TOKEN python3 server/gamerank_server.py \
+  --host 127.0.0.1 --port 8787 --db /var/lib/gamerank/boards.db --static /opt/gamerank
+```
+
+腾讯云部署要点（`deploy/` 里有现成文件）：
+
+1. 上传 `index.html`、`styles.css`、`app.js`、`data/games.js`、`server/` 到 `/opt/gamerank`。
+2. `deploy/gamerank.service` → `/etc/systemd/system/`，把 `GAMERANK_TOKEN` 改成你的口令；
+   `useradd -r gamerank && mkdir -p /var/lib/gamerank && chown gamerank /var/lib/gamerank`，
+   然后 `systemctl enable --now gamerank`。
+3. `deploy/nginx-gamerank.conf` → `/etc/nginx/conf.d/`，改域名与证书路径后 `nginx -t && systemctl reload nginx`。
+4. 安全组放行 80/443；**大陆机房域名需 ICP 备案**。
+5. 站点是 https 时服务端也必须 https，否则浏览器按混合内容拦截 `/api` 请求。
+
+接口（都需要 `X-GameRank-Token`）：
+
+```
+GET    /api/boards             列表
+POST   /api/boards             {name} 新建
+GET    /api/boards/<id>        单档（含 ranking / customs）
+PUT    /api/boards/<id>        {name?, ranking?, customs?} 覆盖写
+DELETE /api/boards/<id>        删除
+```
+
+这是「最后写入者胜」的简单模型，适合两个人轮流改；同一秒互相改同一条会丢一个人的那次改动。
+备份只需拷 `boards.db`（SQLite，直接 `cp` 或 `sqlite3 .backup`）。
+
 ## 已知边界
 
 - 封面图直连 Steam CDN 与 Metacritic CDN，离线时不显示图，但名称、分数、排序功能完全可用。

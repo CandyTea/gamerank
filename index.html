@@ -21,7 +21,7 @@
     document.documentElement.setAttribute('data-theme', mode);
   })();
 </script>
-<link rel="stylesheet" href="styles.css?v=20261115-1650-60150029">
+<link rel="stylesheet" href="styles.css?v=20261115-1650-8be03ef3">
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要内容</a>
@@ -236,6 +236,23 @@
     </form>
     <p id="saveNameErr" class="field__err" hidden></p>
 
+    <details id="remotePanel" class="remote">
+      <summary class="remote__summary">共享服务器（两人互看）</summary>
+      <form id="remoteForm" class="remote__form" novalidate>
+        <label class="field__label" for="remoteBase">服务器地址</label>
+        <input id="remoteBase" class="input" type="url" autocomplete="off" spellcheck="false"
+               placeholder="https://rank.example.com">
+        <label class="field__label" for="remoteToken">口令</label>
+        <input id="remoteToken" class="input" type="password" autocomplete="off"
+               placeholder="服务器启动时设置的 GAMERANK_TOKEN">
+        <div class="remote__actions">
+          <button type="submit" class="btn btn--primary">连接</button>
+          <button type="button" id="remoteOff" class="btn">断开（回到本地）</button>
+        </div>
+        <p id="remoteStatus" class="remote__status" role="status" aria-live="polite"></p>
+      </form>
+    </details>
+
     <footer class="dlg__foot">
       <button type="button" class="btn" data-close="saveDialog">完成</button>
     </footer>
@@ -244,7 +261,7 @@
 
 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-<script src="data/games.js?v=20261115-1650-60150029"></script>
-<script src="app.js?v=20261115-1650-60150029" defer></script>
+<script src="data/games.js?v=20261115-1650-8be03ef3"></script>
+<script src="app.js?v=20261115-1650-8be03ef3" defer></script>
 </body>
 </html>

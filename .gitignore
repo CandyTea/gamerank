@@ -1,4 +1,10 @@
 # build cache (safe to delete; rebuild refetches)
 scripts/.cache/
 scripts/__pycache__/
+server/__pycache__/
 *.pyc
+
+# local board database created by server/gamerank_server.py
+*.db
+*.db-wal
+*.db-shm
