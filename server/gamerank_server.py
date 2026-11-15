@@ -66,10 +66,14 @@ def db() -> sqlite3.Connection:
                    ranking TEXT NOT NULL DEFAULT '[]',
                    customs TEXT NOT NULL DEFAULT '[]',
                    revision INTEGER NOT NULL DEFAULT 1,
+                   owner TEXT NOT NULL DEFAULT '',
                    created_at TEXT NOT NULL,
                    updated_at TEXT NOT NULL
                )"""
         )
+        cols = {row["name"] for row in _conn.execute("PRAGMA table_info(boards)")}
+        if "owner" not in cols:                       # migrate older databases
+            _conn.execute("ALTER TABLE boards ADD COLUMN owner TEXT NOT NULL DEFAULT ''")
         _conn.commit()
     return _conn
 
@@ -85,6 +89,7 @@ def meta_of(row) -> dict:
         "name": row["name"],
         "count": len(ranking) if isinstance(ranking, list) else 0,
         "revision": row["revision"],
+        "owner": row["owner"] if "owner" in row.keys() else "",
         "updatedAt": row["updated_at"],
     }
 
@@ -92,7 +97,7 @@ def meta_of(row) -> dict:
 def list_boards() -> list[dict]:
     with _db_lock:
         rows = db().execute(
-            "SELECT id, name, ranking, revision, updated_at FROM boards ORDER BY created_at"
+            "SELECT id, name, ranking, revision, owner, updated_at FROM boards ORDER BY created_at"
         ).fetchall()
     return [meta_of(r) for r in rows]
 
@@ -108,17 +113,23 @@ def get_board(board_id: str) -> dict | None:
     return board
 
 
-def create_board(name: str) -> dict:
+def create_board(name: str, owner: str = "") -> dict:
     board_id = uuid.uuid4().hex[:12]
     stamp = now_iso()
     with _db_lock:
         db().execute(
-            "INSERT INTO boards (id, name, ranking, customs, revision, created_at, updated_at)"
-            " VALUES (?, ?, '[]', '[]', 1, ?, ?)",
-            (board_id, name, stamp, stamp),
+            "INSERT INTO boards (id, name, ranking, customs, revision, owner, created_at,"
+            " updated_at) VALUES (?, ?, '[]', '[]', 1, ?, ?, ?)",
+            (board_id, name, owner, stamp, stamp),
         )
         db().commit()
     return get_board(board_id)
+
+
+def board_owner(board_id: str) -> str | None:
+    with _db_lock:
+        row = db().execute("SELECT owner FROM boards WHERE id = ?", (board_id,)).fetchone()
+    return None if row is None else (row["owner"] or "")
 
 
 def update_board(board_id: str, payload: dict) -> dict | None:
@@ -271,7 +282,17 @@ class Handler(BaseHTTPRequestHandler):
         if not isinstance(name, str) or not name.strip():
             self.send_json(400, {"error": "name_required"})
             return
-        self.send_json(201, {"board": create_board(name.strip()[:60])})
+        owner = payload.get("owner")
+        owner = owner.strip()[:64] if isinstance(owner, str) else ""
+        self.send_json(201, {"board": create_board(name.strip()[:60], owner)})
+
+    def owner_id(self) -> str:
+        return (self.headers.get("X-Owner-Id") or "").strip()[:64]
+
+    def check_owner(self, board_id: str) -> bool:
+        """Boards without an owner stay writable (legacy rows)."""
+        owner = board_owner(board_id)
+        return owner in ("", None) or owner == self.owner_id()
 
     def do_PUT(self) -> None:
         path = urlparse(self.path).path
@@ -281,6 +302,9 @@ class Handler(BaseHTTPRequestHandler):
         m = re.match(r"^/api/boards/([A-Za-z0-9_-]{1,64})$", path)
         if not m:
             self.send_json(404, {"error": "not_found"})
+            return
+        if not self.check_owner(m.group(1)):
+            self.send_json(403, {"error": "not_owner"})
             return
         payload = self.read_json()
         if payload is None:
@@ -304,6 +328,9 @@ class Handler(BaseHTTPRequestHandler):
         m = re.match(r"^/api/boards/([A-Za-z0-9_-]{1,64})$", path)
         if not m:
             self.send_json(404, {"error": "not_found"})
+            return
+        if not self.check_owner(m.group(1)):
+            self.send_json(403, {"error": "not_owner"})
             return
         if not delete_board(m.group(1)):
             self.send_json(404, {"error": "not_found"})

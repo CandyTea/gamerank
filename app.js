@@ -12,7 +12,8 @@
     custom: 'gamerank.custom.v1',        // legacy single-slot key, migrated once
     theme: 'gamerank.theme.v1',
     remote: 'gamerank.remote.v1',        // {base, token} of the shared-board server
-    remoteActive: 'gamerank.remoteActive.v1'
+    remoteActive: 'gamerank.remoteActive.v1',
+    user: 'gamerank.user.v1'
   };
   var HOT_SUGGESTIONS = 12;   // rows shown for an empty query
   var MAX_SUGGESTIONS = 50;   // hard cap for query results
@@ -53,6 +54,9 @@
     els.provenance = document.getElementById('provenance');
     els.warning = document.getElementById('dataWarning');
     els.listRanking = document.getElementById('rankingList');
+    els.readonlyBanner = document.getElementById('readonlyBanner');
+    els.readonlyName = document.getElementById('readonlyName');
+    els.cloneBoardBtn = document.getElementById('cloneBoardBtn');
     els.empty = document.getElementById('emptyState');
     els.hotChips = document.getElementById('hotChips');
     els.countPill = document.getElementById('countPill');
@@ -112,6 +116,8 @@
     remote: { base: '', token: '' },
     remoteOn: false,    // true once the shared server answered
     remoteOpen: false,  // server runs without a token (GAMERANK_OPEN=1)
+    userId: '',         // stable per-browser id used as board owner
+    readOnly: false,    // viewing someone else's board
     remoteRev: 0,       // revision of the board currently loaded
     remoteEditAt: 0     // timestamp of the last local change (guards polling)
   };
@@ -374,6 +380,14 @@
   var remotePollTimer = 0;
   var remotePushTimer = 0;
 
+  function ensureUserId() {
+    var existing = store.get(STORAGE.user);
+    if (existing && /^[A-Za-z0-9_-]{6,64}$/.test(existing)) return existing;
+    var id = 'u_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
+    store.set(STORAGE.user, id);
+    return id;
+  }
+
   function normalizeBase(base) {
     var value = String(base || '').trim().replace(/\/+$/, '');
     if (!value) return '';
@@ -478,6 +492,7 @@
     var opts = options || {};
     var headers = {};
     if (state.remote.token) headers['X-GameRank-Token'] = state.remote.token;
+    if (state.userId) headers['X-Owner-Id'] = state.userId;
     if (opts.body !== undefined) headers['Content-Type'] = 'application/json';
     return fetch(state.remote.base + '/api' + path, {
       method: opts.method || 'GET',
@@ -515,6 +530,7 @@
         customs: old ? old.customs : [],
         count: board.count,
         revision: board.revision,
+        owner: board.owner || '',
         remote: true
       };
     });
@@ -529,6 +545,7 @@
       store.set(STORAGE.remoteActive, board.id);
       var save = saveById(board.id);
       if (save) {
+        save.owner = board.owner || '';
         save.ranking = board.ranking || [];
         save.customs = board.customs || [];
         save.count = (board.ranking || []).length;
@@ -554,7 +571,7 @@
     return apiJson('/boards').then(function (data) {
       var boards = (data && data.boards) || [];
       if (!boards.length) {
-        return apiJson('/boards', { method: 'POST', body: { name: '共享排行' } })
+        return apiJson('/boards', { method: 'POST', body: { name: '共享排行', owner: state.userId } })
           .then(remoteBootstrap);
       }
       applyRemoteBoards(boards);
@@ -1139,6 +1156,7 @@
   /* ------------------------------------------------------------- ranking ops */
 
   function addGame(game) {
+    if (state.readOnly) { toast('这是朋友的榜，只读；先点「复制到我的榜」'); return; }
     var existing = -1;
     for (var i = 0; i < state.ranking.length; i++) {
       if (state.ranking[i].key === game.key) { existing = i; break; }
@@ -1192,6 +1210,7 @@
   }
 
   function moveBy(index, direction) {
+    if (state.readOnly) return;
     var to = index + direction;
     if (to < 0 || to >= state.ranking.length) return;
     var moved = state.ranking.splice(index, 1)[0];
@@ -1202,6 +1221,7 @@
   }
 
   function clearRanking() {
+    if (state.readOnly) { toast('这是朋友的榜，只读'); return; }
     if (!state.ranking.length) { toast('榜单已经是空的'); return; }
     if (!window.confirm('确定清空整个排行？共 ' + state.ranking.length + ' 款游戏。')) return;
     var previous = state.ranking.slice();
@@ -1823,7 +1843,11 @@
       pick.setAttribute('aria-pressed', save.id === active ? 'true' : 'false');
       var body = textEl('span', 'save-row__body');
       var nameLine = textEl('span', 'save-row__name', save.name);
-      if (save.remote || state.remoteOn) nameLine.appendChild(textEl('span', 'save-row__tag', '共享'));
+      var foreign = state.remoteOn && isReadOnlySave(save);
+      if (state.remoteOn) {
+        nameLine.appendChild(textEl('span', 'save-row__tag',
+          foreign ? '朋友的' : '共享'));
+      }
       body.appendChild(nameLine);
       var total = save.count === undefined || save.count === null ? save.ranking.length : save.count;
       body.appendChild(textEl('span', 'save-row__meta',
@@ -1834,9 +1858,9 @@
       row.appendChild(pick);
 
       var tools = textEl('div', 'save-row__tools');
-      tools.appendChild(saveTool('重命名', function () { startRename(row, save); }));
+      if (!foreign) tools.appendChild(saveTool('重命名', function () { startRename(row, save); }));
       tools.appendChild(saveTool('复制', function () { duplicateSave(save.id); }));
-      tools.appendChild(saveTool('删除', function () { deleteSave(save.id); }, true));
+      if (!foreign) tools.appendChild(saveTool('删除', function () { deleteSave(save.id); }, true));
       row.appendChild(tools);
 
       els.saveList.appendChild(row);
@@ -1885,10 +1909,47 @@
     input.addEventListener('blur', function () { commit(true); });
   }
 
+  function isReadOnlySave(save) {
+    return !!(save && save.remote && save.owner && save.owner !== state.userId);
+  }
+
+  function applyReadOnly() {
+    var save = currentSave();
+    state.readOnly = state.remoteOn && isReadOnlySave(save);
+    if (els.listRanking) els.listRanking.classList.toggle('is-readonly', state.readOnly);
+    if (els.readonlyBanner) els.readonlyBanner.hidden = !state.readOnly;
+    if (els.readonlyName) els.readonlyName.textContent = save ? save.name : '';
+  }
+
+  function cloneBoard() {
+    var save = currentSave();
+    if (!state.remoteOn || !save) return;
+    var name = (save.name + ' 副本').slice(0, 60);
+    apiJson('/boards', { method: 'POST', body: { name: name, owner: state.userId } })
+      .then(function (data) {
+        var copy = data.board;
+        return apiJson('/boards/' + encodeURIComponent(save.id)).then(function (full) {
+          var board = full.board;
+          return apiJson('/boards/' + encodeURIComponent(copy.id), {
+            method: 'PUT',
+            body: { name: name, ranking: board.ranking, customs: board.customs }
+          });
+        }).then(refreshRemoteList).then(function () {
+          return remoteOpen(copy.id);
+        }).then(function () {
+          toast('已复制到我的榜「' + name + '」');
+        });
+      })
+      .catch(function (error) {
+        toast('复制失败：' + error.message);
+      });
+  }
+
   function refreshFromSave() {
     state.customs = readCustomsRaw();
     buildLibrary();
     state.ranking = readRanking();
+    applyReadOnly();
     renderRanking();
     renderMeta();
     renderSaveButton();
@@ -1914,7 +1975,7 @@
 
   function createSave(name) {
     if (state.remoteOn) {
-      return apiJson('/boards', { method: 'POST', body: { name: name } })
+      return apiJson('/boards', { method: 'POST', body: { name: name, owner: state.userId } })
         .then(function (data) {
           var board = data.board;
           state.saves.push({
@@ -1946,7 +2007,7 @@
     if (!src) return;
     if (state.remoteOn) {
       var copyName = (src.name + ' 副本').slice(0, 60);
-      apiJson('/boards', { method: 'POST', body: { name: copyName } })
+      apiJson('/boards', { method: 'POST', body: { name: copyName, owner: state.userId } })
         .then(function (data) {
           var copy = data.board;
           return apiJson('/boards/' + encodeURIComponent(id)).then(function (full) {
@@ -2115,6 +2176,7 @@
   var autoScrollRaf = 0;
 
   function startDrag(event, row, handle) {
+    if (state.readOnly) return;
     if (event.pointerType === 'mouse' && event.button !== 0) return;
     if (event.isPrimary === false) return;
 
@@ -2393,6 +2455,7 @@
     if (els.remoteForm) els.remoteForm.addEventListener('submit', connectRemote);
     if (els.remoteOff) els.remoteOff.addEventListener('click', disconnectRemote);
     if (els.remoteInvite) els.remoteInvite.addEventListener('click', copyInvite);
+    if (els.cloneBoardBtn) els.cloneBoardBtn.addEventListener('click', cloneBoard);
     if (els.saveNameInput) {
       els.saveNameInput.addEventListener('input', function () {
         setFieldError(els.saveNameInput, els.saveNameErr, '');
@@ -2500,6 +2563,7 @@
     cacheDom();
     if (!els.input || !els.list || !els.listRanking) return;
 
+    state.userId = ensureUserId();
     loadRemoteConfig();
     parseInviteHash();
     loadSaveSlots();

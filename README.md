@@ -84,24 +84,28 @@ serve.cmd           Windows 下启动静态服务器
 - 旧版 `gamerank.ranking.v1` / `gamerank.custom.v1` 会在首次加载时迁移成一份「我的排行」。
 - 分享按钮导出的文本首行带 `【存档名】`，方便区分是谁的榜。
 
-## 共享服务器（两人互看）
+## 共享服务器（多朋友互看）
 
-默认是纯本地模式。要看到对方的榜，有两种服务端模式：
+默认是纯本地模式。要多人互看，把服务端跑起来（站点和 API 最好同域）。
 
-**开放模式（零配置，推荐两人用）**：`GAMERANK_OPEN=1`，站点和 API 同域部署。
-打开网页就自动连上、自动同步，没有任何按钮或输入框；两台设备看到的都是同一份榜。
+**每人一个榜，别人的只读**：浏览器首次打开会生成一个 `gamerank.user.v1` 身份，
+建榜时写入 `owner`。你只能改自己的榜；朋友的榜打上「朋友的」标签，进详情是只读
+（没有拖拽、没有删除），可以一键「复制到我的榜」变成自己的再改。
+服务端对非本人写入返回 `403 not_owner`，不是只靠前端隐藏按钮。
+
+**零配置（推荐）**：`GAMERANK_OPEN=1`，同域部署后打开网页就自动连上，
+没有按钮、没有输入框、没有邀请链接；每个人加游戏只写自己的榜，其他人 8 秒内看到。
 
 ```bash
 GAMERANK_OPEN=1 python3 server/gamerank_server.py \
-  --host 127.0.0.1 --port 8787 --db /var/lib/gamerank/boards.db --static /opt/gamerank
+  --host 0.0.0.0 --port 8080 --db /opt/gamerank/boards.db --static /opt/gamerank
 ```
 
-代价是**能访问这个地址的人都能读和改**。所以只适合私有地址（家里 NAS、内网、只有你们俩知道的域名/IP）。
-不想开放就给服务加口令（去掉 `GAMERANK_OPEN`，设 `GAMERANK_TOKEN`），此时需要填一次口令，
+代价是**能访问这个地址的人都能读、都能建自己的榜**。只适合私有地址（内网、家里 NAS、
+只有熟人知道的域名/IP）。要收紧就换成口令模式。
 
-**口令模式**：在「存档 → 共享服务器」填地址与口令，或点「复制邀请链接」把
-`#k=…` 链接发给朋友，对方点开自动连接、什么都不用填；链接打开后会自动从地址栏抹掉。
-同域部署时地址可以留空。
+**口令模式**：设 `GAMERANK_TOKEN`，在「存档 → 共享服务器」填地址与口令一次，
+或点「复制邀请链接」把 `#k=…` 链接发出去，对方点开自动连接。同域时地址可留空。
 
 服务端 `server/gamerank_server.py`：Python 标准库 + SQLite，零依赖。
 
@@ -109,7 +113,6 @@ GAMERANK_OPEN=1 python3 server/gamerank_server.py \
 # 生成口令
 TOKEN=$(openssl rand -hex 24)
 
-# 直接跑（也顺便把静态站发出去）
 GAMERANK_TOKEN=$TOKEN python3 server/gamerank_server.py \
   --host 127.0.0.1 --port 8787 --db /var/lib/gamerank/boards.db --static /opt/gamerank
 ```
@@ -124,18 +127,19 @@ GAMERANK_TOKEN=$TOKEN python3 server/gamerank_server.py \
 4. 安全组放行 80/443；**大陆机房域名需 ICP 备案**。
 5. 站点是 https 时服务端也必须 https，否则浏览器按混合内容拦截 `/api` 请求。
 
-接口（都需要 `X-GameRank-Token`）：
+接口（口令模式下需 `X-GameRank-Token`；写操作另需 `X-Owner-Id`）：
 
 ```
-GET    /api/boards             列表
-POST   /api/boards             {name} 新建
+GET    /api/health             健康检查（含 open 标志）
+GET    /api/boards             列表（含 owner / count / revision）
+POST   /api/boards             {name, owner} 新建
 GET    /api/boards/<id>        单档（含 ranking / customs）
-PUT    /api/boards/<id>        {name?, ranking?, customs?} 覆盖写
-DELETE /api/boards/<id>        删除
+PUT    /api/boards/<id>        {name?, ranking?, customs?}；非本人 403 not_owner
+DELETE /api/boards/<id>        同上
 ```
 
-这是「最后写入者胜」的简单模型，适合两个人轮流改；同一秒互相改同一条会丢一个人的那次改动。
-备份只需拷 `boards.db`（SQLite，直接 `cp` 或 `sqlite3 .backup`）。
+同一份榜仍是「整份覆盖写、最后写入者胜」：一个人有两台设备同时改，可能丢一次改动；
+不同人各写自己的榜，互不影响。备份只需拷 `boards.db`（`cp` 或 `sqlite3 .backup`）。
 
 ## 已知边界
 
