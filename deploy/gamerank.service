@@ -1,5 +1,5 @@
 [Unit]
-Description=GameRank shared-board API
+Description=GameRank live rankings
 After=network.target
 
 [Service]
@@ -7,15 +7,17 @@ Type=simple
 User=gamerank
 Group=gamerank
 WorkingDirectory=/opt/gamerank
-# Change this secret; it is the password the browser sends as X-GameRank-Token.
-Environment=GAMERANK_TOKEN=CHANGE_ME
 Environment=PYTHONUNBUFFERED=1
+Environment=GAMERANK_HOST=0.0.0.0
+Environment=GAMERANK_PORT=8080
+EnvironmentFile=-/etc/default/gamerank
 ExecStart=/usr/bin/python3 /opt/gamerank/server/gamerank_server.py \
-    --host 127.0.0.1 --port 8787 \
+    --host ${GAMERANK_HOST} --port ${GAMERANK_PORT} \
     --db /var/lib/gamerank/boards.db \
     --static /opt/gamerank
 Restart=always
 RestartSec=3
+StateDirectory=gamerank
 NoNewPrivileges=true
 PrivateTmp=true
 ProtectSystem=strict

@@ -8,3 +8,7 @@ server/__pycache__/
 *.db
 *.db-wal
 *.db-shm
+
+# Runtime data and isolated browser verification profiles
+var/
+.qa-runtime/

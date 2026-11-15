@@ -1,49 +1,36 @@
 #!/usr/bin/env python3
-"""GameRank shared-board server.
+"""Public GameRank boards with browser-owned writes and immediate SSE updates.
 
-Single-file, standard-library-only service that stores named ranking boards so
-two people can see each other's lists. SQLite for storage, token auth for
-writes and reads.
+    python server/gamerank_server.py --port 8787 --db boards.db --static .
 
-    GAMERANK_TOKEN=secret python gamerank_server.py --port 8787 --db boards.db
-
-Optional: --static DIR also serves the site (index.html, data/games.js, ...),
-so one process can host everything behind nginx or directly.
-
-API (all JSON, all require X-GameRank-Token except /api/health):
-
-    GET    /api/health                -> {"ok": true}
-    GET    /api/boards                -> {"boards": [{id,name,count,revision,updatedAt}]}
-    POST   /api/boards   {name}       -> 201 {"board": {…}}
-    GET    /api/boards/<id>           -> {"board": {…, ranking, customs}}
-    PUT    /api/boards/<id> {name?, ranking?, customs?}  -> {"board": {meta}}
-    DELETE /api/boards/<id>           -> 204
+Reads and /api/events are public. /api/me and mutations use X-GameRank-Key, a
+browser-generated secret; responses expose only its derived public owner ID.
+Existing boards remain readable. Legacy ownership IDs cannot authorize writes;
+clone those boards to create a new browser-owned copy.
 """
 
 from __future__ import annotations
 
 import argparse
-import hmac
+import hashlib
 import json
 import os
 import re
 import sqlite3
 import sys
 import threading
-import time
 import uuid
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from urllib.parse import unquote, urlparse
+from pathlib import Path
+from urllib.parse import parse_qs, unquote, urlparse
 
-MAX_BODY = 1024 * 1024          # 1 MiB per board write
-MAX_ITEMS = 5000                # ranking / customs entries per board
-BOARD_ID = re.compile(r"^[A-Za-z0-9_-]{1,64}$")
-TOKEN = os.environ.get("GAMERANK_TOKEN", "").strip()
-# GAMERANK_OPEN=1 disables authentication: anyone who can reach the server can
-# read and write boards. Use it only on a private/unlisted address (same-origin
-# auto-connect), never on a public domain.
-OPEN_MODE = os.environ.get("GAMERANK_OPEN", "").strip() in ("1", "true", "yes")
+MAX_BODY = 1024 * 1024
+MAX_ITEMS = 5000
+BOARD_PATH = re.compile(r"^/api/boards/([A-Za-z0-9_-]{1,64})$")
+IDENTITY_KEY = re.compile(r"^[!-~]{32,256}$")
+CLIENT_ID = re.compile(r"^[!-~]{1,128}$")
+HEARTBEAT_SECONDS = 15
 STATIC_DIR = None
 DB_PATH = "boards.db"
 
@@ -51,9 +38,8 @@ _db_lock = threading.Lock()
 _conn: sqlite3.Connection | None = None
 
 
-# --------------------------------------------------------------------- store
-
 def db() -> sqlite3.Connection:
+    """Call under _db_lock once request threads have started."""
     global _conn
     if _conn is None:
         _conn = sqlite3.connect(DB_PATH, check_same_thread=False)
@@ -67,108 +53,164 @@ def db() -> sqlite3.Connection:
                    customs TEXT NOT NULL DEFAULT '[]',
                    revision INTEGER NOT NULL DEFAULT 1,
                    owner TEXT NOT NULL DEFAULT '',
+                   identity_version INTEGER NOT NULL DEFAULT 0,
+                   client_id TEXT,
                    created_at TEXT NOT NULL,
                    updated_at TEXT NOT NULL
                )"""
         )
-        cols = {row["name"] for row in _conn.execute("PRAGMA table_info(boards)")}
-        if "owner" not in cols:                       # migrate older databases
-            _conn.execute("ALTER TABLE boards ADD COLUMN owner TEXT NOT NULL DEFAULT ''")
+        columns = {row["name"] for row in _conn.execute("PRAGMA table_info(boards)")}
+        for name, declaration in (
+            ("owner", "TEXT NOT NULL DEFAULT ''"),
+            ("identity_version", "INTEGER NOT NULL DEFAULT 0"),
+            ("client_id", "TEXT"),
+        ):
+            if name not in columns:
+                _conn.execute("ALTER TABLE boards ADD COLUMN " + name + " " + declaration)
+        _conn.execute(
+            "CREATE UNIQUE INDEX IF NOT EXISTS boards_client_id "
+            "ON boards(owner, client_id) WHERE client_id IS NOT NULL"
+        )
         _conn.commit()
     return _conn
 
 
 def now_iso() -> str:
-    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    return datetime.now(timezone.utc).isoformat(timespec="milliseconds").replace("+00:00", "Z")
 
 
-def meta_of(row) -> dict:
+def board_of(row: sqlite3.Row, *, full: bool = True) -> dict:
     ranking = json.loads(row["ranking"] or "[]")
-    return {
+    board = {
         "id": row["id"],
         "name": row["name"],
-        "count": len(ranking) if isinstance(ranking, list) else 0,
+        "count": len(ranking),
         "revision": row["revision"],
-        "owner": row["owner"] if "owner" in row.keys() else "",
+        "owner": row["owner"],
         "updatedAt": row["updated_at"],
     }
+    if full:
+        board["ranking"] = ranking
+        board["customs"] = json.loads(row["customs"] or "[]")
+    return board
 
 
 def list_boards() -> list[dict]:
     with _db_lock:
-        rows = db().execute(
-            "SELECT id, name, ranking, revision, owner, updated_at FROM boards ORDER BY created_at"
-        ).fetchall()
-    return [meta_of(r) for r in rows]
+        rows = db().execute("SELECT * FROM boards ORDER BY created_at, id").fetchall()
+    return [board_of(row, full=False) for row in rows]
 
 
 def get_board(board_id: str) -> dict | None:
     with _db_lock:
         row = db().execute("SELECT * FROM boards WHERE id = ?", (board_id,)).fetchone()
-    if row is None:
-        return None
-    board = meta_of(row)
-    board["ranking"] = json.loads(row["ranking"] or "[]")
-    board["customs"] = json.loads(row["customs"] or "[]")
-    return board
+    return board_of(row) if row is not None else None
 
 
-def create_board(name: str, owner: str = "") -> dict:
-    board_id = uuid.uuid4().hex[:12]
+class StoreError(Exception):
+    def __init__(self, status: int, code: str, board: dict | None = None):
+        super().__init__(code)
+        self.status = status
+        self.payload = {"error": code}
+        if board is not None:
+            self.payload.update(revision=board["revision"], board=board)
+
+
+def create_board(payload: dict, owner: str) -> tuple[dict, bool]:
+    """Create complete content atomically; retries reuse an owner's client ID."""
     stamp = now_iso()
+    board_id = uuid.uuid4().hex
+    client_id = payload.get("clientId")
     with _db_lock:
-        db().execute(
-            "INSERT INTO boards (id, name, ranking, customs, revision, owner, created_at,"
-            " updated_at) VALUES (?, ?, '[]', '[]', 1, ?, ?, ?)",
-            (board_id, name, owner, stamp, stamp),
-        )
-        db().commit()
-    return get_board(board_id)
+        conn = db()
+        with conn:
+            conn.execute("BEGIN IMMEDIATE")
+            if client_id is not None:
+                row = conn.execute(
+                    "SELECT * FROM boards WHERE owner = ? AND client_id = ?",
+                    (owner, client_id),
+                ).fetchone()
+                if row is not None:
+                    return board_of(row), False
+            conn.execute(
+                "INSERT INTO boards (id, name, ranking, customs, revision, owner, "
+                "identity_version, client_id, created_at, updated_at) "
+                "VALUES (?, ?, ?, ?, 1, ?, 1, ?, ?, ?)",
+                (board_id, payload["name"].strip()[:60],
+                 json.dumps(payload.get("ranking", []), ensure_ascii=False, separators=(",", ":")),
+                 json.dumps(payload.get("customs", []), ensure_ascii=False, separators=(",", ":")),
+                 owner, client_id, stamp, stamp),
+            )
+        return board_of(conn.execute("SELECT * FROM boards WHERE id = ?", (board_id,)).fetchone()), True
 
 
-def board_owner(board_id: str) -> str | None:
+def owned_row(conn: sqlite3.Connection, board_id: str, owner: str) -> sqlite3.Row:
+    row = conn.execute("SELECT * FROM boards WHERE id = ?", (board_id,)).fetchone()
+    if row is None:
+        raise StoreError(404, "not_found")
+    # Older public IDs were supplied by clients and are not proof of ownership.
+    if row["identity_version"] != 1 or row["owner"] != owner:
+        raise StoreError(403, "not_owner")
+    return row
+
+
+def update_board(board_id: str, payload: dict, owner: str) -> dict:
     with _db_lock:
-        row = db().execute("SELECT owner FROM boards WHERE id = ?", (board_id,)).fetchone()
-    return None if row is None else (row["owner"] or "")
+        conn = db()
+        with conn:
+            conn.execute("BEGIN IMMEDIATE")
+            row = owned_row(conn, board_id, owner)
+            if "revision" in payload and payload["revision"] != row["revision"]:
+                raise StoreError(409, "revision_conflict", board_of(row))
+            conn.execute(
+                "UPDATE boards SET name = ?, ranking = ?, customs = ?, "
+                "revision = revision + 1, updated_at = ? WHERE id = ?",
+                (payload["name"].strip()[:60] if "name" in payload else row["name"],
+                 json.dumps(payload["ranking"], ensure_ascii=False, separators=(",", ":"))
+                 if "ranking" in payload else row["ranking"],
+                 json.dumps(payload["customs"], ensure_ascii=False, separators=(",", ":"))
+                 if "customs" in payload else row["customs"],
+                 now_iso(), board_id),
+            )
+        return board_of(conn.execute("SELECT * FROM boards WHERE id = ?", (board_id,)).fetchone())
 
 
-def update_board(board_id: str, payload: dict) -> dict | None:
+def delete_board(board_id: str, owner: str) -> None:
     with _db_lock:
-        row = db().execute("SELECT * FROM boards WHERE id = ?", (board_id,)).fetchone()
-        if row is None:
-            return None
-        name = payload.get("name")
-        if not isinstance(name, str) or not name.strip():
-            name = row["name"]
-        ranking = payload.get("ranking")
-        if not isinstance(ranking, list):
-            ranking = json.loads(row["ranking"] or "[]")
-        customs = payload.get("customs")
-        if not isinstance(customs, list):
-            customs = json.loads(row["customs"] or "[]")
-        db().execute(
-            "UPDATE boards SET name = ?, ranking = ?, customs = ?, revision = revision + 1,"
-            " updated_at = ? WHERE id = ?",
-            (
-                name.strip()[:60],
-                json.dumps(ranking, ensure_ascii=False, separators=(",", ":")),
-                json.dumps(customs, ensure_ascii=False, separators=(",", ":")),
-                now_iso(),
-                board_id,
-            ),
-        )
-        db().commit()
-    return get_board(board_id)
+        conn = db()
+        with conn:
+            conn.execute("BEGIN IMMEDIATE")
+            owned_row(conn, board_id, owner)
+            conn.execute("DELETE FROM boards WHERE id = ?", (board_id,))
 
 
-def delete_board(board_id: str) -> bool:
-    with _db_lock:
-        cur = db().execute("DELETE FROM boards WHERE id = ?", (board_id,))
-        db().commit()
-    return cur.rowcount > 0
+class GameRankHTTPServer(ThreadingHTTPServer):
+    daemon_threads = True
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.events = threading.Condition()
+        self.version = 0
+        self.closing = False
 
-# ------------------------------------------------------------------- handlers
+    def publish(self) -> None:
+        with self.events:
+            self.version += 1
+            self.events.notify_all()
+
+    def close_events(self) -> None:
+        with self.events:
+            self.closing = True
+            self.events.notify_all()
+
+    def shutdown(self) -> None:
+        self.close_events()
+        super().shutdown()
+
+    def server_close(self) -> None:
+        self.close_events()
+        super().server_close()
+
 
 CONTENT_TYPES = {
     ".html": "text/html; charset=utf-8",
@@ -179,17 +221,28 @@ CONTENT_TYPES = {
     ".png": "image/png",
     ".webp": "image/webp",
     ".ico": "image/x-icon",
-    ".txt": "text/plain; charset=utf-8",
-    ".md": "text/plain; charset=utf-8",
+    ".jpg": "image/jpeg",
+    ".jpeg": "image/jpeg",
+    ".gif": "image/gif",
+    ".avif": "image/avif",
 }
+PUBLIC_FILES = {"index.html", "app.js", "styles.css", "favicon.ico"}
+
+
+def public_path(path: Path) -> bool:
+    parts = path.parts
+    if not parts or any(part.startswith(".") for part in parts):
+        return False
+    return path.as_posix() in PUBLIC_FILES or (
+        parts[0] in ("data", "assets") and len(parts) > 1 and path.suffix.lower() in CONTENT_TYPES
+    )
 
 
 class Handler(BaseHTTPRequestHandler):
-    server_version = "GameRank/1.0"
+    server_version = "GameRank/2.0"
     protocol_version = "HTTP/1.1"
 
-    # ---------------------------------------------------------------- helpers
-    def log_message(self, fmt, *args):  # quieter, keeps stderr readable
+    def log_message(self, fmt, *args):
         sys.stderr.write("%s - %s\n" % (self.address_string(), fmt % args))
 
     def send_json(self, status: int, payload: dict) -> None:
@@ -198,218 +251,253 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
         self.send_header("Cache-Control", "no-store")
-        self.send_cors()
+        self.send_header("X-Content-Type-Options", "nosniff")
         self.end_headers()
         self.wfile.write(body)
 
-    def send_cors(self) -> None:
-        self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-GameRank-Token")
-        self.send_header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
-        self.send_header("Access-Control-Max-Age", "86400")
+    def identity(self) -> str | None:
+        key = self.headers.get("X-GameRank-Key", "")
+        if not IDENTITY_KEY.fullmatch(key):
+            self.close_connection = True
+            self.send_json(401, {"error": "identity_required"})
+            return None
+        return "u_" + hashlib.sha256(key.encode("ascii")).hexdigest()
 
-    def authorized(self) -> bool:
-        if OPEN_MODE:
+    def same_origin(self) -> bool:
+        origin = self.headers.get("Origin")
+        if origin is None:
             return True
-        given = self.headers.get("X-GameRank-Token", "")
-        return bool(TOKEN) and hmac.compare_digest(given, TOKEN)
+        parsed = urlparse(origin)
+        if parsed.scheme in ("http", "https") and parsed.netloc.lower() == self.headers.get("Host", "").lower():
+            return True
+        self.close_connection = True
+        self.send_json(403, {"error": "cross_origin_write"})
+        return False
 
     def read_json(self) -> dict | None:
-        try:
-            length = int(self.headers.get("Content-Length") or 0)
-        except ValueError:
-            return None
-        if length <= 0 or length > MAX_BODY:
-            return None
-        try:
-            data = json.loads(self.rfile.read(length).decode("utf-8"))
-        except (UnicodeDecodeError, json.JSONDecodeError):
-            return None
-        return data if isinstance(data, dict) else None
+        def invalid_constant(value):
+            raise ValueError("Non-finite JSON number")
 
-    def valid_items(self, value) -> bool:
-        if not isinstance(value, list) or len(value) > MAX_ITEMS:
+        try:
+            length = int(self.headers.get("Content-Length", "0"))
+        except ValueError:
+            length = 0
+        if length <= 0 or length > MAX_BODY or self.headers.get("Transfer-Encoding"):
+            self.close_connection = True
+            self.send_json(413 if length > MAX_BODY else 400, {"error": "bad_body_length"})
+            return None
+        try:
+            payload = json.loads(self.rfile.read(length).decode("utf-8"), parse_constant=invalid_constant)
+            json.dumps(payload, ensure_ascii=False).encode("utf-8")
+        except (UnicodeError, ValueError, RecursionError):
+            self.send_json(400, {"error": "bad_json"})
+            return None
+        if not isinstance(payload, dict):
+            self.send_json(400, {"error": "bad_json"})
+            return None
+        return payload
+
+    def valid_payload(self, payload: dict, *, creating: bool = False) -> bool:
+        if creating and "name" not in payload:
+            self.send_json(400, {"error": "name_required"})
             return False
-        for item in value:
-            if not isinstance(item, (dict, str)):
-                return False
+        if "name" in payload and (not isinstance(payload["name"], str) or not payload["name"].strip()):
+            self.send_json(400, {"error": "name_required"})
+            return False
+        for field in ("ranking", "customs"):
+            if field in payload:
+                items = payload[field]
+                if not isinstance(items, list) or len(items) > MAX_ITEMS or any(
+                    not isinstance(item, (dict, str)) for item in items
+                ):
+                    self.send_json(400, {"error": "bad_" + field})
+                    return False
+        if "revision" in payload and (type(payload["revision"]) is not int or payload["revision"] < 1):
+            self.send_json(400, {"error": "bad_revision"})
+            return False
+        if "clientId" in payload and (
+            not isinstance(payload["clientId"], str) or not CLIENT_ID.fullmatch(payload["clientId"])
+        ):
+            self.send_json(400, {"error": "bad_clientId"})
+            return False
         return True
 
-    # ------------------------------------------------------------------ verbs
     def do_OPTIONS(self) -> None:
+        if not self.same_origin():
+            return
         self.send_response(204)
-        self.send_cors()
+        self.send_header("Allow", "GET, POST, PUT, DELETE, OPTIONS")
         self.send_header("Content-Length", "0")
         self.end_headers()
 
     def do_GET(self) -> None:
         path = urlparse(self.path).path
         if path == "/api/health":
-            self.send_json(200, {"ok": True, "open": OPEN_MODE})
-            return
-        if not path.startswith("/api/"):
-            self.serve_static(path)
-            return
-        if not self.authorized():
-            self.send_json(401, {"error": "unauthorized"})
-            return
-
-        if path == "/api/boards":
+            self.send_json(200, {"ok": True, "open": True, "realtime": True})
+        elif path == "/api/me":
+            owner = self.identity()
+            if owner:
+                self.send_json(200, {"user": {"id": owner}})
+        elif path == "/api/boards":
             self.send_json(200, {"boards": list_boards()})
-            return
-
-        m = re.match(r"^/api/boards/([A-Za-z0-9_-]{1,64})$", path)
-        if m:
-            board = get_board(m.group(1))
+        elif path == "/api/events":
+            self.serve_events()
+        elif match := BOARD_PATH.fullmatch(path):
+            board = get_board(match.group(1))
             if board is None:
                 self.send_json(404, {"error": "not_found"})
             else:
                 self.send_json(200, {"board": board})
-            return
-
-        self.serve_static(path)
-
-    def do_POST(self) -> None:
-        path = urlparse(self.path).path
-        if not self.authorized():
-            self.send_json(401, {"error": "unauthorized"})
-            return
-        if path != "/api/boards":
-            self.send_json(404, {"error": "not_found"})
-            return
-        payload = self.read_json() or {}
-        name = payload.get("name")
-        if not isinstance(name, str) or not name.strip():
-            self.send_json(400, {"error": "name_required"})
-            return
-        owner = payload.get("owner")
-        owner = owner.strip()[:64] if isinstance(owner, str) else ""
-        self.send_json(201, {"board": create_board(name.strip()[:60], owner)})
-
-    def owner_id(self) -> str:
-        return (self.headers.get("X-Owner-Id") or "").strip()[:64]
-
-    def check_owner(self, board_id: str) -> bool:
-        """Boards without an owner stay writable (legacy rows)."""
-        owner = board_owner(board_id)
-        return owner in ("", None) or owner == self.owner_id()
-
-    def do_PUT(self) -> None:
-        path = urlparse(self.path).path
-        if not self.authorized():
-            self.send_json(401, {"error": "unauthorized"})
-            return
-        m = re.match(r"^/api/boards/([A-Za-z0-9_-]{1,64})$", path)
-        if not m:
-            self.send_json(404, {"error": "not_found"})
-            return
-        if not self.check_owner(m.group(1)):
-            self.send_json(403, {"error": "not_owner"})
-            return
-        payload = self.read_json()
-        if payload is None:
-            self.send_json(400, {"error": "bad_json"})
-            return
-        for field in ("ranking", "customs"):
-            if field in payload and not self.valid_items(payload[field]):
-                self.send_json(400, {"error": "bad_" + field})
-                return
-        board = update_board(m.group(1), payload)
-        if board is None:
+        elif path.startswith("/api/"):
             self.send_json(404, {"error": "not_found"})
         else:
-            self.send_json(200, {"board": {k: board[k] for k in ("id", "name", "count", "revision", "updatedAt")}})
+            self.serve_static(path)
+
+    def do_POST(self) -> None:
+        if not self.same_origin():
+            return
+        owner = self.identity()
+        if not owner:
+            return
+        if urlparse(self.path).path != "/api/boards":
+            self.send_json(404, {"error": "not_found"})
+            return
+        payload = self.read_json()
+        if payload is None or not self.valid_payload(payload, creating=True):
+            return
+        board, created = create_board(payload, owner)
+        if created:
+            self.server.publish()
+        self.send_json(201 if created else 200, {"board": board})
+
+    def do_PUT(self) -> None:
+        if not self.same_origin():
+            return
+        owner = self.identity()
+        if not owner:
+            return
+        match = BOARD_PATH.fullmatch(urlparse(self.path).path)
+        if not match:
+            self.send_json(404, {"error": "not_found"})
+            return
+        payload = self.read_json()
+        if payload is None or not self.valid_payload(payload):
+            return
+        try:
+            board = update_board(match.group(1), payload, owner)
+        except StoreError as error:
+            self.send_json(error.status, error.payload)
+            return
+        self.server.publish()
+        self.send_json(200, {"board": board})
 
     def do_DELETE(self) -> None:
-        path = urlparse(self.path).path
-        if not self.authorized():
-            self.send_json(401, {"error": "unauthorized"})
+        if not self.same_origin():
             return
-        m = re.match(r"^/api/boards/([A-Za-z0-9_-]{1,64})$", path)
-        if not m:
+        owner = self.identity()
+        if not owner:
+            return
+        match = BOARD_PATH.fullmatch(urlparse(self.path).path)
+        if not match:
             self.send_json(404, {"error": "not_found"})
             return
-        if not self.check_owner(m.group(1)):
-            self.send_json(403, {"error": "not_owner"})
+        try:
+            delete_board(match.group(1), owner)
+        except StoreError as error:
+            self.send_json(error.status, error.payload)
             return
-        if not delete_board(m.group(1)):
-            self.send_json(404, {"error": "not_found"})
-            return
+        self.server.publish()
         self.send_response(204)
-        self.send_cors()
         self.send_header("Content-Length", "0")
         self.end_headers()
 
-    # ----------------------------------------------------------------- static
+    def serve_events(self) -> None:
+        self.send_response(200)
+        self.send_header("Content-Type", "text/event-stream; charset=utf-8")
+        self.send_header("Cache-Control", "no-cache, no-transform")
+        self.send_header("X-Accel-Buffering", "no")
+        self.end_headers()
+        self.close_connection = True
+        self.connection.settimeout(5)
+        version = None
+        try:
+            while True:
+                with self.server.events:
+                    self.server.events.wait_for(
+                        lambda: self.server.closing or self.server.version != version,
+                        timeout=HEARTBEAT_SECONDS,
+                    )
+                    if self.server.closing:
+                        return
+                    latest = self.server.version
+                if latest != version:
+                    message = 'event: boards\nid: %d\ndata: {"version":%d}\n\n' % (latest, latest)
+                    version = latest
+                else:
+                    message = ": heartbeat\n\n"
+                self.wfile.write(message.encode("utf-8"))
+                self.wfile.flush()
+        except (OSError, TimeoutError):
+            return
+
     def serve_static(self, path: str) -> None:
         if not STATIC_DIR:
             self.send_json(404, {"error": "not_found"})
             return
-        rel = unquote(path).lstrip("/") or "index.html"
-        target = os.path.normpath(os.path.join(STATIC_DIR, rel))
-        root = os.path.normpath(STATIC_DIR)
-        if not target.startswith(root + os.sep) and target != root:
-            self.send_json(403, {"error": "forbidden"})
-            return
-        if os.path.isdir(target):
-            target = os.path.join(target, "index.html")
-        if not os.path.isfile(target):
+        relative = Path(unquote(path).lstrip("/") or "index.html")
+        if not public_path(relative) or "\\" in unquote(path):
             self.send_json(404, {"error": "not_found"})
             return
-        ext = os.path.splitext(target)[1].lower()
-        ctype = CONTENT_TYPES.get(ext, "application/octet-stream")
+        root = Path(STATIC_DIR).resolve()
         try:
-            with open(target, "rb") as fh:
-                body = fh.read()
-        except OSError:
-            self.send_json(500, {"error": "read_failed"})
+            target = (root / relative).resolve()
+            resolved_relative = target.relative_to(root)
+            if not public_path(resolved_relative) or not target.is_file():
+                raise ValueError("Not a public asset")
+            body = target.read_bytes()
+        except (OSError, ValueError, RuntimeError):
+            self.send_json(404, {"error": "not_found"})
             return
+        extension = target.suffix.lower()
+        query = parse_qs(urlparse(self.path).query)
+        versioned = bool(query.get("v", [""])[0])
         self.send_response(200)
-        self.send_header("Content-Type", ctype)
+        self.send_header("Content-Type", CONTENT_TYPES[extension])
         self.send_header("Content-Length", str(len(body)))
-        # Versioned assets (?v=) can cache; HTML must not.
-        if ext in (".js", ".css", ".json") or "/data/" in target.replace("\\", "/"):
-            self.send_header("Cache-Control", "public, max-age=2592000")
-        else:
-            self.send_header("Cache-Control", "no-cache")
+        self.send_header("X-Content-Type-Options", "nosniff")
+        self.send_header("Cache-Control", "public, max-age=2592000, immutable"
+                         if versioned and extension != ".html" else "no-cache")
         self.end_headers()
         self.wfile.write(body)
 
 
 def main(argv: list[str]) -> int:
-    global STATIC_DIR, DB_PATH
-    ap = argparse.ArgumentParser(description="GameRank shared-board server")
-    ap.add_argument("--port", type=int, default=8787)
-    ap.add_argument("--host", default="127.0.0.1")
-    ap.add_argument("--db", default="boards.db")
-    ap.add_argument("--static", default="", help="optional site directory to serve")
-    args = ap.parse_args(argv)
-
-    if not TOKEN and not OPEN_MODE:
-        print("GAMERANK_TOKEN is required (or set GAMERANK_OPEN=1 for an "
-              "unauthenticated private deployment).", file=sys.stderr)
-        return 2
-    if OPEN_MODE:
-        print("WARNING: open mode — anyone who can reach this server can edit boards.",
-              file=sys.stderr)
-
+    global STATIC_DIR, DB_PATH, _conn
+    parser = argparse.ArgumentParser(description="GameRank shared-board server")
+    parser.add_argument("--port", type=int, default=8787)
+    parser.add_argument("--host", default="127.0.0.1")
+    parser.add_argument("--db", default="boards.db")
+    parser.add_argument("--static", default="", help="optional site directory to serve")
+    args = parser.parse_args(argv)
     DB_PATH = args.db
     if args.static:
         STATIC_DIR = os.path.abspath(args.static)
         if not os.path.isdir(STATIC_DIR):
             print("--static directory not found: %s" % STATIC_DIR, file=sys.stderr)
             return 2
-
     db()
-    server = ThreadingHTTPServer((args.host, args.port), Handler)
+    server = GameRankHTTPServer((args.host, args.port), Handler)
     print("GameRank server on http://%s:%d  (db=%s, static=%s)"
-          % (args.host, args.port, DB_PATH, STATIC_DIR or "-"), flush=True)
+          % (args.host, server.server_port, DB_PATH, STATIC_DIR or "-"), flush=True)
     try:
         server.serve_forever()
     except KeyboardInterrupt:
         pass
     finally:
         server.server_close()
+        if _conn is not None:
+            _conn.close()
+            _conn = None
     return 0
 
 

@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="GameRank：用中英文搜索游戏，建立属于你的个人游戏排行。">
-<title>GameRank · 我的游戏排行</title>
+<meta name="description" content="GameRank：与朋友在同一个网址分享游戏排行，搜索游戏、拖动排序，改动自动同步。">
+<title>GameRank · 大家的游戏排行</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0d0d'/%3E%3Crect x='6' y='7' width='9' height='18' rx='2' fill='%2366cc33'/%3E%3Crect x='18' y='12' width='8' height='13' rx='2' fill='%23ffcc33'/%3E%3C/svg%3E">
 <script>
   /* Theme bootstrap: runs before first paint to avoid a flash of the wrong theme. */
@@ -21,7 +21,7 @@
     document.documentElement.setAttribute('data-theme', mode);
   })();
 </script>
-<link rel="stylesheet" href="styles.css?v=20261115-1650-6081e1a2">
+<link rel="stylesheet" href="styles.css?v=20261115-1650-7daa1778">
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要内容</a>
@@ -61,11 +61,34 @@
 </header>
 
 <main id="main" class="wrap">
+  <section class="room card" aria-labelledby="roomTitle">
+    <div class="room__head">
+      <div>
+        <h2 id="roomTitle" class="h2">大家的榜单</h2>
+        <p id="roomHint" class="room__hint">正在连接，朋友打开同一个网址就能看到大家的排行。</p>
+      </div>
+      <span id="roomCount" class="room__count"></span>
+    </div>
+    <div class="room__controls">
+      <div class="field room__picker">
+        <label class="field__label" for="boardSelect">正在查看</label>
+        <select id="boardSelect" class="input" aria-label="切换大家的榜单"></select>
+      </div>
+      <button id="renameBoardBtn" class="btn" type="button">重命名我的榜单</button>
+      <button id="newBoardBtn" class="btn btn--primary" type="button">新建我的榜单</button>
+    </div>
+    <div class="room__sync">
+      <p id="syncStatus" class="sync-status" role="status" aria-live="polite">正在连接大家的榜单…</p>
+      <button id="syncRetryBtn" class="save-tool" type="button" hidden>重新连接</button>
+    </div>
+    <div id="syncConflicts" class="sync-conflicts" hidden></div>
+  </section>
+
   <section class="search-panel card" aria-labelledby="searchTitle">
     <div class="search-panel__head">
       <p class="eyebrow">Search the library</p>
       <h1 id="searchTitle" class="h1">排一个属于你的游戏榜</h1>
-      <p class="h1__sub">中英文搜索 · 拖拽排序 · 本地保存</p>
+      <p class="h1__sub">中英文搜索 · 拖拽排序 · 自动保存</p>
     </div>
 
     <div class="combo">
@@ -143,7 +166,7 @@
 
 <footer class="foot">
   <div class="wrap foot__inner">
-    <p>GameRank · 纯静态页面，数据保存在你自己的浏览器里。</p>
+    <p id="footText">打开同一个网址，与朋友分享游戏排行。</p>
   </div>
 </footer>
 
@@ -227,8 +250,8 @@
 <dialog id="saveDialog" class="dlg dlg--save" aria-labelledby="saveTitle">
   <div class="dlg__form">
     <header class="dlg__head">
-      <h2 id="saveTitle" class="dlg__title">存档</h2>
-      <p class="dlg__sub">每个存档是一份独立的排行，切换时自动保存当前进度。</p>
+      <h2 id="saveTitle" class="dlg__title">管理榜单</h2>
+      <p class="dlg__sub">给自己的榜单起个容易认出的名字。改动自动保存，朋友的榜单可以复制后编辑。</p>
     </header>
 
     <div id="saveList" class="saves" role="group" aria-label="存档列表"></div>
@@ -236,29 +259,10 @@
     <form id="saveForm" class="save-new" novalidate>
       <label class="sr-only" for="saveNameInput">新存档名称</label>
       <input id="saveNameInput" class="input" type="text" maxlength="40" autocomplete="off"
-             placeholder="新存档名称，例如：小明的排行">
-      <button type="submit" class="btn btn--primary">新建存档</button>
+             placeholder="给我的榜单起名，例如：小明的排行">
+      <button type="submit" class="btn btn--primary">新建我的榜单</button>
     </form>
     <p id="saveNameErr" class="field__err" hidden></p>
-
-    <details id="remotePanel" class="remote">
-      <summary class="remote__summary">共享服务器（两人互看）</summary>
-      <form id="remoteForm" class="remote__form" novalidate>
-        <label class="field__label" for="remoteBase">服务器地址</label>
-        <input id="remoteBase" class="input" type="url" autocomplete="off" spellcheck="false"
-               placeholder="留空 = 当前站点地址">
-        <label class="field__label" for="remoteToken">口令</label>
-        <input id="remoteToken" class="input" type="password" autocomplete="off"
-               placeholder="服务器启动时设置的 GAMERANK_TOKEN">
-        <div class="remote__actions">
-          <button type="submit" class="btn btn--primary">连接</button>
-          <button type="button" id="remoteInvite" class="btn">复制邀请链接</button>
-          <button type="button" id="remoteOff" class="btn">断开（回到本地）</button>
-        </div>
-        <p id="remoteStatus" class="remote__status" role="status" aria-live="polite"></p>
-        <input id="remoteLink" class="input" type="text" readonly hidden aria-label="邀请链接">
-      </form>
-    </details>
 
     <footer class="dlg__foot">
       <button type="button" class="btn" data-close="saveDialog">完成</button>
@@ -268,7 +272,7 @@
 
 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-<script src="data/games.js?v=20261115-1650-6081e1a2"></script>
-<script src="app.js?v=20261115-1650-6081e1a2" defer></script>
+<script src="data/games.js?v=20261115-1650-7daa1778"></script>
+<script src="app.js?v=20261115-1650-7daa1778" defer></script>
 </body>
 </html>

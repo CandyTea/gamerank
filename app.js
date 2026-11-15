@@ -7,13 +7,15 @@
 
   var STORAGE = {
     saves: 'gamerank.saves.v1',          // local save slots (ranking + customs each)
-    savesRemote: 'gamerank.saves.remote.v1', // cache of shared boards, never mixed with local
+    savesRemote: 'gamerank.realtime.v2', // same-site board cache; local archives stay untouched
     ranking: 'gamerank.ranking.v1',      // legacy single-slot key, migrated once
     custom: 'gamerank.custom.v1',        // legacy single-slot key, migrated once
     theme: 'gamerank.theme.v1',
-    remote: 'gamerank.remote.v1',        // {base, token} of the shared-board server
     remoteActive: 'gamerank.remoteActive.v1',
-    user: 'gamerank.user.v1'
+    key: 'gamerank.key.v1',
+    owner: 'gamerank.owner.v2',
+    pending: 'gamerank.pending.v2',
+    imports: 'gamerank.imports.v2'
   };
   var HOT_SUGGESTIONS = 12;   // rows shown for an empty query
   var MAX_SUGGESTIONS = 50;   // hard cap for query results
@@ -58,6 +60,8 @@
     els.readonlyName = document.getElementById('readonlyName');
     els.cloneBoardBtn = document.getElementById('cloneBoardBtn');
     els.empty = document.getElementById('emptyState');
+    els.emptyTitle = els.empty ? els.empty.querySelector('.empty__title') : null;
+    els.emptyHint = els.empty ? els.empty.querySelector('.empty__hint') : null;
     els.hotChips = document.getElementById('hotChips');
     els.countPill = document.getElementById('countPill');
     els.countSr = document.getElementById('countSr');
@@ -73,13 +77,15 @@
     els.saveNameInput = document.getElementById('saveNameInput');
     els.saveNameErr = document.getElementById('saveNameErr');
     els.boardSaveName = document.getElementById('boardSaveName');
-    els.remoteForm = document.getElementById('remoteForm');
-    els.remoteBase = document.getElementById('remoteBase');
-    els.remoteToken = document.getElementById('remoteToken');
-    els.remoteOff = document.getElementById('remoteOff');
-    els.remoteInvite = document.getElementById('remoteInvite');
-    els.remoteLink = document.getElementById('remoteLink');
-    els.remoteStatus = document.getElementById('remoteStatus');
+    els.boardSelect = document.getElementById('boardSelect');
+    els.newBoardBtn = document.getElementById('newBoardBtn');
+    els.renameBoardBtn = document.getElementById('renameBoardBtn');
+    els.syncStatus = document.getElementById('syncStatus');
+    els.syncRetryBtn = document.getElementById('syncRetryBtn');
+    els.syncConflicts = document.getElementById('syncConflicts');
+    els.roomHint = document.getElementById('roomHint');
+    els.roomCount = document.getElementById('roomCount');
+    els.footText = document.getElementById('footText');
     els.customDialog = document.getElementById('customDialog');
     els.customForm = document.getElementById('customForm');
     els.cName = document.getElementById('cName');
@@ -113,13 +119,14 @@
     customCount: 0,
     saves: [],          // [{ id, name, createdAt, updatedAt, ranking, customs }]
     activeSaveId: '',   // id of the slot currently shown
-    remote: { base: '', token: '' },
-    remoteOn: false,    // true once the shared server answered
-    remoteOpen: false,  // server runs without a token (GAMERANK_OPEN=1)
-    userId: '',         // stable per-browser id used as board owner
+    remoteOn: false,    // retain the shared workspace while temporarily offline
+    connected: false,
+    live: false,
+    connecting: false,
+    userId: '',         // public owner id returned by the server
+    browserKey: '',     // private editing credential, never put in a board or URL
     readOnly: false,    // viewing someone else's board
-    remoteRev: 0,       // revision of the board currently loaded
-    remoteEditAt: 0     // timestamp of the last local change (guards polling)
+    selecting: 0
   };
 
   var pendingFocus = null;
@@ -293,7 +300,14 @@
       createdAt: str(raw.createdAt) || nowIso(),
       updatedAt: str(raw.updatedAt) || str(raw.createdAt) || nowIso(),
       ranking: Array.isArray(raw.ranking) ? raw.ranking : [],
-      customs: Array.isArray(raw.customs) ? raw.customs : []
+      customs: Array.isArray(raw.customs) ? raw.customs : [],
+      remote: raw.remote === true,
+      owner: str(raw.owner),
+      revision: Number(raw.revision) || 0,
+      serverRevision: Number(raw.serverRevision) || Number(raw.revision) || 0,
+      loaded: raw.loaded === true,
+      count: typeof raw.count === 'number' ? raw.count : (Array.isArray(raw.ranking) ? raw.ranking.length : 0),
+      importSourceId: str(raw.importSourceId)
     };
   }
 
@@ -319,8 +333,8 @@
     return state.remoteOn ? STORAGE.savesRemote : STORAGE.saves;
   }
 
-  function readSaves() {
-    var raw = store.get(savesKey());
+  function readSaves(key) {
+    var raw = store.get(key || savesKey());
     var data = null;
     if (raw) {
       try { data = JSON.parse(raw); } catch (err) { data = null; }
@@ -355,7 +369,7 @@
     for (var i = 0; i < state.saves.length; i++) {
       if (state.saves[i].id === state.activeSaveId) return state.saves[i];
     }
-    return state.saves.length ? state.saves[0] : null;
+    return null;
   }
 
   function saveById(id) {
@@ -375,363 +389,553 @@
 
   /* ------------------------------------------------------------ shared board */
 
-  var REMOTE_POLL_MS = 8000;   // how often to look for the other person's edits
-  var REMOTE_PUSH_MS = 600;    // debounce before writing a board back
-  var remotePollTimer = 0;
-  var remotePushTimer = 0;
+  var pendingWrites = Object.create(null);
+  var inFlight = Object.create(null);
+  var writeTimers = Object.create(null);
+  var importedSaves = Object.create(null);
+  var eventStream = null;
+  var connectPromise = null;
+  var retryTimer = 0;
+  var refreshPromise = null;
+  var refreshAgain = false;
+  var queueSequence = 0;
+  var mutationVersion = 0;
 
-  function ensureUserId() {
-    var existing = store.get(STORAGE.user);
-    if (existing && /^[A-Za-z0-9_-]{6,64}$/.test(existing)) return existing;
-    var id = 'u_' + Math.random().toString(36).slice(2, 10) + Date.now().toString(36);
-    store.set(STORAGE.user, id);
-    return id;
+  function copyData(value) {
+    return JSON.parse(JSON.stringify(value));
   }
 
-  function normalizeBase(base) {
-    var value = String(base || '').trim().replace(/\/+$/, '');
-    if (!value) return '';
-    if (!/^https?:\/\//i.test(value)) value = 'https://' + value;
-    return value;
+  function boardPayload(save) {
+    return {
+      name: save.name,
+      ranking: normalizeRanking(save.ranking).map(function (item) {
+        return item.custom ? { key: item.key, custom: true } : { key: item.key };
+      }),
+      customs: copyData(save.customs || [])
+    };
   }
 
-  function loadRemoteConfig() {
-    var raw = store.get(STORAGE.remote);
+  function sameBoardContent(a, b) {
+    return JSON.stringify(boardPayload(a)) === JSON.stringify(boardPayload(b));
+  }
+
+  function ensureBrowserKey() {
+    var existing = store.get(STORAGE.key);
+    if (existing && /^[a-f0-9]{64}$/.test(existing)) return existing;
+    if (!window.crypto || typeof window.crypto.getRandomValues !== 'function') return '';
+    var bytes = new Uint8Array(32);
+    window.crypto.getRandomValues(bytes);
+    var key = Array.from(bytes, function (byte) { return byte.toString(16).padStart(2, '0'); }).join('');
+    if (!store.set(STORAGE.key, key)) warnStorageOnce();
+    return key;
+  }
+
+  function restoreSharedWorkspace() {
+    try {
+      var imported = JSON.parse(store.get(STORAGE.imports) || '{}');
+      if (imported && typeof imported === 'object' && !Array.isArray(imported)) {
+        Object.keys(imported).forEach(function (id) { importedSaves[id] = imported[id]; });
+      }
+    } catch (err) { /* A damaged import index does not change the original archives. */ }
+    try {
+      var queued = JSON.parse(store.get(STORAGE.pending) || '[]');
+      if (Array.isArray(queued)) queued.forEach(function (entry) {
+        if (!entry || typeof entry.id !== 'string' || !entry.payload || !entry.payload.name) return;
+        entry.seq = ++queueSequence;
+        pendingWrites[entry.id] = entry;
+      });
+    } catch (err) { /* The cached boards still retain their most recent local content. */ }
+    var raw = store.get(STORAGE.savesRemote);
     if (!raw) return;
     try {
-      var parsed = JSON.parse(raw);
-      if (parsed && parsed.base) {
-        state.remote = { base: normalizeBase(parsed.base), token: String(parsed.token || '') };
-        state.remoteOpen = parsed.open === true;
-      }
-    } catch (err) { /* ignore broken config */ }
+      var data = JSON.parse(raw);
+      if (!data || !Array.isArray(data.saves) || !data.saves.length) return;
+      var cached = data.saves.map(normalizeSave).filter(Boolean);
+      if (!cached.length) return;
+      state.remoteOn = true;
+      state.userId = store.get(STORAGE.owner) || '';
+      state.saves = cached;
+      state.activeSaveId = cached.some(function (save) { return save.id === data.activeId; })
+        ? data.activeId : cached[0].id;
+      Object.keys(pendingWrites).forEach(function (id) {
+        var entry = pendingWrites[id];
+        var save = saveById(id);
+        if (!save) {
+          save = normalizeSave(Object.assign({ id: id, remote: true, owner: state.userId, loaded: true }, entry.payload));
+          state.saves.push(save);
+        }
+        Object.assign(save, copyData(entry.payload));
+        save.count = save.ranking.length;
+      });
+    } catch (err) { /* Fall back to the separate local archives. */ }
   }
 
-  function saveRemoteConfig() {
-    store.set(STORAGE.remote, state.remote.base && (state.remote.token || state.remoteOpen)
-      ? JSON.stringify({
-        base: state.remote.base,
-        token: state.remote.token,
-        open: state.remoteOpen === true
-      })
-      : '');
-  }
-
-  function remoteReady() {
-    return !!state.remote.base && (!!state.remote.token || state.remoteOpen === true);
-  }
-
-  function encodeInvite(payload) {
-    var json = JSON.stringify(payload);
-    var bytes = new TextEncoder().encode(json);
-    var bin = '';
-    for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
-    return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-  }
-
-  function decodeInvite(value) {
-    try {
-      var b64 = value.replace(/-/g, '+').replace(/_/g, '/');
-      while (b64.length % 4) b64 += '=';
-      var bin = atob(b64);
-      var bytes = new Uint8Array(bin.length);
-      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
-      var data = JSON.parse(new TextDecoder().decode(bytes));
-      if (!data || !data.base || !data.token) return null;
-      return { base: normalizeBase(data.base), token: String(data.token) };
-    } catch (err) {
-      return null;
-    }
-  }
-
-  function inviteLink() {
-    if (!state.remote.base || !state.remote.token) return '';
-    return location.origin + location.pathname + '#k='
-      + encodeInvite({ base: state.remote.base, token: state.remote.token });
-  }
-
-  function parseInviteHash() {
-    var match = /^#k=([A-Za-z0-9_-]+)$/.exec(location.hash || '');
-    if (!match) return null;
-    var config = decodeInvite(match[1]);
-    if (!config) return null;
-    state.remote = config;
-    saveRemoteConfig();
-    try {
-      history.replaceState(null, '', location.pathname + location.search);
-    } catch (err) { /* file:// may refuse; the hash just stays visible */ }
-    return config;
-  }
-
-  function copyInvite() {
-    var link = inviteLink();
-    if (!link) {
-      remoteStatus('先连接共享服务器，才能生成邀请链接', true);
-      return;
-    }
-    if (els.remoteLink) {
-      els.remoteLink.hidden = false;
-      els.remoteLink.value = link;
-      try { els.remoteLink.select(); } catch (err) { /* ignore */ }
-    }
-    copyText(link).then(function (ok) {
-      remoteStatus(ok
-        ? '邀请链接已复制；没复制成功就手动复制下面这条'
-        : '自动复制被拦截，请手动复制下面的链接');
-      toast(ok ? '邀请链接已复制' : '请手动复制邀请链接');
-    });
-  }
-
-  function remoteStatus(message, isError) {
-    if (!els.remoteStatus) return;
-    els.remoteStatus.textContent = message || '';
-    els.remoteStatus.classList.toggle('is-error', !!isError);
-  }
-
-  function apiFetch(path, options) {
-    var opts = options || {};
-    var headers = {};
-    if (state.remote.token) headers['X-GameRank-Token'] = state.remote.token;
-    if (state.userId) headers['X-Owner-Id'] = state.userId;
-    if (opts.body !== undefined) headers['Content-Type'] = 'application/json';
-    return fetch(state.remote.base + '/api' + path, {
-      method: opts.method || 'GET',
-      headers: headers,
-      body: opts.body === undefined ? undefined : JSON.stringify(opts.body),
-      cache: 'no-store'
-    });
+  function persistPending() {
+    if (!store.set(STORAGE.pending, JSON.stringify(Object.keys(pendingWrites).map(function (id) {
+      return pendingWrites[id];
+    })))) warnStorageOnce();
+    writeSaves();
   }
 
   function apiJson(path, options) {
-    return apiFetch(path, options).then(function (res) {
+    var opts = options || {};
+    var headers = {};
+    if (state.browserKey) headers['X-GameRank-Key'] = state.browserKey;
+    if (opts.body !== undefined) headers['Content-Type'] = 'application/json';
+    var controller = typeof AbortController === 'function' ? new AbortController() : null;
+    var timeout = controller ? setTimeout(function () { controller.abort(); }, 12000) : 0;
+    return fetch('/api' + path, {
+      method: opts.method || 'GET',
+      headers: headers,
+      body: opts.body === undefined ? undefined : JSON.stringify(opts.body),
+      cache: 'no-store',
+      signal: controller ? controller.signal : undefined
+    }).then(function (res) {
       if (res.status === 204) return null;
-      return res.json().catch(function () { return null; }).then(function (data) {
+      return res.text().then(function (body) {
+        var data;
+        try { data = JSON.parse(body); } catch (err) {
+          var invalid = new Error('这个网址暂时没有连接共享服务');
+          invalid.status = res.status;
+          throw invalid;
+        }
         if (!res.ok) {
-          var error = new Error((data && data.error) || ('HTTP ' + res.status));
+          var error = new Error(str(data && data.error) || '暂时无法保存');
           error.status = res.status;
+          error.data = data;
           throw error;
         }
+        if (!data || typeof data !== 'object') throw new Error('共享服务返回了无效内容');
         return data;
       });
+    }).finally(function () { clearTimeout(timeout); });
+  }
+
+  function renderBoardChoices() {
+    if (!els.boardSelect) return;
+    var options = document.createDocumentFragment();
+    var groups = [
+      { title: state.remoteOn ? '我的榜单' : '本机榜单', mine: true },
+      { title: '朋友的榜单', mine: false }
+    ];
+    groups.forEach(function (group) {
+      var saves = state.saves.filter(function (save) { return (!isReadOnlySave(save)) === group.mine; });
+      if (!saves.length) return;
+      var optgroup = document.createElement('optgroup');
+      optgroup.label = group.title;
+      saves.forEach(function (save) {
+        var option = document.createElement('option');
+        option.value = save.id;
+        option.textContent = save.name + ' · ' + (group.mine ? (state.remoteOn ? '我的' : '本机') : '朋友的') +
+          ' · ' + (save.count || 0) + ' 款' +
+          (pendingWrites[save.id] ? ' · 待保存' : '');
+        optgroup.appendChild(option);
+      });
+      options.appendChild(optgroup);
     });
+    els.boardSelect.replaceChildren(options);
+    els.boardSelect.value = state.activeSaveId;
+    var owners = new Set(state.saves.filter(function (save) { return save.owner; }).map(function (save) { return save.owner; }));
+    if (els.roomCount) els.roomCount.textContent = state.saves.length + ' 份榜单' +
+      (state.remoteOn ? ' · ' + owners.size + ' 位玩家' : '');
+    if (els.renameBoardBtn) els.renameBoardBtn.hidden = state.readOnly || !currentSave();
+  }
+
+  function updateSyncStatus() {
+    var ids = Object.keys(pendingWrites);
+    var conflicts = ids.filter(function (id) { return !!pendingWrites[id].conflict; });
+    var text;
+    if (!state.remoteOn) text = state.connecting ? '正在连接大家的榜单…' : '本地模式 · 服务器未连接';
+    else if (conflicts.length) text = conflicts.length + ' 份改动需要确认 · 已保留在本机';
+    else if (ids.length) text = state.connected ? '正在保存 · ' + ids.length + ' 份榜单' : '离线重试 · 改动已保留在本机';
+    else if (!state.connected) text = '离线重试 · 显示上次保存的榜单';
+    else if (!state.live) text = '正在恢复实时连接…';
+    else text = '已同步 · 实时更新';
+    if (els.syncStatus) {
+      els.syncStatus.textContent = text;
+      els.syncStatus.dataset.state = conflicts.length ? 'conflict' :
+        (!state.connected || (state.remoteOn && !state.live) ? 'offline' : (ids.length ? 'saving' : 'synced'));
+    }
+    if (els.syncRetryBtn) els.syncRetryBtn.hidden = state.connected && state.live || state.connecting;
+    if (els.roomHint) els.roomHint.textContent = state.remoteOn
+      ? '朋友打开同一个网址，就能看到这里的榜单。给你的榜单起个容易认出的名字。'
+      : '当前只保存在本机。连接共享服务后，你的榜单会自动上传到这个网址。';
+    if (els.footText) els.footText.textContent = state.remoteOn
+      ? '榜单在这个网址公开可见。此浏览器保管你的编辑权限，改动会自动保存。'
+      : '本地模式：改动保存在这个浏览器中，朋友暂时无法看到。';
+    renderConflicts();
+    renderBoardChoices();
+  }
+
+  function renderConflicts() {
+    if (!els.syncConflicts) return;
+    els.syncConflicts.textContent = '';
+    Object.keys(pendingWrites).forEach(function (id) {
+      var entry = pendingWrites[id];
+      if (!entry.conflict) return;
+      var row = textEl('div', 'sync-conflict');
+      row.appendChild(textEl('p', '', '「' + entry.payload.name + '」' +
+        (entry.conflict.kind === 'revision' ? '在另一处也有修改。你的改动已保留。' : '暂时无法保存，改动已保留。')));
+      var actions = textEl('div', 'sync-conflict__actions');
+      actions.appendChild(saveTool('将我的改动另存为新榜', function () { resolveConflict(id, true); }));
+      if (entry.conflict.board) actions.appendChild(saveTool('采用已同步版本', function () { resolveConflict(id, false); }));
+      row.appendChild(actions);
+      els.syncConflicts.appendChild(row);
+    });
+    els.syncConflicts.hidden = !els.syncConflicts.children.length;
+  }
+
+  function resolveConflict(id, keepCopy) {
+    var entry = pendingWrites[id];
+    if (!entry || !entry.conflict) return;
+    var payload = copyData(entry.payload);
+    var serverBoard = entry.conflict.board;
+    delete pendingWrites[id];
+    if (serverBoard) {
+      var existing = saveById(id);
+      if (existing) existing.serverRevision = serverBoard.revision;
+      mergeRemoteBoard(serverBoard);
+    }
+    else state.saves = state.saves.filter(function (save) { return save.id !== id; });
+    if (keepCopy) {
+      createSharedDraft((payload.name + '（本机副本）').slice(0, 40), payload.ranking, payload.customs, true);
+    } else if (state.activeSaveId === id) refreshFromSave();
+    persistPending();
+    renderSaveList();
+    updateSyncStatus();
+    flushPending();
+    refreshRemoteList();
+  }
+
+  function mergeRemoteBoard(board) {
+    if (!board || typeof board.id !== 'string') throw new Error('无法读取这份榜单');
+    var save = saveById(board.id);
+    if (!save) {
+      save = normalizeSave(Object.assign({}, board, { remote: true, loaded: true }));
+      state.saves.push(save);
+    }
+    if (!pendingWrites[board.id] && !inFlight[board.id] && Number(board.revision) >= save.revision &&
+        Number(board.revision) >= save.serverRevision) {
+      Object.assign(save, {
+        name: str(board.name), ranking: copyData(board.ranking || []), customs: copyData(board.customs || []),
+        count: (board.ranking || []).length, revision: Number(board.revision) || 0,
+        serverRevision: Number(board.revision) || 0, updatedAt: board.updatedAt, loaded: true
+      });
+    }
+    save.owner = str(board.owner);
+    save.remote = true;
+    return save;
   }
 
   function applyRemoteBoards(boards) {
-    var prev = {};
-    state.saves.forEach(function (save) { prev[save.id] = save; });
-    state.saves = boards.map(function (board) {
-      var old = prev[board.id];
-      return {
-        id: board.id,
-        name: board.name,
-        createdAt: old ? old.createdAt : board.updatedAt,
-        updatedAt: board.updatedAt,
-        ranking: old ? old.ranking : [],
-        customs: old ? old.customs : [],
-        count: board.count,
-        revision: board.revision,
-        owner: board.owner || '',
-        remote: true
-      };
+    var previous = Object.create(null);
+    state.saves.forEach(function (save) { previous[save.id] = save; });
+    var next = boards.map(function (meta) {
+      var save = previous[meta.id] || normalizeSave(Object.assign({}, meta, { remote: true }));
+      delete previous[meta.id];
+      save.remote = true;
+      save.owner = str(meta.owner);
+      save.serverRevision = Number(meta.revision) || 0;
+      if (!pendingWrites[save.id] && !inFlight[save.id]) {
+        save.name = str(meta.name);
+        save.count = Number(meta.count) || 0;
+        save.updatedAt = meta.updatedAt;
+      }
+      return save;
+    });
+    Object.keys(previous).forEach(function (id) {
+      if (pendingWrites[id] || inFlight[id]) next.push(previous[id]);
+    });
+    state.saves = next;
+    writeSaves();
+  }
+
+  function fetchBoard(id) {
+    return apiJson('/boards/' + encodeURIComponent(id)).then(function (data) {
+      var save = mergeRemoteBoard(data.board);
+      writeSaves();
+      return save;
     });
   }
 
   function remoteOpen(id) {
-    return apiJson('/boards/' + encodeURIComponent(id)).then(function (data) {
-      var board = data.board;
-      state.remoteOn = true;
-      state.activeSaveId = board.id;
-      state.remoteRev = board.revision;
-      store.set(STORAGE.remoteActive, board.id);
-      var save = saveById(board.id);
-      if (save) {
-        save.owner = board.owner || '';
-        save.ranking = board.ranking || [];
-        save.customs = board.customs || [];
-        save.count = (board.ranking || []).length;
-        save.updatedAt = board.updatedAt || save.updatedAt;
-        save.revision = board.revision;
-      }
-      refreshFromSave();
-      return board;
+    var selection = ++state.selecting;
+    if (drag.active) onDragCancel();
+    hideToast();
+    closeList();
+    if (els.customDialog && els.customDialog.open) closeDialog(els.customDialog);
+    state.activeSaveId = id;
+    store.set(STORAGE.remoteActive, id);
+    writeSaves();
+    refreshFromSave();
+    var save = saveById(id);
+    if (!state.connected || pendingWrites[id] || (save && save.loaded && save.serverRevision === save.revision)) {
+      return Promise.resolve(save);
+    }
+    return fetchBoard(id).then(function (loaded) {
+      if (selection === state.selecting && state.activeSaveId === id) refreshFromSave();
+      return loaded;
     });
   }
 
   function refreshRemoteList() {
-    return apiJson('/boards').then(function (data) {
-      applyRemoteBoards((data && data.boards) || []);
+    if (!state.connected) return Promise.resolve();
+    if (refreshPromise) { refreshAgain = true; return refreshPromise; }
+    refreshAgain = false;
+    var activeId = state.activeSaveId;
+    var selection = state.selecting;
+    var version = mutationVersion;
+    refreshPromise = apiJson('/boards').then(function (data) {
+      if (!Array.isArray(data.boards)) throw new Error('无法读取大家的榜单');
+      if (version !== mutationVersion) { refreshAgain = true; return; }
+      applyRemoteBoards(data.boards);
+      var active = saveById(activeId);
+      if (!active && state.activeSaveId === activeId) {
+        var fallback = state.saves.find(function (save) { return !isReadOnlySave(save); }) || state.saves[0];
+        if (fallback) return remoteOpen(fallback.id);
+        createSharedDraft(defaultBoardName(), [], [], true);
+        return;
+      }
+      if (active && !pendingWrites[activeId] && !inFlight[activeId] &&
+          (!active.loaded || active.serverRevision !== active.revision) && !drag.active) {
+        return fetchBoard(activeId).then(function () {
+          if (state.activeSaveId === activeId && state.selecting === selection) refreshFromSave();
+        });
+      }
+    }).then(function () {
       renderSaveButton();
       renderSaveList();
+      updateSyncStatus();
+    }).catch(function () { markDisconnected(); }).finally(function () {
+      refreshPromise = null;
+      if (refreshAgain && state.connected) refreshRemoteList();
     });
+    return refreshPromise;
   }
 
-  function remoteBootstrap() {
-    if (!remoteReady()) return Promise.resolve(false);
-    remoteStatus('正在连接…');
-    return apiJson('/boards').then(function (data) {
-      var boards = (data && data.boards) || [];
-      if (!boards.length) {
-        return apiJson('/boards', { method: 'POST', body: { name: '共享排行', owner: state.userId } })
-          .then(remoteBootstrap);
-      }
-      applyRemoteBoards(boards);
-      state.remoteOn = true;
-      var wanted = store.get(STORAGE.remoteActive) || boards[0].id;
-      var exists = boards.some(function (board) { return board.id === wanted; });
-      return remoteOpen(exists ? wanted : boards[0].id).then(function () {
-        startRemotePoll();
-        remoteStatus('已连接 · ' + boards.length + ' 个共享存档');
-        toast('已连接共享服务器');
-        return true;
-      });
-    }).catch(function (error) {
-      state.remoteOn = false;
-      if (error && error.status === 401) state.remoteOpen = false;
-      remoteStatus('连接失败：' + error.message, true);
-      toast('共享服务器连接失败');
-      return false;
-    });
-  }
-
-  function scheduleRemotePush() {
-    if (!state.remoteOn) return;
-    state.remoteEditAt = Date.now();
-    clearTimeout(remotePushTimer);
-    remotePushTimer = setTimeout(pushRemoteBoard, REMOTE_PUSH_MS);
-  }
-
-  function pushRemoteBoard() {
-    remotePushTimer = 0;
-    if (!state.remoteOn) return;
-    var save = currentSave();
-    if (!save) return;
-    var body = {
-      name: save.name,
-      ranking: state.ranking.map(function (item) {
-        return item.custom ? { key: item.key, custom: true } : { key: item.key };
-      }),
-      customs: state.customs
+  function scheduleRemotePush(save) {
+    var target = save || currentSave();
+    if (!state.remoteOn || !target || isReadOnlySave(target)) { updateSyncStatus(); return; }
+    var previous = pendingWrites[target.id];
+    pendingWrites[target.id] = {
+      id: target.id, create: previous ? previous.create : false,
+      clientId: previous ? previous.clientId : '',
+      revision: previous ? previous.revision : target.revision,
+      payload: boardPayload(target), seq: ++queueSequence,
+      conflict: previous ? previous.conflict : null,
+      importSourceId: target.importSourceId || ''
     };
-    apiJson('/boards/' + encodeURIComponent(save.id), { method: 'PUT', body: body })
-      .then(function (data) {
-        var meta = data && data.board;
-        if (meta) {
-          state.remoteRev = meta.revision;
-          save.revision = meta.revision;
-          save.updatedAt = meta.updatedAt;
-          save.count = meta.count;
-          renderSaveList();
+    target.count = target.ranking.length;
+    persistPending();
+    clearTimeout(writeTimers[target.id]);
+    writeTimers[target.id] = setTimeout(function () { flushBoard(target.id); }, 450);
+    updateSyncStatus();
+  }
+
+  function flushPending() {
+    Object.keys(pendingWrites).forEach(function (id) {
+      clearTimeout(writeTimers[id]);
+      flushBoard(id);
+    });
+  }
+
+  function flushBoard(id) {
+    var entry = pendingWrites[id];
+    if (!state.connected || !entry || entry.conflict || inFlight[id]) return Promise.resolve();
+    var sent = copyData(entry);
+    var body = copyData(sent.payload);
+    if (sent.create) body.clientId = sent.clientId || id;
+    else body.revision = sent.revision;
+    inFlight[id] = true;
+    updateSyncStatus();
+    return apiJson(sent.create ? '/boards' : '/boards/' + encodeURIComponent(id), {
+      method: sent.create ? 'POST' : 'PUT', body: body
+    }).then(function (data) {
+      var board = data && data.board;
+      if (!board || !board.id || !Array.isArray(board.ranking)) throw new Error('保存结果无效');
+      mutationVersion++;
+      var latest = pendingWrites[id];
+      if (!latest) return;
+      var save = saveById(id);
+      if (sent.create && board.id !== id) {
+        state.saves = state.saves.filter(function (item) { return item.id !== board.id || item === save; });
+        if (save) { save.id = board.id; save.revision = board.revision; save.serverRevision = board.revision; }
+        delete pendingWrites[id];
+        latest.id = board.id;
+        latest.create = false;
+        pendingWrites[board.id] = latest;
+        if (state.activeSaveId === id) {
+          state.activeSaveId = board.id;
+          store.set(STORAGE.remoteActive, board.id);
         }
-        remoteStatus('已保存 · ' + formatSaveTime(save.updatedAt));
-      })
-      .catch(function (error) {
-        remoteStatus('保存失败：' + error.message, true);
-        toast('共享服务器保存失败，改动暂存在本地');
-      });
-  }
-
-  function startRemotePoll() {
-    stopRemotePoll();
-    remotePollTimer = setInterval(remoteTick, REMOTE_POLL_MS);
-  }
-
-  function stopRemotePoll() {
-    clearInterval(remotePollTimer);
-    remotePollTimer = 0;
-  }
-
-  function remoteTick() {
-    if (!state.remoteOn) return;
-    if (typeof document !== 'undefined' && document.visibilityState === 'hidden') return;
-    if (remotePushTimer) return;                       // a write is in flight
-    if (Date.now() - state.remoteEditAt < 2500) return; // just edited locally
-    apiJson('/boards').then(function (data) {
-      var boards = (data && data.boards) || [];
-      var active = null;
-      for (var i = 0; i < boards.length; i++) {
-        if (boards[i].id === state.activeSaveId) active = boards[i];
       }
-      if (!active) return;
-      var localIds = state.saves.map(function (save) { return save.id; }).join(',');
-      var remoteIds = boards.map(function (board) { return board.id; }).join(',');
-      if (localIds !== remoteIds) {
-        applyRemoteBoards(boards);
+      if (sent.importSourceId) {
+        importedSaves[sent.importSourceId] = board.id;
+        store.set(STORAGE.imports, JSON.stringify(importedSaves));
+      }
+      if (sent.create && !sameBoardContent(sent.payload, board)) {
+        latest.conflict = { kind: 'revision', board: board };
+      } else if (latest.seq === sent.seq) {
+        delete pendingWrites[board.id];
+        delete inFlight[id];
+        mergeRemoteBoard(board);
+      } else {
+        latest.revision = board.revision;
+        if (save) {
+          save.revision = board.revision;
+          save.serverRevision = board.revision;
+          save.owner = board.owner;
+        }
+      }
+      if (save) { save.owner = board.owner; save.remote = true; save.loaded = true; }
+      persistPending();
+      renderSaveButton();
+      renderSaveList();
+    }).catch(function (error) {
+      var latest = pendingWrites[id];
+      var returned = error.data && error.data.board;
+      if (latest && error.status === 409 && returned &&
+          (sameBoardContent(latest.payload, returned) || sameBoardContent(sent.payload, returned))) {
+        // The write may have committed before its response was lost during reload.
+        if (sameBoardContent(latest.payload, returned)) delete pendingWrites[id];
+        else latest.revision = returned.revision;
+        var saved = saveById(id);
+        if (saved) {
+          saved.revision = returned.revision;
+          saved.serverRevision = Math.max(saved.serverRevision, returned.revision);
+          saved.updatedAt = returned.updatedAt;
+        }
+        mutationVersion++;
+        persistPending();
         renderSaveButton();
         renderSaveList();
-        if (!saveById(state.activeSaveId) && boards.length) {
-          remoteOpen(boards[0].id).catch(function () { /* ignore */ });
-        }
         return;
       }
-      if (active.revision !== state.remoteRev) {
-        remoteOpen(active.id).then(function () {
-          toast('已同步「' + active.name + '」的最新改动');
-        }).catch(function () { /* ignore */ });
-        return;
-      }
-      boards.forEach(function (meta) {
-        var save = saveById(meta.id);
-        if (save) { save.count = meta.count; save.updatedAt = meta.updatedAt; save.revision = meta.revision; }
-      });
-      renderSaveList();
-    }).catch(function () { /* offline is fine, keep local edits */ });
-  }
-
-  function probeSameOrigin() {
-    if (!/^https?:$/.test(location.protocol)) return Promise.resolve(false);
-    return fetch(location.origin + '/api/health', { cache: 'no-store' })
-      .then(function (res) { return res.ok ? res.json() : null; })
-      .then(function (data) {
-        if (!data || !data.ok || data.open !== true) return false;
-        state.remote = { base: location.origin, token: '' };
-        state.remoteOpen = true;
-        saveRemoteConfig();
-        if (els.remoteBase) els.remoteBase.value = location.origin;
-        remoteStatus('已自动连接同域服务器');
-        return remoteBootstrap();
-      })
-      .catch(function () { return false; });
-  }
-
-  function connectRemote(event) {
-    if (event) event.preventDefault();
-    var base = normalizeBase(els.remoteBase ? els.remoteBase.value : '');
-    if (!base && /^https?:$/.test(location.protocol)) base = location.origin;
-    var token = els.remoteToken ? els.remoteToken.value.trim() : '';
-    if (!base) {
-      remoteStatus('请填写服务器地址', true);
-      return;
-    }
-    // No token is legitimate for a server started with GAMERANK_OPEN=1: try it,
-    // and only complain after the server answers 401.
-    state.remote = { base: base, token: token };
-    state.remoteOpen = token === '';
-    remoteStatus('正在连接…');
-    remoteBootstrap().then(function (ok) {
-      if (!ok) {
-        if (state.remoteOpen) {
-          state.remoteOpen = false;
-          remoteStatus('这台服务器需要口令', true);
-        }
-        return;
-      }
-      saveRemoteConfig();
-      if (els.remoteBase) els.remoteBase.value = base;
-      if (els.remoteToken) els.remoteToken.value = token;
+      if (latest && (error.status === 409 || error.status === 403 || error.status === 404 || error.status === 400)) {
+        latest.conflict = { kind: error.status === 409 ? 'revision' : 'unavailable',
+          board: error.data && error.data.board || null };
+        persistPending();
+      } else markDisconnected();
+    }).finally(function () {
+      delete inFlight[id];
+      updateSyncStatus();
+      var nextId = sent.create && saveById(id) === null
+        ? Object.keys(pendingWrites).find(function (key) { return pendingWrites[key].clientId === sent.clientId; }) : id;
+      if (nextId && state.connected && pendingWrites[nextId] && !pendingWrites[nextId].conflict) flushBoard(nextId);
     });
   }
 
-  function disconnectRemote() {
-    stopRemotePoll();
-    state.remoteOn = false;
-    state.remoteOpen = false;
-    state.remote = { base: '', token: '' };
-    saveRemoteConfig();
-    store.set(STORAGE.remoteActive, '');
-    loadSaveSlots();
-    refreshFromSave();
-    remoteStatus('已断开，使用本地存档');
-    toast('已断开共享服务器');
+  function defaultBoardName() {
+    return '玩家' + state.userId.slice(-6).toUpperCase() + '的排行';
+  }
+
+  function createSharedDraft(name, ranking, customs, select, importSourceId) {
+    var id = importSourceId ? 'import_' + importSourceId : 'draft_' + uuid();
+    var existing = saveById(id);
+    if (existing) return existing;
+    var save = normalizeSave({ id: id, name: name, ranking: copyData(ranking || []),
+      customs: copyData(customs || []), owner: state.userId, remote: true, loaded: true,
+      importSourceId: importSourceId || '' });
+    state.saves.push(save);
+    pendingWrites[id] = { id: id, create: true, clientId: importSourceId ? 'local:' + importSourceId : id,
+      revision: 0, payload: boardPayload(save), seq: ++queueSequence, conflict: null,
+      importSourceId: importSourceId || '' };
+    if (select) { state.activeSaveId = id; state.selecting++; refreshFromSave(); }
+    persistPending();
+    renderSaveList();
+    updateSyncStatus();
+    flushBoard(id);
+    return save;
+  }
+
+  function importLocalArchives() {
+    var local = readSaves(STORAGE.saves);
+    local.saves.forEach(function (save) {
+      if (importedSaves[save.id] || (!save.ranking.length && !save.customs.length)) return;
+      createSharedDraft(save.name === '我的排行' ? defaultBoardName() : save.name,
+        save.ranking, save.customs, false, save.id);
+    });
+  }
+
+  function markDisconnected() {
+    state.connected = false;
+    state.live = false;
+    if (eventStream) {
+      var retired = eventStream;
+      eventStream = null;
+      retired.close();
+    }
+    updateSyncStatus();
+    scheduleReconnect();
+  }
+
+  function scheduleReconnect() {
+    if (retryTimer || !/^https?:$/.test(location.protocol)) return;
+    retryTimer = setTimeout(function () { retryTimer = 0; connectSameOrigin(); }, 4000);
+  }
+
+  function startEvents() {
+    if (eventStream || typeof EventSource !== 'function') return;
+    var stream = new EventSource('/api/events');
+    eventStream = stream;
+    stream.onopen = function () {
+      if (eventStream !== stream) return;
+      state.connected = true;
+      state.live = true;
+      clearTimeout(retryTimer);
+      retryTimer = 0;
+      updateSyncStatus();
+      flushPending();
+      refreshRemoteList();
+    };
+    stream.addEventListener('boards', function () {
+      if (eventStream === stream) refreshRemoteList();
+    });
+    stream.onerror = function () {
+      if (eventStream === stream) markDisconnected();
+    };
+  }
+
+  function connectSameOrigin() {
+    if (connectPromise) return connectPromise;
+    if (!/^https?:$/.test(location.protocol) || !state.browserKey) {
+      updateSyncStatus();
+      return Promise.resolve(false);
+    }
+    clearTimeout(retryTimer);
+    retryTimer = 0;
+    state.connecting = true;
+    updateSyncStatus();
+    connectPromise = apiJson('/health').then(function (health) {
+      if (health.ok !== true || health.open !== true || health.realtime !== true) throw new Error('共享服务尚未连接');
+      return apiJson('/me');
+    }).then(function (data) {
+      if (!data.user || typeof data.user.id !== 'string') throw new Error('无法恢复编辑权限');
+      state.userId = data.user.id;
+      store.set(STORAGE.owner, state.userId);
+      return apiJson('/boards');
+    }).then(function (data) {
+      if (!Array.isArray(data.boards)) throw new Error('无法读取大家的榜单');
+      if (!state.remoteOn) { state.saves = []; state.activeSaveId = ''; }
+      state.remoteOn = true;
+      state.connected = true;
+      applyRemoteBoards(data.boards);
+      importLocalArchives();
+      var mine = state.saves.find(function (save) { return !isReadOnlySave(save); });
+      if (!mine) mine = createSharedDraft(defaultBoardName(), [], [], false);
+      var wanted = saveById(state.activeSaveId) || saveById(store.get(STORAGE.remoteActive)) || mine || state.saves[0];
+      startEvents();
+      flushPending();
+      return remoteOpen(wanted.id).then(function () { return true; });
+    }).catch(function () {
+      markDisconnected();
+      return false;
+    }).finally(function () {
+      state.connecting = false;
+      connectPromise = null;
+      updateSyncStatus();
+    });
+    return connectPromise;
   }
 
   function buildLibrary() {
@@ -793,18 +997,19 @@
 
   function persistRanking() {
     var save = currentSave();
-    if (!save) return;
+    if (!save || isReadOnlySave(save)) return;
     save.ranking = state.ranking.map(function (item) {
       return item.custom ? { key: item.key, custom: true } : { key: item.key };
     });
     save.updatedAt = nowIso();
+    save.count = save.ranking.length;
     writeSaves();
     scheduleRemotePush();
   }
 
   function persistCustoms() {
     var save = currentSave();
-    if (!save) return;
+    if (!save || isReadOnlySave(save)) return;
     save.customs = state.customs;
     save.updatedAt = nowIso();
     writeSaves();
@@ -1193,6 +1398,8 @@
   }
 
   function removeAt(index) {
+    if (state.readOnly) return;
+    var undoSaveId = state.activeSaveId;
     var item = state.ranking[index];
     if (!item) return;
     var game = entryFor(item.key);
@@ -1202,6 +1409,7 @@
     toast('已移除「' + gameLabel(game) + '」', {
       label: '撤销',
       run: function () {
+        if (state.readOnly || state.activeSaveId !== undoSaveId) return;
         state.ranking.splice(Math.min(index, state.ranking.length), 0, item);
         persistRanking();
         renderRanking();
@@ -1225,12 +1433,14 @@
     if (!state.ranking.length) { toast('榜单已经是空的'); return; }
     if (!window.confirm('确定清空整个排行？共 ' + state.ranking.length + ' 款游戏。')) return;
     var previous = state.ranking.slice();
+    var undoSaveId = state.activeSaveId;
     state.ranking = [];
     persistRanking();
     renderRanking();
     toast('已清空榜单', {
       label: '撤销',
       run: function () {
+        if (state.readOnly || state.activeSaveId !== undoSaveId) return;
         state.ranking = previous;
         persistRanking();
         renderRanking();
@@ -1390,7 +1600,7 @@
     els.listRanking.hidden = count === 0;
     if (els.shareBtn) els.shareBtn.disabled = count === 0;
     if (els.exportBtn) els.exportBtn.disabled = count === 0;
-    if (els.clearRankBtn) els.clearRankBtn.disabled = count === 0;
+    if (els.clearRankBtn) els.clearRankBtn.disabled = state.readOnly || count === 0;
 
     renderHotChips();
     restoreFocus();
@@ -1568,6 +1778,7 @@
   }
 
   function openCustomDialog(prefill) {
+    if (state.readOnly) { toast('复制到我的榜后，就能添加游戏'); return; }
     if (!els.customDialog || !els.cName) return;
     els.cName.value = prefill || '';
     els.cZh.value = '';
@@ -1581,6 +1792,7 @@
 
   function submitCustom(event) {
     event.preventDefault();
+    if (state.readOnly) return;
     clearCustomErrors();
 
     var name = els.cName.value.trim();
@@ -1830,6 +2042,7 @@
 
   function renderSaveList() {
     if (!els.saveList) return;
+    if (els.saveList.querySelector('.save-row__rename')) return;
     els.saveList.textContent = '';
     var active = state.activeSaveId;
 
@@ -1843,10 +2056,10 @@
       pick.setAttribute('aria-pressed', save.id === active ? 'true' : 'false');
       var body = textEl('span', 'save-row__body');
       var nameLine = textEl('span', 'save-row__name', save.name);
-      var foreign = state.remoteOn && isReadOnlySave(save);
+      var foreign = isReadOnlySave(save);
       if (state.remoteOn) {
         nameLine.appendChild(textEl('span', 'save-row__tag',
-          foreign ? '朋友的' : '共享'));
+          foreign ? '朋友的' : '我的'));
       }
       body.appendChild(nameLine);
       var total = save.count === undefined || save.count === null ? save.ranking.length : save.count;
@@ -1868,7 +2081,16 @@
   }
 
   function startRename(row, save) {
-    if (row.querySelector('.save-row__rename')) return;
+    if (isReadOnlySave(save) || row.querySelector('.save-row__rename')) return;
+    if (save.remote && !save.loaded) {
+      if (!state.connected) { toast('恢复连接、读取这份榜单后才能重命名'); return; }
+      fetchBoard(save.id).then(function (full) {
+        renderSaveList();
+        var rows = els.saveList.querySelectorAll('.save-row');
+        for (var i = 0; i < rows.length; i++) if (rows[i].dataset.id === full.id) { startRename(rows[i], full); break; }
+      }).catch(function () { markDisconnected(); });
+      return;
+    }
     var body = row.querySelector('.save-row__body');
     var input = document.createElement('input');
     input.className = 'input save-row__rename';
@@ -1884,15 +2106,13 @@
     function commit(keep) {
       if (done) return;
       done = true;
+      input.classList.remove('save-row__rename');
       var next = input.value.trim();
       if (keep && next && next !== save.name) {
         save.name = next.slice(0, 40);
         save.updatedAt = nowIso();
         writeSaves();
-        if (state.remoteOn) {
-          apiJson('/boards/' + encodeURIComponent(save.id), { method: 'PUT', body: { name: save.name } })
-            .catch(function (error) { remoteStatus('重命名失败：' + error.message, true); });
-        }
+        scheduleRemotePush(save);
         toast('已重命名为「' + save.name + '」');
       }
       renderSaveList();
@@ -1910,39 +2130,33 @@
   }
 
   function isReadOnlySave(save) {
-    return !!(save && save.remote && save.owner && save.owner !== state.userId);
+    return !!(save && save.remote && (!state.userId || save.owner !== state.userId));
   }
 
   function applyReadOnly() {
     var save = currentSave();
-    state.readOnly = state.remoteOn && isReadOnlySave(save);
+    var foreign = isReadOnlySave(save);
+    var loading = !!(save && save.remote && !save.loaded);
+    state.readOnly = !save || foreign || loading;
     if (els.listRanking) els.listRanking.classList.toggle('is-readonly', state.readOnly);
-    if (els.readonlyBanner) els.readonlyBanner.hidden = !state.readOnly;
+    if (els.readonlyBanner) els.readonlyBanner.hidden = !save || !foreign;
     if (els.readonlyName) els.readonlyName.textContent = save ? save.name : '';
+    if (els.input) {
+      els.input.disabled = state.readOnly;
+      els.input.placeholder = state.readOnly ? '复制到我的榜后，就能搜索和添加游戏' : '搜索游戏（中/英文）';
+    }
+    if (els.hotChips) els.hotChips.hidden = state.readOnly;
+    if (els.clearRankBtn) els.clearRankBtn.disabled = state.readOnly || !state.ranking.length;
+    if (els.emptyTitle) els.emptyTitle.textContent = loading ? '正在读取榜单…' : '榜单还空着';
+    if (els.emptyHint) els.emptyHint.textContent = loading ? '连接恢复后会自动显示这份榜单的内容。' :
+      (foreign ? '这是朋友的空榜单。你也可以新建一份自己的排行。' : '从下面的热门游戏快速添加，或者在上方搜索。');
+    renderBoardChoices();
   }
 
   function cloneBoard() {
     var save = currentSave();
-    if (!state.remoteOn || !save) return;
-    var name = (save.name + ' 副本').slice(0, 60);
-    apiJson('/boards', { method: 'POST', body: { name: name, owner: state.userId } })
-      .then(function (data) {
-        var copy = data.board;
-        return apiJson('/boards/' + encodeURIComponent(save.id)).then(function (full) {
-          var board = full.board;
-          return apiJson('/boards/' + encodeURIComponent(copy.id), {
-            method: 'PUT',
-            body: { name: name, ranking: board.ranking, customs: board.customs }
-          });
-        }).then(refreshRemoteList).then(function () {
-          return remoteOpen(copy.id);
-        }).then(function () {
-          toast('已复制到我的榜「' + name + '」');
-        });
-      })
-      .catch(function (error) {
-        toast('复制失败：' + error.message);
-      });
+    if (!save) return;
+    duplicateSave(save.id);
   }
 
   function refreshFromSave() {
@@ -1954,121 +2168,94 @@
     renderMeta();
     renderSaveButton();
     renderSaveList();
+    updateSyncStatus();
     if (els.browseDialog && els.browseDialog.open) renderBrowse(true);
   }
 
   function setActiveSave(id) {
     if (id === state.activeSaveId || !saveById(id)) return;
     if (state.remoteOn) {
-      remoteOpen(id).then(function () {
-        toast('已切换到存档「' + currentSave().name + '」');
-      }).catch(function (error) {
-        toast('切换失败：' + error.message);
+      remoteOpen(id).catch(function () {
+        markDisconnected();
+        toast('暂时无法加载，显示本机保留的内容');
       });
       return;
     }
+    hideToast();
+    if (drag.active) onDragCancel();
     state.activeSaveId = id;
     writeSaves();
     refreshFromSave();
-    toast('已切换到存档「' + currentSave().name + '」');
   }
 
   function createSave(name) {
     if (state.remoteOn) {
-      return apiJson('/boards', { method: 'POST', body: { name: name, owner: state.userId } })
-        .then(function (data) {
-          var board = data.board;
-          state.saves.push({
-            id: board.id, name: board.name, createdAt: board.updatedAt,
-            updatedAt: board.updatedAt, ranking: [], customs: [],
-            count: 0, revision: board.revision, remote: true
-          });
-          return remoteOpen(board.id).then(function () {
-            toast('已新建共享存档「' + board.name + '」');
-            return board;
-          });
-        })
-        .catch(function (error) {
-          remoteStatus('新建失败：' + error.message, true);
-          toast('新建共享存档失败');
-        });
+      var draft = createSharedDraft(name, [], [], true);
+      toast('已新建「' + draft.name + '」，改动会自动保存');
+      return draft;
     }
     var save = normalizeSave({ id: newSaveId(), name: name, ranking: [], customs: [] });
     state.saves.push(save);
     state.activeSaveId = save.id;
     writeSaves();
     refreshFromSave();
-    toast('已新建存档「' + save.name + '」');
+    toast('已新建「' + save.name + '」');
     return save;
   }
 
   function duplicateSave(id) {
     var src = saveById(id);
     if (!src) return;
-    if (state.remoteOn) {
-      var copyName = (src.name + ' 副本').slice(0, 60);
-      apiJson('/boards', { method: 'POST', body: { name: copyName, owner: state.userId } })
-        .then(function (data) {
-          var copy = data.board;
-          return apiJson('/boards/' + encodeURIComponent(id)).then(function (full) {
-            var board = full.board;
-            return apiJson('/boards/' + encodeURIComponent(copy.id), {
-              method: 'PUT',
-              body: { name: copyName, ranking: board.ranking, customs: board.customs }
-            });
-          }).then(refreshRemoteList).then(function () {
-            toast('已复制为「' + copyName + '」');
-          });
-        })
-        .catch(function (error) {
-          remoteStatus('复制失败：' + error.message, true);
-        });
-      return;
-    }
-    var copy = normalizeSave({
-      id: newSaveId(),
-      name: (src.name + ' 副本').slice(0, 40),
-      createdAt: nowIso(),
-      updatedAt: nowIso(),
-      ranking: JSON.parse(JSON.stringify(src.ranking)),
-      customs: JSON.parse(JSON.stringify(src.customs))
-    });
-    state.saves.push(copy);
-    writeSaves();
-    renderSaveList();
-    toast('已复制为「' + copy.name + '」');
+    var load = state.remoteOn && !src.loaded
+      ? (state.connected ? fetchBoard(id) : Promise.reject(new Error('这份榜单还没有下载，请恢复连接后再复制')))
+      : Promise.resolve(src);
+    load.then(function (full) {
+      var name = (full.name + ' 副本').slice(0, 40);
+      if (state.remoteOn) createSharedDraft(name, full.ranking, full.customs, true);
+      else {
+        var copy = normalizeSave({ id: newSaveId(), name: name,
+          ranking: copyData(full.ranking), customs: copyData(full.customs) });
+        state.saves.push(copy);
+        state.activeSaveId = copy.id;
+        writeSaves();
+        refreshFromSave();
+      }
+      toast('已复制到我的榜「' + name + '」');
+    }).catch(function (error) { toast(error.message || '暂时无法复制这份榜单'); });
   }
 
   function deleteSave(id) {
-    if (state.saves.length <= 1) { toast('至少要保留一个存档'); return; }
     var save = saveById(id);
-    if (!save) return;
-    if (!window.confirm('删除存档「' + save.name + '」？其中的排行无法恢复。')) return;
-
-    if (state.remoteOn) {
-      var remoteWasActive = id === state.activeSaveId;
-      apiJson('/boards/' + encodeURIComponent(id), { method: 'DELETE' })
-        .then(function () {
-          state.saves = state.saves.filter(function (item) { return item.id !== id; });
-          renderSaveButton();
-          renderSaveList();
-          if (remoteWasActive && state.saves.length) {
-            return remoteOpen(state.saves[0].id);
-          }
-          return null;
-        })
-        .then(function () { toast('已删除存档「' + save.name + '」'); })
-        .catch(function (error) { remoteStatus('删除失败：' + error.message, true); });
+    if (!save || isReadOnlySave(save)) return;
+    if (state.saves.length <= 1) { toast('至少要保留一份榜单'); return; }
+    if (inFlight[id]) { toast('这份榜单正在保存，请稍后再删除'); return; }
+    if (state.remoteOn && pendingWrites[id] && !pendingWrites[id].create) {
+      toast('请先同步这份榜单，或处理需要确认的改动');
       return;
     }
-
-    var wasActive = id === state.activeSaveId;
-    state.saves = state.saves.filter(function (item) { return item.id !== id; });
-    if (wasActive) state.activeSaveId = state.saves[0].id;
-    writeSaves();
-    if (wasActive) refreshFromSave();
-    else { renderSaveButton(); renderSaveList(); }
-    toast('已删除存档「' + save.name + '」');
+    if (state.remoteOn && !state.connected && !pendingWrites[id]) { toast('恢复连接后才能删除已同步的榜单'); return; }
+    if (!window.confirm('删除榜单「' + save.name + '」？其中的排行无法恢复。')) return;
+    var remove = function () {
+      mutationVersion++;
+      clearTimeout(writeTimers[id]);
+      delete pendingWrites[id];
+      state.saves = state.saves.filter(function (item) { return item.id !== id; });
+      if (state.activeSaveId === id) {
+        var next = state.saves.find(function (item) { return !isReadOnlySave(item); }) || state.saves[0];
+        state.activeSaveId = next ? next.id : '';
+        state.selecting++;
+      }
+      persistPending();
+      refreshFromSave();
+      if (state.remoteOn && state.activeSaveId) remoteOpen(state.activeSaveId).catch(function () { markDisconnected(); });
+      toast('已删除「' + save.name + '」');
+    };
+    if (state.remoteOn && !pendingWrites[id]) {
+      apiJson('/boards/' + encodeURIComponent(id), { method: 'DELETE' }).then(remove).catch(function () {
+        markDisconnected();
+        toast('暂时无法删除，榜单已保留');
+      });
+    } else remove();
   }
 
   function openSaveDialog() {
@@ -2452,9 +2639,23 @@
 
     if (els.saveBtn) els.saveBtn.addEventListener('click', openSaveDialog);
     if (els.saveForm) els.saveForm.addEventListener('submit', submitSaveName);
-    if (els.remoteForm) els.remoteForm.addEventListener('submit', connectRemote);
-    if (els.remoteOff) els.remoteOff.addEventListener('click', disconnectRemote);
-    if (els.remoteInvite) els.remoteInvite.addEventListener('click', copyInvite);
+    if (els.boardSelect) els.boardSelect.addEventListener('change', function () { setActiveSave(els.boardSelect.value); });
+    if (els.newBoardBtn) els.newBoardBtn.addEventListener('click', openSaveDialog);
+    if (els.renameBoardBtn) els.renameBoardBtn.addEventListener('click', function () {
+      var save = currentSave();
+      if (!save || isReadOnlySave(save)) return;
+      openSaveDialog();
+      var rows = els.saveList.querySelectorAll('.save-row');
+      for (var i = 0; i < rows.length; i++) if (rows[i].dataset.id === save.id) { startRename(rows[i], save); break; }
+    });
+    if (els.syncRetryBtn) els.syncRetryBtn.addEventListener('click', function () { connectSameOrigin(); });
+    window.addEventListener('online', function () { connectSameOrigin(); });
+    window.addEventListener('offline', markDisconnected);
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState !== 'visible') return;
+      if (state.connected) { flushPending(); refreshRemoteList(); }
+      else connectSameOrigin();
+    });
     if (els.cloneBoardBtn) els.cloneBoardBtn.addEventListener('click', cloneBoard);
     if (els.saveNameInput) {
       els.saveNameInput.addEventListener('input', function () {
@@ -2563,10 +2764,9 @@
     cacheDom();
     if (!els.input || !els.list || !els.listRanking) return;
 
-    state.userId = ensureUserId();
-    loadRemoteConfig();
-    parseInviteHash();
+    state.browserKey = ensureBrowserKey();
     loadSaveSlots();
+    restoreSharedWorkspace();
     state.customs = readCustomsRaw();
     buildLibrary();
     state.ranking = readRanking();
@@ -2581,10 +2781,8 @@
     renderRanking();
     syncClearButton();
 
-    if (els.remoteBase && state.remote.base) els.remoteBase.value = state.remote.base;
-    if (els.remoteToken && state.remote.token) els.remoteToken.value = state.remote.token;
-    if (remoteReady()) remoteBootstrap();
-    else probeSameOrigin();
+    refreshFromSave();
+    connectSameOrigin();
   }
 
   if (document.readyState === 'loading') {

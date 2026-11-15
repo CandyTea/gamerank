@@ -1,149 +1,100 @@
 # GameRank
 
-**在线版：https://candytea.github.io/gamerank/**
+你和朋友打开同一个网址，就能查看大家的命名游戏榜单。自己的修改自动保存到服务器，朋友正在看的榜单通过实时推送更新，无需邀请链接、连接配置或注册。
 
-给游戏排序的单页网站：中英文搜索游戏 → 加入排行榜 → 拖拽调整顺序，数据存在浏览器本地。
-纯静态、零构建、无依赖，双击 `index.html` 就能用（封面图来自 Steam CDN，需要联网）。
+前端使用原生 HTML / CSS / JavaScript，后端使用 Python 标准库 + SQLite，无需安装第三方依赖。需要 Python 3.10 或更新版本。
 
-推送 `main` 分支即自动部署到 GitHub Pages（Pages 直接发布仓库根目录，无需 Actions）。
+## 启动
 
-## 运行
+Windows 双击 `serve.cmd`，Linux / macOS 运行：
 
 ```bash
-python -m http.server 8080 --bind 127.0.0.1
-# 或双击 serve.cmd
+bash start.sh
 ```
 
-打开 http://localhost:8080/ 。也可以直接打开 `index.html`（file:// 同样可用）。
+打开 [http://localhost:8080/](http://localhost:8080/)。同一局域网的朋友使用这台电脑的 IP 加 `:8080` 访问；部署到公网服务器后，大家使用该服务器的同一个网址。允许系统防火墙或服务器安全组的对应端口入站。
 
-## 功能
+`GAMERANK_PORT` 可指定端口，Linux 启动脚本还支持 `GAMERANK_HOST`、`GAMERANK_DB`。默认数据库为项目内的 `var/boards.db`，重启服务不会清空榜单。
 
-| 功能 | 说明 |
-| --- | --- |
-| 搜索联想 | 输入中文或英文即时匹配 `name` / `nameZh` / `aliases`，结果按热度降序；空输入时显示「热门 Top 12 · 库内共 N 款」并可一键进入全部游戏；输入法（IME）组词期间不打断、不误判回车 |
-| 浏览全部 | 「浏览全部 N 款游戏」弹窗：全库按热度排序，每次加载 60 条并支持滚动续载，顶部可再筛选 |
-| 键盘操作 | ↑ / ↓ 选择、Enter 加入、Esc 关闭，完整 combobox ARIA |
-| 排行榜 | 拖拽手柄排序（Pointer Events，支持触屏），另有 ↑ / ↓ 按钮作为无障碍兜底 |
-| 存档 | 顶栏「存档」按钮：多份命名存档（新建 / 切换 / 重命名 / 复制 / 删除），每份拥有独立的排行与自定义游戏，切换时自动保存；旧版单档数据会自动迁移成「我的排行」 |
-| 自定义游戏 | 库里没有时手动添加（名称 / 中文名 / 分数 / 年份），与内置游戏一起参与排序 |
-| 本地保存 | `localStorage` 保存榜单与自定义游戏，刷新不丢；库更新后旧记录不会消失 |
-| 分享 | 一键复制纯文本排行，或导出文本 |
-| 响应式 | 320px 起的手机布局、44px 触控目标、粘性搜索框；浅色/深色主题 |
+直接双击 `index.html`，或者只把静态文件放到 GitHub Pages，仍可使用本地排序；页面会提示本地模式。**多人实时共享需要运行上述后端，不能只上传静态页面。**
 
-## 数据
+## 朋友怎么使用
 
-`data/games.js` 由 `scripts/build_games.py` 从公开来源生成（详见生成文件头的 `window.GAMES_META`）：
+1. 每个人打开同一个普通网址，主页直接显示大家的榜单。
+2. 新建并命名自己的榜单，例如「小明的排行」，搜索游戏或添加自定义游戏，再拖拽排序。
+3. 修改自动保存。朋友打开这份榜单即可实时观看，不用刷新。
+4. 朋友的榜单只能查看；可以复制成自己的榜单继续修改。
 
-- Steam 最热玩榜（`ISteamChartsService/GetMostPlayedGames`）——热度主信号
-- Steam 热销榜 / 新品（`store.steampowered.com/api/featuredcategories`）
-- Steam 商店接口（`appdetails` / `storesearch`）——中英文名、发行年份、平台、Metacritic 分数、封面
-- Metacritic 全时段最高分榜——评分与经典库覆盖面
-- IGN 评测页 JSON-LD——IGN 分数
-- Metacritic 独占目录：主机独占 / 不上 Steam 的游戏（塞尔达、马力欧、宝可梦、原神等），
-  记录 id 为 `mc:<slug>`，封面用 M 站 2:3 竖图；中文名只来自构建脚本里人工维护的
-  `CONSOLE_ZH` 表（不猜译名），其余条目标题保持英文。
+浏览器自动保存一份私人设备密钥，服务端据此校验榜单的编辑归属。密钥不会写进公开榜单或分享网址。清除浏览器数据、换浏览器或换设备后会获得新身份，旧榜单仍可查看和复制。
 
-重新生成：
+升级前已在服务器上的榜单按只读保留；需要继续编辑时，点击「复制到我的榜」即可。
+
+已有本地存档在连接服务器时迁移上传，原本地数据继续保留。尚未同步的修改缓存在当前浏览器，网络恢复后重试；同一份榜单发生版本冲突时不会静默覆盖服务器上的更新。
+
+这个版本面向朋友互看：能访问站点的人可以阅读榜单并创建自己的榜单。它没有好友审核或账号找回功能。
+
+## Linux 服务器常驻运行
+
+把项目上传到服务器任意目录，在该目录运行：
+
+```bash
+sudo bash deploy/install.sh
+```
+
+安装脚本仅复制网页、游戏库和服务端到 `/opt/gamerank`，安装并启动 systemd 服务，数据库存放在 `/var/lib/gamerank/boards.db`。更新时再次运行安装脚本即可，已有数据库不会被覆盖。
+
+放行 TCP 8080 后，使用 `http://服务器IP:8080/` 访问。查看服务状态和日志：
+
+```bash
+systemctl status gamerank
+journalctl -u gamerank -f
+```
+
+自定义监听地址或端口时，在 `/etc/default/gamerank` 写入 `GAMERANK_HOST=127.0.0.1` 或 `GAMERANK_PORT=8080`，然后 `sudo systemctl restart gamerank`。
+
+已有域名和 HTTPS 证书时，可使用 `deploy/nginx-gamerank.conf`：修改域名与证书路径，并确认反向代理端口与服务一致。`/api/events` 已关闭代理缓冲和压缩，避免实时更新被积压。前端和 API 使用同一域名。旧版共享口令和邀请链接不再需要。
+
+数据库备份可使用 SQLite 在线备份接口：
+
+```bash
+sudo -u gamerank python3 -c "import sqlite3; source=sqlite3.connect('/var/lib/gamerank/boards.db'); target=sqlite3.connect('/var/lib/gamerank/boards-backup.db'); source.backup(target); target.close(); source.close()"
+```
+
+## 原有功能
+
+- 1650 款游戏的中英文联想搜索，按热度排列；支持浏览全部、键盘选择及中文输入法。
+- 命名榜单的新建、切换、重命名、复制、删除；每份榜单的排序及自定义游戏独立。
+- 拖拽及上下按钮排序，支持手机；复用游戏行节点，避免排序时封面闪烁。
+- 自定义游戏、文本导出、浅色与深色主题。
+
+## 游戏数据
+
+`data/games.js` 是构建时的游戏库快照，来自 Steam 热玩榜、热销榜、新品、商店接口、Metacritic 全时段榜及 IGN 评测数据。当前快照为 1650 款（Steam 857 + Metacritic 独占 793）。封面图从 Steam / Metacritic CDN 加载。
+
+重新生成游戏库：
 
 ```bash
 python scripts/build_games.py
 ```
 
-热度 `popularity` 是 0..1 的合成值，数组已按它降序排列；搜索列表直接用这个顺序，所以热门游戏总在前面。
+构建脚本会更新页面资源版本号。部分主机独占游戏没有中文译名，可使用英文搜索。游戏库快照与朋友榜单的实时同步是两套独立功能。
 
-当前快照：**1650 款**（Steam 上架 857 + Metacritic 独占 793），Metascore 覆盖 1565，IGN 覆盖 857，封面 1649。
-
-## 文件
-
-```
-index.html          页面结构（含主题引导脚本 + 资源版本号）
-styles.css          全部样式与响应式规则
-app.js              搜索联想 / 排序 / 持久化
-data/games.js       游戏库（window.GAMES + window.GAMES_META）
-scripts/build_games.py  数据集构建脚本（带本地缓存）
-serve.cmd           Windows 下启动静态服务器
-```
-
-`index.html` 里三个资源都带 `?v=<日期>-<游戏数>-<资源摘要>`，构建脚本每次重建都会改写它——
-否则浏览器会继续用缓存里的旧库（曾出现页面显示 19 款、实际库已 857 款）。摘要覆盖
-`data/games.js`、`app.js`、`styles.css`，所以只改样式或脚本也会让缓存失效。
-
-## 存档
-
-所有数据在浏览器 `localStorage` 的单个键 `gamerank.saves.v1` 里：
-
-```js
-{ version: 1, activeId: "s_xxx",
-  saves: [{ id, name, createdAt, updatedAt,
-            ranking: [{ key }],           // 该存档的排序
-            customs: [ … ] }] }           // 该存档的自定义游戏
-```
-
-- 顶栏「存档」按钮显示当前存档名，点开可新建 / 切换 / 重命名 / 复制 / 删除。
-- 每份存档的排行、自定义游戏互相独立；切换即自动写盘，无需手动保存。
-- 旧版 `gamerank.ranking.v1` / `gamerank.custom.v1` 会在首次加载时迁移成一份「我的排行」。
-- 分享按钮导出的文本首行带 `【存档名】`，方便区分是谁的榜。
-
-## 共享服务器（多朋友互看）
-
-默认是纯本地模式。要多人互看，把服务端跑起来（站点和 API 最好同域）。
-
-**每人一个榜，别人的只读**：浏览器首次打开会生成一个 `gamerank.user.v1` 身份，
-建榜时写入 `owner`。你只能改自己的榜；朋友的榜打上「朋友的」标签，进详情是只读
-（没有拖拽、没有删除），可以一键「复制到我的榜」变成自己的再改。
-服务端对非本人写入返回 `403 not_owner`，不是只靠前端隐藏按钮。
-
-**零配置（推荐）**：`GAMERANK_OPEN=1`，同域部署后打开网页就自动连上，
-没有按钮、没有输入框、没有邀请链接；每个人加游戏只写自己的榜，其他人 8 秒内看到。
+## 验证与接口
 
 ```bash
-GAMERANK_OPEN=1 python3 server/gamerank_server.py \
-  --host 0.0.0.0 --port 8080 --db /opt/gamerank/boards.db --static /opt/gamerank
+node --check app.js
+python -m unittest discover -s server -p "test_*.py"
 ```
 
-代价是**能访问这个地址的人都能读、都能建自己的榜**。只适合私有地址（内网、家里 NAS、
-只有熟人知道的域名/IP）。要收紧就换成口令模式。
+| 接口 | 用途 |
+| --- | --- |
+| `GET /api/health` | 服务状态与实时功能标记 |
+| `GET /api/me` | 根据设备密钥获取当前身份 |
+| `GET /api/boards` | 大家的榜单摘要 |
+| `GET /api/boards/<id>` | 完整榜单 |
+| `POST /api/boards` | 新建榜单，可同时传入初始内容 |
+| `PUT /api/boards/<id>` | 保存自己的榜单，支持版本校验 |
+| `DELETE /api/boards/<id>` | 删除自己的榜单 |
+| `GET /api/events` | SSE 实时变更通知，重连时重新获取最新数据 |
 
-**口令模式**：设 `GAMERANK_TOKEN`，在「存档 → 共享服务器」填地址与口令一次，
-或点「复制邀请链接」把 `#k=…` 链接发出去，对方点开自动连接。同域时地址可留空。
-
-服务端 `server/gamerank_server.py`：Python 标准库 + SQLite，零依赖。
-
-```bash
-# 生成口令
-TOKEN=$(openssl rand -hex 24)
-
-GAMERANK_TOKEN=$TOKEN python3 server/gamerank_server.py \
-  --host 127.0.0.1 --port 8787 --db /var/lib/gamerank/boards.db --static /opt/gamerank
-```
-
-腾讯云部署要点（`deploy/` 里有现成文件）：
-
-1. 上传 `index.html`、`styles.css`、`app.js`、`data/games.js`、`server/` 到 `/opt/gamerank`。
-2. `deploy/gamerank.service` → `/etc/systemd/system/`，把 `GAMERANK_TOKEN` 改成你的口令；
-   `useradd -r gamerank && mkdir -p /var/lib/gamerank && chown gamerank /var/lib/gamerank`，
-   然后 `systemctl enable --now gamerank`。
-3. `deploy/nginx-gamerank.conf` → `/etc/nginx/conf.d/`，改域名与证书路径后 `nginx -t && systemctl reload nginx`。
-4. 安全组放行 80/443；**大陆机房域名需 ICP 备案**。
-5. 站点是 https 时服务端也必须 https，否则浏览器按混合内容拦截 `/api` 请求。
-
-接口（口令模式下需 `X-GameRank-Token`；写操作另需 `X-Owner-Id`）：
-
-```
-GET    /api/health             健康检查（含 open 标志）
-GET    /api/boards             列表（含 owner / count / revision）
-POST   /api/boards             {name, owner} 新建
-GET    /api/boards/<id>        单档（含 ranking / customs）
-PUT    /api/boards/<id>        {name?, ranking?, customs?}；非本人 403 not_owner
-DELETE /api/boards/<id>        同上
-```
-
-同一份榜仍是「整份覆盖写、最后写入者胜」：一个人有两台设备同时改，可能丢一次改动；
-不同人各写自己的榜，互不影响。备份只需拷 `boards.db`（`cp` 或 `sqlite3 .backup`）。
-
-## 已知边界
-
-- 封面图直连 Steam CDN 与 Metacritic CDN，离线时不显示图，但名称、分数、排序功能完全可用。
-- Metacritic 独占条目没有 Steam 中文名，只有构建脚本 `CONSOLE_ZH` 表里的知名作品能用中文搜到
-  （塞尔达、马力欧、宝可梦、原神等），其余用英文名搜索。
-- 游戏库是构建时快照，不会实时更新；改库只需重新跑构建脚本。
+身份接口和写操作使用 `X-GameRank-Key` 设备密钥。公开的 `owner` 仅用于显示归属，不能用来冒充作者。网页只公开必要静态资源，不提供数据库、Git 元数据或服务端源文件下载。
