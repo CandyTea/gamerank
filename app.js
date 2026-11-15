@@ -73,6 +73,8 @@
     els.remoteBase = document.getElementById('remoteBase');
     els.remoteToken = document.getElementById('remoteToken');
     els.remoteOff = document.getElementById('remoteOff');
+    els.remoteInvite = document.getElementById('remoteInvite');
+    els.remoteLink = document.getElementById('remoteLink');
     els.remoteStatus = document.getElementById('remoteStatus');
     els.customDialog = document.getElementById('customDialog');
     els.customForm = document.getElementById('customForm');
@@ -398,6 +400,67 @@
     return !!(state.remote.base && state.remote.token);
   }
 
+  function encodeInvite(payload) {
+    var json = JSON.stringify(payload);
+    var bytes = new TextEncoder().encode(json);
+    var bin = '';
+    for (var i = 0; i < bytes.length; i++) bin += String.fromCharCode(bytes[i]);
+    return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  }
+
+  function decodeInvite(value) {
+    try {
+      var b64 = value.replace(/-/g, '+').replace(/_/g, '/');
+      while (b64.length % 4) b64 += '=';
+      var bin = atob(b64);
+      var bytes = new Uint8Array(bin.length);
+      for (var i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+      var data = JSON.parse(new TextDecoder().decode(bytes));
+      if (!data || !data.base || !data.token) return null;
+      return { base: normalizeBase(data.base), token: String(data.token) };
+    } catch (err) {
+      return null;
+    }
+  }
+
+  function inviteLink() {
+    if (!state.remote.base || !state.remote.token) return '';
+    return location.origin + location.pathname + '#k='
+      + encodeInvite({ base: state.remote.base, token: state.remote.token });
+  }
+
+  function parseInviteHash() {
+    var match = /^#k=([A-Za-z0-9_-]+)$/.exec(location.hash || '');
+    if (!match) return null;
+    var config = decodeInvite(match[1]);
+    if (!config) return null;
+    state.remote = config;
+    saveRemoteConfig();
+    try {
+      history.replaceState(null, '', location.pathname + location.search);
+    } catch (err) { /* file:// may refuse; the hash just stays visible */ }
+    return config;
+  }
+
+  function copyInvite() {
+    var link = inviteLink();
+    if (!link) {
+      remoteStatus('先连接共享服务器，才能生成邀请链接', true);
+      return;
+    }
+    if (els.remoteLink) {
+      els.remoteLink.hidden = false;
+      els.remoteLink.value = link;
+      try { els.remoteLink.select(); } catch (err) { /* ignore */ }
+    }
+    copyText(link).then(function (ok) {
+      remoteStatus(ok
+        ? '邀请链接已复制；没复制成功就手动复制下面这条'
+        : '自动复制被拦截，请手动复制下面的链接');
+      toast(ok ? '邀请链接已复制' : '请手动复制邀请链接');
+    });
+  }
+
   function remoteStatus(message, isError) {
     if (!els.remoteStatus) return;
     els.remoteStatus.textContent = message || '';
@@ -591,6 +654,7 @@
   function connectRemote(event) {
     if (event) event.preventDefault();
     var base = normalizeBase(els.remoteBase ? els.remoteBase.value : '');
+    if (!base && /^https?:$/.test(location.protocol)) base = location.origin;
     var token = els.remoteToken ? els.remoteToken.value.trim() : '';
     if (!base || !token) {
       remoteStatus('请填写服务器地址和口令', true);
@@ -2293,6 +2357,7 @@
     if (els.saveForm) els.saveForm.addEventListener('submit', submitSaveName);
     if (els.remoteForm) els.remoteForm.addEventListener('submit', connectRemote);
     if (els.remoteOff) els.remoteOff.addEventListener('click', disconnectRemote);
+    if (els.remoteInvite) els.remoteInvite.addEventListener('click', copyInvite);
     if (els.saveNameInput) {
       els.saveNameInput.addEventListener('input', function () {
         setFieldError(els.saveNameInput, els.saveNameErr, '');
@@ -2401,6 +2466,7 @@
     if (!els.input || !els.list || !els.listRanking) return;
 
     loadRemoteConfig();
+    parseInviteHash();
     loadSaveSlots();
     state.customs = readCustomsRaw();
     buildLibrary();

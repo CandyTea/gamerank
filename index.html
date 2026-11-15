@@ -21,7 +21,7 @@
     document.documentElement.setAttribute('data-theme', mode);
   })();
 </script>
-<link rel="stylesheet" href="styles.css?v=20261115-1650-8be03ef3">
+<link rel="stylesheet" href="styles.css?v=20261115-1650-a92c4fb4">
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要内容</a>
@@ -241,15 +241,17 @@
       <form id="remoteForm" class="remote__form" novalidate>
         <label class="field__label" for="remoteBase">服务器地址</label>
         <input id="remoteBase" class="input" type="url" autocomplete="off" spellcheck="false"
-               placeholder="https://rank.example.com">
+               placeholder="留空 = 当前站点地址">
         <label class="field__label" for="remoteToken">口令</label>
         <input id="remoteToken" class="input" type="password" autocomplete="off"
                placeholder="服务器启动时设置的 GAMERANK_TOKEN">
         <div class="remote__actions">
           <button type="submit" class="btn btn--primary">连接</button>
+          <button type="button" id="remoteInvite" class="btn">复制邀请链接</button>
           <button type="button" id="remoteOff" class="btn">断开（回到本地）</button>
         </div>
         <p id="remoteStatus" class="remote__status" role="status" aria-live="polite"></p>
+        <input id="remoteLink" class="input" type="text" readonly hidden aria-label="邀请链接">
       </form>
     </details>
 
@@ -261,7 +263,7 @@
 
 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-<script src="data/games.js?v=20261115-1650-8be03ef3"></script>
-<script src="app.js?v=20261115-1650-8be03ef3" defer></script>
+<script src="data/games.js?v=20261115-1650-a92c4fb4"></script>
+<script src="app.js?v=20261115-1650-a92c4fb4" defer></script>
 </body>
 </html>
