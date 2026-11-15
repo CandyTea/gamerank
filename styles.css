@@ -637,7 +637,7 @@ html[data-theme="dark"].combo-open body::after {
   max-width: 100%;
 }
 
-.sug__zh {
+.sug__secondary {
   color: var(--ink-3);
   font-size: 12.5px;
   font-weight: 600;
@@ -770,11 +770,45 @@ html[data-theme="dark"].combo-open body::after {
   white-space: nowrap;
 }
 
-.chip--ign {
+.ign-score {
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 52px;
+  height: 58px;
+  background: #bf1313;
+  color: #fff;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   font-variant-numeric: tabular-nums;
-  letter-spacing: 0.02em;
-  color: var(--ink);
-  border-color: color-mix(in srgb, var(--ink) 22%, var(--line));
+}
+
+.ign-score__value {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.ign-score__label {
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.03em;
+}
+
+.sug .ign-score,
+.brow .ign-score {
+  width: 44px;
+  height: 50px;
+}
+
+.sug .ign-score__value,
+.brow .ign-score__value {
+  font-size: 18px;
 }
 
 .chip--genre {
@@ -1125,7 +1159,7 @@ body.is-dragging .rank-row img {
   min-width: 0;
 }
 
-.rank-row__en {
+.rank-row__primary {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: -0.01em;
@@ -1135,7 +1169,7 @@ body.is-dragging .rank-row img {
   max-width: 100%;
 }
 
-.rank-row__zh {
+.rank-row__secondary {
   color: var(--ink-3);
   font-size: 12.5px;
   font-weight: 600;
@@ -1602,7 +1636,7 @@ body.is-dragging .rank-row img {
     display: none;
   }
 
-  .rank-row__en {
+  .rank-row__primary {
     font-size: 14px;
   }
 
@@ -1861,7 +1895,7 @@ body.is-dragging .rank-row img {
   white-space: nowrap;
 }
 
-.brow__zh {
+.brow__secondary {
   color: var(--ink-3);
   font-size: 12.5px;
   font-weight: 600;
@@ -2335,4 +2369,262 @@ body.is-dragging .rank-row img {
 
 .rank.is-readonly .rank-row {
   min-height: 64px;
+}
+
+/* --------------------------------------------------------- display controls */
+
+.board-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 16px 0;
+}
+
+.display-setting {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.display-setting__label {
+  color: var(--ink-3);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+}
+
+.segmented button {
+  min-height: 36px;
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background: transparent;
+  color: var(--ink-2);
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.segmented button[aria-pressed="true"] {
+  border-color: var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow-1);
+}
+
+.segmented button:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 1px;
+}
+
+/* Cards keep the same ordered nodes and linear ranking as the list. */
+.rank.is-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.rank.is-grid .rank-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 40px;
+  grid-template-areas:
+    "pos handle"
+    "art art"
+    "body body"
+    "scores scores"
+    "actions actions";
+  grid-template-rows: 36px 104px minmax(104px, 1fr) 58px 40px;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 0;
+  padding: 10px;
+}
+
+.rank.is-grid .rank-row:hover {
+  transform: none;
+}
+
+.rank.is-grid .rank-row > .rank-row__pos {
+  grid-area: pos;
+  justify-self: start;
+  min-width: 0;
+  text-align: left;
+  font-size: 22px;
+}
+
+.rank.is-grid .rank-row > .rank-row__handle {
+  grid-area: handle;
+  justify-self: end;
+  align-self: center;
+  width: 40px;
+  height: 36px;
+  margin: 0;
+}
+
+.rank.is-grid .rank-row > .thumb {
+  grid-area: art;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  height: 104px;
+  margin: 0;
+  border-radius: var(--radius-sm);
+}
+
+.rank.is-grid .rank-row > .thumb--portrait {
+  width: 69px;
+}
+
+.rank.is-grid .thumb__img {
+  object-fit: contain;
+}
+
+.rank.is-grid .rank-row > .rank-row__body {
+  grid-area: body;
+  align-self: start;
+  gap: 6px;
+}
+
+.rank.is-grid .names {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 3px;
+  min-height: 72px;
+}
+
+.rank.is-grid .rank-row__primary,
+.rank.is-grid .rank-row__secondary {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  line-height: 1.35;
+}
+
+.rank.is-grid .rank-row__primary {
+  font-size: 14px;
+}
+
+.rank.is-grid .rank-row__secondary {
+  font-size: 12px;
+}
+
+.rank.is-grid .rank-row__meta {
+  gap: 4px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.rank.is-grid .rank-row__meta .chip {
+  padding: 0 4px;
+  font-size: 9px;
+}
+
+.rank.is-grid .rank-row__meta .chip--genre {
+  display: none;
+}
+
+.rank.is-grid .rank-row__meta > * + *::before {
+  content: none;
+}
+
+.rank.is-grid .rank-row > .rank-row__scores {
+  grid-area: scores;
+  justify-self: stretch;
+  justify-content: center;
+  align-self: center;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.rank.is-grid .rank-row > .rank-row__actions {
+  grid-area: actions;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-self: stretch;
+  align-self: stretch;
+  gap: 2px;
+  border-top: 1px solid var(--line);
+  padding-top: 4px;
+}
+
+.rank.is-grid .rank-row__actions .icon-btn {
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+}
+
+.rank.is-grid.is-readonly .rank-row {
+  grid-template-areas: "pos pos" "art art" "body body" "scores scores";
+  grid-template-rows: 36px 104px minmax(104px, 1fr) 58px;
+}
+
+.rank.is-grid.is-readonly .rank-row > .rank-row__handle,
+.rank.is-grid.is-readonly .rank-row > .rank-row__actions {
+  display: none;
+}
+
+@media (max-width: 959px) {
+  .rank.is-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 599px) {
+  .rank.is-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .rank.is-grid .rank-row {
+    padding: 8px;
+    grid-template-rows: 36px 80px minmax(104px, 1fr) 58px 40px;
+  }
+
+  .rank.is-grid .rank-row > .thumb {
+    height: 80px;
+  }
+
+  .rank.is-grid .rank-row > .thumb--portrait {
+    width: 53px;
+  }
+
+  .rank.is-grid.is-readonly .rank-row {
+    grid-template-rows: 36px 80px minmax(104px, 1fr) 58px;
+  }
+}
+
+@media (hover: none) {
+  .segmented button {
+    min-height: 40px;
+  }
+}
+
+@media print {
+  .board-display {
+    display: none !important;
+  }
+
+  .ign-score {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }

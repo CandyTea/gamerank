@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="description" content="GameRank：与朋友在同一个网址分享游戏排行，搜索游戏、拖动排序，改动自动同步。">
+<meta name="description" content="GameRank：与其他人在同一个网址分享游戏排行，搜索游戏、拖动排序，改动自动同步。">
 <title>GameRank · 大家的游戏排行</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0d0d'/%3E%3Crect x='6' y='7' width='9' height='18' rx='2' fill='%2366cc33'/%3E%3Crect x='18' y='12' width='8' height='13' rx='2' fill='%23ffcc33'/%3E%3C/svg%3E">
 <script>
@@ -21,7 +21,7 @@
     document.documentElement.setAttribute('data-theme', mode);
   })();
 </script>
-<link rel="stylesheet" href="styles.css?v=20261115-1650-7daa1778">
+<link rel="stylesheet" href="styles.css?v=20261115-1650-94807582">
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要内容</a>
@@ -65,7 +65,7 @@
     <div class="room__head">
       <div>
         <h2 id="roomTitle" class="h2">大家的榜单</h2>
-        <p id="roomHint" class="room__hint">正在连接，朋友打开同一个网址就能看到大家的排行。</p>
+        <p id="roomHint" class="room__hint">正在连接，其他人打开同一个网址就能看到大家的排行。</p>
       </div>
       <span id="roomCount" class="room__count"></span>
     </div>
@@ -149,8 +149,25 @@
       </div>
     </div>
 
+    <div class="board-display" aria-label="榜单显示设置">
+      <div class="display-setting">
+        <span id="nameOrderLabel" class="display-setting__label">名称顺序</span>
+        <div class="segmented" role="group" aria-labelledby="nameOrderLabel">
+          <button id="nameOrderZh" type="button" aria-pressed="true">中文优先</button>
+          <button id="nameOrderEn" type="button" aria-pressed="false">英文优先</button>
+        </div>
+      </div>
+      <div class="display-setting">
+        <span id="rankingViewLabel" class="display-setting__label">榜单视图</span>
+        <div class="segmented" role="group" aria-labelledby="rankingViewLabel">
+          <button id="viewListBtn" type="button" aria-pressed="true">列表</button>
+          <button id="viewGridBtn" type="button" aria-pressed="false" title="宽屏每行5款，平板每行3款，手机每行2款">格子</button>
+        </div>
+      </div>
+    </div>
+
     <div id="readonlyBanner" class="readonly" hidden>
-      <p class="readonly__text">「<span id="readonlyName"></span>」是朋友的榜，只读。</p>
+      <p class="readonly__text">「<span id="readonlyName"></span>」是其他人的榜，只读。</p>
       <button id="cloneBoardBtn" class="btn btn--primary" type="button">复制到我的榜</button>
     </div>
 
@@ -166,7 +183,7 @@
 
 <footer class="foot">
   <div class="wrap foot__inner">
-    <p id="footText">打开同一个网址，与朋友分享游戏排行。</p>
+    <p id="footText">打开同一个网址，与其他人分享游戏排行。</p>
   </div>
 </footer>
 
@@ -251,7 +268,7 @@
   <div class="dlg__form">
     <header class="dlg__head">
       <h2 id="saveTitle" class="dlg__title">管理榜单</h2>
-      <p class="dlg__sub">给自己的榜单起个容易认出的名字。改动自动保存，朋友的榜单可以复制后编辑。</p>
+      <p class="dlg__sub">给自己的榜单起个容易认出的名字。改动自动保存，其他人的榜单可以复制后编辑。</p>
     </header>
 
     <div id="saveList" class="saves" role="group" aria-label="存档列表"></div>
@@ -272,7 +289,7 @@
 
 <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
 
-<script src="data/games.js?v=20261115-1650-7daa1778"></script>
-<script src="app.js?v=20261115-1650-7daa1778" defer></script>
+<script src="data/games.js?v=20261115-1650-94807582"></script>
+<script src="app.js?v=20261115-1650-94807582" defer></script>
 </body>
 </html>

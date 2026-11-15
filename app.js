@@ -11,6 +11,8 @@
     ranking: 'gamerank.ranking.v1',      // legacy single-slot key, migrated once
     custom: 'gamerank.custom.v1',        // legacy single-slot key, migrated once
     theme: 'gamerank.theme.v1',
+    nameOrder: 'gamerank.nameOrder.v1',
+    view: 'gamerank.view.v1',
     remoteActive: 'gamerank.remoteActive.v1',
     key: 'gamerank.key.v1',
     owner: 'gamerank.owner.v2',
@@ -56,6 +58,10 @@
     els.provenance = document.getElementById('provenance');
     els.warning = document.getElementById('dataWarning');
     els.listRanking = document.getElementById('rankingList');
+    els.nameOrderZh = document.getElementById('nameOrderZh');
+    els.nameOrderEn = document.getElementById('nameOrderEn');
+    els.viewListBtn = document.getElementById('viewListBtn');
+    els.viewGridBtn = document.getElementById('viewGridBtn');
     els.readonlyBanner = document.getElementById('readonlyBanner');
     els.readonlyName = document.getElementById('readonlyName');
     els.cloneBoardBtn = document.getElementById('cloneBoardBtn');
@@ -115,6 +121,8 @@
     open: false,
     composing: false,
     theme: 'light',
+    nameOrder: 'zh',
+    view: 'list',
     builtinCount: 0,
     customCount: 0,
     saves: [],          // [{ id, name, createdAt, updatedAt, ranking, customs }]
@@ -158,14 +166,23 @@
     return /[\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff]/.test(text);
   }
 
+  function gameNames(game) {
+    if (!game) return { primary: '未知游戏', secondary: '' };
+    if (game.missing) return { primary: '未知游戏 #' + game.key, secondary: '' };
+    var english = str(game.name).trim();
+    var chinese = str(game.nameZh).trim();
+    var primary = state.nameOrder === 'en' ? english || chinese : chinese || english;
+    var secondary = state.nameOrder === 'en' ? chinese : english;
+    if (secondary === primary) secondary = '';
+    return { primary: primary || '游戏 #' + game.key, secondary: secondary };
+  }
+
   function gameLabel(game) {
-    if (!game) return '未知游戏';
-    if (game.missing) return '未知游戏 #' + game.key;
-    return game.nameZh || game.name || ('游戏 #' + game.key);
+    return gameNames(game).primary;
   }
 
   function initials(game) {
-    var source = (game.nameZh && hasCjk(game.nameZh) ? game.nameZh : (game.name || game.nameZh || '')).trim();
+    var source = gameLabel(game).trim();
     if (!source) return '?';
     if (hasCjk(source)) return source.slice(0, 2);
     var parts = source.split(/\s+/).filter(Boolean);
@@ -516,7 +533,7 @@
     var options = document.createDocumentFragment();
     var groups = [
       { title: state.remoteOn ? '我的榜单' : '本机榜单', mine: true },
-      { title: '朋友的榜单', mine: false }
+      { title: '其他人的榜单', mine: false }
     ];
     groups.forEach(function (group) {
       var saves = state.saves.filter(function (save) { return (!isReadOnlySave(save)) === group.mine; });
@@ -526,7 +543,7 @@
       saves.forEach(function (save) {
         var option = document.createElement('option');
         option.value = save.id;
-        option.textContent = save.name + ' · ' + (group.mine ? (state.remoteOn ? '我的' : '本机') : '朋友的') +
+        option.textContent = save.name + ' · ' + (group.mine ? (state.remoteOn ? '我的' : '本机') : '其他人的') +
           ' · ' + (save.count || 0) + ' 款' +
           (pendingWrites[save.id] ? ' · 待保存' : '');
         optgroup.appendChild(option);
@@ -558,11 +575,11 @@
     }
     if (els.syncRetryBtn) els.syncRetryBtn.hidden = state.connected && state.live || state.connecting;
     if (els.roomHint) els.roomHint.textContent = state.remoteOn
-      ? '朋友打开同一个网址，就能看到这里的榜单。给你的榜单起个容易认出的名字。'
+      ? '其他人打开同一个网址，就能看到这里的榜单。给你的榜单起个容易认出的名字。'
       : '当前只保存在本机。连接共享服务后，你的榜单会自动上传到这个网址。';
     if (els.footText) els.footText.textContent = state.remoteOn
       ? '榜单在这个网址公开可见。此浏览器保管你的编辑权限，改动会自动保存。'
-      : '本地模式：改动保存在这个浏览器中，朋友暂时无法看到。';
+      : '本地模式：改动保存在这个浏览器中，其他人暂时无法看到。';
     renderConflicts();
     renderBoardChoices();
   }
@@ -1122,8 +1139,12 @@
   }
 
   function ignChip(value) {
-    var chip = textEl('span', 'chip chip--ign', 'IGN ' + (value % 1 === 0 ? String(value) : value.toFixed(1)));
+    var chip = textEl('span', 'ign-score');
+    chip.appendChild(textEl('span', 'ign-score__value', String(value)));
+    chip.appendChild(textEl('span', 'ign-score__label', 'IGN'));
     chip.title = 'IGN ' + value + '/10';
+    chip.setAttribute('role', 'img');
+    chip.setAttribute('aria-label', chip.title);
     return chip;
   }
 
@@ -1163,13 +1184,67 @@
     return box;
   }
 
-  function namesBlock(game, enClass, zhClass) {
+  function updateNamesBlock(names, game) {
+    var labels = gameNames(game);
+    var primary = names.querySelector('.names__primary');
+    var secondary = names.querySelector('.names__secondary');
+    if (primary.textContent !== labels.primary) primary.textContent = labels.primary;
+    if (secondary.textContent !== labels.secondary) secondary.textContent = labels.secondary;
+    secondary.hidden = !labels.secondary;
+  }
+
+  function namesBlock(game, primaryClass, secondaryClass) {
     var names = textEl('span', 'names');
-    names.appendChild(textEl('span', enClass, game.missing ? '已下架/未知游戏' : game.name));
-    if (game.nameZh && game.nameZh !== game.name) {
-      names.appendChild(textEl('span', zhClass, game.nameZh));
-    }
+    names.dataset.gameKey = game.key;
+    names.appendChild(textEl('span', 'names__primary ' + primaryClass));
+    names.appendChild(textEl('span', 'names__secondary ' + secondaryClass));
+    updateNamesBlock(names, game);
     return names;
+  }
+
+  function applyDisplayControls() {
+    if (els.nameOrderZh) els.nameOrderZh.setAttribute('aria-pressed', String(state.nameOrder === 'zh'));
+    if (els.nameOrderEn) els.nameOrderEn.setAttribute('aria-pressed', String(state.nameOrder === 'en'));
+    if (els.viewListBtn) els.viewListBtn.setAttribute('aria-pressed', String(state.view === 'list'));
+    if (els.viewGridBtn) els.viewGridBtn.setAttribute('aria-pressed', String(state.view === 'grid'));
+    if (els.listRanking) els.listRanking.classList.toggle('is-grid', state.view === 'grid');
+  }
+
+  function setNameOrder(order) {
+    if (state.nameOrder === order) return;
+    if (drag.active) onDragCancel();
+    state.nameOrder = order;
+    if (!store.set(STORAGE.nameOrder, order)) warnStorageOnce();
+    applyDisplayControls();
+    document.querySelectorAll('.names[data-game-key]').forEach(function (names) {
+      var game = entryFor(names.dataset.gameKey);
+      updateNamesBlock(names, game);
+      var row = names.closest('.rank-row, .sug, .brow');
+      var fallback = row ? row.querySelector('.thumb__initials') : null;
+      if (fallback) fallback.textContent = initials(game);
+      if (row && row.classList.contains('brow')) row.setAttribute('aria-label', '添加「' + gameLabel(game) + '」');
+    });
+    if (els.listRanking) Array.prototype.forEach.call(els.listRanking.children, function (row, index) {
+      if (state.ranking[index]) updateRowState(row, state.ranking[index], index);
+    });
+    if (els.hotChips) els.hotChips.querySelectorAll('.chip--add').forEach(function (chip) {
+      var game = entryFor(chip.dataset.key);
+      var label = chip.querySelector('.chip__text');
+      if (label) label.textContent = gameLabel(game);
+      chip.setAttribute('aria-label', '添加「' + gameLabel(game) + '」');
+      var fallback = chip.querySelector('.thumb__initials');
+      if (fallback) fallback.textContent = initials(game);
+    });
+    if (els.exportDialog && els.exportDialog.open && els.exportText) els.exportText.value = buildExportText();
+    hideToast();
+  }
+
+  function setRankingView(view) {
+    if (state.view === view) return;
+    if (drag.active) onDragCancel();
+    state.view = view;
+    if (!store.set(STORAGE.view, view)) warnStorageOnce();
+    applyDisplayControls();
   }
 
   /* --------------------------------------------------------- suggestion list */
@@ -1202,7 +1277,7 @@
     row.appendChild(thumbBlock(game, 'thumb--sug'));
 
     var body = textEl('div', 'sug__body');
-    body.appendChild(namesBlock(game, 'sug__name', 'sug__zh'));
+    body.appendChild(namesBlock(game, 'sug__name', 'sug__secondary'));
 
     var meta = textEl('div', 'sug__meta');
     if (game.year) meta.appendChild(textEl('span', 'meta-item', game.year + ' 年'));
@@ -1361,7 +1436,7 @@
   /* ------------------------------------------------------------- ranking ops */
 
   function addGame(game) {
-    if (state.readOnly) { toast('这是朋友的榜，只读；先点「复制到我的榜」'); return; }
+    if (state.readOnly) { toast('这是其他人的榜，只读；先点「复制到我的榜」'); return; }
     var existing = -1;
     for (var i = 0; i < state.ranking.length; i++) {
       if (state.ranking[i].key === game.key) { existing = i; break; }
@@ -1429,7 +1504,7 @@
   }
 
   function clearRanking() {
-    if (state.readOnly) { toast('这是朋友的榜，只读'); return; }
+    if (state.readOnly) { toast('这是其他人的榜，只读'); return; }
     if (!state.ranking.length) { toast('榜单已经是空的'); return; }
     if (!window.confirm('确定清空整个排行？共 ' + state.ranking.length + ' 款游戏。')) return;
     var previous = state.ranking.slice();
@@ -1486,7 +1561,7 @@
 
     var body = textEl('div', 'rank-row__body');
     var nameLine = textEl('p', 'rank-row__name');
-    nameLine.appendChild(namesBlock(game, 'rank-row__en', 'rank-row__zh'));
+    nameLine.appendChild(namesBlock(game, 'rank-row__primary', 'rank-row__secondary'));
     body.appendChild(nameLine);
 
     var meta = textEl('div', 'rank-row__meta');
@@ -1547,6 +1622,18 @@
 
   function updateRowState(li, item, index) {
     li.dataset.index = String(index);
+    var game = entryFor(item.key);
+    var names = li.querySelector('.names');
+    if (names) updateNamesBlock(names, game);
+    var fallback = li.querySelector('.thumb__initials');
+    if (fallback) fallback.textContent = initials(game);
+    ['up', 'down', 'remove'].forEach(function (action) {
+      var button = li.querySelector('button[data-act="' + action + '"]');
+      if (!button) return;
+      var label = (action === 'up' ? '上移「' : (action === 'down' ? '下移「' : '从榜单移除「')) + gameLabel(game) + '」';
+      button.setAttribute('aria-label', label);
+      button.title = label;
+    });
     var pos = li.querySelector('.rank-row__pos');
     if (pos) pos.textContent = String(index + 1);
     var up = li.querySelector('button[data-act="up"]');
@@ -1557,6 +1644,7 @@
 
   function renderRanking() {
     if (!els.listRanking) return;
+    els.listRanking.classList.toggle('is-grid', state.view === 'grid');
 
     var existing = new Map();
     var kids = els.listRanking.children;
@@ -1622,6 +1710,7 @@
       chip.type = 'button';
       chip.className = 'chip chip--add';
       chip.dataset.key = game.key;
+      chip.setAttribute('aria-label', '添加「' + gameLabel(game) + '」');
       chip.appendChild(thumbBlock(game, 'thumb--chip'));
       chip.appendChild(textEl('span', 'chip__text', gameLabel(game)));
       chip.appendChild(textEl('span', 'chip__plus', '+'));
@@ -1860,7 +1949,7 @@
     persistRanking();
     renderRanking();
     closeDialog(els.customDialog);
-    toast('已添加自定义游戏「' + (custom.nameZh || custom.name) + '」');
+    toast('已添加自定义游戏「' + gameLabel(entryFor(custom.id)) + '」');
     if (els.input) els.input.focus();
   }
 
@@ -1899,7 +1988,7 @@
     var save = currentSave();
     var lines = state.ranking.map(function (item, index) {
       var game = entryFor(item.key);
-      var name = game.nameZh || game.name || gameLabel(game);
+      var name = gameLabel(game);
       var score = game.mc === null ? '' : ' ' + game.mc;
       return (index + 1) + '. ' + name + score;
     });
@@ -1928,10 +2017,11 @@
     row.setAttribute('role', 'button');
     row.tabIndex = 0;
     row.dataset.key = game.key;
+    row.setAttribute('aria-label', '添加「' + gameLabel(game) + '」');
     row.appendChild(thumbBlock(game, 'thumb--brow'));
 
     var body = textEl('div', 'brow__body');
-    body.appendChild(namesBlock(game, 'brow__name', 'brow__zh'));
+    body.appendChild(namesBlock(game, 'brow__name', 'brow__secondary'));
     var meta = textEl('div', 'brow__meta');
     if (game.year) meta.appendChild(textEl('span', 'meta-item', game.year + ' 年'));
     for (var p = 0; p < Math.min(game.platforms.length, 3); p++) {
@@ -2059,7 +2149,7 @@
       var foreign = isReadOnlySave(save);
       if (state.remoteOn) {
         nameLine.appendChild(textEl('span', 'save-row__tag',
-          foreign ? '朋友的' : '我的'));
+          foreign ? '其他人的' : '我的'));
       }
       body.appendChild(nameLine);
       var total = save.count === undefined || save.count === null ? save.ranking.length : save.count;
@@ -2149,7 +2239,7 @@
     if (els.clearRankBtn) els.clearRankBtn.disabled = state.readOnly || !state.ranking.length;
     if (els.emptyTitle) els.emptyTitle.textContent = loading ? '正在读取榜单…' : '榜单还空着';
     if (els.emptyHint) els.emptyHint.textContent = loading ? '连接恢复后会自动显示这份榜单的内容。' :
-      (foreign ? '这是朋友的空榜单。你也可以新建一份自己的排行。' : '从下面的热门游戏快速添加，或者在上方搜索。');
+      (foreign ? '这是其他人的空榜单。你也可以新建一份自己的排行。' : '从下面的热门游戏快速添加，或者在上方搜索。');
     renderBoardChoices();
   }
 
@@ -2350,9 +2440,11 @@
     active: false,
     index: -1,
     target: -1,
+    grid: false,
+    startDocX: 0,
     startDocY: 0,
+    lastClientX: 0,
     lastClientY: 0,
-    height: 0,
     rows: [],
     geo: [],
     handle: null,
@@ -2378,17 +2470,21 @@
     event.preventDefault();
 
     var scrollTop = window.scrollY;
+    var scrollLeft = window.scrollX;
     var geo = rows.map(function (el) {
       var rect = el.getBoundingClientRect();
-      return { el: el, top: rect.top + scrollTop, height: rect.height };
+      return { el: el, left: rect.left + scrollLeft, top: rect.top + scrollTop,
+        width: rect.width, height: rect.height };
     });
 
     drag.active = true;
     drag.index = index;
     drag.target = index;
+    drag.grid = state.view === 'grid';
+    drag.startDocX = event.clientX + scrollLeft;
     drag.startDocY = event.clientY + scrollTop;
+    drag.lastClientX = event.clientX;
     drag.lastClientY = event.clientY;
-    drag.height = geo[index].height;
     drag.rows = rows;
     drag.geo = geo;
     drag.handle = handle;
@@ -2397,46 +2493,68 @@
     drag.li = row;
 
     row.classList.add('is-dragging');
-    row.style.transform = 'translateY(0px)';
+    row.style.transform = 'translate3d(0, 0, 0)';
     document.body.classList.add('is-dragging');
 
     try { handle.setPointerCapture(event.pointerId); } catch (err) { /* ignore */ }
     handle.addEventListener('pointermove', onDragMove);
     handle.addEventListener('pointerup', onDragEnd);
     handle.addEventListener('pointercancel', onDragCancel);
+    handle.addEventListener('lostpointercapture', onDragCancel);
     startAutoScroll();
   }
 
-  function applyDrag(clientY) {
-    var docY = clientY + window.scrollY;
-    var delta = docY - drag.startDocY;
-    if (Math.abs(delta) > 3) drag.moved = true;
-    drag.li.style.transform = 'translateY(' + delta + 'px)';
+  function dragTarget(geometry, from, centerX, centerY, grid) {
+    if (grid) {
+      var nearest = from;
+      var distance = Infinity;
+      geometry.forEach(function (item, index) {
+        var dx = item.left + item.width / 2 - centerX;
+        var dy = item.top + item.height / 2 - centerY;
+        var candidate = dx * dx + dy * dy;
+        if (candidate < distance) { distance = candidate; nearest = index; }
+      });
+      return nearest;
+    }
+    var target = 0;
+    for (var i = 0; i < geometry.length; i++) {
+      if (i !== from && geometry[i].top + geometry[i].height / 2 < centerY) target++;
+    }
+    return Math.max(0, Math.min(geometry.length - 1, target));
+  }
+
+  function applyDrag(clientX, clientY) {
+    var deltaX = drag.grid ? clientX + window.scrollX - drag.startDocX : 0;
+    var deltaY = clientY + window.scrollY - drag.startDocY;
+    if (Math.abs(deltaX) > 3 || Math.abs(deltaY) > 3) drag.moved = true;
+    drag.li.style.transform = 'translate3d(' + deltaX + 'px, ' + deltaY + 'px, 0)';
 
     var dragged = drag.geo[drag.index];
-    var center = dragged.top + drag.height / 2 + delta;
-    var target = 0;
-    for (var i = 0; i < drag.geo.length; i++) {
-      if (i === drag.index) continue;
-      var item = drag.geo[i];
-      if (item.top + item.height / 2 < center) target++;
-    }
-    drag.target = Math.max(0, Math.min(drag.geo.length - 1, target));
+    drag.target = dragTarget(drag.geo, drag.index,
+      dragged.left + dragged.width / 2 + deltaX, dragged.top + dragged.height / 2 + deltaY, drag.grid);
 
+    var listGap = drag.geo.length > 1 ? Math.max(0, drag.geo[1].top - drag.geo[0].top - drag.geo[0].height) : 0;
     for (var k = 0; k < drag.geo.length; k++) {
       if (k === drag.index) continue;
-      var shift = 0;
-      if (drag.index < drag.target && k > drag.index && k <= drag.target) shift = -drag.height;
-      else if (drag.target < drag.index && k >= drag.target && k < drag.index) shift = drag.height;
-      drag.geo[k].el.style.transform = shift ? 'translateY(' + shift + 'px)' : '';
-      drag.geo[k].el.classList.toggle('is-shifted', shift !== 0);
+      var slot = k;
+      if (drag.index < drag.target && k > drag.index && k <= drag.target) slot = k - 1;
+      else if (drag.target < drag.index && k >= drag.target && k < drag.index) slot = k + 1;
+      var dx = drag.geo[slot].left - drag.geo[k].left;
+      var dy = drag.geo[slot].top - drag.geo[k].top;
+      if (!drag.grid && slot !== k) {
+        dx = 0;
+        dy = (slot < k ? -1 : 1) * (dragged.height + listGap);
+      }
+      drag.geo[k].el.style.transform = slot !== k ? 'translate3d(' + dx + 'px, ' + dy + 'px, 0)' : '';
+      drag.geo[k].el.classList.toggle('is-shifted', slot !== k);
     }
   }
 
   function onDragMove(event) {
-    if (!drag.active) return;
+    if (!drag.active || event.pointerId !== drag.pointerId) return;
+    drag.lastClientX = event.clientX;
     drag.lastClientY = event.clientY;
-    applyDrag(event.clientY);
+    applyDrag(event.clientX, event.clientY);
   }
 
   function startAutoScroll() {
@@ -2451,7 +2569,7 @@
       else if (y > window.innerHeight - edge) delta = Math.min(22, (y - (window.innerHeight - edge)) * 0.35);
       if (delta) {
         window.scrollBy(0, delta);
-        applyDrag(drag.lastClientY);
+        applyDrag(drag.lastClientX, drag.lastClientY);
       }
     };
     autoScrollRaf = window.requestAnimationFrame(step);
@@ -2478,6 +2596,7 @@
       drag.handle.removeEventListener('pointermove', onDragMove);
       drag.handle.removeEventListener('pointerup', onDragEnd);
       drag.handle.removeEventListener('pointercancel', onDragCancel);
+      drag.handle.removeEventListener('lostpointercapture', onDragCancel);
       try {
         if (drag.pointerId !== null && drag.handle.hasPointerCapture(drag.pointerId)) {
           drag.handle.releasePointerCapture(drag.pointerId);
@@ -2493,8 +2612,8 @@
     drag.pointerId = null;
   }
 
-  function onDragEnd() {
-    if (!drag.active) return;
+  function onDragEnd(event) {
+    if (!drag.active || (event && event.pointerId !== drag.pointerId)) return;
     var from = drag.index;
     var to = drag.target;
     var moved = drag.moved;
@@ -2502,7 +2621,7 @@
 
     cleanupDrag();
 
-    if (from !== to) {
+    if (from !== to && !state.readOnly) {
       var item = state.ranking.splice(from, 1)[0];
       state.ranking.splice(to, 0, item);
       persistRanking();
@@ -2636,6 +2755,11 @@
     }
     els.clearRankBtn.addEventListener('click', clearRanking);
     els.themeBtn.addEventListener('click', toggleTheme);
+    if (els.nameOrderZh) els.nameOrderZh.addEventListener('click', function () { setNameOrder('zh'); });
+    if (els.nameOrderEn) els.nameOrderEn.addEventListener('click', function () { setNameOrder('en'); });
+    if (els.viewListBtn) els.viewListBtn.addEventListener('click', function () { setRankingView('list'); });
+    if (els.viewGridBtn) els.viewGridBtn.addEventListener('click', function () { setRankingView('grid'); });
+    window.addEventListener('resize', function () { if (drag.active) onDragCancel(); });
 
     if (els.saveBtn) els.saveBtn.addEventListener('click', openSaveDialog);
     if (els.saveForm) els.saveForm.addEventListener('submit', submitSaveName);
@@ -2765,6 +2889,9 @@
     if (!els.input || !els.list || !els.listRanking) return;
 
     state.browserKey = ensureBrowserKey();
+    state.nameOrder = store.get(STORAGE.nameOrder) === 'en' ? 'en' : 'zh';
+    state.view = store.get(STORAGE.view) === 'grid' ? 'grid' : 'list';
+    applyDisplayControls();
     loadSaveSlots();
     restoreSharedWorkspace();
     state.customs = readCustomsRaw();
