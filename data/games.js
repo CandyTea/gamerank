@@ -5,7 +5,7 @@ window.GAMES = [
 {
   "id": 730,
   "name": "Counter-Strike 2",
-  "nameZh": "Counter-Strike 2",
+  "nameZh": "反恐精英2",
   "aliases": [
    "CS2",
    "CSGO",
@@ -28,12 +28,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 1,
    "peak": 1304292
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 570,
   "name": "Dota 2",
-  "nameZh": "Dota 2",
+  "nameZh": "刀塔2",
   "aliases": [
    "刀塔2",
    "刀塔",
@@ -57,7 +58,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 2,
    "peak": 854923
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4115450,
@@ -84,7 +86,7 @@ window.GAMES = [
 {
   "id": 578080,
   "name": "PUBG: BATTLEGROUNDS",
-  "nameZh": "PUBG: BATTLEGROUNDS",
+  "nameZh": "绝地求生：大逃杀",
   "aliases": [
    "PUBG",
    "绝地求生",
@@ -107,12 +109,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 3,
    "peak": 739272
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1172470,
   "name": "Apex Legends",
-  "nameZh": "Apex Legends",
+  "nameZh": "Apex英雄",
   "aliases": [
    "Apex",
    "Apex英雄",
@@ -135,7 +138,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 9,
    "peak": 253967
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1938090,
@@ -188,7 +192,7 @@ window.GAMES = [
 {
   "id": 4262460,
   "name": "ROB RUN",
-  "nameZh": "ROB RUN",
+  "nameZh": "罗布快跑",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -209,12 +213,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 5,
    "peak": 418021
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 440,
   "name": "Team Fortress 2",
-  "nameZh": "Team Fortress 2",
+  "nameZh": "军团要塞2",
   "aliases": [],
   "mc": 92,
   "ign": 8.9,
@@ -232,7 +237,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 34,
    "peak": 106657
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2357570,
@@ -259,7 +265,7 @@ window.GAMES = [
 {
   "id": 413150,
   "name": "Stardew Valley",
-  "nameZh": "Stardew Valley",
+  "nameZh": "星露谷物语",
   "aliases": [
    "星露谷",
    "星露谷物语"
@@ -282,12 +288,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 25,
    "peak": 86350
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2868840,
   "name": "Slay the Spire 2",
-  "nameZh": "Slay the Spire 2",
+  "nameZh": "杀戮尖塔2",
   "aliases": [],
   "mc": null,
   "ign": 9.0,
@@ -307,12 +314,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 8,
    "peak": 200329
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1174180,
   "name": "Red Dead Redemption 2",
-  "nameZh": "Red Dead Redemption 2",
+  "nameZh": "荒野大镖客：救赎2",
   "aliases": [
    "大镖客2",
    "RDR2",
@@ -335,7 +343,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 45,
    "peak": 40489
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1091500,
@@ -366,7 +375,7 @@ window.GAMES = [
 {
   "id": 489830,
   "name": "The Elder Scrolls V: Skyrim Special Edition",
-  "nameZh": "The Elder Scrolls V: Skyrim Special Edition",
+  "nameZh": "上古卷轴V：天际 特别版",
   "aliases": [
    "老滚5",
    "上古卷轴5",
@@ -386,7 +395,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 48,
    "peak": 43076
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1086940,
@@ -419,7 +429,7 @@ window.GAMES = [
 {
   "id": 550,
   "name": "Left 4 Dead 2",
-  "nameZh": "Left 4 Dead 2",
+  "nameZh": "求生之路2",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -436,7 +446,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 31,
    "peak": 38244
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 292030,
@@ -520,7 +531,7 @@ window.GAMES = [
 {
   "id": 250900,
   "name": "The Binding of Isaac: Rebirth",
-  "nameZh": "The Binding of Isaac: Rebirth",
+  "nameZh": "以撒的结合：重生",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -539,12 +550,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 26,
    "peak": 50815
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1364780,
   "name": "Street Fighter 6",
-  "nameZh": "Street Fighter 6",
+  "nameZh": "街头霸王6",
   "aliases": [],
   "mc": 92,
   "ign": 9.0,
@@ -562,12 +574,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 64,
    "peak": 30546
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4435490,
   "name": "Call of Duty : Modern Warfare 4",
-  "nameZh": "Call of Duty : Modern Warfare 4",
+  "nameZh": "使命召唤：现代战争4",
   "aliases": [],
   "mc": 94,
   "ign": 7.0,
@@ -583,12 +596,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1422450,
   "name": "Deadlock",
-  "nameZh": "Deadlock",
+  "nameZh": "死锁",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -604,7 +618,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 6,
    "peak": 217723
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1203620,
@@ -686,7 +701,7 @@ window.GAMES = [
 {
   "id": 227300,
   "name": "Euro Truck Simulator 2",
-  "nameZh": "Euro Truck Simulator 2",
+  "nameZh": "欧洲卡车模拟2",
   "aliases": [
    "欧卡2",
    "欧洲卡车模拟"
@@ -708,7 +723,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 13,
    "peak": 95240
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4348910,
@@ -764,7 +780,7 @@ window.GAMES = [
 {
   "id": 289070,
   "name": "Sid Meier’s Civilization VI",
-  "nameZh": "Sid Meier’s Civilization VI",
+  "nameZh": "席德·梅尔的文明VI",
   "aliases": [
    "文明6",
    "文明VI"
@@ -785,7 +801,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 67,
    "peak": 42253
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 431960,
@@ -839,7 +856,7 @@ window.GAMES = [
 {
   "id": "mc:soulcalibur",
   "name": "SoulCalibur",
-  "nameZh": "",
+  "nameZh": "灵魂能力",
   "aliases": [],
   "mc": 98,
   "ign": 10.0,
@@ -852,7 +869,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-mario-galaxy-2",
@@ -878,7 +896,7 @@ window.GAMES = [
 {
   "id": 12210,
   "name": "Grand Theft Auto IV: The Complete Edition",
-  "nameZh": "Grand Theft Auto IV: The Complete Edition",
+  "nameZh": "侠盗猎车手4：完全版",
   "aliases": [],
   "mc": 98,
   "ign": 9.0,
@@ -895,12 +913,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 632470,
   "name": "Disco Elysium - The Final Cut",
-  "nameZh": "Disco Elysium - The Final Cut",
+  "nameZh": "极乐迪斯科：最终剪辑版",
   "aliases": [],
   "mc": 97,
   "ign": 10.0,
@@ -918,7 +937,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-mario-galaxy",
@@ -969,7 +989,7 @@ window.GAMES = [
 {
   "id": "mc:perfect-dark-2000",
   "name": "Perfect Dark",
-  "nameZh": "",
+  "nameZh": "完美黑暗",
   "aliases": [],
   "mc": 97,
   "ign": 9.8,
@@ -982,12 +1002,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tony-hawks-pro-skater-3",
   "name": "Tony Hawk's Pro Skater 3",
-  "nameZh": "",
+  "nameZh": "托尼·霍克职业滑板3",
   "aliases": [],
   "mc": 97,
   "ign": 9.5,
@@ -1002,12 +1023,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2545710,
   "name": "Tony Hawk's Pro Skater 3 + 4",
-  "nameZh": "",
+  "nameZh": "托尼·霍克职业滑板3 + 4",
   "aliases": [],
   "mc": 97,
   "ign": 8.0,
@@ -1023,12 +1045,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metroid-prime",
   "name": "Metroid Prime",
-  "nameZh": "",
+  "nameZh": "密特罗德Prime",
   "aliases": [],
   "mc": 97,
   "ign": 9.8,
@@ -1041,12 +1064,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1546970,
   "name": "Grand Theft Auto III – The Definitive Edition",
-  "nameZh": "Grand Theft Auto III – The Definitive Edition",
+  "nameZh": "侠盗猎车手3：最终版",
   "aliases": [],
   "mc": 97,
   "ign": null,
@@ -1063,7 +1087,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-mario-odyssey",
@@ -1092,7 +1117,7 @@ window.GAMES = [
 {
   "id": "mc:halo-combat-evolved",
   "name": "Halo: Combat Evolved",
-  "nameZh": "",
+  "nameZh": "光环：战斗进化",
   "aliases": [],
   "mc": 97,
   "ign": 9.7,
@@ -1107,12 +1132,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nfl-2k1",
   "name": "NFL 2K1",
-  "nameZh": "",
+  "nameZh": "NFL 2K1：美式橄榄球",
   "aliases": [],
   "mc": 97,
   "ign": 9.5,
@@ -1125,12 +1151,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 252490,
   "name": "Rust",
-  "nameZh": "Rust",
+  "nameZh": "腐蚀",
   "aliases": [
    "腐蚀",
    "RUST"
@@ -1154,12 +1181,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 28,
    "peak": 133413
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1867240,
   "name": "WARDOGS",
-  "nameZh": "WARDOGS",
+  "nameZh": "战犬",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -1179,12 +1207,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 15,
    "peak": 136901
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 220,
   "name": "Half-Life 2",
-  "nameZh": "Half-Life 2",
+  "nameZh": "半条命2",
   "aliases": [
    "半条命2",
    "HL2"
@@ -1204,12 +1233,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-orange-box",
   "name": "The Orange Box",
-  "nameZh": "",
+  "nameZh": "橙盒",
   "aliases": [],
   "mc": 96,
   "ign": 9.5,
@@ -1224,12 +1254,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 70,
   "name": "Half-Life",
-  "nameZh": "Half-Life",
+  "nameZh": "半条命",
   "aliases": [],
   "mc": 96,
   "ign": 9.5,
@@ -1247,12 +1278,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 7670,
   "name": "BioShock",
-  "nameZh": "BioShock",
+  "nameZh": "生化奇兵",
   "aliases": [],
   "mc": 96,
   "ign": 9.7,
@@ -1269,12 +1301,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mass-effect-2",
   "name": "Mass Effect 2",
-  "nameZh": "",
+  "nameZh": "质量效应2",
   "aliases": [],
   "mc": 96,
   "ign": 9.5,
@@ -1289,12 +1322,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2362420,
   "name": "Mass Effect 2 (2010) Edition",
-  "nameZh": "Mass Effect 2 (2010) Edition",
+  "nameZh": "质量效应2（2010版）",
   "aliases": [],
   "mc": 96,
   "ign": null,
@@ -1310,12 +1344,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:goldeneye-007",
   "name": "GoldenEye 007",
-  "nameZh": "",
+  "nameZh": "007：黄金眼",
   "aliases": [],
   "mc": 96,
   "ign": 9.7,
@@ -1328,12 +1363,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:uncharted-2-among-thieves",
   "name": "Uncharted 2: Among Thieves",
-  "nameZh": "",
+  "nameZh": "神秘海域2：纵横贼海",
   "aliases": [],
   "mc": 96,
   "ign": 9.5,
@@ -1346,12 +1382,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2050650,
   "name": "Resident Evil 4",
-  "nameZh": "Resident Evil 4",
+  "nameZh": "生化危机4",
   "aliases": [],
   "mc": 96,
   "ign": 10.0,
@@ -1369,12 +1406,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tekken-3",
   "name": "Tekken 3",
-  "nameZh": "",
+  "nameZh": "铁拳3",
   "aliases": [],
   "mc": 96,
   "ign": 9.3,
@@ -1387,12 +1425,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-house-in-fata-morgana-dreams-of-the-revenants",
   "name": "The House in Fata Morgana - Dreams of the Revenants Edition -",
-  "nameZh": "",
+  "nameZh": "海市蜃楼之馆：亡灵之梦版",
   "aliases": [],
   "mc": 96,
   "ign": null,
@@ -1407,7 +1446,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-tears-of-the-kingdom",
@@ -1457,7 +1497,7 @@ window.GAMES = [
 {
   "id": "mc:baldurs-gate-ii-shadows-of-amn",
   "name": "Baldur's Gate II: Shadows of Amn",
-  "nameZh": "",
+  "nameZh": "博德之门II：安姆的阴影",
   "aliases": [],
   "mc": 95,
   "ign": 9.4,
@@ -1472,12 +1512,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gran-turismo",
   "name": "Gran Turismo",
-  "nameZh": "",
+  "nameZh": "GT赛车",
   "aliases": [],
   "mc": 96,
   "ign": 9.5,
@@ -1490,7 +1531,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1687950,
@@ -1517,7 +1559,7 @@ window.GAMES = [
 {
   "id": "mc:metal-gear-solid-2-sons-of-liberty",
   "name": "Metal Gear Solid 2: Sons of Liberty",
-  "nameZh": "",
+  "nameZh": "合金装备2：自由之子",
   "aliases": [],
   "mc": 96,
   "ign": 9.7,
@@ -1530,12 +1572,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2131640,
   "name": "METAL GEAR SOLID 2: Sons of Liberty - Master Collection Version",
-  "nameZh": "",
+  "nameZh": "合金装备2：自由之子—大师合集版",
   "aliases": [],
   "mc": 96,
   "ign": null,
@@ -1551,12 +1594,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 620,
   "name": "Portal 2",
-  "nameZh": "Portal 2",
+  "nameZh": "传送门2",
   "aliases": [],
   "mc": 95,
   "ign": 9.5,
@@ -1574,12 +1618,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:grand-theft-auto-double-pack",
   "name": "Grand Theft Auto Double Pack",
-  "nameZh": "",
+  "nameZh": "侠盗猎车手：双重组合包",
   "aliases": [],
   "mc": 96,
   "ign": null,
@@ -1592,12 +1637,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1145350,
   "name": "Hades II",
-  "nameZh": "Hades II",
+  "nameZh": "哈迪斯2",
   "aliases": [
    "哈迪斯2",
    "哈迪斯II"
@@ -1620,12 +1666,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1546990,
   "name": "Grand Theft Auto: Vice City – The Definitive Edition",
-  "nameZh": "Grand Theft Auto: Vice City – The Definitive Edition",
+  "nameZh": "侠盗猎车手：罪恶都市最终版",
   "aliases": [],
   "mc": 95,
   "ign": null,
@@ -1642,12 +1689,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:portal-companion-collection",
   "name": "Portal: Companion Collection",
-  "nameZh": "",
+  "nameZh": "传送门：同伴合集",
   "aliases": [],
   "mc": 95,
   "ign": null,
@@ -1662,12 +1710,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1547000,
   "name": "Grand Theft Auto: San Andreas – The Definitive Edition",
-  "nameZh": "Grand Theft Auto: San Andreas – The Definitive Edition",
+  "nameZh": "侠盗猎车手：圣安地列斯最终版",
   "aliases": [],
   "mc": 95,
   "ign": null,
@@ -1684,12 +1733,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sid-meiers-civilization-ii",
   "name": "Sid Meier's Civilization II",
-  "nameZh": "",
+  "nameZh": "席德·梅尔的文明II",
   "aliases": [],
   "mc": 94,
   "ign": 8.8,
@@ -1704,12 +1754,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3910,
   "name": "Sid Meier's Civilization III Complete",
-  "nameZh": "Sid Meier's Civilization III Complete",
+  "nameZh": "席德·梅尔的文明III 完全版",
   "aliases": [],
   "mc": 94,
   "ign": null,
@@ -1725,12 +1776,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-tears-of-the-kingdom-nintendo",
   "name": "The Legend of Zelda: Tears of the Kingdom - Nintendo Switch 2 Edition",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：王国之泪 Nintendo Switch 2 Edition",
   "aliases": [],
   "mc": 95,
   "ign": null,
@@ -1745,12 +1797,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2310,
   "name": "Quake",
-  "nameZh": "Quake",
+  "nameZh": "雷神之锤",
   "aliases": [],
   "mc": 94,
   "ign": 8.0,
@@ -1766,7 +1819,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 8870,
@@ -1794,7 +1848,7 @@ window.GAMES = [
 {
   "id": "mc:littlebigplanet",
   "name": "LittleBigPlanet",
-  "nameZh": "",
+  "nameZh": "小小大星球",
   "aliases": [],
   "mc": 95,
   "ign": 9.5,
@@ -1807,12 +1861,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2623190,
   "name": "The Elder Scrolls IV: Oblivion Remastered",
-  "nameZh": "The Elder Scrolls IV: Oblivion Remastered",
+  "nameZh": "上古卷轴IV：湮灭 重制版",
   "aliases": [],
   "mc": 94,
   "ign": 8.0,
@@ -1828,12 +1883,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-collectors-edition",
   "name": "The Legend of Zelda Collector's Edition",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：收藏版",
   "aliases": [],
   "mc": 95,
   "ign": null,
@@ -1846,12 +1902,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 316790,
   "name": "Grim Fandango Remastered",
-  "nameZh": "Grim Fandango Remastered",
+  "nameZh": "冥界狂想曲：重制版",
   "aliases": [],
   "mc": 94,
   "ign": 9.3,
@@ -1869,12 +1926,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:halo-2",
   "name": "Halo 2",
-  "nameZh": "",
+  "nameZh": "光环2",
   "aliases": [],
   "mc": 95,
   "ign": 9.8,
@@ -1887,12 +1945,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gran-turismo-3-a-spec",
   "name": "Gran Turismo 3: A-Spec",
-  "nameZh": "",
+  "nameZh": "GT赛车3：A-Spec",
   "aliases": [],
   "mc": 95,
   "ign": 9.8,
@@ -1905,12 +1964,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo",
   "name": "Diablo",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神",
   "aliases": [],
   "mc": 94,
   "ign": 7.5,
@@ -1925,12 +1985,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-a-link-to-the-past-four-swords",
   "name": "The Legend of Zelda: A Link to the Past / Four Swords",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：众神的三角神力 / 四支剑",
   "aliases": [],
   "mc": 95,
   "ign": 9.0,
@@ -1943,7 +2004,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-majoras-mask",
@@ -1969,7 +2031,7 @@ window.GAMES = [
 {
   "id": 3900,
   "name": "Sid Meier's Civilization IV",
-  "nameZh": "Sid Meier's Civilization IV",
+  "nameZh": "席德·梅尔的文明IV",
   "aliases": [],
   "mc": 94,
   "ign": 9.4,
@@ -1986,12 +2048,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-last-of-us",
   "name": "The Last of Us",
-  "nameZh": "",
+  "nameZh": "最后生还者",
   "aliases": [],
   "mc": 95,
   "ign": 10.0,
@@ -2004,12 +2067,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1888930,
   "name": "The Last of Us Part I",
-  "nameZh": "The Last of Us Part I",
+  "nameZh": "最后生还者 第一部",
   "aliases": [],
   "mc": 95,
   "ign": null,
@@ -2027,7 +2091,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-twilight-princess",
@@ -2052,7 +2117,7 @@ window.GAMES = [
 {
   "id": "mc:madden-nfl-2003",
   "name": "Madden NFL 2003",
-  "nameZh": "",
+  "nameZh": "麦登NFL 2003",
   "aliases": [],
   "mc": 95,
   "ign": 8.8,
@@ -2067,12 +2132,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1593500,
   "name": "God of War",
-  "nameZh": "God of War",
+  "nameZh": "战神",
   "aliases": [
    "战神4",
    "战神"
@@ -2094,12 +2160,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-last-of-us-remastered",
   "name": "The Last of Us Remastered",
-  "nameZh": "",
+  "nameZh": "最后生还者：复刻版",
   "aliases": [],
   "mc": 95,
   "ign": 10.0,
@@ -2114,12 +2181,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2668510,
   "name": "Red Dead Redemption",
-  "nameZh": "Red Dead Redemption",
+  "nameZh": "荒野大镖客：救赎",
   "aliases": [],
   "mc": 95,
   "ign": 9.7,
@@ -2135,12 +2203,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 32370,
   "name": "STAR WARS Knights of the Old Republic",
-  "nameZh": "STAR WARS Knights of the Old Republic",
+  "nameZh": "星球大战：旧共和国武士",
   "aliases": [],
   "mc": 94,
   "ign": 9.0,
@@ -2158,12 +2227,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:call-of-duty-4-modern-warfare",
   "name": "Call of Duty 4: Modern Warfare",
-  "nameZh": "",
+  "nameZh": "使命召唤4：现代战争",
   "aliases": [],
   "mc": 94,
   "ign": 9.4,
@@ -2178,12 +2248,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 228200,
   "name": "Company of Heroes",
-  "nameZh": "Company of Heroes",
+  "nameZh": "英雄连",
   "aliases": [],
   "mc": 93,
   "ign": 9.4,
@@ -2200,7 +2271,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1142710,
@@ -2229,7 +2301,7 @@ window.GAMES = [
 {
   "id": 546560,
   "name": "Half-Life: Alyx",
-  "nameZh": "Half-Life: Alyx",
+  "nameZh": "半条命：艾莉克斯",
   "aliases": [],
   "mc": 93,
   "ign": 10.0,
@@ -2246,7 +2318,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 435150,
@@ -2275,7 +2348,7 @@ window.GAMES = [
 {
   "id": "mc:unreal-tournament-2004",
   "name": "Unreal Tournament 2004",
-  "nameZh": "",
+  "nameZh": "虚幻竞技场2004",
   "aliases": [],
   "mc": 93,
   "ign": 9.4,
@@ -2290,12 +2363,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:starcraft-ii-wings-of-liberty",
   "name": "Starcraft II: Wings of Liberty",
-  "nameZh": "",
+  "nameZh": "星际争霸II：自由之翼",
   "aliases": [],
   "mc": 93,
   "ign": 9.0,
@@ -2310,7 +2384,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:minecraft",
@@ -2338,7 +2413,7 @@ window.GAMES = [
 {
   "id": 1672970,
   "name": "Minecraft Dungeons",
-  "nameZh": "Minecraft Dungeons",
+  "nameZh": "我的世界：地下城",
   "aliases": [],
   "mc": 93,
   "ign": 7.0,
@@ -2356,7 +2431,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 13570,
@@ -2382,7 +2458,7 @@ window.GAMES = [
 {
   "id": "mc:elden-ring-shadow-of-the-erdtree",
   "name": "Elden Ring: Shadow of the Erdtree",
-  "nameZh": "",
+  "nameZh": "艾尔登法环：黄金树幽影",
   "aliases": [],
   "mc": 94,
   "ign": 10.0,
@@ -2398,12 +2474,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-breath-of-the-wild-nintendo",
   "name": "The Legend of Zelda: Breath of the Wild - Nintendo Switch 2 Edition",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：旷野之息 Nintendo Switch 2 Edition",
   "aliases": [],
   "mc": 94,
   "ign": null,
@@ -2418,12 +2495,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 244160,
   "name": "Homeworld Remastered Collection",
-  "nameZh": "Homeworld Remastered Collection",
+  "nameZh": "家园：重制合集",
   "aliases": [],
   "mc": 93,
   "ign": 9.0,
@@ -2441,7 +2519,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:astro-bot",
@@ -2468,7 +2547,7 @@ window.GAMES = [
 {
   "id": "mc:final-fantasy-ix",
   "name": "Final Fantasy IX",
-  "nameZh": "",
+  "nameZh": "最终幻想IX",
   "aliases": [],
   "mc": 94,
   "ign": 9.2,
@@ -2483,12 +2562,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 620980,
   "name": "Beat Saber",
-  "nameZh": "Beat Saber",
+  "nameZh": "节奏光剑",
   "aliases": [],
   "mc": 93,
   "ign": 9.5,
@@ -2504,12 +2584,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1145360,
   "name": "Hades",
-  "nameZh": "Hades",
+  "nameZh": "哈迪斯",
   "aliases": [
    "哈迪斯"
   ],
@@ -2530,12 +2611,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tony-hawks-pro-skater-4",
   "name": "Tony Hawk's Pro Skater 4",
-  "nameZh": "",
+  "nameZh": "托尼·霍克职业滑板4",
   "aliases": [],
   "mc": 94,
   "ign": 9.3,
@@ -2550,12 +2632,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 631510,
   "name": "Devil May Cry HD Collection",
-  "nameZh": "Devil May Cry HD Collection",
+  "nameZh": "鬼泣高清合集",
   "aliases": [],
   "mc": 94,
   "ign": null,
@@ -2571,12 +2654,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-of-warcraft",
   "name": "World of Warcraft",
-  "nameZh": "",
+  "nameZh": "魔兽世界",
   "aliases": [],
   "mc": 93,
   "ign": 9.1,
@@ -2591,12 +2675,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:madden-nfl-2002",
   "name": "Madden NFL 2002",
-  "nameZh": "",
+  "nameZh": "麦登NFL 2002",
   "aliases": [],
   "mc": 94,
   "ign": 8.7,
@@ -2609,12 +2694,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2105620,
   "name": "Sektori",
-  "nameZh": "SEKTORI",
+  "nameZh": "塞克托里",
   "aliases": [],
   "mc": 93,
   "ign": null,
@@ -2631,12 +2717,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:batman-arkham-city",
   "name": "Batman: Arkham City",
-  "nameZh": "",
+  "nameZh": "蝙蝠侠：阿卡姆之城",
   "aliases": [],
   "mc": 94,
   "ign": 9.5,
@@ -2651,12 +2738,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 200260,
   "name": "Batman: Arkham City - Game of the Year Edition",
-  "nameZh": "",
+  "nameZh": "蝙蝠侠：阿卡姆之城 年度版",
   "aliases": [],
   "mc": 94,
   "ign": null,
@@ -2673,7 +2761,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2679460,
@@ -2750,7 +2839,7 @@ window.GAMES = [
 {
   "id": "mc:the-legend-of-zelda-ocarina-of-time-3d",
   "name": "The Legend of Zelda: Ocarina of Time 3D",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：时之笛3D",
   "aliases": [],
   "mc": 94,
   "ign": 9.5,
@@ -2763,12 +2852,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:chrono-cross",
   "name": "Chrono Cross",
-  "nameZh": "",
+  "nameZh": "时空之轮：次元交错",
   "aliases": [],
   "mc": 94,
   "ign": 9.7,
@@ -2781,12 +2871,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1133760,
   "name": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
-  "nameZh": "CHRONO CROSS: THE RADICAL DREAMERS EDITION",
+  "nameZh": "时空之轮：次元交错 激进梦想家版",
   "aliases": [],
   "mc": 94,
   "ign": null,
@@ -2803,12 +2894,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:madden-nfl-2004",
   "name": "Madden NFL 2004",
-  "nameZh": "",
+  "nameZh": "麦登NFL 2004",
   "aliases": [],
   "mc": 94,
   "ign": 9.4,
@@ -2823,12 +2915,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gears-of-war",
   "name": "Gears of War",
-  "nameZh": "",
+  "nameZh": "战争机器",
   "aliases": [],
   "mc": 94,
   "ign": 9.5,
@@ -2843,12 +2936,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3010850,
   "name": "Gears of War: E-Day",
-  "nameZh": "Gears of War: E-Day",
+  "nameZh": "战争机器：E日",
   "aliases": [],
   "mc": 94,
   "ign": 9.0,
@@ -2866,12 +2960,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:world-soccer-winning-eleven-7-international",
   "name": "World Soccer Winning Eleven 7 International",
-  "nameZh": "",
+  "nameZh": "实况足球7 国际版",
   "aliases": [],
   "mc": 93,
   "ign": 9.1,
@@ -2886,12 +2981,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:halo-3",
   "name": "Halo 3",
-  "nameZh": "",
+  "nameZh": "光环3",
   "aliases": [],
   "mc": 94,
   "ign": 9.5,
@@ -2906,12 +3002,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ninja-gaiden-black",
   "name": "Ninja Gaiden Black",
-  "nameZh": "",
+  "nameZh": "忍者龙剑传 黑之章",
   "aliases": [],
   "mc": 94,
   "ign": 9.4,
@@ -2924,12 +3021,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:jet-set-radio-2000",
   "name": "Jet Set Radio",
-  "nameZh": "",
+  "nameZh": "涂鸦小子",
   "aliases": [],
   "mc": 94,
   "ign": 8.5,
@@ -2942,12 +3040,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid",
   "name": "Metal Gear Solid",
-  "nameZh": "",
+  "nameZh": "合金装备",
   "aliases": [],
   "mc": 94,
   "ign": 9.8,
@@ -2960,12 +3059,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2417610,
   "name": "METAL GEAR SOLID Δ: SNAKE EATER",
-  "nameZh": "METAL GEAR SOLID Δ: SNAKE EATER",
+  "nameZh": "合金装备Δ：食蛇者",
   "aliases": [],
   "mc": 94,
   "ign": 9.8,
@@ -2982,12 +3082,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-mario-advance-4-super-mario-bros-3",
   "name": "Super Mario Advance 4: Super Mario Bros. 3",
-  "nameZh": "",
+  "nameZh": "超级马力欧Advance 4：超级马力欧兄弟3",
   "aliases": [],
   "mc": 94,
   "ign": 9.5,
@@ -3000,7 +3101,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2807960,
@@ -3026,7 +3128,7 @@ window.GAMES = [
 {
   "id": 587620,
   "name": "Okami HD",
-  "nameZh": "Okami HD",
+  "nameZh": "大神 HD",
   "aliases": [],
   "mc": 93,
   "ign": null,
@@ -3042,12 +3144,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2322010,
   "name": "God of War Ragnarök",
-  "nameZh": "God of War Ragnarök",
+  "nameZh": "战神：诸神黄昏",
   "aliases": [],
   "mc": 94,
   "ign": 10.0,
@@ -3066,12 +3169,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:resident-evil-code-veronica",
   "name": "Resident Evil Code: Veronica",
-  "nameZh": "",
+  "nameZh": "生化危机 代号：维罗妮卡",
   "aliases": [],
   "mc": 94,
   "ign": null,
@@ -3084,12 +3188,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:burnout-3-takedown",
   "name": "Burnout 3: Takedown",
-  "nameZh": "",
+  "nameZh": "火爆狂飙3：撞击",
   "aliases": [],
   "mc": 94,
   "ign": 9.5,
@@ -3102,12 +3207,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid-3-subsistence",
   "name": "Metal Gear Solid 3: Subsistence",
-  "nameZh": "",
+  "nameZh": "合金装备3：生存",
   "aliases": [],
   "mc": 94,
   "ign": 9.8,
@@ -3120,12 +3226,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:call-of-duty-modern-warfare-2",
   "name": "Call of Duty: Modern Warfare 2",
-  "nameZh": "",
+  "nameZh": "使命召唤：现代战争2",
   "aliases": [],
   "mc": 94,
   "ign": 8.0,
@@ -3140,12 +3247,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid-4-guns-of-the-patriots",
   "name": "Metal Gear Solid 4: Guns of the Patriots",
-  "nameZh": "",
+  "nameZh": "合金装备4：爱国者之枪",
   "aliases": [],
   "mc": 94,
   "ign": 10.0,
@@ -3158,12 +3266,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2492670,
   "name": "METAL GEAR SOLID 4: Guns of the Patriots - Master Collection Version",
-  "nameZh": "",
+  "nameZh": "合金装备4：爱国者之枪—大师合集版",
   "aliases": [],
   "mc": 94,
   "ign": null,
@@ -3180,12 +3289,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3764200,
   "name": "Resident Evil Requiem",
-  "nameZh": "Resident Evil Requiem",
+  "nameZh": "生化危机：安魂曲",
   "aliases": [],
   "mc": 92,
   "ign": 9.0,
@@ -3203,12 +3313,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:warcraft-iii-reign-of-chaos",
   "name": "Warcraft III: Reign of Chaos",
-  "nameZh": "",
+  "nameZh": "魔兽争霸III：混乱之治",
   "aliases": [],
   "mc": 92,
   "ign": 9.3,
@@ -3223,12 +3334,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sid-meiers-gettysburg",
   "name": "Sid Meier's Gettysburg!",
-  "nameZh": "",
+  "nameZh": "席德·梅尔的葛底斯堡！",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -3243,12 +3355,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-sims",
   "name": "The Sims",
-  "nameZh": "",
+  "nameZh": "模拟人生",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -3263,7 +3376,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-mario-64",
@@ -3313,7 +3427,7 @@ window.GAMES = [
 {
   "id": "mc:virtua-fighter-4",
   "name": "Virtua Fighter 4",
-  "nameZh": "",
+  "nameZh": "VR战士4",
   "aliases": [],
   "mc": 94,
   "ign": 9.3,
@@ -3326,7 +3440,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1569580,
@@ -3355,7 +3470,7 @@ window.GAMES = [
 {
   "id": "mc:system-shock-2",
   "name": "System Shock 2",
-  "nameZh": "",
+  "nameZh": "网络奇兵2",
   "aliases": [],
   "mc": 92,
   "ign": 9.0,
@@ -3370,12 +3485,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 866570,
   "name": "System Shock 2: 25th Anniversary Remaster",
-  "nameZh": "System Shock 2: 25th Anniversary Remaster",
+  "nameZh": "网络奇兵2：25周年重制版",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -3393,12 +3509,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 105600,
   "name": "Terraria",
-  "nameZh": "Terraria",
+  "nameZh": "泰拉瑞亚",
   "aliases": [
    "泰拉瑞亚",
    "泰拉"
@@ -3422,12 +3539,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 32,
    "peak": 41308
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rome-total-war",
   "name": "Rome: Total War",
-  "nameZh": "",
+  "nameZh": "罗马：全面战争",
   "aliases": [],
   "mc": 92,
   "ign": 9.4,
@@ -3442,7 +3560,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 885970,
@@ -3470,7 +3589,7 @@ window.GAMES = [
 {
   "id": 391540,
   "name": "Undertale",
-  "nameZh": "Undertale",
+  "nameZh": "传说之下",
   "aliases": [
    "传说之下"
   ],
@@ -3491,12 +3610,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4200960,
   "name": "Thief: The Dark Project Remastered",
-  "nameZh": "Thief: The Dark Project Remastered",
+  "nameZh": "神偷：黑暗计划 重制版",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -3513,12 +3633,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:age-of-empires-ii-the-age-of-kings",
   "name": "Age of Empires II: The Age of Kings",
-  "nameZh": "",
+  "nameZh": "帝国时代II：帝王时代",
   "aliases": [],
   "mc": 92,
   "ign": 8.8,
@@ -3533,12 +3654,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sid-meiers-alpha-centauri",
   "name": "Sid Meier's Alpha Centauri",
-  "nameZh": "",
+  "nameZh": "席德·梅尔的半人马座阿尔法星",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -3553,7 +3675,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2204130,
@@ -3579,7 +3702,7 @@ window.GAMES = [
 {
   "id": "mc:unreal-tournament-1999",
   "name": "Unreal Tournament",
-  "nameZh": "",
+  "nameZh": "虚幻竞技场",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -3594,12 +3717,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid-v-the-phantom-pain",
   "name": "Metal Gear Solid V: The Phantom Pain",
-  "nameZh": "",
+  "nameZh": "合金装备V：幻痛",
   "aliases": [],
   "mc": 93,
   "ign": 10.0,
@@ -3615,12 +3739,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:galactic-civilizations-ii-twilight-of-the-arnor",
   "name": "Galactic Civilizations II: Twilight of the Arnor",
-  "nameZh": "",
+  "nameZh": "银河文明II：阿诺之暮",
   "aliases": [],
   "mc": 92,
   "ign": 9.1,
@@ -3635,7 +3760,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 13560,
@@ -3661,7 +3787,7 @@ window.GAMES = [
 {
   "id": "mc:final-fantasy-xiv-endwalker",
   "name": "Final Fantasy XIV: Endwalker",
-  "nameZh": "",
+  "nameZh": "最终幻想XIV：晓月之终途",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -3676,12 +3802,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:out-of-the-park-baseball-17",
   "name": "Out of the Park Baseball 17",
-  "nameZh": "",
+  "nameZh": "公园之外棒球17",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -3696,12 +3823,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-witcher-3-wild-hunt-blood-and-wine",
   "name": "The Witcher 3: Wild Hunt - Blood and Wine",
-  "nameZh": "",
+  "nameZh": "巫师3：狂猎——血与酒",
   "aliases": [],
   "mc": 92,
   "ign": 9.0,
@@ -3716,12 +3844,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tiger-woods-pga-tour-2003",
   "name": "Tiger Woods PGA Tour 2003",
-  "nameZh": "",
+  "nameZh": "泰格·伍兹PGA巡回赛2003",
   "aliases": [],
   "mc": 92,
   "ign": 8.5,
@@ -3736,12 +3865,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-smash-bros-brawl",
   "name": "Super Smash Bros. Brawl",
-  "nameZh": "",
+  "nameZh": "任天堂明星大乱斗X",
   "aliases": [],
   "mc": 93,
   "ign": 9.5,
@@ -3754,12 +3884,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gran-turismo-2",
   "name": "Gran Turismo 2",
-  "nameZh": "",
+  "nameZh": "GT赛车2",
   "aliases": [],
   "mc": 93,
   "ign": 9.8,
@@ -3772,12 +3903,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2531310,
   "name": "The Last of Us Part II Remastered",
-  "nameZh": "The Last of Us Part II Remastered",
+  "nameZh": "最后生还者 第二部 重制版",
   "aliases": [],
   "mc": 93,
   "ign": null,
@@ -3796,12 +3928,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3929740,
   "name": "Tom Clancy's Splinter Cell: Pandora Tomorrow",
-  "nameZh": "Tom Clancy's Splinter Cell: Pandora Tomorrow",
+  "nameZh": "汤姆·克兰西之细胞分裂：明日潘多拉",
   "aliases": [],
   "mc": 93,
   "ign": 9.5,
@@ -3817,12 +3950,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:grand-theft-auto-chinatown-wars",
   "name": "Grand Theft Auto: Chinatown Wars",
-  "nameZh": "",
+  "nameZh": "侠盗猎车手：唐人街战争",
   "aliases": [],
   "mc": 93,
   "ign": 9.0,
@@ -3835,12 +3969,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 236450,
   "name": "PAC-MAN Championship Edition DX+",
-  "nameZh": "PAC-MAN Championship Edition DX+",
+  "nameZh": "吃豆人：冠军版DX+",
   "aliases": [],
   "mc": 93,
   "ign": 10.0,
@@ -3856,12 +3991,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:street-fighter-iv",
   "name": "Street Fighter IV",
-  "nameZh": "",
+  "nameZh": "街头霸王IV",
   "aliases": [],
   "mc": 93,
   "ign": 8.9,
@@ -3876,12 +4012,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 22300,
   "name": "Fallout 3",
-  "nameZh": "Fallout 3",
+  "nameZh": "辐射3",
   "aliases": [],
   "mc": 93,
   "ign": 8.8,
@@ -3897,12 +4034,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 499180,
   "name": "Braid, Anniversary Edition",
-  "nameZh": "Braid, Anniversary Edition",
+  "nameZh": "时空幻境 纪念版",
   "aliases": [],
   "mc": 93,
   "ign": null,
@@ -3921,12 +4059,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:god-of-war-ii",
   "name": "God of War II",
-  "nameZh": "",
+  "nameZh": "战神II",
   "aliases": [],
   "mc": 93,
   "ign": 9.7,
@@ -3939,7 +4078,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-mario-3d-world",
@@ -3965,7 +4105,7 @@ window.GAMES = [
 {
   "id": "mc:ssx-2000",
   "name": "SSX",
-  "nameZh": "",
+  "nameZh": "SSX极限滑雪",
   "aliases": [],
   "mc": 93,
   "ign": null,
@@ -3978,7 +4118,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1551360,
@@ -4030,7 +4171,7 @@ window.GAMES = [
 {
   "id": "mc:persona-5",
   "name": "Persona 5",
-  "nameZh": "",
+  "nameZh": "女神异闻录5",
   "aliases": [],
   "mc": 93,
   "ign": null,
@@ -4045,7 +4186,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 230410,
@@ -4073,7 +4215,7 @@ window.GAMES = [
 {
   "id": 2200,
   "name": "Quake III Arena",
-  "nameZh": "Quake III Arena",
+  "nameZh": "雷神之锤III竞技场",
   "aliases": [],
   "mc": 93,
   "ign": 9.3,
@@ -4089,12 +4231,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ssx-3",
   "name": "SSX 3",
-  "nameZh": "",
+  "nameZh": "SSX 3极限滑雪",
   "aliases": [],
   "mc": 93,
   "ign": 9.4,
@@ -4107,12 +4250,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1147860,
   "name": "UFO 50",
-  "nameZh": "UFO 50",
+  "nameZh": "UFO 50合集",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -4132,7 +4276,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1336490,
@@ -4159,7 +4304,7 @@ window.GAMES = [
 {
   "id": 205100,
   "name": "Dishonored",
-  "nameZh": "Dishonored",
+  "nameZh": "羞辱",
   "aliases": [],
   "mc": 91,
   "ign": 9.2,
@@ -4176,12 +4321,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:medal-of-honor-allied-assault",
   "name": "Medal of Honor: Allied Assault",
-  "nameZh": "",
+  "nameZh": "荣誉勋章：联合袭击",
   "aliases": [],
   "mc": 91,
   "ign": 9.3,
@@ -4196,12 +4342,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:myth-the-fallen-lords",
   "name": "Myth: The Fallen Lords",
-  "nameZh": "",
+  "nameZh": "神话：堕落领主",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -4216,7 +4363,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 322330,
@@ -4249,7 +4397,7 @@ window.GAMES = [
 {
   "id": "mc:microsoft-flight-simulator",
   "name": "Microsoft Flight Simulator",
-  "nameZh": "",
+  "nameZh": "微软模拟飞行",
   "aliases": [],
   "mc": 91,
   "ign": 10.0,
@@ -4264,12 +4412,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2537590,
   "name": "Microsoft Flight Simulator 2024",
-  "nameZh": "Microsoft Flight Simulator 2024",
+  "nameZh": "微软模拟飞行2024",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -4285,12 +4434,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:batman-arkham-asylum",
   "name": "Batman: Arkham Asylum",
-  "nameZh": "",
+  "nameZh": "蝙蝠侠：阿卡姆疯人院",
   "aliases": [],
   "mc": 92,
   "ign": 9.3,
@@ -4305,12 +4455,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gears-of-war-2",
   "name": "Gears of War 2",
-  "nameZh": "",
+  "nameZh": "战争机器2",
   "aliases": [],
   "mc": 93,
   "ign": 8.9,
@@ -4323,12 +4474,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-of-warcraft-wrath-of-the-lich-king",
   "name": "World of Warcraft: Wrath of the Lich King",
-  "nameZh": "",
+  "nameZh": "魔兽世界：巫妖王之怒",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -4343,12 +4495,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1148760,
   "name": "I Was a Teenage Exocolonist",
-  "nameZh": "I Was a Teenage Exocolonist",
+  "nameZh": "我曾是青少年外星殖民者",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -4368,12 +4521,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:pro-evolution-soccer-2",
   "name": "Pro Evolution Soccer 2",
-  "nameZh": "",
+  "nameZh": "实况足球2",
   "aliases": [],
   "mc": 93,
   "ign": null,
@@ -4386,12 +4540,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:soulcalibur-ii",
   "name": "SoulCalibur II",
-  "nameZh": "",
+  "nameZh": "灵魂能力II",
   "aliases": [],
   "mc": 93,
   "ign": 9.2,
@@ -4404,12 +4559,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 228280,
   "name": "Baldur's Gate: Enhanced Edition",
-  "nameZh": "Baldur's Gate: Enhanced Edition",
+  "nameZh": "博德之门：增强版",
   "aliases": [],
   "mc": 91,
   "ign": 6.0,
@@ -4428,12 +4584,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:f1-career-challenge",
   "name": "F1 Career Challenge",
-  "nameZh": "",
+  "nameZh": "F1生涯挑战",
   "aliases": [],
   "mc": 91,
   "ign": 7.4,
@@ -4448,12 +4605,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:mass-effect-3",
   "name": "Mass Effect 3",
-  "nameZh": "",
+  "nameZh": "质量效应3",
   "aliases": [],
   "mc": 93,
   "ign": 9.5,
@@ -4468,12 +4626,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1238020,
   "name": "Mass Effect 3 N7 Digital Deluxe Edition",
-  "nameZh": "",
+  "nameZh": "质量效应3 N7数字豪华版",
   "aliases": [],
   "mc": 93,
   "ign": null,
@@ -4491,12 +4650,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1478500,
   "name": "Big Walk",
-  "nameZh": "Big Walk",
+  "nameZh": "大步漫游",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -4513,12 +4673,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:skies-of-arcadia",
   "name": "Skies of Arcadia",
-  "nameZh": "",
+  "nameZh": "永恒的阿卡迪亚",
   "aliases": [],
   "mc": 93,
   "ign": 9.2,
@@ -4531,7 +4692,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1229240,
@@ -4582,7 +4744,7 @@ window.GAMES = [
 {
   "id": "mc:mario-kart-super-circuit",
   "name": "Mario Kart: Super Circuit",
-  "nameZh": "",
+  "nameZh": "马力欧赛车：超级赛道",
   "aliases": [],
   "mc": 93,
   "ign": 9.5,
@@ -4595,7 +4757,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1778820,
@@ -4622,7 +4785,7 @@ window.GAMES = [
 {
   "id": 273620,
   "name": "Freespace 2",
-  "nameZh": "Freespace 2",
+  "nameZh": "自由空间2",
   "aliases": [],
   "mc": 91,
   "ign": 8.9,
@@ -4638,12 +4801,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:il-2-sturmovik",
   "name": "IL-2 Sturmovik",
-  "nameZh": "",
+  "nameZh": "伊尔-2：强击机",
   "aliases": [],
   "mc": 91,
   "ign": 8.3,
@@ -4658,7 +4822,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 307960,
@@ -4685,7 +4850,7 @@ window.GAMES = [
 {
   "id": "mc:rock-band-3",
   "name": "Rock Band 3",
-  "nameZh": "",
+  "nameZh": "摇滚乐队3",
   "aliases": [],
   "mc": 93,
   "ign": 8.5,
@@ -4698,12 +4863,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nba-2k1",
   "name": "NBA 2K1",
-  "nameZh": "",
+  "nameZh": "NBA 2K1：篮球游戏",
   "aliases": [],
   "mc": 93,
   "ign": 8.8,
@@ -4716,12 +4882,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:viewtiful-joe",
   "name": "Viewtiful Joe",
-  "nameZh": "",
+  "nameZh": "红侠乔伊",
   "aliases": [],
   "mc": 93,
   "ign": 9.5,
@@ -4734,12 +4901,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 975370,
   "name": "Dwarf Fortress",
-  "nameZh": "Dwarf Fortress",
+  "nameZh": "矮人要塞",
   "aliases": [],
   "mc": 91,
   "ign": 10.0,
@@ -4758,12 +4926,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:kentucky-route-zero-act-iii",
   "name": "Kentucky Route Zero - Act III",
-  "nameZh": "",
+  "nameZh": "肯塔基零号公路：第三幕",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -4778,7 +4947,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1903340,
@@ -4806,7 +4976,7 @@ window.GAMES = [
 {
   "id": "mc:virtua-fighter-4-evolution",
   "name": "Virtua Fighter 4: Evolution",
-  "nameZh": "",
+  "nameZh": "VR战士4：进化",
   "aliases": [],
   "mc": 93,
   "ign": 9.5,
@@ -4819,7 +4989,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:uncharted-4-a-thiefs-end",
@@ -4847,7 +5018,7 @@ window.GAMES = [
 {
   "id": 1715130,
   "name": "Crysis Remastered",
-  "nameZh": "Crysis Remastered",
+  "nameZh": "孤岛危机：复刻版",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -4863,7 +5034,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-smash-bros-ultimate",
@@ -4891,7 +5063,7 @@ window.GAMES = [
 {
   "id": 281610,
   "name": "Homeworld: Deserts of Kharak",
-  "nameZh": "Homeworld: Deserts of Kharak",
+  "nameZh": "家园：卡拉克沙漠",
   "aliases": [],
   "mc": 93,
   "ign": 8.8,
@@ -4909,12 +5081,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-of-warcraft-the-burning-crusade",
   "name": "World of Warcraft: The Burning Crusade",
-  "nameZh": "",
+  "nameZh": "魔兽世界：燃烧的远征",
   "aliases": [],
   "mc": 91,
   "ign": 8.8,
@@ -4929,12 +5102,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:paper-mario",
   "name": "Paper Mario",
-  "nameZh": "",
+  "nameZh": "纸片马力欧",
   "aliases": [],
   "mc": 93,
   "ign": 9.0,
@@ -4947,12 +5121,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 32380,
   "name": "STAR WARS Jedi Knight: Dark Forces II",
-  "nameZh": "STAR WARS Jedi Knight: Dark Forces II",
+  "nameZh": "星球大战：绝地武士：黑暗力量II",
   "aliases": [],
   "mc": 91,
   "ign": 8.0,
@@ -4968,12 +5143,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 6310,
   "name": "The Longest Journey",
-  "nameZh": "The Longest Journey",
+  "nameZh": "最长的旅程",
   "aliases": [],
   "mc": 91,
   "ign": 9.3,
@@ -4991,12 +5167,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tiger-woods-pga-tour-2005",
   "name": "Tiger Woods PGA Tour 2005",
-  "nameZh": "",
+  "nameZh": "泰格·伍兹PGA巡回赛2005",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -5011,12 +5188,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2395210,
   "name": "Tony Hawk's Pro Skater 1 + 2",
-  "nameZh": "",
+  "nameZh": "托尼·霍克职业滑板1 + 2",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -5032,12 +5210,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tony-hawks-pro-skater-2",
   "name": "Tony Hawk's Pro Skater 2",
-  "nameZh": "",
+  "nameZh": "托尼·霍克职业滑板2",
   "aliases": [],
   "mc": 91,
   "ign": 9.3,
@@ -5052,12 +5231,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:wipeout-xl",
   "name": "Wipeout XL",
-  "nameZh": "",
+  "nameZh": "反重力赛车XL",
   "aliases": [],
   "mc": 93,
   "ign": 9.0,
@@ -5070,12 +5250,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 304430,
   "name": "INSIDE",
-  "nameZh": "INSIDE",
+  "nameZh": "INSIDE：深入",
   "aliases": [],
   "mc": 93,
   "ign": 10.0,
@@ -5094,12 +5275,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:flipnote-studio",
   "name": "Flipnote Studio",
-  "nameZh": "",
+  "nameZh": "翻页笔记工作室",
   "aliases": [],
   "mc": 93,
   "ign": 9.0,
@@ -5112,12 +5294,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:galactic-civilizations-ii-dark-avatar",
   "name": "Galactic Civilizations II: Dark Avatar",
-  "nameZh": "",
+  "nameZh": "银河文明II：黑暗化身",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -5132,12 +5315,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-operative-no-one-lives-forever",
   "name": "The Operative: No One Lives Forever",
-  "nameZh": "",
+  "nameZh": "特工：无人永生",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -5152,12 +5336,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2246340,
   "name": "Monster Hunter Wilds",
-  "nameZh": "Monster Hunter Wilds",
+  "nameZh": "怪物猎人：荒野",
   "aliases": [
    "怪猎荒野",
    "怪物猎人荒野"
@@ -5179,12 +5364,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 91,
    "peak": 24935
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1158310,
   "name": "Crusader Kings III",
-  "nameZh": "Crusader Kings III",
+  "nameZh": "十字军之王III",
   "aliases": [],
   "mc": 91,
   "ign": 10.0,
@@ -5204,12 +5390,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:battlefield-2",
   "name": "Battlefield 2",
-  "nameZh": "",
+  "nameZh": "战地2",
   "aliases": [],
   "mc": 91,
   "ign": 8.9,
@@ -5224,12 +5411,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 224760,
   "name": "FEZ",
-  "nameZh": "FEZ",
+  "nameZh": "FEZ：立方谜城",
   "aliases": [],
   "mc": 91,
   "ign": 9.5,
@@ -5247,12 +5435,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 466300,
   "name": "Planescape: Torment: Enhanced Edition",
-  "nameZh": "Planescape: Torment: Enhanced Edition",
+  "nameZh": "异域镇魂曲：增强版",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -5271,12 +5460,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 704450,
   "name": "Neverwinter Nights: Enhanced Edition",
-  "nameZh": "Neverwinter Nights: Enhanced Edition",
+  "nameZh": "无冬之夜：增强版",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -5294,12 +5484,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:no-one-lives-forever-2-a-spy-in-h-a-r-m-s-way",
   "name": "No One Lives Forever 2: A Spy in H.A.R.M.'s Way",
-  "nameZh": "",
+  "nameZh": "无人永生2：哈姆组织特工之道",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -5314,12 +5505,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2406770,
   "name": "Bodycam",
-  "nameZh": "Bodycam",
+  "nameZh": "随身摄像头",
   "aliases": [],
   "mc": null,
   "ign": 5.0,
@@ -5340,12 +5532,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 38,
    "peak": 24613
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 47810,
   "name": "Dragon Age: Origins - Ultimate Edition",
-  "nameZh": "",
+  "nameZh": "龙腾世纪：起源 终极版",
   "aliases": [],
   "mc": 91,
   "ign": 8.5,
@@ -5361,7 +5554,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2767030,
@@ -5394,7 +5588,7 @@ window.GAMES = [
 {
   "id": 214560,
   "name": "Mark of the Ninja",
-  "nameZh": "Mark of the Ninja",
+  "nameZh": "忍者印记",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -5414,12 +5608,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:disco-elysium",
   "name": "Disco Elysium",
-  "nameZh": "",
+  "nameZh": "极乐迪斯科",
   "aliases": [],
   "mc": 91,
   "ign": 9.6,
@@ -5434,12 +5629,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 236430,
   "name": "DARK SOULS II",
-  "nameZh": "DARK SOULS II",
+  "nameZh": "黑暗之魂II",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -5456,12 +5652,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 418530,
   "name": "Spelunky 2",
-  "nameZh": "Spelunky 2",
+  "nameZh": "洞穴探险2",
   "aliases": [],
   "mc": 91,
   "ign": 10.0,
@@ -5479,12 +5676,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2909400,
   "name": "FINAL FANTASY VII REBIRTH",
-  "nameZh": "FINAL FANTASY VII REBIRTH",
+  "nameZh": "最终幻想VII 重生",
   "aliases": [],
   "mc": 92,
   "ign": 9.0,
@@ -5503,7 +5701,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 526870,
@@ -5532,7 +5731,7 @@ window.GAMES = [
 {
   "id": 333640,
   "name": "Caves of Qud",
-  "nameZh": "Caves of Qud",
+  "nameZh": "Qud洞窟",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -5553,7 +5752,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 3280350,
@@ -5581,7 +5781,7 @@ window.GAMES = [
 {
   "id": "mc:forza-horizon-4",
   "name": "Forza Horizon 4",
-  "nameZh": "",
+  "nameZh": "极限竞速：地平线4",
   "aliases": [],
   "mc": 92,
   "ign": 9.6,
@@ -5597,7 +5797,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:god-of-war-iii",
@@ -5622,7 +5823,7 @@ window.GAMES = [
 {
   "id": "mc:nfl-2k3",
   "name": "NFL 2K3",
-  "nameZh": "",
+  "nameZh": "NFL 2K3：美式橄榄球",
   "aliases": [],
   "mc": 92,
   "ign": 9.1,
@@ -5635,12 +5836,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nhl-2002",
   "name": "NHL 2002",
-  "nameZh": "",
+  "nameZh": "NHL 2002：冰球",
   "aliases": [],
   "mc": 92,
   "ign": 9.2,
@@ -5655,12 +5857,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ssx-tricky",
   "name": "SSX Tricky",
-  "nameZh": "",
+  "nameZh": "SSX 疯狂",
   "aliases": [],
   "mc": 92,
   "ign": 9.0,
@@ -5673,12 +5876,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 13600,
   "name": "Prince of Persia : The Sands of Time",
-  "nameZh": "",
+  "nameZh": "波斯王子：时之沙",
   "aliases": [],
   "mc": 92,
   "ign": 9.6,
@@ -5695,12 +5899,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:uncharted-3-drakes-deception",
   "name": "Uncharted 3: Drake's Deception",
-  "nameZh": "",
+  "nameZh": "神秘海域3：德雷克的诡计",
   "aliases": [],
   "mc": 92,
   "ign": 10.0,
@@ -5713,12 +5918,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rock-band",
   "name": "Rock Band",
-  "nameZh": "",
+  "nameZh": "摇滚乐队",
   "aliases": [],
   "mc": 92,
   "ign": 9.4,
@@ -5731,12 +5937,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4697880,
   "name": "Rock Band Simulator",
-  "nameZh": "Rock Band Simulator",
+  "nameZh": "摇滚乐队模拟器",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -5754,7 +5961,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2001120,
@@ -5805,7 +6013,7 @@ window.GAMES = [
 {
   "id": "mc:xenoblade-chronicles-3-expansion-pass-wave-4",
   "name": "Xenoblade Chronicles 3: Expansion Pass Wave 4 - Future Redeemed",
-  "nameZh": "",
+  "nameZh": "异度神剑3：扩展票第4波——未来的遗响",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -5820,7 +6028,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:bloodborne",
@@ -5848,7 +6057,7 @@ window.GAMES = [
 {
   "id": "mc:eternal-darkness-sanitys-requiem",
   "name": "Eternal Darkness: Sanity's Requiem",
-  "nameZh": "",
+  "nameZh": "永恒黑暗：理智的安魂曲",
   "aliases": [],
   "mc": 92,
   "ign": 9.6,
@@ -5861,12 +6070,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:banjo-kazooie",
   "name": "Banjo-Kazooie",
-  "nameZh": "",
+  "nameZh": "班卓熊大冒险",
   "aliases": [],
   "mc": 92,
   "ign": 9.6,
@@ -5879,12 +6089,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 504230,
   "name": "Celeste",
-  "nameZh": "Celeste",
+  "nameZh": "蔚蓝",
   "aliases": [],
   "mc": 92,
   "ign": 10.0,
@@ -5905,7 +6116,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2440510,
@@ -5931,7 +6143,7 @@ window.GAMES = [
 {
   "id": 813230,
   "name": "ANIMAL WELL",
-  "nameZh": "ANIMAL WELL",
+  "nameZh": "动物井",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -5949,12 +6161,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2379780,
   "name": "Balatro",
-  "nameZh": "Balatro",
+  "nameZh": "小丑牌",
   "aliases": [
    "小丑牌"
   ],
@@ -5975,12 +6188,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:advance-wars",
   "name": "Advance Wars",
-  "nameZh": "",
+  "nameZh": "高级战争",
   "aliases": [],
   "mc": 92,
   "ign": 9.9,
@@ -5993,12 +6207,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:vagrant-story",
   "name": "Vagrant Story",
-  "nameZh": "",
+  "nameZh": "放浪冒险谭",
   "aliases": [],
   "mc": 92,
   "ign": 9.6,
@@ -6011,7 +6226,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3314070,
@@ -6037,7 +6253,7 @@ window.GAMES = [
 {
   "id": "mc:final-fantasy-xiv-shadowbringers",
   "name": "Final Fantasy XIV: Shadowbringers",
-  "nameZh": "",
+  "nameZh": "最终幻想XIV：暗影之逆焰",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -6052,12 +6268,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-of-warcraft-cataclysm",
   "name": "World of Warcraft: Cataclysm",
-  "nameZh": "",
+  "nameZh": "魔兽世界：大灾变",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -6072,12 +6289,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 22000,
   "name": "World of Goo",
-  "nameZh": "World of Goo",
+  "nameZh": "粘粘世界",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -6095,12 +6313,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-xii",
   "name": "Final Fantasy XII",
-  "nameZh": "",
+  "nameZh": "最终幻想XII",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -6113,12 +6332,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1030300,
   "name": "Hollow Knight: Silksong",
-  "nameZh": "Hollow Knight: Silksong",
+  "nameZh": "空洞骑士：丝之歌",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -6138,12 +6358,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:slay-the-princess",
   "name": "Slay the Princess",
-  "nameZh": "",
+  "nameZh": "杀死公主",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -6158,12 +6379,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1989270,
   "name": "Slay the Princess — The Pristine Cut",
-  "nameZh": "Slay the Princess — The Pristine Cut",
+  "nameZh": "杀死公主：纯粹剪辑版",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -6184,12 +6406,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 427520,
   "name": "Factorio",
-  "nameZh": "Factorio",
+  "nameZh": "异星工厂",
   "aliases": [],
   "mc": 90,
   "ign": 8.0,
@@ -6210,12 +6433,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-mario-world-super-mario-advance-2",
   "name": "Super Mario World: Super Mario Advance 2",
-  "nameZh": "",
+  "nameZh": "超级马力欧世界：超级马力欧Advance 2",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -6228,7 +6452,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1998450,
@@ -6257,7 +6482,7 @@ window.GAMES = [
 {
   "id": "mc:espn-nfl-2k5",
   "name": "ESPN NFL 2K5",
-  "nameZh": "",
+  "nameZh": "ESPN NFL 2K5 美式橄榄球",
   "aliases": [],
   "mc": 92,
   "ign": 9.3,
@@ -6270,12 +6495,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 239350,
   "name": "Spelunky",
-  "nameZh": "Spelunky",
+  "nameZh": "洞穴探险",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -6291,12 +6517,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-smash-bros-melee",
   "name": "Super Smash Bros. Melee",
-  "nameZh": "",
+  "nameZh": "任天堂明星大乱斗DX",
   "aliases": [],
   "mc": 92,
   "ign": 9.6,
@@ -6309,7 +6536,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1875830,
@@ -6337,7 +6565,7 @@ window.GAMES = [
 {
   "id": "mc:virtua-tennis",
   "name": "Virtua Tennis",
-  "nameZh": "",
+  "nameZh": "VR网球",
   "aliases": [],
   "mc": 92,
   "ign": 9.4,
@@ -6350,12 +6578,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 400,
   "name": "Portal",
-  "nameZh": "Portal",
+  "nameZh": "传送门",
   "aliases": [],
   "mc": 90,
   "ign": 8.2,
@@ -6372,12 +6601,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:forza-motorsport-3",
   "name": "Forza Motorsport 3",
-  "nameZh": "",
+  "nameZh": "极限竞速：赛车运动3",
   "aliases": [],
   "mc": 92,
   "ign": 9.4,
@@ -6390,12 +6620,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tetris-effect",
   "name": "Tetris Effect",
-  "nameZh": "",
+  "nameZh": "俄罗斯方块效应",
   "aliases": [],
   "mc": 90,
   "ign": 8.5,
@@ -6411,12 +6642,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1003590,
   "name": "Tetris Effect: Connected",
-  "nameZh": "Tetris Effect: Connected",
+  "nameZh": "俄罗斯方块效应：连接",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -6435,7 +6667,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:demons-souls",
@@ -6463,7 +6696,7 @@ window.GAMES = [
 {
   "id": "mc:nhl-2001",
   "name": "NHL 2001",
-  "nameZh": "",
+  "nameZh": "NHL 2001：冰球",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -6478,7 +6711,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1875580,
@@ -6507,7 +6741,7 @@ window.GAMES = [
 {
   "id": 3131640,
   "name": "Deus Ex Remastered",
-  "nameZh": "Deus Ex Remastered",
+  "nameZh": "杀出重围：重制版",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -6525,12 +6759,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 353540,
   "name": "Stephen's Sausage Roll",
-  "nameZh": "Stephen's Sausage Roll",
+  "nameZh": "斯蒂芬的香肠卷",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -6548,12 +6783,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:super-mario-sunshine",
   "name": "Super Mario Sunshine",
-  "nameZh": "",
+  "nameZh": "超级马力欧阳光",
   "aliases": [],
   "mc": 92,
   "ign": 9.4,
@@ -6566,12 +6802,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tony-hawks-pro-skater",
   "name": "Tony Hawk's Pro Skater",
-  "nameZh": "",
+  "nameZh": "托尼·霍克职业滑板",
   "aliases": [],
   "mc": 92,
   "ign": 9.8,
@@ -6584,12 +6821,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fire-emblem-awakening",
   "name": "Fire Emblem: Awakening",
-  "nameZh": "",
+  "nameZh": "火焰纹章：觉醒",
   "aliases": [],
   "mc": 92,
   "ign": 9.6,
@@ -6602,12 +6840,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:half-life-2-episode-two",
   "name": "Half-Life 2: Episode Two",
-  "nameZh": "",
+  "nameZh": "半条命2：第二章",
   "aliases": [],
   "mc": 90,
   "ign": 9.4,
@@ -6622,12 +6861,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-x",
   "name": "Final Fantasy X",
-  "nameZh": "",
+  "nameZh": "最终幻想X",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -6640,12 +6880,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-chronicles-of-riddick-escape-from-butcher-bay",
   "name": "The Chronicles of Riddick: Escape From Butcher Bay",
-  "nameZh": "",
+  "nameZh": "星际传奇：逃离屠夫湾",
   "aliases": [],
   "mc": 90,
   "ign": 8.5,
@@ -6660,12 +6901,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1967430,
   "name": "Ghost Trick: Phantom Detective",
-  "nameZh": "Ghost Trick: Phantom Detective",
+  "nameZh": "幽灵诡计：幻影侦探",
   "aliases": [],
   "mc": 90,
   "ign": 8.5,
@@ -6682,12 +6924,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2079180,
   "name": "VIDEOVERSE",
-  "nameZh": "VIDEOVERSE",
+  "nameZh": "视频宇宙",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -6708,12 +6951,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:wave-race-64",
   "name": "Wave Race 64",
-  "nameZh": "",
+  "nameZh": "波浪竞速64",
   "aliases": [],
   "mc": 92,
   "ign": 9.7,
@@ -6726,7 +6970,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1868140,
@@ -6756,7 +7001,7 @@ window.GAMES = [
 {
   "id": 1817230,
   "name": "Hi-Fi RUSH",
-  "nameZh": "Hi-Fi RUSH",
+  "nameZh": "完美音浪",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -6773,12 +7018,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-smash-bros-for-nintendo-3ds-wii-u",
   "name": "Super Smash Bros. for Nintendo 3DS / Wii U",
-  "nameZh": "",
+  "nameZh": "任天堂明星大乱斗：任天堂3DS / Wii U",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -6791,12 +7037,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:guitar-hero-ii",
   "name": "Guitar Hero II",
-  "nameZh": "",
+  "nameZh": "吉他英雄2",
   "aliases": [],
   "mc": 92,
   "ign": 9.4,
@@ -6809,12 +7056,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3837340,
   "name": "FINAL FANTASY VII",
-  "nameZh": "FINAL FANTASY VII",
+  "nameZh": "最终幻想VII",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -6830,12 +7078,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 15210,
   "name": "Silent Hunter III",
-  "nameZh": "Silent Hunter III",
+  "nameZh": "猎杀潜航III",
   "aliases": [],
   "mc": 90,
   "ign": 8.8,
@@ -6851,12 +7100,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 460790,
   "name": "Bayonetta",
-  "nameZh": "Bayonetta",
+  "nameZh": "猎天使魔女",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -6873,12 +7123,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 613830,
   "name": "CHRONO TRIGGER",
-  "nameZh": "CHRONO TRIGGER",
+  "nameZh": "时空之轮",
   "aliases": [],
   "mc": 92,
   "ign": 10.0,
@@ -6894,12 +7145,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 8930,
   "name": "Sid Meier's Civilization V",
-  "nameZh": "Sid Meier's Civilization V",
+  "nameZh": "席德·梅尔的文明V",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -6917,12 +7169,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:falcon-4-0-allied-force",
   "name": "Falcon 4.0: Allied Force",
-  "nameZh": "",
+  "nameZh": "猎鹰4.0：联军力量",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -6937,12 +7190,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 638230,
   "name": "Journey",
-  "nameZh": "Journey",
+  "nameZh": "风之旅人",
   "aliases": [],
   "mc": 92,
   "ign": 9.0,
@@ -6959,12 +7213,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 883710,
   "name": "Resident Evil 2",
-  "nameZh": "Resident Evil 2",
+  "nameZh": "生化危机2",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -6981,12 +7236,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1703340,
   "name": "The Stanley Parable: Ultra Deluxe",
-  "nameZh": "The Stanley Parable: Ultra Deluxe",
+  "nameZh": "史丹利的寓言：超豪华版",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -7006,7 +7262,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 359550,
@@ -7033,7 +7290,7 @@ window.GAMES = [
 {
   "id": "mc:conkers-bad-fur-day",
   "name": "Conker's Bad Fur Day",
-  "nameZh": "",
+  "nameZh": "松鼠康克的糟糕一天",
   "aliases": [],
   "mc": 92,
   "ign": 9.9,
@@ -7046,12 +7303,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 47790,
   "name": "Medal of Honor",
-  "nameZh": "Medal of Honor",
+  "nameZh": "荣誉勋章",
   "aliases": [],
   "mc": 92,
   "ign": 6.0,
@@ -7067,12 +7325,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 322170,
   "name": "Geometry Dash",
-  "nameZh": "Geometry Dash",
+  "nameZh": "几何冲刺",
   "aliases": [
    "GD",
    "几何冲刺"
@@ -7093,7 +7352,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 14,
    "peak": 68543
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2101390,
@@ -7121,7 +7381,7 @@ window.GAMES = [
 {
   "id": "mc:rock-band-2",
   "name": "Rock Band 2",
-  "nameZh": "",
+  "nameZh": "摇滚乐队2",
   "aliases": [],
   "mc": 92,
   "ign": 7.9,
@@ -7134,12 +7394,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:flight-simulator-2002",
   "name": "Flight Simulator 2002",
-  "nameZh": "",
+  "nameZh": "微软模拟飞行2002",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -7154,7 +7415,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mario-kart-8-deluxe",
@@ -7182,7 +7444,7 @@ window.GAMES = [
 {
   "id": 225080,
   "name": "Brothers - A Tale of Two Sons",
-  "nameZh": "Brothers - A Tale of Two Sons",
+  "nameZh": "兄弟：双子传说",
   "aliases": [],
   "mc": 90,
   "ign": 8.2,
@@ -7200,12 +7462,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-ico-and-shadow-of-the-colossus-collection",
   "name": "The ICO & Shadow of the Colossus Collection",
-  "nameZh": "",
+  "nameZh": "ICO与旺达与巨像合集",
   "aliases": [],
   "mc": 92,
   "ign": null,
@@ -7218,12 +7481,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metroid-prime-2-echoes",
   "name": "Metroid Prime 2: Echoes",
-  "nameZh": "",
+  "nameZh": "密特罗德Prime 2：回声",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -7236,12 +7500,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1284210,
   "name": "Guild Wars 2",
-  "nameZh": "Guild Wars 2",
+  "nameZh": "激战2",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -7260,12 +7525,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metroid-fusion",
   "name": "Metroid Fusion",
-  "nameZh": "",
+  "nameZh": "密特罗德：融合",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -7278,12 +7544,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:deus-ex-human-revolution",
   "name": "Deus Ex: Human Revolution",
-  "nameZh": "",
+  "nameZh": "杀出重围：人类革命",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -7298,12 +7565,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 238010,
   "name": "Deus Ex: Human Revolution - Director's Cut",
-  "nameZh": "",
+  "nameZh": "杀出重围：人类革命 导演剪辑版",
   "aliases": [],
   "mc": 90,
   "ign": 8.3,
@@ -7320,12 +7588,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1173820,
   "name": "FINAL FANTASY VI",
-  "nameZh": "FINAL FANTASY VI",
+  "nameZh": "最终幻想VI",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -7341,12 +7610,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:freedom-force",
   "name": "Freedom Force",
-  "nameZh": "",
+  "nameZh": "自由力量",
   "aliases": [],
   "mc": 90,
   "ign": 9.3,
@@ -7361,12 +7631,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 590380,
   "name": "Into the Breach",
-  "nameZh": "Into the Breach",
+  "nameZh": "陷阵之志",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -7387,12 +7658,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 242550,
   "name": "Rayman Legends",
-  "nameZh": "Rayman Legends",
+  "nameZh": "雷曼：传奇",
   "aliases": [],
   "mc": 92,
   "ign": 9.5,
@@ -7409,12 +7681,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1123450,
   "name": "Chicory: A Colorful Tale",
-  "nameZh": "Chicory: A Colorful Tale",
+  "nameZh": "菊苣：多彩物语",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -7433,12 +7706,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:gtr-2",
   "name": "GTR 2",
-  "nameZh": "",
+  "nameZh": "GTR 2：GT赛车",
   "aliases": [],
   "mc": 90,
   "ign": 9.2,
@@ -7453,12 +7727,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 8790,
   "name": "GTR 2 FIA GT Racing Game",
-  "nameZh": "GTR 2 FIA GT Racing Game",
+  "nameZh": "GTR 2：FIA GT赛车",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -7476,7 +7751,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 201270,
@@ -7504,7 +7780,7 @@ window.GAMES = [
 {
   "id": "mc:empire-total-war",
   "name": "Empire: Total War",
-  "nameZh": "",
+  "nameZh": "帝国：全面战争",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -7519,12 +7795,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 10500,
   "name": "Total War: EMPIRE – Definitive Edition",
-  "nameZh": "",
+  "nameZh": "帝国：全面战争 终极版",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -7542,7 +7819,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 17480,
@@ -7569,7 +7847,7 @@ window.GAMES = [
 {
   "id": "mc:command-and-conquer-red-alert",
   "name": "Command & Conquer: Red Alert",
-  "nameZh": "",
+  "nameZh": "命令与征服：红色警戒",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -7584,12 +7862,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:kentucky-route-zero-act-iv",
   "name": "Kentucky Route Zero - Act IV",
-  "nameZh": "",
+  "nameZh": "肯塔基零号公路：第四幕",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -7604,12 +7883,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1668510,
   "name": "The Legend of Heroes: Trails from Zero",
-  "nameZh": "The Legend of Heroes: Trails from Zero",
+  "nameZh": "英雄传说：零之轨迹",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -7625,12 +7905,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1973530,
   "name": "Limbus Company",
-  "nameZh": "Limbus Company",
+  "nameZh": "边狱公司",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -7646,12 +7927,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 18,
    "peak": 77678
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 17460,
   "name": "Mass Effect",
-  "nameZh": "Mass Effect",
+  "nameZh": "质量效应",
   "aliases": [],
   "mc": 91,
   "ign": 9.4,
@@ -7668,12 +7950,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:madden-nfl-2005",
   "name": "Madden NFL 2005",
-  "nameZh": "",
+  "nameZh": "麦登NFL 2005",
   "aliases": [],
   "mc": 91,
   "ign": 9.5,
@@ -7688,12 +7971,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:littlebigplanet-2",
   "name": "LittleBigPlanet 2",
-  "nameZh": "",
+  "nameZh": "小小大星球2",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -7706,12 +7990,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:guitar-hero",
   "name": "Guitar Hero",
-  "nameZh": "",
+  "nameZh": "吉他英雄",
   "aliases": [],
   "mc": 91,
   "ign": 9.2,
@@ -7724,12 +8009,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4076840,
   "name": "Hero Of The Guitar",
-  "nameZh": "Hero Of The Guitar",
+  "nameZh": "吉他英雄之路",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -7747,12 +8033,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-witcher-3-wild-hunt-hearts-of-stone",
   "name": "The Witcher 3: Wild Hunt - Hearts of Stone",
-  "nameZh": "",
+  "nameZh": "巫师3：狂猎——石之心",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -7767,12 +8054,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:alan-wake-ii",
   "name": "Alan Wake II",
-  "nameZh": "",
+  "nameZh": "心灵杀手2",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -7788,7 +8076,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2507950,
@@ -7817,7 +8106,7 @@ window.GAMES = [
 {
   "id": "mc:metroid-prime-trilogy",
   "name": "Metroid Prime Trilogy",
-  "nameZh": "",
+  "nameZh": "密特罗德Prime三部曲",
   "aliases": [],
   "mc": 91,
   "ign": 9.5,
@@ -7830,12 +8119,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 6030,
   "name": "STAR WARS Jedi Knight II - Jedi Outcast",
-  "nameZh": "",
+  "nameZh": "星球大战：绝地武士II：绝地放逐",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -7852,12 +8142,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:madden-nfl-2001",
   "name": "Madden NFL 2001",
-  "nameZh": "",
+  "nameZh": "麦登NFL 2001",
   "aliases": [],
   "mc": 91,
   "ign": 8.0,
@@ -7870,12 +8161,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3375780,
   "name": "Trails in the Sky 1st Chapter",
-  "nameZh": "Trails in the Sky 1st Chapter",
+  "nameZh": "英雄传说：空之轨迹 1st Chapter",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -7894,12 +8186,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 601150,
   "name": "Devil May Cry 5",
-  "nameZh": "Devil May Cry 5",
+  "nameZh": "鬼泣5",
   "aliases": [],
   "mc": 89,
   "ign": 9.5,
@@ -7916,7 +8209,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2090390,
@@ -7943,7 +8237,7 @@ window.GAMES = [
 {
   "id": "mc:bayonetta-2",
   "name": "Bayonetta 2",
-  "nameZh": "",
+  "nameZh": "猎天使魔女2",
   "aliases": [],
   "mc": 91,
   "ign": 9.5,
@@ -7956,12 +8250,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1533420,
   "name": "Neon White",
-  "nameZh": "Neon White",
+  "nameZh": "霓虹白",
   "aliases": [],
   "mc": 89,
   "ign": 8.0,
@@ -7979,12 +8274,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:age-of-mythology",
   "name": "Age of Mythology",
-  "nameZh": "",
+  "nameZh": "神话时代",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -7999,12 +8295,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1934680,
   "name": "Age of Mythology: Retold",
-  "nameZh": "Age of Mythology: Retold",
+  "nameZh": "神话时代：重述",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8020,12 +8317,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 414340,
   "name": "Hellblade: Senua's Sacrifice",
-  "nameZh": "Hellblade: Senua's Sacrifice",
+  "nameZh": "地狱之刃：塞娜的献祭",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -8043,12 +8341,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sacrifice-2000",
   "name": "Sacrifice",
-  "nameZh": "",
+  "nameZh": "牺牲",
   "aliases": [],
   "mc": 89,
   "ign": 9.4,
@@ -8063,12 +8362,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-walking-dead-a-telltale-games-series",
   "name": "The Walking Dead: A Telltale Games Series",
-  "nameZh": "",
+  "nameZh": "行尸走肉：Telltale游戏系列",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8083,12 +8383,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:klonoa-2-lunateas-veil",
   "name": "Klonoa 2: Lunatea's Veil",
-  "nameZh": "",
+  "nameZh": "风之克罗诺亚2：月之国度面纱",
   "aliases": [],
   "mc": 91,
   "ign": 9.2,
@@ -8101,12 +8402,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:colony-wars",
   "name": "Colony Wars",
-  "nameZh": "",
+  "nameZh": "殖民战争",
   "aliases": [],
   "mc": 91,
   "ign": 9.3,
@@ -8119,12 +8421,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:mario-tennis",
   "name": "Mario Tennis",
-  "nameZh": "",
+  "nameZh": "马力欧网球",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -8137,7 +8440,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2072450,
@@ -8166,7 +8470,7 @@ window.GAMES = [
 {
   "id": 374320,
   "name": "DARK SOULS III",
-  "nameZh": "DARK SOULS III",
+  "nameZh": "黑暗之魂III",
   "aliases": [
    "黑魂3",
    "黑暗之魂3",
@@ -8187,7 +8491,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 774181,
@@ -8219,7 +8524,7 @@ window.GAMES = [
 {
   "id": 2367820,
   "name": "despelote",
-  "nameZh": "despelote",
+  "nameZh": "Despelote：混乱",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8237,12 +8542,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:ratchet-and-clank-up-your-arsenal",
   "name": "Ratchet & Clank: Up Your Arsenal",
-  "nameZh": "",
+  "nameZh": "瑞奇与叮当：武装到牙齿",
   "aliases": [],
   "mc": 91,
   "ign": 9.6,
@@ -8255,12 +8561,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 291650,
   "name": "Pillars of Eternity",
-  "nameZh": "Pillars of Eternity",
+  "nameZh": "永恒之柱",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -8278,12 +8585,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid-3-snake-eater",
   "name": "Metal Gear Solid 3: Snake Eater",
-  "nameZh": "",
+  "nameZh": "合金装备3：食蛇者",
   "aliases": [],
   "mc": 91,
   "ign": 9.6,
@@ -8296,12 +8604,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2131650,
   "name": "METAL GEAR SOLID 3: Snake Eater - Master Collection Version",
-  "nameZh": "",
+  "nameZh": "合金装备3：食蛇者—大师合集版",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -8317,12 +8626,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-elder-scrolls-iii-morrowind",
   "name": "The Elder Scrolls III: Morrowind",
-  "nameZh": "",
+  "nameZh": "上古卷轴III：晨风",
   "aliases": [],
   "mc": 89,
   "ign": 9.4,
@@ -8337,12 +8647,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 22320,
   "name": "The Elder Scrolls III: Morrowind Game of the Year Edition",
-  "nameZh": "The Elder Scrolls III: Morrowind Game of the Year Edition",
+  "nameZh": "上古卷轴III：晨风年度游戏版",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8358,12 +8669,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dragon-quest-xi-s-echoes-of-an-elusive-age",
   "name": "Dragon Quest XI S: Echoes of an Elusive Age - Definitive Edition",
-  "nameZh": "",
+  "nameZh": "勇者斗恶龙XI S：寻觅逝去的时光 终极版",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -8378,12 +8690,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fallout",
   "name": "Fallout",
-  "nameZh": "",
+  "nameZh": "辐射",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8398,12 +8711,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1151340,
   "name": "Fallout 76",
-  "nameZh": "Fallout 76",
+  "nameZh": "辐射76",
   "aliases": [],
   "mc": 89,
   "ign": 7.0,
@@ -8419,12 +8733,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rocksmith-2014-edition",
   "name": "Rocksmith 2014 Edition",
-  "nameZh": "",
+  "nameZh": "摇滚史密斯2014版",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8439,12 +8754,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 221680,
   "name": "Rocksmith 2014 Edition REMASTERED LEARN & PLAY",
-  "nameZh": "Rocksmith 2014 Edition REMASTERED LEARN & PLAY",
+  "nameZh": "摇滚史密斯2014版：重制版 学习与演奏",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8461,12 +8777,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:spyro-year-of-the-dragon",
   "name": "Spyro: Year of the Dragon",
-  "nameZh": "",
+  "nameZh": "小龙斯派罗：龙年",
   "aliases": [],
   "mc": 91,
   "ign": 9.1,
@@ -8479,12 +8796,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 8000,
   "name": "Tomb Raider: Anniversary",
-  "nameZh": "Tomb Raider: Anniversary",
+  "nameZh": "古墓丽影：周年纪念版",
   "aliases": [],
   "mc": 91,
   "ign": 7.0,
@@ -8501,12 +8819,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:twisted-metal-black",
   "name": "Twisted Metal: Black",
-  "nameZh": "",
+  "nameZh": "扭曲金属：黑色",
   "aliases": [],
   "mc": 91,
   "ign": 9.6,
@@ -8519,12 +8838,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2231450,
   "name": "Pizza Tower",
-  "nameZh": "Pizza Tower",
+  "nameZh": "披萨塔",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -8541,7 +8861,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2806640,
@@ -8567,7 +8888,7 @@ window.GAMES = [
 {
   "id": "mc:forza-horizon-3",
   "name": "Forza Horizon 3",
-  "nameZh": "",
+  "nameZh": "极限竞速：地平线3",
   "aliases": [],
   "mc": 91,
   "ign": 9.5,
@@ -8583,12 +8904,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-ocarina-of-time-master-quest-2002",
   "name": "The Legend of Zelda: Ocarina of Time / Master Quest",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：时之笛 / 大师任务",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -8601,12 +8923,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-soccer-winning-eleven-9",
   "name": "World Soccer Winning Eleven 9",
-  "nameZh": "",
+  "nameZh": "实况足球9",
   "aliases": [],
   "mc": 89,
   "ign": 8.8,
@@ -8621,12 +8944,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ncaa-football-2003",
   "name": "NCAA Football 2003",
-  "nameZh": "",
+  "nameZh": "NCAA大学橄榄球2003",
   "aliases": [],
   "mc": 91,
   "ign": 8.9,
@@ -8639,12 +8963,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:worldwide-soccer-manager-2005",
   "name": "Worldwide Soccer Manager 2005",
-  "nameZh": "",
+  "nameZh": "世界足球经理2005",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8659,12 +8984,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 588650,
   "name": "Dead Cells",
-  "nameZh": "Dead Cells",
+  "nameZh": "重生细胞",
   "aliases": [],
   "mc": 89,
   "ign": 9.5,
@@ -8685,12 +9011,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:there-is-no-game-wrong-dimension",
   "name": "There is no game : Wrong dimension",
-  "nameZh": "",
+  "nameZh": "这不是游戏：错误维度",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8706,12 +9033,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 646570,
   "name": "Slay the Spire",
-  "nameZh": "Slay the Spire",
+  "nameZh": "杀戮尖塔",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -8730,12 +9058,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 500,
   "name": "Left 4 Dead",
-  "nameZh": "Left 4 Dead",
+  "nameZh": "求生之路",
   "aliases": [],
   "mc": 89,
   "ign": 9.2,
@@ -8751,12 +9080,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ninja-gaiden-2004",
   "name": "Ninja Gaiden",
-  "nameZh": "",
+  "nameZh": "忍者龙剑传",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -8769,7 +9099,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2542120,
@@ -8797,7 +9128,7 @@ window.GAMES = [
 {
   "id": "mc:doom-the-dark-ages-revelations",
   "name": "DOOM: The Dark Ages - Revelations",
-  "nameZh": "",
+  "nameZh": "毁灭战士：黑暗时代——启示录",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -8813,12 +9144,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:god-of-war-chains-of-olympus",
   "name": "God of War: Chains of Olympus",
-  "nameZh": "",
+  "nameZh": "战神：奥林匹斯之链",
   "aliases": [],
   "mc": 91,
   "ign": 9.4,
@@ -8831,12 +9163,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:doa2-hardcore",
   "name": "DOA2: Hardcore",
-  "nameZh": "",
+  "nameZh": "生死格斗2：硬核版",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -8849,12 +9182,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:f1-2017",
   "name": "F1 2017",
-  "nameZh": "",
+  "nameZh": "F1赛车2017",
   "aliases": [],
   "mc": 89,
   "ign": 8.9,
@@ -8870,12 +9204,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nascar-racing-2002-season",
   "name": "NASCAR Racing 2002 Season",
-  "nameZh": "",
+  "nameZh": "NASCAR赛车2002赛季",
   "aliases": [],
   "mc": 89,
   "ign": 8.9,
@@ -8890,12 +9225,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mlb-10-the-show",
   "name": "MLB 10: The Show",
-  "nameZh": "",
+  "nameZh": "MLB 10：棒球大联盟",
   "aliases": [],
   "mc": 91,
   "ign": 8.9,
@@ -8908,12 +9244,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 758870,
   "name": "Kynseed",
-  "nameZh": "Kynseed",
+  "nameZh": "奇恩之籽",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8932,12 +9269,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:shadow-of-the-colossus",
   "name": "Shadow of the Colossus",
-  "nameZh": "",
+  "nameZh": "旺达与巨像",
   "aliases": [],
   "mc": 91,
   "ign": 9.7,
@@ -8952,12 +9290,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2366980,
   "name": "Thank Goodness You're Here!",
-  "nameZh": "Thank Goodness You're Here!",
+  "nameZh": "谢天谢地，你们来了！",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -8976,12 +9315,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:yoshis-island-super-mario-advance-3",
   "name": "Yoshi's Island: Super Mario Advance 3",
-  "nameZh": "",
+  "nameZh": "耀西岛：超级马力欧Advance 3",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -8994,12 +9334,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:espn-nfl-football",
   "name": "ESPN NFL Football",
-  "nameZh": "",
+  "nameZh": "ESPN美式橄榄球",
   "aliases": [],
   "mc": 91,
   "ign": 9.3,
@@ -9012,12 +9353,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:fifa-soccer-12",
   "name": "FIFA Soccer 12",
-  "nameZh": "",
+  "nameZh": "FIFA足球12",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -9032,12 +9374,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 607080,
   "name": "Psychonauts 2",
-  "nameZh": "Psychonauts 2",
+  "nameZh": "脑航员2",
   "aliases": [],
   "mc": 89,
   "ign": 8.0,
@@ -9057,12 +9400,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3843560,
   "name": "Combat Mission 2: Barbarossa to Berlin",
-  "nameZh": "Combat Mission 2: Barbarossa to Berlin",
+  "nameZh": "战斗任务2：巴巴罗萨至柏林",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -9079,12 +9423,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:combat-mission-barbarossa-to-berlin",
   "name": "Combat Mission: Barbarossa to Berlin",
-  "nameZh": "",
+  "nameZh": "战斗任务：巴巴罗萨至柏林",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9099,12 +9444,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:homeworld-cataclysm",
   "name": "Homeworld: Cataclysm",
-  "nameZh": "",
+  "nameZh": "家园：灾难",
   "aliases": [],
   "mc": 89,
   "ign": 9.2,
@@ -9119,12 +9465,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:cyberpunk-2077-phantom-liberty",
   "name": "Cyberpunk 2077: Phantom Liberty",
-  "nameZh": "",
+  "nameZh": "赛博朋克2077：往日之影",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9139,12 +9486,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:guild-wars",
   "name": "Guild Wars",
-  "nameZh": "",
+  "nameZh": "激战",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9159,12 +9507,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 29720,
   "name": "Guild Wars Reforged",
-  "nameZh": "Guild Wars Reforged",
+  "nameZh": "激战：重铸",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9183,12 +9532,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:killzone-2",
   "name": "Killzone 2",
-  "nameZh": "",
+  "nameZh": "杀戮地带2",
   "aliases": [],
   "mc": 91,
   "ign": 9.4,
@@ -9201,12 +9551,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-walking-dead-episode-5-no-time-left",
   "name": "The Walking Dead: Episode 5 - No Time Left",
-  "nameZh": "",
+  "nameZh": "行尸走肉：第5集——没有时间了",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -9221,12 +9572,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:halo-reach",
   "name": "Halo: Reach",
-  "nameZh": "",
+  "nameZh": "光环：致远星",
   "aliases": [],
   "mc": 91,
   "ign": 9.5,
@@ -9239,12 +9591,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1395520,
   "name": "The Séance of Blake Manor",
-  "nameZh": "The Séance of Blake Manor",
+  "nameZh": "布莱克庄园降灵会",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -9261,12 +9614,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 49520,
   "name": "Borderlands 2",
-  "nameZh": "Borderlands 2",
+  "nameZh": "无主之地2",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9285,12 +9639,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:max-payne",
   "name": "Max Payne",
-  "nameZh": "",
+  "nameZh": "马克思·佩恩",
   "aliases": [],
   "mc": 89,
   "ign": 8.1,
@@ -9305,12 +9660,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:football-manager-handheld",
   "name": "Football Manager Handheld",
-  "nameZh": "",
+  "nameZh": "足球经理 掌上版",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -9325,12 +9681,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:out-of-the-park-baseball-15",
   "name": "Out of the Park Baseball 15",
-  "nameZh": "",
+  "nameZh": "公园之外棒球15",
   "aliases": [],
   "mc": 89,
   "ign": 8.5,
@@ -9345,12 +9702,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4249120,
   "name": "Resident Evil 3 Nemesis",
-  "nameZh": "Resident Evil 3 Nemesis",
+  "nameZh": "生化危机3：复仇女神",
   "aliases": [],
   "mc": 91,
   "ign": 8.0,
@@ -9367,12 +9725,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:resident-evil-4-separate-ways",
   "name": "Resident Evil 4: Separate Ways",
-  "nameZh": "",
+  "nameZh": "生化危机4：艾达篇",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9388,12 +9747,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:forza-motorsport-4",
   "name": "Forza Motorsport 4",
-  "nameZh": "",
+  "nameZh": "极限竞速：赛车运动4",
   "aliases": [],
   "mc": 91,
   "ign": 9.5,
@@ -9406,12 +9766,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 304240,
   "name": "Resident Evil",
-  "nameZh": "Resident Evil",
+  "nameZh": "生化危机",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -9428,12 +9789,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 5540250,
   "name": "Frontlines: World in Conflict",
-  "nameZh": "Frontlines: World in Conflict",
+  "nameZh": "前线：冲突世界",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -9450,12 +9812,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-in-conflict",
   "name": "World in Conflict",
-  "nameZh": "",
+  "nameZh": "冲突世界",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -9470,12 +9833,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:quake-ii-enhanced-edition",
   "name": "Quake II - Enhanced Edition",
-  "nameZh": "",
+  "nameZh": "雷神之锤II：增强版",
   "aliases": [],
   "mc": 89,
   "ign": 8.3,
@@ -9490,12 +9854,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:destiny-2-the-final-shape",
   "name": "Destiny 2: The Final Shape",
-  "nameZh": "",
+  "nameZh": "命运2：最终形态",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9510,12 +9875,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:duke-nukem-3d",
   "name": "Duke Nukem 3D",
-  "nameZh": "",
+  "nameZh": "毁灭公爵3D",
   "aliases": [],
   "mc": 89,
   "ign": 7.9,
@@ -9530,12 +9896,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 434050,
   "name": "Duke Nukem 3D: 20th Anniversary World Tour",
-  "nameZh": "Duke Nukem 3D: 20th Anniversary World Tour",
+  "nameZh": "毁灭公爵3D：20周年巡回版",
   "aliases": [],
   "mc": 89,
   "ign": 7.9,
@@ -9552,12 +9919,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nascar-racing-4",
   "name": "NASCAR Racing 4",
-  "nameZh": "",
+  "nameZh": "NASCAR赛车4",
   "aliases": [],
   "mc": 89,
   "ign": 9.2,
@@ -9572,12 +9940,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 13520,
   "name": "Far Cry",
-  "nameZh": "Far Cry",
+  "nameZh": "孤岛惊魂",
   "aliases": [],
   "mc": 89,
   "ign": 9.2,
@@ -9593,12 +9962,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gears-of-war-3",
   "name": "Gears of War 3",
-  "nameZh": "",
+  "nameZh": "战争机器3",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -9611,7 +9981,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2420110,
@@ -9639,7 +10010,7 @@ window.GAMES = [
 {
   "id": "mc:castlevania-aria-of-sorrow",
   "name": "Castlevania: Aria of Sorrow",
-  "nameZh": "",
+  "nameZh": "恶魔城：晓月圆舞曲",
   "aliases": [],
   "mc": 91,
   "ign": 9.3,
@@ -9652,12 +10023,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 242680,
   "name": "Nuclear Throne",
-  "nameZh": "Nuclear Throne",
+  "nameZh": "核子王座",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9677,12 +10049,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:cuphead-in-the-delicious-last-course",
   "name": "Cuphead in the Delicious Last Course",
-  "nameZh": "",
+  "nameZh": "茶杯头：最后的美味佳肴",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -9697,7 +10070,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2527160,
@@ -9726,7 +10100,7 @@ window.GAMES = [
 {
   "id": "mc:legacy-of-kain-soul-reaver",
   "name": "Legacy of Kain: Soul Reaver",
-  "nameZh": "",
+  "nameZh": "凯恩的遗产：灵魂掠夺者",
   "aliases": [],
   "mc": 91,
   "ign": 9.3,
@@ -9739,12 +10113,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 224940,
   "name": "Legacy of Kain: Soul Reaver 2",
-  "nameZh": "Legacy of Kain: Soul Reaver 2",
+  "nameZh": "凯恩的遗产：灵魂掠夺者2",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -9761,12 +10136,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:golden-sun",
   "name": "Golden Sun",
-  "nameZh": "",
+  "nameZh": "黄金太阳",
   "aliases": [],
   "mc": 91,
   "ign": 9.7,
@@ -9779,12 +10155,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:lone-echo",
   "name": "Lone Echo",
-  "nameZh": "",
+  "nameZh": "孤独回声",
   "aliases": [],
   "mc": 89,
   "ign": 8.9,
@@ -9799,12 +10176,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 200510,
   "name": "XCOM: Enemy Unknown",
-  "nameZh": "XCOM: Enemy Unknown",
+  "nameZh": "幽浮：未知敌人",
   "aliases": [],
   "mc": 89,
   "ign": 8.2,
@@ -9821,12 +10199,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-soccer-winning-eleven-8-international",
   "name": "World Soccer Winning Eleven 8 International",
-  "nameZh": "",
+  "nameZh": "实况足球8 国际版",
   "aliases": [],
   "mc": 91,
   "ign": 9.4,
@@ -9841,12 +10220,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rise-of-nations-2003",
   "name": "Rise of Nations",
-  "nameZh": "",
+  "nameZh": "国家崛起",
   "aliases": [],
   "mc": 89,
   "ign": 8.2,
@@ -9861,12 +10241,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 287450,
   "name": "Rise of Nations: Extended Edition",
-  "nameZh": "Rise of Nations: Extended Edition",
+  "nameZh": "国家崛起：扩展版",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -9883,12 +10264,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-a-link-between-worlds",
   "name": "The Legend of Zelda: A Link Between Worlds",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：众神的三角神力2",
   "aliases": [],
   "mc": 91,
   "ign": 9.4,
@@ -9901,12 +10283,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 273590,
   "name": "Descent 3",
-  "nameZh": "Descent 3",
+  "nameZh": "坠落3",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -9924,12 +10307,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nascar-racing-2003-season",
   "name": "NASCAR Racing 2003 Season",
-  "nameZh": "",
+  "nameZh": "NASCAR赛车2003赛季",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -9944,12 +10328,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nier-automata-game-of-the-yorha-edition",
   "name": "NieR: Automata - Game of the YoRHa Edition",
-  "nameZh": "",
+  "nameZh": "尼尔：机械纪元—寄叶版",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -9964,12 +10349,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 730820,
   "name": "The Curse of Monkey Island",
-  "nameZh": "The Curse of Monkey Island",
+  "nameZh": "猴岛的诅咒",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -9986,12 +10372,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:castlevania-circle-of-the-moon",
   "name": "Castlevania: Circle of the Moon",
-  "nameZh": "",
+  "nameZh": "恶魔城：月轮",
   "aliases": [],
   "mc": 91,
   "ign": 9.0,
@@ -10004,12 +10391,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:donkey-kong-bananza",
   "name": "Donkey Kong Bananza",
-  "nameZh": "",
+  "nameZh": "咚奇刚：蕉力全开",
   "aliases": [],
   "mc": 91,
   "ign": 10.0,
@@ -10024,7 +10412,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1221250,
@@ -10052,7 +10441,7 @@ window.GAMES = [
 {
   "id": 636450,
   "name": "Rez Infinite",
-  "nameZh": "Rez Infinite",
+  "nameZh": "雷兹无限",
   "aliases": [],
   "mc": 89,
   "ign": 8.2,
@@ -10071,12 +10460,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1238820,
   "name": "Battlefield 3",
-  "nameZh": "《Battlefield 3 》",
+  "nameZh": "战地3",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -10092,12 +10482,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:battlefield-1942",
   "name": "Battlefield 1942",
-  "nameZh": "",
+  "nameZh": "战地1942",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -10112,12 +10503,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 814380,
   "name": "Sekiro : Shadows Die Twice - GOTY Edition",
-  "nameZh": "Sekiro : Shadows Die Twice - GOTY Edition",
+  "nameZh": "只狼：影逝二度 年度游戏版",
   "aliases": [
    "只狼",
    "隻狼"
@@ -10138,12 +10530,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 48000,
   "name": "LIMBO",
-  "nameZh": "LIMBO",
+  "nameZh": "地狱边境",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -10162,12 +10555,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 250760,
   "name": "Shovel Knight: Treasure Trove",
-  "nameZh": "Shovel Knight: Treasure Trove",
+  "nameZh": "铲子骑士：宝藏合集",
   "aliases": [],
   "mc": 91,
   "ign": null,
@@ -10188,12 +10582,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:crash-bandicoot-warped",
   "name": "Crash Bandicoot: Warped",
-  "nameZh": "",
+  "nameZh": "古惑狼3：扭曲",
   "aliases": [],
   "mc": 91,
   "ign": 9.1,
@@ -10206,12 +10601,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mario-golf",
   "name": "Mario Golf",
-  "nameZh": "",
+  "nameZh": "马力欧高尔夫",
   "aliases": [],
   "mc": 91,
   "ign": 8.0,
@@ -10224,12 +10620,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mario-kart-ds",
   "name": "Mario Kart DS",
-  "nameZh": "",
+  "nameZh": "马力欧赛车DS",
   "aliases": [],
   "mc": 91,
   "ign": 9.5,
@@ -10242,7 +10639,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2161700,
@@ -10271,7 +10669,7 @@ window.GAMES = [
 {
   "id": "mc:dirt-2",
   "name": "DiRT 2",
-  "nameZh": "",
+  "nameZh": "尘埃2",
   "aliases": [],
   "mc": 89,
   "ign": 8.4,
@@ -10286,7 +10684,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1426210,
@@ -10314,7 +10713,7 @@ window.GAMES = [
 {
   "id": 653530,
   "name": "Return of the Obra Dinn",
-  "nameZh": "Return of the Obra Dinn",
+  "nameZh": "奥伯拉丁号归来",
   "aliases": [],
   "mc": 89,
   "ign": 9.2,
@@ -10332,7 +10731,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3699590,
@@ -10407,7 +10807,7 @@ window.GAMES = [
 {
   "id": "mc:railroad-tycoon-ii",
   "name": "Railroad Tycoon II",
-  "nameZh": "",
+  "nameZh": "铁路大亨2",
   "aliases": [],
   "mc": 89,
   "ign": 6.0,
@@ -10422,12 +10822,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1057090,
   "name": "Ori and the Will of the Wisps",
-  "nameZh": "Ori and the Will of the Wisps",
+  "nameZh": "奥日与萤火意志",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -10444,7 +10845,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 48190,
@@ -10471,7 +10873,7 @@ window.GAMES = [
 {
   "id": "mc:assassins-creed-ii",
   "name": "Assassin's Creed II",
-  "nameZh": "",
+  "nameZh": "刺客信条II",
   "aliases": [],
   "mc": 90,
   "ign": 9.2,
@@ -10486,7 +10888,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 911400,
@@ -10513,7 +10916,7 @@ window.GAMES = [
 {
   "id": "mc:project-gotham-racing-2",
   "name": "Project Gotham Racing 2",
-  "nameZh": "",
+  "nameZh": "都市赛车计划2",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -10526,7 +10929,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 381210,
@@ -10575,7 +10979,7 @@ window.GAMES = [
 {
   "id": "mc:asgards-wrath",
   "name": "Asgard's Wrath",
-  "nameZh": "",
+  "nameZh": "阿斯加德之怒",
   "aliases": [],
   "mc": 88,
   "ign": 9.4,
@@ -10590,12 +10994,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:xcom-2-war-of-the-chosen",
   "name": "XCOM 2: War of the Chosen",
-  "nameZh": "",
+  "nameZh": "幽浮2：天选者之战",
   "aliases": [],
   "mc": 88,
   "ign": 9.3,
@@ -10610,12 +11015,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo-iii-ultimate-evil-edition",
   "name": "Diablo III: Ultimate Evil Edition",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神III：终极邪恶版",
   "aliases": [],
   "mc": 90,
   "ign": 9.2,
@@ -10630,12 +11036,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tiger-woods-pga-tour-2004",
   "name": "Tiger Woods PGA Tour 2004",
-  "nameZh": "",
+  "nameZh": "泰格·伍兹PGA巡回赛2004",
   "aliases": [],
   "mc": 89,
   "ign": 9.1,
@@ -10650,12 +11057,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 519860,
   "name": "DUSK",
-  "nameZh": "DUSK",
+  "nameZh": "DUSK：黄昏",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -10674,12 +11082,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:ico",
   "name": "ICO",
-  "nameZh": "",
+  "nameZh": "ICO：古堡迷踪",
   "aliases": [],
   "mc": 90,
   "ign": 9.4,
@@ -10692,12 +11101,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3472510,
   "name": "IcoNick Duster - Planets Defender",
-  "nameZh": "",
+  "nameZh": "IcoNick Duster：行星守护者",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -10713,7 +11123,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 427410,
@@ -10742,7 +11153,7 @@ window.GAMES = [
 {
   "id": 345260,
   "name": "Medieval: Total War - Collection",
-  "nameZh": "",
+  "nameZh": "中世纪：全面战争合集",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -10759,12 +11170,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:microsoft-flight-simulator-2004-a-century-of-flig",
   "name": "Microsoft Flight Simulator 2004: A Century of Flight",
-  "nameZh": "",
+  "nameZh": "微软模拟飞行2004：飞行世纪",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -10779,12 +11191,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tom-clancys-ghost-recon-advanced-warfighter",
   "name": "Tom Clancy's Ghost Recon Advanced Warfighter",
-  "nameZh": "",
+  "nameZh": "汤姆·克兰西之幽灵行动：尖峰战士",
   "aliases": [],
   "mc": 90,
   "ign": 9.2,
@@ -10797,12 +11210,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mario-and-luigi-superstar-saga",
   "name": "Mario & Luigi: Superstar Saga",
-  "nameZh": "",
+  "nameZh": "马力欧与路易吉：超级明星传奇",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -10815,7 +11229,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1030840,
@@ -10842,7 +11257,7 @@ window.GAMES = [
 {
   "id": "mc:ape-escape",
   "name": "Ape Escape",
-  "nameZh": "",
+  "nameZh": "捉猴啦",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -10855,12 +11270,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:marvel-vs-capcom-2",
   "name": "Marvel vs. Capcom 2",
-  "nameZh": "",
+  "nameZh": "漫威VS卡普空2",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -10873,12 +11289,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:syphon-filter",
   "name": "Syphon Filter",
-  "nameZh": "",
+  "nameZh": "虹吸战士",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -10891,12 +11308,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tony-hawks-underground",
   "name": "Tony Hawk's Underground",
-  "nameZh": "",
+  "nameZh": "托尼·霍克：地下世界",
   "aliases": [],
   "mc": 90,
   "ign": 9.2,
@@ -10909,12 +11327,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1035890,
   "name": "vApe Escape",
-  "nameZh": "vApe Escape",
+  "nameZh": "vApe逃脱",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -10931,12 +11350,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:crusader-kings-ii-the-old-gods",
   "name": "Crusader Kings II: The Old Gods",
-  "nameZh": "",
+  "nameZh": "十字军之王II：旧神",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -10951,12 +11371,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1497440,
   "name": "COCOON",
-  "nameZh": "COCOON",
+  "nameZh": "茧",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -10973,12 +11394,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mario-and-luigi-bowsers-inside-story",
   "name": "Mario & Luigi: Bowser's Inside Story",
-  "nameZh": "",
+  "nameZh": "马力欧与路易吉：库巴体内冒险",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -10991,12 +11413,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:superbike-2001",
   "name": "Superbike 2001",
-  "nameZh": "",
+  "nameZh": "超级摩托车2001",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -11011,12 +11434,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 21090,
   "name": "F.E.A.R.",
-  "nameZh": "F.E.A.R.",
+  "nameZh": "极度恐慌",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -11032,12 +11456,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 220160,
   "name": "Trials Evolution: Gold Edition",
-  "nameZh": "Trials Evolution: Gold Edition",
+  "nameZh": "进化摩托：黄金版",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -11054,12 +11479,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:grand-theft-auto-iv-the-lost-and-damned",
   "name": "Grand Theft Auto IV: The Lost and Damned",
-  "nameZh": "",
+  "nameZh": "侠盗猎车手4：失落与诅咒",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -11072,12 +11498,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 220200,
   "name": "Kerbal Space Program",
-  "nameZh": "Kerbal Space Program",
+  "nameZh": "坎巴拉太空计划",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -11096,12 +11523,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:age-of-empires-ii-the-conquerors-expansion",
   "name": "Age of Empires II: The Conquerors Expansion",
-  "nameZh": "",
+  "nameZh": "帝国时代II：征服者资料片",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -11116,12 +11544,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tribes-2",
   "name": "Tribes 2",
-  "nameZh": "",
+  "nameZh": "部落2",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -11136,12 +11565,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fifa-soccer-10",
   "name": "FIFA Soccer 10",
-  "nameZh": "",
+  "nameZh": "FIFA足球10",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -11154,12 +11584,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nba-street-vol-2",
   "name": "NBA Street Vol. 2",
-  "nameZh": "",
+  "nameZh": "NBA街头篮球Vol. 2",
   "aliases": [],
   "mc": 90,
   "ign": 9.4,
@@ -11172,12 +11603,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ratchet-and-clank-going-commando",
   "name": "Ratchet & Clank: Going Commando",
-  "nameZh": "",
+  "nameZh": "瑞奇与叮当：深入战场",
   "aliases": [],
   "mc": 90,
   "ign": 9.4,
@@ -11190,12 +11622,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2054970,
   "name": "Dragon's Dogma 2",
-  "nameZh": "Dragon's Dogma 2",
+  "nameZh": "龙之信条2",
   "aliases": [],
   "mc": 88,
   "ign": 8.0,
@@ -11212,12 +11645,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ai-the-somnium-files-nirvana-initiative",
   "name": "AI: The Somnium Files - nirvanA Initiative",
-  "nameZh": "",
+  "nameZh": "AI：梦境档案 涅槃计划",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -11232,12 +11666,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:streets-of-rage-4-mr-x-nightmare",
   "name": "Streets of Rage 4: Mr. X Nightmare",
-  "nameZh": "",
+  "nameZh": "怒之铁拳4：X先生噩梦",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -11252,12 +11687,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-the-wind-waker-hd",
   "name": "The Legend of Zelda: The Wind Waker HD",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：风之杖 HD",
   "aliases": [],
   "mc": 90,
   "ign": 9.8,
@@ -11270,12 +11706,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2142790,
   "name": "Fields of Mistria",
-  "nameZh": "Fields of Mistria",
+  "nameZh": "米斯特里亚田园",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -11294,12 +11731,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 3476660,
   "name": "Star Crafter",
-  "nameZh": "Star Crafter",
+  "nameZh": "星球工匠",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -11319,12 +11757,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:starcraft",
   "name": "StarCraft",
-  "nameZh": "",
+  "nameZh": "星际争霸",
   "aliases": [],
   "mc": 88,
   "ign": 9.5,
@@ -11339,12 +11778,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-phantom-hourglass",
   "name": "The Legend of Zelda: Phantom Hourglass",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：幻影沙漏",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -11357,12 +11797,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:warcraft-iii-the-frozen-throne",
   "name": "Warcraft III: The Frozen Throne",
-  "nameZh": "",
+  "nameZh": "魔兽争霸III：冰封王座",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -11377,12 +11818,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dance-dance-revolution",
   "name": "Dance Dance Revolution",
-  "nameZh": "",
+  "nameZh": "跳舞革命",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -11395,12 +11837,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:jack-jeanne",
   "name": "Jack Jeanne",
-  "nameZh": "",
+  "nameZh": "杰克珍妮",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -11415,12 +11858,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 582010,
   "name": "Monster Hunter: World",
-  "nameZh": "Monster Hunter: World",
+  "nameZh": "怪物猎人：世界",
   "aliases": [
    "怪猎世界",
    "怪物猎人世界",
@@ -11441,12 +11885,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1205520,
   "name": "Pentiment",
-  "nameZh": "Pentiment",
+  "nameZh": "隐迹渐现",
   "aliases": [],
   "mc": 88,
   "ign": 10.0,
@@ -11463,12 +11908,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:advance-wars-dual-strike",
   "name": "Advance Wars: Dual Strike",
-  "nameZh": "",
+  "nameZh": "高级战争：双重打击",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -11481,12 +11927,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 220240,
   "name": "Far Cry 3",
-  "nameZh": "Far Cry 3",
+  "nameZh": "孤岛惊魂3",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -11503,12 +11950,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2651280,
   "name": "Marvel's Spider-Man 2",
-  "nameZh": "Marvel's Spider-Man 2",
+  "nameZh": "漫威蜘蛛侠2",
   "aliases": [],
   "mc": 90,
   "ign": 8.0,
@@ -11526,12 +11974,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dead-cells-return-to-castlevania",
   "name": "Dead Cells: Return to Castlevania",
-  "nameZh": "",
+  "nameZh": "重生细胞：重返恶魔城",
   "aliases": [],
   "mc": 88,
   "ign": 10.0,
@@ -11546,12 +11995,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mlb-11-the-show",
   "name": "MLB 11: The Show",
-  "nameZh": "",
+  "nameZh": "MLB 11：棒球大联盟",
   "aliases": [],
   "mc": 90,
   "ign": 8.0,
@@ -11564,7 +12014,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 244210,
@@ -11593,7 +12044,7 @@ window.GAMES = [
 {
   "id": "mc:nier-automata-become-as-gods-edition",
   "name": "NieR: Automata - Become as Gods Edition",
-  "nameZh": "",
+  "nameZh": "尼尔：机械纪元—众神版",
   "aliases": [],
   "mc": 90,
   "ign": 7.0,
@@ -11608,12 +12059,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1253920,
   "name": "Rogue Legacy 2",
-  "nameZh": "Rogue Legacy 2",
+  "nameZh": "盗贼遗产2",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -11634,12 +12086,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:jak-and-daxter-the-precursor-legacy",
   "name": "Jak and Daxter: The Precursor Legacy",
-  "nameZh": "",
+  "nameZh": "杰克与达斯特：先驱者遗产",
   "aliases": [],
   "mc": 90,
   "ign": 9.4,
@@ -11652,12 +12105,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2008920,
   "name": "Lorelei and the Laser Eyes",
-  "nameZh": "Lorelei and the Laser Eyes",
+  "nameZh": "洛雷莱与激光之眼",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -11675,12 +12129,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:star-wars-rogue-leader-rogue-squadron-ii",
   "name": "Star Wars Rogue Leader: Rogue Squadron II",
-  "nameZh": "",
+  "nameZh": "星球大战：侠盗中队II——侠盗领袖",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -11693,12 +12148,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 200710,
   "name": "Torchlight II",
-  "nameZh": "Torchlight II",
+  "nameZh": "火炬之光II",
   "aliases": [],
   "mc": 88,
   "ign": 9.1,
@@ -11719,12 +12175,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:donkey-kong-64",
   "name": "Donkey Kong 64",
-  "nameZh": "",
+  "nameZh": "大金刚64",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -11737,12 +12194,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ncaa-football-2002",
   "name": "NCAA Football 2002",
-  "nameZh": "",
+  "nameZh": "NCAA大学橄榄球2002",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -11755,12 +12213,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tsukihime-a-piece-of-blue-glass-moon",
   "name": "Tsukihime: A Piece of Blue Glass Moon",
-  "nameZh": "",
+  "nameZh": "月姬：一片蓝色玻璃之月",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -11775,12 +12234,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 268500,
   "name": "XCOM 2",
-  "nameZh": "XCOM 2",
+  "nameZh": "幽浮2",
   "aliases": [],
   "mc": 88,
   "ign": 9.3,
@@ -11798,12 +12258,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 268910,
   "name": "Cuphead",
-  "nameZh": "Cuphead",
+  "nameZh": "茶杯头",
   "aliases": [
    "茶杯头"
   ],
@@ -11824,7 +12285,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2524850,
@@ -11894,7 +12356,7 @@ window.GAMES = [
 {
   "id": 2111190,
   "name": "MULLET MADJACK",
-  "nameZh": "MULLET MADJACK",
+  "nameZh": "狂野马尾杰克",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -11911,12 +12373,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:myth-ii-soulblighter",
   "name": "Myth II: Soulblighter",
-  "nameZh": "",
+  "nameZh": "神话II：灵魂粉碎者",
   "aliases": [],
   "mc": 88,
   "ign": 8.9,
@@ -11931,12 +12394,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1098770,
   "name": "The Crimson Diamond",
-  "nameZh": "The Crimson Diamond",
+  "nameZh": "赤红钻石",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -11953,12 +12417,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:panzer-dragoon-orta",
   "name": "Panzer Dragoon Orta",
-  "nameZh": "",
+  "nameZh": "铁甲飞龙：奥尔塔",
   "aliases": [],
   "mc": 90,
   "ign": 9.2,
@@ -11971,12 +12436,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:portal-still-alive",
   "name": "Portal: Still Alive",
-  "nameZh": "",
+  "nameZh": "传送门：仍然活着",
   "aliases": [],
   "mc": 90,
   "ign": 9.2,
@@ -11989,12 +12455,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:elden-ring-tarnished-edition",
   "name": "Elden Ring: Tarnished Edition",
-  "nameZh": "",
+  "nameZh": "艾尔登法环：褪色者版",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -12009,12 +12476,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:shin-megami-tensei-persona-4",
   "name": "Shin Megami Tensei: Persona 4",
-  "nameZh": "",
+  "nameZh": "女神异闻录4",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -12027,12 +12495,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 367520,
   "name": "Hollow Knight",
-  "nameZh": "Hollow Knight",
+  "nameZh": "空洞骑士",
   "aliases": [],
   "mc": 90,
   "ign": 9.4,
@@ -12053,7 +12522,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 686060,
@@ -12083,7 +12553,7 @@ window.GAMES = [
 {
   "id": "mc:mlb-09-the-show",
   "name": "MLB 09: The Show",
-  "nameZh": "",
+  "nameZh": "MLB 09：棒球大联盟",
   "aliases": [],
   "mc": 90,
   "ign": 7.3,
@@ -12096,12 +12566,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 9010,
   "name": "Return to Castle Wolfenstein",
-  "nameZh": "Return to Castle Wolfenstein",
+  "nameZh": "重返德军总部",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12117,12 +12588,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:blast-corps",
   "name": "Blast Corps",
-  "nameZh": "",
+  "nameZh": "爆破兵团",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -12135,7 +12607,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 835960,
@@ -12162,7 +12635,7 @@ window.GAMES = [
 {
   "id": 610860,
   "name": "Shogo: Mobile Armor Division",
-  "nameZh": "Shogo: Mobile Armor Division",
+  "nameZh": "Shogo：机动装甲师",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12180,12 +12653,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:mvp-baseball-2004",
   "name": "MVP Baseball 2004",
-  "nameZh": "",
+  "nameZh": "MVP棒球2004",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -12198,12 +12672,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 214700,
   "name": "Thirty Flights of Loving",
-  "nameZh": "Thirty Flights of Loving",
+  "nameZh": "爱的三十次飞行",
   "aliases": [],
   "mc": 88,
   "ign": 8.0,
@@ -12223,12 +12698,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:wwf-smackdown-2-know-your-role",
   "name": "WWF SmackDown! 2: Know Your Role",
-  "nameZh": "",
+  "nameZh": "WWF SmackDown! 2：认清你的定位",
   "aliases": [],
   "mc": 90,
   "ign": 8.9,
@@ -12241,7 +12717,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2694420,
@@ -12267,7 +12744,7 @@ window.GAMES = [
 {
   "id": 1817190,
   "name": "Marvel’s Spider-Man: Miles Morales",
-  "nameZh": "Marvel’s Spider-Man: Miles Morales",
+  "nameZh": "漫威蜘蛛侠：迈尔斯·莫拉莱斯",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12284,12 +12761,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 40800,
   "name": "Super Meat Boy",
-  "nameZh": "Super Meat Boy",
+  "nameZh": "超级食肉男孩",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -12307,12 +12785,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2157560,
   "name": "Granblue Fantasy Versus: Rising",
-  "nameZh": "Granblue Fantasy Versus: Rising",
+  "nameZh": "碧蓝幻想Versus：崛起",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12328,12 +12807,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:hearthstone-heroes-of-warcraft",
   "name": "Hearthstone: Heroes of Warcraft",
-  "nameZh": "",
+  "nameZh": "炉石传说：魔兽英雄传",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12348,7 +12828,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 809230,
@@ -12378,7 +12859,7 @@ window.GAMES = [
 {
   "id": "mc:medieval-ii-total-war",
   "name": "Medieval II: Total War",
-  "nameZh": "",
+  "nameZh": "中世纪II：全面战争",
   "aliases": [],
   "mc": 88,
   "ign": 8.8,
@@ -12393,12 +12874,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4700,
   "name": "Total War: MEDIEVAL II – Definitive Edition",
-  "nameZh": "",
+  "nameZh": "中世纪II：全面战争 终极版",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -12416,12 +12898,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:f1-2002",
   "name": "F1 2002",
-  "nameZh": "",
+  "nameZh": "F1赛车2002",
   "aliases": [],
   "mc": 88,
   "ign": 9.3,
@@ -12436,12 +12919,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3241660,
   "name": "R.E.P.O.",
-  "nameZh": "R.E.P.O.",
+  "nameZh": "R.E.P.O.：回收公司",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -12458,12 +12942,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 24,
    "peak": 54070
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 221910,
   "name": "The Stanley Parable",
-  "nameZh": "The Stanley Parable",
+  "nameZh": "史丹利的寓言",
   "aliases": [],
   "mc": 88,
   "ign": 8.8,
@@ -12482,12 +12967,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 47780,
   "name": "Dead Space 2",
-  "nameZh": "Dead Space 2",
+  "nameZh": "死亡空间2",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -12504,7 +12990,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2084000,
@@ -12559,7 +13046,7 @@ window.GAMES = [
 {
   "id": "mc:pikmin-2",
   "name": "Pikmin 2",
-  "nameZh": "",
+  "nameZh": "皮克敏2",
   "aliases": [],
   "mc": 90,
   "ign": 9.3,
@@ -12572,12 +13059,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 8850,
   "name": "BioShock 2",
-  "nameZh": "BioShock 2",
+  "nameZh": "生化奇兵2",
   "aliases": [],
   "mc": 88,
   "ign": 9.1,
@@ -12593,12 +13081,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 240,
   "name": "Counter-Strike: Source",
-  "nameZh": "Counter-Strike: Source",
+  "nameZh": "反恐精英：起源",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -12615,12 +13104,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:geometry-wars-retro-evolved-2",
   "name": "Geometry Wars: Retro Evolved 2",
-  "nameZh": "",
+  "nameZh": "几何战争：复古进化2",
   "aliases": [],
   "mc": 90,
   "ign": 8.3,
@@ -12633,12 +13123,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1238840,
   "name": "Battlefield 1",
-  "nameZh": "Battlefield 1",
+  "nameZh": "战地1",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12655,12 +13146,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-mario-3d-land",
   "name": "Super Mario 3D Land",
-  "nameZh": "",
+  "nameZh": "超级马力欧3D大陆",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -12673,12 +13165,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mario-kart-8-dlc-pack-2",
   "name": "Mario Kart 8 DLC Pack 2",
-  "nameZh": "",
+  "nameZh": "马力欧赛车8：DLC包2",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -12691,12 +13184,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:starcraft-ii-legacy-of-the-void",
   "name": "Starcraft II: Legacy of the Void",
-  "nameZh": "",
+  "nameZh": "星际争霸II：虚空之遗",
   "aliases": [],
   "mc": 88,
   "ign": 8.9,
@@ -12711,12 +13205,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo-iii",
   "name": "Diablo III",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神III",
   "aliases": [],
   "mc": 88,
   "ign": 9.5,
@@ -12731,12 +13226,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:f1-2020",
   "name": "F1 2020",
-  "nameZh": "",
+  "nameZh": "F1赛车2020",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12752,12 +13248,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metroid-prime-3-corruption",
   "name": "Metroid Prime 3: Corruption",
-  "nameZh": "",
+  "nameZh": "密特罗德Prime 3：腐蚀",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -12770,12 +13267,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rise-of-nations-thrones-and-patriots",
   "name": "Rise of Nations: Thrones & Patriots",
-  "nameZh": "",
+  "nameZh": "国家崛起：王朝与爱国者",
   "aliases": [],
   "mc": 88,
   "ign": 8.9,
@@ -12790,12 +13288,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3920,
   "name": "Sid Meier's Pirates!",
-  "nameZh": "Sid Meier's Pirates!",
+  "nameZh": "席德·梅尔的海盗！",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12811,12 +13310,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:eve-online-special-edition",
   "name": "EVE Online: Special Edition",
-  "nameZh": "",
+  "nameZh": "星战前夜：特别版",
   "aliases": [],
   "mc": 88,
   "ign": 8.0,
@@ -12831,12 +13331,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:armadillo-run",
   "name": "Armadillo Run",
-  "nameZh": "",
+  "nameZh": "犰狳跑酷",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -12851,12 +13352,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:timesplitters-2",
   "name": "TimeSplitters 2",
-  "nameZh": "",
+  "nameZh": "时间分裂者2",
   "aliases": [],
   "mc": 90,
   "ign": 9.1,
@@ -12869,12 +13371,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-of-warcraft-legion",
   "name": "World of Warcraft: Legion",
-  "nameZh": "",
+  "nameZh": "魔兽世界：军团再临",
   "aliases": [],
   "mc": 88,
   "ign": 9.1,
@@ -12889,12 +13392,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 560130,
   "name": "Pillars of Eternity II: Deadfire",
-  "nameZh": "Pillars of Eternity II: Deadfire",
+  "nameZh": "永恒之柱II：死亡之火",
   "aliases": [],
   "mc": 88,
   "ign": 8.5,
@@ -12912,12 +13416,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 782330,
   "name": "DOOM Eternal",
-  "nameZh": "DOOM Eternal",
+  "nameZh": "毁灭战士：永恒",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12933,12 +13438,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:forza-motorsport-2",
   "name": "Forza Motorsport 2",
-  "nameZh": "",
+  "nameZh": "极限竞速：赛车运动2",
   "aliases": [],
   "mc": 90,
   "ign": 8.9,
@@ -12951,12 +13457,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:baldurs-gate-ii-throne-of-bhaal",
   "name": "Baldur's Gate II: Throne of Bhaal",
-  "nameZh": "",
+  "nameZh": "博德之门II：巴尔王座",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -12971,12 +13478,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 10,
   "name": "Counter-Strike",
-  "nameZh": "Counter-Strike",
+  "nameZh": "反恐精英",
   "aliases": [],
   "mc": 88,
   "ign": 7.9,
@@ -12994,12 +13502,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dark-age-of-camelot",
   "name": "Dark Age of Camelot",
-  "nameZh": "",
+  "nameZh": "卡美洛的黑暗时代",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -13014,12 +13523,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1743850,
   "name": "HYPER DEMON",
-  "nameZh": "HYPER DEMON",
+  "nameZh": "超级恶魔",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -13036,12 +13546,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:pushmo",
   "name": "Pushmo",
-  "nameZh": "",
+  "nameZh": "推推乐",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -13054,12 +13565,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fifa-soccer-13",
   "name": "FIFA Soccer 13",
-  "nameZh": "",
+  "nameZh": "FIFA足球13",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -13074,7 +13586,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3308870,
@@ -13130,7 +13643,7 @@ window.GAMES = [
 {
   "id": 481510,
   "name": "Night in the Woods",
-  "nameZh": "Night in the Woods",
+  "nameZh": "林中之夜",
   "aliases": [],
   "mc": 88,
   "ign": 8.7,
@@ -13148,12 +13661,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 261570,
   "name": "Ori and the Blind Forest",
-  "nameZh": "Ori and the Blind Forest",
+  "nameZh": "奥日与迷失森林",
   "aliases": [],
   "mc": 88,
   "ign": 8.5,
@@ -13170,12 +13684,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo-ii",
   "name": "Diablo II",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神II",
   "aliases": [],
   "mc": 88,
   "ign": 8.3,
@@ -13190,7 +13705,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2218750,
@@ -13219,7 +13735,7 @@ window.GAMES = [
 {
   "id": 1150690,
   "name": "OMORI",
-  "nameZh": "OMORI",
+  "nameZh": "OMORI：奥莫里",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -13238,12 +13754,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3357650,
   "name": "PRAGMATA",
-  "nameZh": "PRAGMATA",
+  "nameZh": "识质存在",
   "aliases": [],
   "mc": 88,
   "ign": 8.0,
@@ -13260,12 +13777,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1799840,
   "name": "Queen's Domain",
-  "nameZh": "Queen's Domain",
+  "nameZh": "女王领域",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -13284,12 +13802,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 20920,
   "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
-  "nameZh": "The Witcher 2: Assassins of Kings Enhanced Edition",
+  "nameZh": "巫师2：国王刺客 增强版",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -13307,12 +13826,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:astro-bot-rescue-mission",
   "name": "Astro Bot Rescue Mission",
-  "nameZh": "",
+  "nameZh": "宇宙机器人：救援任务",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -13327,12 +13847,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:bayonetta-plus-bayonetta-2",
   "name": "Bayonetta + Bayonetta 2",
-  "nameZh": "",
+  "nameZh": "猎天使魔女 + 猎天使魔女2",
   "aliases": [],
   "mc": 90,
   "ign": null,
@@ -13347,12 +13868,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:beetle-adventure-racing",
   "name": "Beetle Adventure Racing",
-  "nameZh": "",
+  "nameZh": "甲壳虫冒险赛车",
   "aliases": [],
   "mc": 90,
   "ign": 9.1,
@@ -13365,12 +13887,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-viii",
   "name": "Final Fantasy VIII",
-  "nameZh": "",
+  "nameZh": "最终幻想VIII",
   "aliases": [],
   "mc": 90,
   "ign": 9.0,
@@ -13383,12 +13906,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nba-2k12",
   "name": "NBA 2K12",
-  "nameZh": "",
+  "nameZh": "NBA 2K12：篮球游戏",
   "aliases": [],
   "mc": 90,
   "ign": 9.5,
@@ -13401,12 +13925,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1238080,
   "name": "Burnout Paradise Remastered",
-  "nameZh": "Burnout Paradise Remastered",
+  "nameZh": "火爆狂飙：天堂 重制版",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -13424,12 +13949,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:battlefield-bad-company-2",
   "name": "Battlefield: Bad Company 2",
-  "nameZh": "",
+  "nameZh": "战地：叛逆连队2",
   "aliases": [],
   "mc": 88,
   "ign": 8.9,
@@ -13444,12 +13970,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3419430,
   "name": "Bongo Cat",
-  "nameZh": "Bongo Cat",
+  "nameZh": "邦戈猫",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -13470,12 +13997,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 71,
    "peak": 191498
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 3590,
   "name": "Plants vs. Zombies GOTY Edition",
-  "nameZh": "Plants vs. Zombies GOTY Edition",
+  "nameZh": "植物大战僵尸：年度版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13492,7 +14020,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1659420,
@@ -13519,7 +14048,7 @@ window.GAMES = [
 {
   "id": 208200,
   "name": "DOOM 3",
-  "nameZh": "DOOM 3",
+  "nameZh": "毁灭战士3",
   "aliases": [],
   "mc": 87,
   "ign": 8.9,
@@ -13535,7 +14064,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 264710,
@@ -13563,7 +14093,7 @@ window.GAMES = [
 {
   "id": "mc:football-manager-2010",
   "name": "Football Manager 2010",
-  "nameZh": "",
+  "nameZh": "足球经理2010",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13578,12 +14108,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:halo-2-multiplayer-map-pack",
   "name": "Halo 2 Multiplayer Map Pack",
-  "nameZh": "",
+  "nameZh": "光环2：多人游戏地图包",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -13596,12 +14127,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:wipeout-hd-fury",
   "name": "Wipeout HD Fury",
-  "nameZh": "",
+  "nameZh": "反重力赛车HD：狂怒",
   "aliases": [],
   "mc": 89,
   "ign": 9.2,
@@ -13614,12 +14146,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-xiv-stormblood",
   "name": "Final Fantasy XIV: Stormblood",
-  "nameZh": "",
+  "nameZh": "最终幻想XIV：红莲之狂潮",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13634,12 +14167,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:hitman-3",
   "name": "Hitman 3",
-  "nameZh": "",
+  "nameZh": "杀手3",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13654,12 +14188,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nba-2k18",
   "name": "NBA 2K18",
-  "nameZh": "",
+  "nameZh": "NBA 2K18：篮球游戏",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13674,12 +14209,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:shin-megami-tensei-persona-3-portable",
   "name": "Shin Megami Tensei: Persona 3 Portable",
-  "nameZh": "",
+  "nameZh": "女神异闻录3 携带版",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -13692,12 +14228,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:europa-universalis-ii",
   "name": "Europa Universalis II",
-  "nameZh": "",
+  "nameZh": "欧陆风云II",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13712,12 +14249,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 25800,
   "name": "Europa Universalis III Complete",
-  "nameZh": "Europa Universalis III Complete",
+  "nameZh": "欧陆风云III 完全版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13734,12 +14272,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:xenoblade-chronicles-definitive-edition",
   "name": "Xenoblade Chronicles: Definitive Edition",
-  "nameZh": "",
+  "nameZh": "异度神剑：终极版",
   "aliases": [],
   "mc": 89,
   "ign": 8.0,
@@ -13754,12 +14293,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:burnout-revenge",
   "name": "Burnout Revenge",
-  "nameZh": "",
+  "nameZh": "火爆狂飙：复仇",
   "aliases": [],
   "mc": 89,
   "ign": 8.9,
@@ -13772,12 +14312,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2630,
   "name": "Call of Duty 2",
-  "nameZh": "Call of Duty 2",
+  "nameZh": "使命召唤2",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -13794,12 +14335,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dragon-quest-viii-journey-of-the-cursed-king",
   "name": "Dragon Quest VIII: Journey of the Cursed King",
-  "nameZh": "",
+  "nameZh": "勇者斗恶龙VIII：天空、海洋、大地与被诅咒的公主",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -13812,7 +14354,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1244090,
@@ -13862,7 +14405,7 @@ window.GAMES = [
 {
   "id": "mc:metroid-zero-mission",
   "name": "Metroid: Zero Mission",
-  "nameZh": "",
+  "nameZh": "密特罗德：零点任务",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -13875,12 +14418,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 412830,
   "name": "STEINS;GATE",
-  "nameZh": "STEINS;GATE",
+  "nameZh": "命运石之门",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13896,12 +14440,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-majoras-mask-3d",
   "name": "The Legend of Zelda: Majora's Mask 3D",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：姆吉拉的假面3D",
   "aliases": [],
   "mc": 89,
   "ign": 8.7,
@@ -13914,12 +14459,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1462040,
   "name": "FINAL FANTASY VII REMAKE INTERGRADE",
-  "nameZh": "FINAL FANTASY VII REMAKE INTERGRADE",
+  "nameZh": "最终幻想VII 重制版 INTERGRADE",
   "aliases": [],
   "mc": 89,
   "ign": 8.0,
@@ -13939,12 +14485,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:grid-2008",
   "name": "GRID",
-  "nameZh": "",
+  "nameZh": "超级房车赛",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -13959,12 +14506,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1307710,
   "name": "GRID Legends",
-  "nameZh": "GRID Legends",
+  "nameZh": "超级房车赛：传奇",
   "aliases": [],
   "mc": 87,
   "ign": 7.0,
@@ -13983,12 +14531,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pikmin",
   "name": "Pikmin",
-  "nameZh": "",
+  "nameZh": "皮克敏",
   "aliases": [],
   "mc": 89,
   "ign": 8.0,
@@ -14001,12 +14550,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:wipeout-3",
   "name": "Wipeout 3",
-  "nameZh": "",
+  "nameZh": "反重力赛车3",
   "aliases": [],
   "mc": 89,
   "ign": 9.1,
@@ -14019,7 +14569,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1693980,
@@ -14047,7 +14598,7 @@ window.GAMES = [
 {
   "id": 2742830,
   "name": "Monster Train 2",
-  "nameZh": "Monster Train 2",
+  "nameZh": "怪物列车2",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -14065,7 +14616,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 247080,
@@ -14095,7 +14647,7 @@ window.GAMES = [
 {
   "id": 1395030,
   "name": "Kathy Rain: Director's Cut",
-  "nameZh": "Kathy Rain: Director's Cut",
+  "nameZh": "凯西·雷恩：导演剪辑版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14114,12 +14666,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1043810,
   "name": "Tactical Breach Wizards",
-  "nameZh": "Tactical Breach Wizards",
+  "nameZh": "战术破门巫师",
   "aliases": [],
   "mc": 87,
   "ign": 8.0,
@@ -14138,12 +14691,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:legends-of-runeterra",
   "name": "Legends of Runeterra",
-  "nameZh": "",
+  "nameZh": "符文之地传说",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14158,12 +14712,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sins-of-a-solar-empire",
   "name": "Sins of a Solar Empire",
-  "nameZh": "",
+  "nameZh": "太阳帝国的罪恶",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14178,12 +14733,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1252330,
   "name": "DEATHLOOP",
-  "nameZh": "DEATHLOOP",
+  "nameZh": "死亡循环",
   "aliases": [],
   "mc": 88,
   "ign": 10.0,
@@ -14200,12 +14756,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2638370,
   "name": "Five Nights at Freddy's: Into the Pit",
-  "nameZh": "Five Nights at Freddy's: Into the Pit",
+  "nameZh": "玩具熊的五夜后宫：进入深坑",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14223,12 +14780,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:monster-hunter-world-iceborne",
   "name": "Monster Hunter: World - Iceborne",
-  "nameZh": "",
+  "nameZh": "怪物猎人：世界—冰原",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -14244,12 +14802,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 15190,
   "name": "Brothers in Arms: Road to Hill 30",
-  "nameZh": "Brothers in Arms: Road to Hill 30",
+  "nameZh": "兄弟连：30高地之路",
   "aliases": [],
   "mc": 88,
   "ign": 8.6,
@@ -14265,12 +14824,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:crusader-kings-iii-roads-to-power",
   "name": "Crusader Kings III: Roads to Power",
-  "nameZh": "",
+  "nameZh": "十字军之王III：权力之路",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14285,12 +14845,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:mechwarrior-4-vengeance",
   "name": "MechWarrior 4: Vengeance",
-  "nameZh": "",
+  "nameZh": "机甲战士4：复仇",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14305,12 +14866,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2124490,
   "name": "SILENT HILL 2",
-  "nameZh": "SILENT HILL 2",
+  "nameZh": "寂静岭2",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -14328,12 +14890,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 211740,
   "name": "Thief II: The Metal Age",
-  "nameZh": "Thief II: The Metal Age",
+  "nameZh": "神偷II：金属时代",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -14350,12 +14913,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo-ii-lord-of-destruction",
   "name": "Diablo II: Lord of Destruction",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神II：毁灭之王",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14370,12 +14934,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 32460,
   "name": "Monkey Island 2 Special Edition: LeChuck’s Revenge",
-  "nameZh": "Monkey Island 2 Special Edition: LeChuck’s Revenge",
+  "nameZh": "猴岛小英雄2特别版：勒恰克的复仇",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14391,12 +14956,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rez",
   "name": "Rez",
-  "nameZh": "",
+  "nameZh": "雷兹",
   "aliases": [],
   "mc": 89,
   "ign": 8.5,
@@ -14409,12 +14975,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:half-life-2-episode-one",
   "name": "Half-Life 2: Episode One",
-  "nameZh": "",
+  "nameZh": "半条命2：第一章",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14429,12 +14996,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 231160,
   "name": "The Swapper",
-  "nameZh": "The Swapper",
+  "nameZh": "交换者",
   "aliases": [],
   "mc": 87,
   "ign": 9.3,
@@ -14452,12 +15020,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 736260,
   "name": "Baba Is You",
-  "nameZh": "Baba Is You",
+  "nameZh": "巴巴是你",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14475,12 +15044,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:castlevania-symphony-of-the-night",
   "name": "Castlevania: Symphony of the Night",
-  "nameZh": "",
+  "nameZh": "恶魔城：月下夜想曲",
   "aliases": [],
   "mc": 89,
   "ign": 9.5,
@@ -14493,12 +15063,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fable-ii",
   "name": "Fable II",
-  "nameZh": "",
+  "nameZh": "神鬼寓言II",
   "aliases": [],
   "mc": 89,
   "ign": 8.8,
@@ -14511,7 +15082,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2677660,
@@ -14538,7 +15110,7 @@ window.GAMES = [
 {
   "id": 6850,
   "name": "Hitman 2: Silent Assassin",
-  "nameZh": "Hitman 2: Silent Assassin",
+  "nameZh": "杀手2：沉默刺客",
   "aliases": [],
   "mc": 87,
   "ign": 8.7,
@@ -14554,12 +15126,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1127500,
   "name": "Mini Motorways",
-  "nameZh": "Mini Motorways",
+  "nameZh": "迷你高速公路",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14578,12 +15151,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-chronicles",
   "name": "Final Fantasy Chronicles",
-  "nameZh": "",
+  "nameZh": "最终幻想编年史",
   "aliases": [],
   "mc": 89,
   "ign": 9.4,
@@ -14596,12 +15170,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nhl-2k3",
   "name": "NHL 2K3",
-  "nameZh": "",
+  "nameZh": "NHL 2K3：冰球",
   "aliases": [],
   "mc": 89,
   "ign": 8.8,
@@ -14614,12 +15189,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 269050,
   "name": "Year Walk",
-  "nameZh": "Year Walk",
+  "nameZh": "年之漫步",
   "aliases": [],
   "mc": 87,
   "ign": 8.0,
@@ -14637,12 +15213,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1350200,
   "name": "IMMORTALITY",
-  "nameZh": "IMMORTALITY",
+  "nameZh": "不朽",
   "aliases": [],
   "mc": 87,
   "ign": 8.0,
@@ -14662,7 +15239,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 373420,
@@ -14693,7 +15271,7 @@ window.GAMES = [
 {
   "id": 2870350,
   "name": "Pipistrello and the Cursed Yoyo",
-  "nameZh": "Pipistrello and the Cursed Yoyo",
+  "nameZh": "皮皮斯特雷洛与诅咒悠悠球",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14711,12 +15289,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 204100,
   "name": "Max Payne 3",
-  "nameZh": "Max Payne 3",
+  "nameZh": "马克思·佩恩3",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -14732,12 +15311,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 251470,
   "name": "TowerFall Ascension",
-  "nameZh": "TowerFall Ascension",
+  "nameZh": "塔楼坠落：飞升",
   "aliases": [],
   "mc": 87,
   "ign": 8.9,
@@ -14757,12 +15337,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:battlefield-3-armored-kill",
   "name": "Battlefield 3: Armored Kill",
-  "nameZh": "",
+  "nameZh": "战地3：装甲杀戮",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14777,12 +15358,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 321800,
   "name": "Icewind Dale: Enhanced Edition",
-  "nameZh": "Icewind Dale: Enhanced Edition",
+  "nameZh": "冰风谷：增强版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -14801,7 +15383,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1190170,
@@ -14829,7 +15412,7 @@ window.GAMES = [
 {
   "id": 3830,
   "name": "Psychonauts",
-  "nameZh": "Psychonauts",
+  "nameZh": "脑航员",
   "aliases": [],
   "mc": 88,
   "ign": 8.7,
@@ -14847,12 +15430,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1237970,
   "name": "Titanfall 2",
-  "nameZh": "Titanfall 2",
+  "nameZh": "泰坦陨落2",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -14869,12 +15453,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 210970,
   "name": "The Witness",
-  "nameZh": "The Witness",
+  "nameZh": "见证者",
   "aliases": [],
   "mc": 87,
   "ign": 10.0,
@@ -14893,12 +15478,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gunstar-heroes",
   "name": "Gunstar Heroes",
-  "nameZh": "",
+  "nameZh": "银河快枪手",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -14911,12 +15497,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 7110,
   "name": "Jade Empire : Special Edition",
-  "nameZh": "",
+  "nameZh": "翡翠帝国：特别版",
   "aliases": [],
   "mc": 89,
   "ign": 9.9,
@@ -14932,12 +15519,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 97110,
   "name": "Kohan: Immortal Sovereigns",
-  "nameZh": "Kohan: Immortal Sovereigns",
+  "nameZh": "科汉：永恒君主",
   "aliases": [],
   "mc": 87,
   "ign": 8.5,
@@ -14953,12 +15541,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nba-2k3",
   "name": "NBA 2K3",
-  "nameZh": "",
+  "nameZh": "NBA 2K3：篮球游戏",
   "aliases": [],
   "mc": 89,
   "ign": 8.9,
@@ -14971,12 +15560,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:phantasy-star-online",
   "name": "Phantasy Star Online",
-  "nameZh": "",
+  "nameZh": "梦幻之星Online",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -14989,12 +15579,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tekken-2",
   "name": "Tekken 2",
-  "nameZh": "",
+  "nameZh": "铁拳2",
   "aliases": [],
   "mc": 89,
   "ign": 6.2,
@@ -15007,7 +15598,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1634860,
@@ -15037,7 +15629,7 @@ window.GAMES = [
 {
   "id": "mc:raw-data",
   "name": "Raw Data",
-  "nameZh": "",
+  "nameZh": "原始数据",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15052,12 +15644,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo-iii-reaper-of-souls",
   "name": "Diablo III: Reaper of Souls",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神III：夺魂之镰",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15072,12 +15665,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:grand-prix-3",
   "name": "Grand Prix 3",
-  "nameZh": "",
+  "nameZh": "大奖赛3",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15092,12 +15686,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 41000,
   "name": "Serious Sam HD: The First Encounter",
-  "nameZh": "Serious Sam HD: The First Encounter",
+  "nameZh": "英雄萨姆HD：初次遭遇",
   "aliases": [],
   "mc": 87,
   "ign": 7.5,
@@ -15114,7 +15709,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:xenoblade-chronicles-3",
@@ -15142,7 +15738,7 @@ window.GAMES = [
 {
   "id": "mc:f-zero-gx",
   "name": "F-Zero GX",
-  "nameZh": "",
+  "nameZh": "F-Zero GX：零式赛车",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -15155,12 +15751,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:super-mario-3d-world-plus-bowsers-fury",
   "name": "Super Mario 3D World + Bowser's Fury",
-  "nameZh": "",
+  "nameZh": "超级马力欧3D世界 + 库巴之怒",
   "aliases": [],
   "mc": 89,
   "ign": 7.0,
@@ -15175,12 +15772,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 570940,
   "name": "DARK SOULS : REMASTERED",
-  "nameZh": "DARK SOULS : REMASTERED",
+  "nameZh": "黑暗之魂：重制版",
   "aliases": [],
   "mc": 89,
   "ign": 9.5,
@@ -15196,12 +15794,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-vi-pixel-remaster",
   "name": "Final Fantasy VI Pixel Remaster",
-  "nameZh": "",
+  "nameZh": "最终幻想VI 像素复刻版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15216,12 +15815,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2640,
   "name": "Call of Duty: United Offensive",
-  "nameZh": "Call of Duty: United Offensive",
+  "nameZh": "使命召唤：联合进攻",
   "aliases": [],
   "mc": 87,
   "ign": 8.4,
@@ -15237,12 +15837,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pokemon-pokopia",
   "name": "Pokemon Pokopia",
-  "nameZh": "",
+  "nameZh": "宝可梦Pokopia",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -15257,12 +15858,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2408350,
   "name": "Hermit and Pig",
-  "nameZh": "Hermit and Pig",
+  "nameZh": "隐士与猪",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15281,12 +15883,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nba-street-v3",
   "name": "NBA Street V3",
-  "nameZh": "",
+  "nameZh": "NBA街头篮球V3",
   "aliases": [],
   "mc": 89,
   "ign": 9.4,
@@ -15299,12 +15902,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:need-for-speed-hot-pursuit-2",
   "name": "Need for Speed: Hot Pursuit 2",
-  "nameZh": "",
+  "nameZh": "极品飞车：热力追踪2",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -15317,12 +15921,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:grand-theft-auto-iv-the-ballad-of-gay-tony",
   "name": "Grand Theft Auto IV: The Ballad of Gay Tony",
-  "nameZh": "",
+  "nameZh": "侠盗猎车手4：夜生活之曲",
   "aliases": [],
   "mc": 89,
   "ign": 9.2,
@@ -15335,12 +15940,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 336140,
   "name": "Unavowed",
-  "nameZh": "Unavowed",
+  "nameZh": "未立誓者",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15360,12 +15966,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 9340,
   "name": "Company of Heroes: Opposing Fronts",
-  "nameZh": "Company of Heroes: Opposing Fronts",
+  "nameZh": "英雄连：抵抗前线",
   "aliases": [],
   "mc": 87,
   "ign": 8.8,
@@ -15382,12 +15989,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-the-minish-cap",
   "name": "The Legend of Zelda: The Minish Cap",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：缩小帽",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -15400,12 +16008,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:worldwide-soccer-manager-2007",
   "name": "Worldwide Soccer Manager 2007",
-  "nameZh": "",
+  "nameZh": "世界足球经理2007",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15420,12 +16029,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:ncaa-football-2004",
   "name": "NCAA Football 2004",
-  "nameZh": "",
+  "nameZh": "NCAA大学橄榄球2004",
   "aliases": [],
   "mc": 89,
   "ign": 9.1,
@@ -15438,7 +16048,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2060130,
@@ -15489,7 +16100,7 @@ window.GAMES = [
 {
   "id": 438100,
   "name": "VRChat",
-  "nameZh": "VRChat",
+  "nameZh": "VRChat虚拟社交",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -15511,12 +16122,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 36,
    "peak": 63856
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:out-of-the-park-baseball-4",
   "name": "Out of the Park Baseball 4",
-  "nameZh": "",
+  "nameZh": "公园之外棒球4",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15531,12 +16143,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:f1-2019",
   "name": "F1 2019",
-  "nameZh": "",
+  "nameZh": "F1赛车2019",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15551,12 +16164,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 200900,
   "name": "Cave Story+",
-  "nameZh": "Cave Story+",
+  "nameZh": "洞窟物语+",
   "aliases": [],
   "mc": 89,
   "ign": 8.5,
@@ -15574,12 +16188,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2370000,
   "name": "Lumines Arise",
-  "nameZh": "Lumines Arise",
+  "nameZh": "Lumines：崛起",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15597,12 +16212,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 236850,
   "name": "Europa Universalis IV",
-  "nameZh": "Europa Universalis IV",
+  "nameZh": "欧陆风云IV",
   "aliases": [],
   "mc": 87,
   "ign": 8.9,
@@ -15621,12 +16237,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1919470,
   "name": "Atari 50: The Anniversary Celebration",
-  "nameZh": "Atari 50: The Anniversary Celebration",
+  "nameZh": "雅达利50周年纪念合集",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -15645,7 +16262,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2592160,
@@ -15675,7 +16293,7 @@ window.GAMES = [
 {
   "id": "mc:ace-combat-04-shattered-skies",
   "name": "Ace Combat 04: Shattered Skies",
-  "nameZh": "",
+  "nameZh": "皇牌空战04：破碎的天空",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -15688,12 +16306,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2420660,
   "name": "Neva",
-  "nameZh": "Neva",
+  "nameZh": "尼瓦",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15712,12 +16331,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:sunless-skies",
   "name": "Sunless Skies",
-  "nameZh": "",
+  "nameZh": "无光之空",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15732,12 +16352,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 596970,
   "name": "Sunless Skies: Sovereign Edition",
-  "nameZh": "Sunless Skies: Sovereign Edition",
+  "nameZh": "无光之空：君主版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15757,12 +16378,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:hollow-knight-voidheart-edition",
   "name": "Hollow Knight: Voidheart Edition",
-  "nameZh": "",
+  "nameZh": "空洞骑士：虚空之心版",
   "aliases": [],
   "mc": 89,
   "ign": 9.4,
@@ -15777,12 +16399,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:streets-of-rage-2",
   "name": "Streets of Rage 2",
-  "nameZh": "",
+  "nameZh": "怒之铁拳2",
   "aliases": [],
   "mc": 89,
   "ign": 7.3,
@@ -15795,7 +16418,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 594570,
@@ -15848,7 +16472,7 @@ window.GAMES = [
 {
   "id": "mc:nhl-2004",
   "name": "NHL 2004",
-  "nameZh": "",
+  "nameZh": "NHL 2004：冰球",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15863,12 +16487,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:zeus-master-of-olympus",
   "name": "Zeus: Master of Olympus",
-  "nameZh": "",
+  "nameZh": "宙斯：奥林匹斯之主",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -15883,7 +16508,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1928690,
@@ -15936,7 +16562,7 @@ window.GAMES = [
 {
   "id": 1817070,
   "name": "Marvel’s Spider-Man Remastered",
-  "nameZh": "Marvel’s Spider-Man Remastered",
+  "nameZh": "漫威蜘蛛侠：重制版",
   "aliases": [
    "漫威蜘蛛侠",
    "蜘蛛侠"
@@ -15957,12 +16583,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2582320,
   "name": "Mixtape",
-  "nameZh": "Mixtape",
+  "nameZh": "混音带",
   "aliases": [],
   "mc": 87,
   "ign": 10.0,
@@ -15980,12 +16607,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nier-automata-the-end-of-yorha-edition",
   "name": "NieR: Automata - The End of YoRHa Edition",
-  "nameZh": "",
+  "nameZh": "尼尔：机械纪元—寄叶终结版",
   "aliases": [],
   "mc": 89,
   "ign": 7.0,
@@ -16000,7 +16628,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1887400,
@@ -16028,7 +16657,7 @@ window.GAMES = [
 {
   "id": "mc:hex-shards-of-fate",
   "name": "Hex: Shards of Fate",
-  "nameZh": "",
+  "nameZh": "Hex：命运碎片",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -16043,12 +16672,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:castlevania-dawn-of-sorrow",
   "name": "Castlevania: Dawn of Sorrow",
-  "nameZh": "",
+  "nameZh": "恶魔城：苍月十字架",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -16061,12 +16691,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-of-warcraft-warlords-of-draenor",
   "name": "World of Warcraft: Warlords of Draenor",
-  "nameZh": "",
+  "nameZh": "魔兽世界：德拉诺之王",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -16081,7 +16712,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1904480,
@@ -16110,7 +16742,7 @@ window.GAMES = [
 {
   "id": "mc:warhammer-40-000-dawn-of-war-dark-crusade",
   "name": "Warhammer 40,000: Dawn of War - Dark Crusade",
-  "nameZh": "",
+  "nameZh": "战锤40,000：战争黎明——黑暗十字军",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -16125,12 +16757,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 597220,
   "name": "West of Loathing",
-  "nameZh": "West of Loathing",
+  "nameZh": "憎恶之西",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -16150,12 +16783,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 393520,
   "name": "Iconoclasts",
-  "nameZh": "Iconoclasts",
+  "nameZh": "圣像破坏者",
   "aliases": [],
   "mc": 87,
   "ign": 8.4,
@@ -16175,12 +16809,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 6830,
   "name": "Commandos 2: Men of Courage",
-  "nameZh": "Commandos 2: Men of Courage",
+  "nameZh": "盟军敢死队2：勇往直前",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -16196,12 +16831,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2545360,
   "name": "Lonely Mountains: Snow Riders",
-  "nameZh": "Lonely Mountains: Snow Riders",
+  "nameZh": "孤山雪地骑手",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -16219,12 +16855,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:teenage-mutant-ninja-turtles-shredders-revenge-2023",
   "name": "Teenage Mutant Ninja Turtles: Shredder's Revenge - Dimension Shellshock",
-  "nameZh": "",
+  "nameZh": "忍者神龟：施莱德的复仇——次元震荡",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -16239,7 +16876,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3195440,
@@ -16291,7 +16929,7 @@ window.GAMES = [
 {
   "id": "mc:fire-emblem-fortunes-weave",
   "name": "Fire Emblem: Fortune's Weave",
-  "nameZh": "",
+  "nameZh": "火焰纹章：命运编织",
   "aliases": [],
   "mc": 89,
   "ign": 10.0,
@@ -16306,12 +16944,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2634890,
   "name": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
-  "nameZh": "MARVEL vs. CAPCOM Fighting Collection: Arcade Classics",
+  "nameZh": "漫威VS卡普空格斗合集：街机经典",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -16328,12 +16967,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:shin-megami-tensei-persona-3-fes",
   "name": "Shin Megami Tensei: Persona 3 FES",
-  "nameZh": "",
+  "nameZh": "女神异闻录3 FES",
   "aliases": [],
   "mc": 89,
   "ign": 8.8,
@@ -16346,12 +16986,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:world-series-baseball-2k3",
   "name": "World Series Baseball 2K3",
-  "nameZh": "",
+  "nameZh": "世界大赛棒球2K3",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -16364,12 +17005,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:dark-souls-artorias-of-the-abyss",
   "name": "Dark Souls: Artorias of the Abyss",
-  "nameZh": "",
+  "nameZh": "黑暗之魂：亚尔特留斯的深渊",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -16382,12 +17024,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid-hd-collection",
   "name": "Metal Gear Solid HD Collection",
-  "nameZh": "",
+  "nameZh": "合金装备高清合集",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -16400,12 +17043,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1446780,
   "name": "MONSTER HUNTER RISE",
-  "nameZh": "MONSTER HUNTER RISE",
+  "nameZh": "怪物猎人：崛起",
   "aliases": [
    "怪猎崛起",
    "怪物猎人崛起",
@@ -16426,12 +17070,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 885000,
   "name": "Synth Riders",
-  "nameZh": "Synth Riders",
+  "nameZh": "合成骑士",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -16450,12 +17095,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dreams",
   "name": "Dreams",
-  "nameZh": "",
+  "nameZh": "梦境",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -16470,12 +17116,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4282500,
   "name": "hololive Dreams",
-  "nameZh": "hololive Dreams",
+  "nameZh": "hololive 梦想",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -16495,7 +17142,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1328660,
@@ -16522,7 +17170,7 @@ window.GAMES = [
 {
   "id": "mc:einhander",
   "name": "Einhander",
-  "nameZh": "",
+  "nameZh": "独臂战机",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -16535,12 +17183,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:wwf-no-mercy",
   "name": "WWF No Mercy",
-  "nameZh": "",
+  "nameZh": "WWF：无情",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -16553,7 +17202,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1888160,
@@ -16579,7 +17229,7 @@ window.GAMES = [
 {
   "id": "mc:gran-turismo-4",
   "name": "Gran Turismo 4",
-  "nameZh": "",
+  "nameZh": "GT赛车4",
   "aliases": [],
   "mc": 89,
   "ign": 9.5,
@@ -16592,12 +17242,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2366970,
   "name": "Arco",
-  "nameZh": "Arco",
+  "nameZh": "阿尔科",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -16616,12 +17267,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-beatles-rock-band",
   "name": "The Beatles: Rock Band",
-  "nameZh": "",
+  "nameZh": "披头士：摇滚乐队",
   "aliases": [],
   "mc": 89,
   "ign": 8.0,
@@ -16634,12 +17286,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:advance-wars-2-black-hole-rising",
   "name": "Advance Wars 2: Black Hole Rising",
-  "nameZh": "",
+  "nameZh": "高级战争2：黑洞升起",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -16652,12 +17305,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tales-from-the-borderlands-episode-5-the-vault-of",
   "name": "Tales From The Borderlands: Episode 5 - The Vault of the Traveler",
-  "nameZh": "",
+  "nameZh": "无主之地传说：第5集——旅行者秘库",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -16672,12 +17326,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:cult-of-the-lamb-woolhaven",
   "name": "Cult of the Lamb: Woolhaven",
-  "nameZh": "",
+  "nameZh": "咩咩启示录：伍尔黑文",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -16692,7 +17347,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1895880,
@@ -16720,7 +17376,7 @@ window.GAMES = [
 {
   "id": 107100,
   "name": "Bastion",
-  "nameZh": "Bastion",
+  "nameZh": "堡垒",
   "aliases": [],
   "mc": 86,
   "ign": 9.0,
@@ -16740,12 +17396,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 851670,
   "name": "LUMINES REMASTERED",
-  "nameZh": "LUMINES REMASTERED",
+  "nameZh": "Lumines：重制版",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -16763,12 +17420,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 110800,
   "name": "L.A. Noire",
-  "nameZh": "L.A. Noire",
+  "nameZh": "黑色洛城",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -16785,12 +17443,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 232430,
   "name": "Gone Home",
-  "nameZh": "Gone Home",
+  "nameZh": "回家",
   "aliases": [],
   "mc": 86,
   "ign": 9.5,
@@ -16809,12 +17468,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ratchet-and-clank-future-tools-of-destruction",
   "name": "Ratchet & Clank Future: Tools of Destruction",
-  "nameZh": "",
+  "nameZh": "瑞奇与叮当Future：破坏工具",
   "aliases": [],
   "mc": 89,
   "ign": 9.4,
@@ -16827,12 +17487,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3480,
   "name": "Peggle Deluxe",
-  "nameZh": "Peggle Deluxe",
+  "nameZh": "弹珠豪华版",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -16849,12 +17510,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1328350,
   "name": "Turbo Overkill",
-  "nameZh": "Turbo Overkill",
+  "nameZh": "涡轮超杀",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -16871,12 +17533,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 9350,
   "name": "Supreme Commander",
-  "nameZh": "Supreme Commander",
+  "nameZh": "最高指挥官",
   "aliases": [],
   "mc": 86,
   "ign": 4.5,
@@ -16892,12 +17555,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:new-super-mario-bros",
   "name": "New Super Mario Bros.",
-  "nameZh": "",
+  "nameZh": "新超级马力欧兄弟",
   "aliases": [],
   "mc": 89,
   "ign": 9.5,
@@ -16910,12 +17574,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2369900,
   "name": "Castlevania Dominus Collection",
-  "nameZh": "Castlevania Dominus Collection",
+  "nameZh": "恶魔城 Dominus 合集",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -16933,12 +17598,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:enemy-engaged-rah-66-comanche-versus-ka-52-hokum",
   "name": "Enemy Engaged: RAH-66 Comanche Versus Ka-52 Hokum",
-  "nameZh": "",
+  "nameZh": "武装直升机交锋：科曼奇对阵霍克姆",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -16953,12 +17619,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:fallout-2",
   "name": "Fallout 2",
-  "nameZh": "",
+  "nameZh": "辐射2",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -16973,12 +17640,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 38410,
   "name": "Fallout 2: A Post Nuclear Role Playing Game",
-  "nameZh": "Fallout 2: A Post Nuclear Role Playing Game",
+  "nameZh": "辐射2：核战后的角色扮演游戏",
   "aliases": [],
   "mc": 86,
   "ign": 8.9,
@@ -16994,12 +17662,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2088810,
   "name": "Perfect Tides: Station to Station",
-  "nameZh": "Perfect Tides: Station to Station",
+  "nameZh": "完美潮汐：站到站",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17018,12 +17687,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 243040,
   "name": "Startopia",
-  "nameZh": "Startopia",
+  "nameZh": "星托邦",
   "aliases": [],
   "mc": 86,
   "ign": 9.0,
@@ -17039,12 +17709,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:total-war-shogun-2-fall-of-the-samurai",
   "name": "Total War: Shogun 2 - Fall of the Samurai",
-  "nameZh": "",
+  "nameZh": "全面战争：幕府将军2——武士的陨落",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17059,12 +17730,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid-peace-walker",
   "name": "Metal Gear Solid: Peace Walker",
-  "nameZh": "",
+  "nameZh": "合金装备：和平行者",
   "aliases": [],
   "mc": 89,
   "ign": 9.5,
@@ -17077,12 +17749,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2492660,
   "name": "METAL GEAR SOLID: Peace Walker - Master Collection Version",
-  "nameZh": "",
+  "nameZh": "合金装备：和平行者—大师合集版",
   "aliases": [],
   "mc": 89,
   "ign": 9.8,
@@ -17099,12 +17772,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:warioware-inc-mega-microgame",
   "name": "WarioWare, Inc.: Mega Microgame$!",
-  "nameZh": "",
+  "nameZh": "瓦里奥制造：超级迷你游戏$!",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -17117,12 +17791,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:grandia",
   "name": "Grandia",
-  "nameZh": "",
+  "nameZh": "格兰蒂亚",
   "aliases": [],
   "mc": 89,
   "ign": 9.0,
@@ -17135,7 +17810,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1034860,
@@ -17162,7 +17838,7 @@ window.GAMES = [
 {
   "id": "mc:nba-2k2",
   "name": "NBA 2K2",
-  "nameZh": "",
+  "nameZh": "NBA 2K2：篮球游戏",
   "aliases": [],
   "mc": 89,
   "ign": 8.6,
@@ -17175,12 +17851,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4356430,
   "name": "NBA 2K27",
-  "nameZh": "《NBA 2K27》",
+  "nameZh": "NBA 2K27：篮球游戏",
   "aliases": [],
   "mc": 89,
   "ign": 6.0,
@@ -17196,12 +17873,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:oddworld-abes-oddysee-new-n-tasty",
   "name": "Oddworld: Abe's Oddysee - New 'n' Tasty",
-  "nameZh": "",
+  "nameZh": "奇异世界：阿比的奥德赛—美味全新",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17216,12 +17894,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:colors-3d",
   "name": "Colors! 3D",
-  "nameZh": "",
+  "nameZh": "色彩！3D",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -17234,12 +17913,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 403640,
   "name": "Dishonored 2",
-  "nameZh": "Dishonored 2",
+  "nameZh": "羞辱2",
   "aliases": [],
   "mc": 88,
   "ign": 9.3,
@@ -17256,7 +17936,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1610440,
@@ -17284,7 +17965,7 @@ window.GAMES = [
 {
   "id": "mc:final-fantasy-xiv-heavensward",
   "name": "Final Fantasy XIV: Heavensward",
-  "nameZh": "",
+  "nameZh": "最终幻想XIV：苍穹之禁城",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17299,12 +17980,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:football-manager-2013",
   "name": "Football Manager 2013",
-  "nameZh": "",
+  "nameZh": "足球经理2013",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17319,12 +18001,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nba-2k11",
   "name": "NBA 2K11",
-  "nameZh": "",
+  "nameZh": "NBA 2K11：篮球游戏",
   "aliases": [],
   "mc": 89,
   "ign": 8.0,
@@ -17337,12 +18020,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:out-of-the-park-baseball-14",
   "name": "Out of the Park Baseball 14",
-  "nameZh": "",
+  "nameZh": "公园之外棒球14",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17357,12 +18041,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:warhammer-40000-rogue-trader-void-shadows",
   "name": "Warhammer 40,000: Rogue Trader - Void Shadows",
-  "nameZh": "",
+  "nameZh": "战锤40,000：行商浪人——虚空阴影",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17377,7 +18062,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2561580,
@@ -17406,7 +18092,7 @@ window.GAMES = [
 {
   "id": "mc:the-witcher-enhanced-edition",
   "name": "The Witcher: Enhanced Edition",
-  "nameZh": "",
+  "nameZh": "巫师：增强版",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17421,12 +18107,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 20900,
   "name": "The Witcher: Enhanced Edition Director's Cut",
-  "nameZh": "The Witcher: Enhanced Edition Director's Cut",
+  "nameZh": "巫师：增强版 导演剪辑版",
   "aliases": [],
   "mc": 86,
   "ign": 8.5,
@@ -17444,12 +18131,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-binding-of-isaac-repentance-plus-online",
   "name": "The Binding of Isaac: Repentance + Online",
-  "nameZh": "",
+  "nameZh": "以撒的结合：忏悔 + 在线模式",
   "aliases": [],
   "mc": 89,
   "ign": 7.5,
@@ -17464,12 +18152,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:borderlands-the-secret-armory-of-general-knoxx",
   "name": "Borderlands: The Secret Armory of General Knoxx",
-  "nameZh": "",
+  "nameZh": "无主之地：诺克斯将军的秘密军火库",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17484,7 +18173,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2701660,
@@ -17510,7 +18200,7 @@ window.GAMES = [
 {
   "id": 283680,
   "name": "Astebreed: Definitive Edition",
-  "nameZh": "Astebreed: Definitive Edition",
+  "nameZh": "Astebreed：决定版",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17527,12 +18217,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 32360,
   "name": "The Secret of Monkey Island: Special Edition",
-  "nameZh": "The Secret of Monkey Island: Special Edition",
+  "nameZh": "猴岛的秘密：特别版",
   "aliases": [],
   "mc": 88,
   "ign": 8.7,
@@ -17548,12 +18239,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ground-control",
   "name": "Ground Control",
-  "nameZh": "",
+  "nameZh": "地面控制",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17568,12 +18260,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 254820,
   "name": "Ground Control Anthology",
-  "nameZh": "Ground Control Anthology",
+  "nameZh": "地面控制：合集",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17589,12 +18282,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:espn-nba-basketball",
   "name": "ESPN NBA Basketball",
-  "nameZh": "",
+  "nameZh": "ESPN NBA篮球",
   "aliases": [],
   "mc": 89,
   "ign": 9.2,
@@ -17607,12 +18301,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nba-street",
   "name": "NBA Street",
-  "nameZh": "",
+  "nameZh": "NBA街头篮球",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -17625,12 +18320,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:soul-edge",
   "name": "Soul Edge",
-  "nameZh": "",
+  "nameZh": "刀魂",
   "aliases": [],
   "mc": 89,
   "ign": null,
@@ -17643,12 +18339,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:top-spin",
   "name": "Top Spin",
-  "nameZh": "",
+  "nameZh": "顶旋网球",
   "aliases": [],
   "mc": 89,
   "ign": 9.3,
@@ -17661,12 +18358,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:kentucky-route-zero",
   "name": "Kentucky Route Zero",
-  "nameZh": "",
+  "nameZh": "肯塔基零号公路",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17681,7 +18379,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 231200,
@@ -17710,7 +18409,7 @@ window.GAMES = [
 {
   "id": 945360,
   "name": "Among Us",
-  "nameZh": "Among Us",
+  "nameZh": "Among Us：太空狼人杀",
   "aliases": [],
   "mc": 85,
   "ign": 9.0,
@@ -17726,12 +18425,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 93,
    "peak": 9977
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 391220,
   "name": "Rise of the Tomb Raider",
-  "nameZh": "Rise of the Tomb Raider",
+  "nameZh": "古墓丽影：崛起",
   "aliases": [],
   "mc": 86,
   "ign": 9.3,
@@ -17750,7 +18450,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2344520,
@@ -17852,7 +18553,7 @@ window.GAMES = [
 {
   "id": "mc:monster-hunter-rise-sunbreak",
   "name": "Monster Hunter Rise: Sunbreak",
-  "nameZh": "",
+  "nameZh": "怪物猎人：崛起—曙光",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17867,12 +18568,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 21690,
   "name": "Resident Evil 5",
-  "nameZh": "Resident Evil 5",
+  "nameZh": "生化危机5",
   "aliases": [],
   "mc": 86,
   "ign": 9.3,
@@ -17889,12 +18591,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:saints-row-iv",
   "name": "Saints Row IV",
-  "nameZh": "",
+  "nameZh": "黑道圣徒IV",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17909,12 +18612,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 206420,
   "name": "Saints Row IV: Re-Elected",
-  "nameZh": "Saints Row IV: Re-Elected",
+  "nameZh": "黑道圣徒IV：重新当选版",
   "aliases": [],
   "mc": 86,
   "ign": 7.8,
@@ -17932,12 +18636,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dave-the-diver-in-the-jungle",
   "name": "DAVE THE DIVER: In the Jungle",
-  "nameZh": "",
+  "nameZh": "潜水员戴夫：丛林",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17952,12 +18657,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1871460,
   "name": "Beasts of Steel",
-  "nameZh": "Beasts of Steel",
+  "nameZh": "钢铁巨兽",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17979,12 +18685,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:everquest-omens-of-war",
   "name": "EverQuest: Omens of War",
-  "nameZh": "",
+  "nameZh": "无尽任务：战争预兆",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -17999,12 +18706,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:steel-beasts",
   "name": "Steel Beasts",
-  "nameZh": "",
+  "nameZh": "钢铁猛兽",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18019,12 +18727,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 298030,
   "name": "Total Annihilation",
-  "nameZh": "Total Annihilation",
+  "nameZh": "横扫千军",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18040,12 +18749,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mass-effect-2-lair-of-the-shadow-broker",
   "name": "Mass Effect 2: Lair of the Shadow Broker",
-  "nameZh": "",
+  "nameZh": "质量效应2：影子经纪人巢穴",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -18060,12 +18770,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 813780,
   "name": "Age of Empires II: Definitive Edition",
-  "nameZh": "Age of Empires II: Definitive Edition",
+  "nameZh": "帝国时代II：决定版",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -18082,12 +18793,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 79,
    "peak": 25478
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sid-meiers-civilization-iv-beyond-the-sword",
   "name": "Sid Meier's Civilization IV: Beyond the Sword",
-  "nameZh": "",
+  "nameZh": "席德·梅尔的文明IV：超越刀锋",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18102,12 +18814,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 47890,
   "name": "The Sims 3",
-  "nameZh": "The Sims 3",
+  "nameZh": "模拟人生3",
   "aliases": [],
   "mc": 86,
   "ign": 7.5,
@@ -18123,12 +18836,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:freedom-force-vs-the-3rd-reich",
   "name": "Freedom Force vs The 3rd Reich",
-  "nameZh": "",
+  "nameZh": "自由力量对抗第三帝国",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18143,12 +18857,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:death-stranding",
   "name": "Death Stranding",
-  "nameZh": "",
+  "nameZh": "死亡搁浅",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18163,12 +18878,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1850570,
   "name": "DEATH STRANDING DIRECTOR'S CUT",
-  "nameZh": "DEATH STRANDING DIRECTOR'S CUT",
+  "nameZh": "死亡搁浅 导演剪辑版",
   "aliases": [],
   "mc": 86,
   "ign": 7.0,
@@ -18185,12 +18901,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:destiny-2-the-witch-queen",
   "name": "Destiny 2: The Witch Queen",
-  "nameZh": "",
+  "nameZh": "命运2：邪姬魅影",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18205,7 +18922,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1328670,
@@ -18233,7 +18951,7 @@ window.GAMES = [
 {
   "id": "mc:yakuza-0",
   "name": "Yakuza 0",
-  "nameZh": "",
+  "nameZh": "如龙0",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18248,7 +18966,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2988580,
@@ -18276,7 +18995,7 @@ window.GAMES = [
 {
   "id": "mc:tribes-ascend",
   "name": "Tribes: Ascend",
-  "nameZh": "",
+  "nameZh": "部落：崛起",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18291,12 +19010,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:titanfall",
   "name": "Titanfall",
-  "nameZh": "",
+  "nameZh": "泰坦陨落",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18312,12 +19032,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 292060,
   "name": "Titanfall - The Final Hours",
-  "nameZh": "",
+  "nameZh": "泰坦陨落：最后时刻",
   "aliases": [],
   "mc": 86,
   "ign": 8.9,
@@ -18334,12 +19055,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gears-of-war-4",
   "name": "Gears of War 4",
-  "nameZh": "",
+  "nameZh": "战争机器4",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18354,7 +19076,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2321470,
@@ -18380,7 +19103,7 @@ window.GAMES = [
 {
   "id": 600130,
   "name": "Valfaris",
-  "nameZh": "Valfaris",
+  "nameZh": "瓦尔法瑞斯",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18397,12 +19120,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 612880,
   "name": "Wolfenstein II: The New Colossus",
-  "nameZh": "Wolfenstein II: The New Colossus",
+  "nameZh": "德军总部II：新巨像",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -18419,12 +19143,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:1000xresist",
   "name": "1000xRESIST",
-  "nameZh": "",
+  "nameZh": "千倍抵抗",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18439,12 +19164,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:wipeout-pure",
   "name": "Wipeout Pure",
-  "nameZh": "",
+  "nameZh": "反重力赛车：纯粹",
   "aliases": [],
   "mc": 88,
   "ign": 9.3,
@@ -18457,12 +19183,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1055540,
   "name": "A Short Hike",
-  "nameZh": "A Short Hike",
+  "nameZh": "短途徒步",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -18482,12 +19209,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1072040,
   "name": "Panzer Corps 2",
-  "nameZh": "Panzer Corps 2",
+  "nameZh": "装甲军团2",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18503,12 +19231,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 368370,
   "name": "Her Story",
-  "nameZh": "Her Story",
+  "nameZh": "她的故事",
   "aliases": [],
   "mc": 86,
   "ign": 8.5,
@@ -18528,12 +19257,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:starcraft-ii-heart-of-the-swarm",
   "name": "Starcraft II: Heart of the Swarm",
-  "nameZh": "",
+  "nameZh": "星际争霸II：虫群之心",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18548,12 +19278,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 39190,
   "name": "Dungeon Siege",
-  "nameZh": "Dungeon Siege",
+  "nameZh": "地牢围攻",
   "aliases": [],
   "mc": 86,
   "ign": 8.5,
@@ -18569,12 +19300,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:excitebike-64",
   "name": "Excitebike 64",
-  "nameZh": "",
+  "nameZh": "越野摩托64",
   "aliases": [],
   "mc": 88,
   "ign": 9.7,
@@ -18587,12 +19319,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:lego-star-wars-ii-the-original-trilogy",
   "name": "Lego Star Wars II: The Original Trilogy",
-  "nameZh": "",
+  "nameZh": "乐高星球大战II：正传三部曲",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18607,12 +19340,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:r4-ridge-racer-type-4",
   "name": "R4: Ridge Racer Type 4",
-  "nameZh": "",
+  "nameZh": "R4：山脊赛车4",
   "aliases": [],
   "mc": 88,
   "ign": 9.4,
@@ -18625,12 +19359,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1712350,
   "name": "Riven",
-  "nameZh": "Riven",
+  "nameZh": "瑞文",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18649,12 +19384,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:shenmue",
   "name": "Shenmue",
-  "nameZh": "",
+  "nameZh": "莎木",
   "aliases": [],
   "mc": 88,
   "ign": 9.7,
@@ -18667,12 +19403,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1668520,
   "name": "The Legend of Heroes: Trails to Azure",
-  "nameZh": "The Legend of Heroes: Trails to Azure",
+  "nameZh": "英雄传说：碧之轨迹",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18688,12 +19425,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 108600,
   "name": "Project Zomboid",
-  "nameZh": "Project Zomboid",
+  "nameZh": "僵尸毁灭工程",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -18714,12 +19452,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 41,
    "peak": 53293
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dirt-3",
   "name": "DiRT 3",
-  "nameZh": "",
+  "nameZh": "尘埃3",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -18734,12 +19473,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2096600,
   "name": "Crysis 2 Remastered",
-  "nameZh": "Crysis 2 Remastered",
+  "nameZh": "孤岛危机2：复刻版",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18755,12 +19495,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 385560,
   "name": "Shadow Complex Remastered",
-  "nameZh": "Shadow Complex Remastered",
+  "nameZh": "暗影帝国：重制版",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -18777,12 +19518,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 42680,
   "name": "Call of Duty : Modern Warfare 3",
-  "nameZh": "",
+  "nameZh": "使命召唤：现代战争3",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -18798,12 +19540,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 12150,
   "name": "Max Payne 2: The Fall of Max Payne",
-  "nameZh": "Max Payne 2: The Fall of Max Payne",
+  "nameZh": "马克思·佩恩2：马克思·佩恩的陨落",
   "aliases": [],
   "mc": 86,
   "ign": 9.4,
@@ -18819,12 +19562,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 501300,
   "name": "What Remains of Edith Finch",
-  "nameZh": "What Remains of Edith Finch",
+  "nameZh": "艾迪·芬奇的记忆",
   "aliases": [],
   "mc": 88,
   "ign": 8.8,
@@ -18842,12 +19586,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 368340,
   "name": "CrossCode",
-  "nameZh": "CrossCode",
+  "nameZh": "远星物语",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18868,7 +19613,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2754380,
@@ -18896,7 +19642,7 @@ window.GAMES = [
 {
   "id": "mc:arc-raiders",
   "name": "ARC Raiders",
-  "nameZh": "",
+  "nameZh": "ARC Raiders：方舟突袭者",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18911,12 +19657,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:ctr-crash-team-racing",
   "name": "CTR: Crash Team Racing",
-  "nameZh": "",
+  "nameZh": "CTR：古惑狼赛车",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -18929,12 +19676,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:galactic-civilizations-ii-dread-lords",
   "name": "Galactic Civilizations II: Dread Lords",
-  "nameZh": "",
+  "nameZh": "银河文明II：恐怖领主",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -18949,7 +19697,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2361770,
@@ -18976,7 +19725,7 @@ window.GAMES = [
 {
   "id": 284160,
   "name": "BeamNG.drive",
-  "nameZh": "BeamNG.drive",
+  "nameZh": "BeamNG.drive：软体碰撞驾驶模拟",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -18994,12 +19743,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 37,
    "peak": 37484
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:battlefield-bad-company-2-vietnam",
   "name": "Battlefield: Bad Company 2 Vietnam",
-  "nameZh": "",
+  "nameZh": "战地：叛逆连队2 越南",
   "aliases": [],
   "mc": 88,
   "ign": 9.5,
@@ -19014,7 +19764,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1947910,
@@ -19064,7 +19815,7 @@ window.GAMES = [
 {
   "id": "mc:pinball-fx-2-marvel-pinball-avengers-chronicles",
   "name": "Pinball FX 2: Marvel Pinball - Avengers Chronicles",
-  "nameZh": "",
+  "nameZh": "弹珠FX 2：漫威弹珠—复仇者编年史",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -19077,12 +19828,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:star-trek-voyager-elite-force",
   "name": "Star Trek: Voyager Elite Force",
-  "nameZh": "",
+  "nameZh": "星际迷航：航海家 精英力量",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19097,12 +19849,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:medal-of-honor-frontline",
   "name": "Medal of Honor: Frontline",
-  "nameZh": "",
+  "nameZh": "荣誉勋章：前线",
   "aliases": [],
   "mc": 88,
   "ign": 7.9,
@@ -19115,12 +19868,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ultimate-fighting-championship",
   "name": "Ultimate Fighting Championship",
-  "nameZh": "",
+  "nameZh": "终极格斗冠军赛",
   "aliases": [],
   "mc": 88,
   "ign": 7.7,
@@ -19133,7 +19887,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4019220,
@@ -19161,7 +19916,7 @@ window.GAMES = [
 {
   "id": 824600,
   "name": "HROT",
-  "nameZh": "HROT",
+  "nameZh": "HROT：尖峰",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19178,12 +19933,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:mario-kart-8",
   "name": "Mario Kart 8",
-  "nameZh": "",
+  "nameZh": "马力欧赛车8",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -19196,12 +19952,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:worldwide-soccer-manager-2008",
   "name": "Worldwide Soccer Manager 2008",
-  "nameZh": "",
+  "nameZh": "世界足球经理2008",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19216,12 +19973,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:il-2-sturmovik-forgotten-battles",
   "name": "IL-2 Sturmovik: Forgotten Battles",
-  "nameZh": "",
+  "nameZh": "伊尔-2：遗忘的战斗",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19236,12 +19994,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:super-mario-maker",
   "name": "Super Mario Maker",
-  "nameZh": "",
+  "nameZh": "超级马力欧制造",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -19254,12 +20013,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tekken-5",
   "name": "Tekken 5",
-  "nameZh": "",
+  "nameZh": "铁拳5",
   "aliases": [],
   "mc": 88,
   "ign": 9.3,
@@ -19272,12 +20032,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:f1-2016",
   "name": "F1 2016",
-  "nameZh": "",
+  "nameZh": "F1赛车2016",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19292,12 +20053,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 718590,
   "name": "Dark Devotion",
-  "nameZh": "Dark Devotion",
+  "nameZh": "黑暗献祭",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19317,12 +20079,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:devotion",
   "name": "Devotion",
-  "nameZh": "",
+  "nameZh": "还愿",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19337,12 +20100,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nhl-10",
   "name": "NHL 10",
-  "nameZh": "",
+  "nameZh": "NHL 10：冰球",
   "aliases": [],
   "mc": 88,
   "ign": 8.7,
@@ -19355,12 +20119,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1649240,
   "name": "Returnal",
-  "nameZh": "Returnal",
+  "nameZh": "死亡回归",
   "aliases": [],
   "mc": 86,
   "ign": 8.0,
@@ -19376,12 +20141,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1326470,
   "name": "Sons Of The Forest",
-  "nameZh": "Sons Of The Forest",
+  "nameZh": "森林之子",
   "aliases": [],
   "mc": 86,
   "ign": 9.0,
@@ -19400,12 +20166,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 61510,
   "name": "Age of Wonders II: The Wizard's Throne",
-  "nameZh": "Age of Wonders II: The Wizard's Throne",
+  "nameZh": "奇迹时代II：巫师王座",
   "aliases": [],
   "mc": 86,
   "ign": 8.5,
@@ -19422,12 +20189,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:everquest-the-ruins-of-kunark",
   "name": "EverQuest: The Ruins of Kunark",
-  "nameZh": "",
+  "nameZh": "无尽任务：昆纳克废墟",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19442,12 +20210,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 228360,
   "name": "Full Throttle Remastered",
-  "nameZh": "Full Throttle Remastered",
+  "nameZh": "极速天龙：重制版",
   "aliases": [],
   "mc": 86,
   "ign": 8.0,
@@ -19465,12 +20234,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:links-2001",
   "name": "Links 2001",
-  "nameZh": "",
+  "nameZh": "Links 2001：高尔夫",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19485,12 +20255,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:unreal-tournament-2003",
   "name": "Unreal Tournament 2003",
-  "nameZh": "",
+  "nameZh": "虚幻竞技场2003",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19505,12 +20276,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diddy-kong-racing",
   "name": "Diddy Kong Racing",
-  "nameZh": "",
+  "nameZh": "迪迪刚赛车",
   "aliases": [],
   "mc": 88,
   "ign": 8.4,
@@ -19523,12 +20295,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:star-fox-64",
   "name": "Star Fox 64",
-  "nameZh": "",
+  "nameZh": "星际火狐64",
   "aliases": [],
   "mc": 88,
   "ign": 8.7,
@@ -19541,7 +20314,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1203220,
@@ -19573,7 +20347,7 @@ window.GAMES = [
 {
   "id": "mc:nhl-09",
   "name": "NHL 09",
-  "nameZh": "",
+  "nameZh": "NHL 09：冰球",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -19586,12 +20360,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-lord-of-the-rings-online-shadows-of-angmar",
   "name": "The Lord of the Rings Online: Shadows of Angmar",
-  "nameZh": "",
+  "nameZh": "指环王Online：安格玛之影",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19606,12 +20381,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sea-of-stars-throes-of-the-watchmaker",
   "name": "Sea of Stars: Throes of the Watchmaker",
-  "nameZh": "",
+  "nameZh": "星之海：钟表匠的苦难",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19626,12 +20402,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 610370,
   "name": "Desperados III",
-  "nameZh": "Desperados III",
+  "nameZh": "赏金奇兵III",
   "aliases": [],
   "mc": 86,
   "ign": 8.0,
@@ -19649,12 +20426,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 524220,
   "name": "NieR:Automata",
-  "nameZh": "NieR:Automata",
+  "nameZh": "尼尔：机械纪元",
   "aliases": [],
   "mc": 88,
   "ign": 8.9,
@@ -19672,12 +20450,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:meteos",
   "name": "Meteos",
-  "nameZh": "",
+  "nameZh": "陨石方块",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -19690,12 +20469,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2892490,
   "name": "MeteoStorm",
-  "nameZh": "MeteoStorm",
+  "nameZh": "流星风暴",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -19714,12 +20494,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 405640,
   "name": "Pony Island",
-  "nameZh": "Pony Island",
+  "nameZh": "小马岛",
   "aliases": [],
   "mc": 86,
   "ign": 9.0,
@@ -19737,12 +20518,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3556750,
   "name": "Warhammer 40,000: Dawn of War - Definitive Edition",
-  "nameZh": "Warhammer 40,000: Dawn of War - Definitive Edition",
+  "nameZh": "战锤40,000：战争黎明 终极版",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19758,12 +20540,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pokemon-pokopia-bubbly-basin",
   "name": "Pokemon Pokopia: Bubbly Basin",
-  "nameZh": "",
+  "nameZh": "宝可梦Pokopia：欢快盆地",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -19778,12 +20561,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:rise-of-the-tomb-raider-20-year-celebration",
   "name": "Rise of the Tomb Raider: 20 Year Celebration",
-  "nameZh": "",
+  "nameZh": "古墓丽影：崛起 20周年纪念版",
   "aliases": [],
   "mc": 88,
   "ign": 9.3,
@@ -19798,12 +20582,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:warhammer-online-age-of-reckoning",
   "name": "Warhammer Online: Age of Reckoning",
-  "nameZh": "",
+  "nameZh": "战锤Online：纷争时代",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19818,7 +20603,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1931770,
@@ -19845,7 +20631,7 @@ window.GAMES = [
 {
   "id": "mc:uncharted-drakes-fortune",
   "name": "Uncharted: Drake's Fortune",
-  "nameZh": "",
+  "nameZh": "神秘海域：德雷克的宝藏",
   "aliases": [],
   "mc": 88,
   "ign": 9.1,
@@ -19858,12 +20644,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:playerunknowns-battlegrounds",
   "name": "PlayerUnknown's Battlegrounds",
-  "nameZh": "",
+  "nameZh": "绝地求生：大逃杀",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19878,12 +20665,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 13540,
   "name": "Tom Clancy's Rainbow Six Vegas",
-  "nameZh": "Tom Clancy's Rainbow Six Vegas",
+  "nameZh": "汤姆·克兰西之彩虹六号：维加斯",
   "aliases": [],
   "mc": 88,
   "ign": 7.6,
@@ -19899,12 +20687,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-street-fighter-ii-turbo-hd-remix",
   "name": "Super Street Fighter II Turbo HD Remix",
-  "nameZh": "",
+  "nameZh": "超级街头霸王II Turbo HD Remix",
   "aliases": [],
   "mc": 88,
   "ign": 8.7,
@@ -19917,12 +20706,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tactics-ogre-the-knight-of-lodis",
   "name": "Tactics Ogre: The Knight of Lodis",
-  "nameZh": "",
+  "nameZh": "皇家骑士团：洛迪斯骑士",
   "aliases": [],
   "mc": 88,
   "ign": 8.5,
@@ -19935,12 +20725,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 356400,
   "name": "Thumper",
-  "nameZh": "Thumper",
+  "nameZh": "重击",
   "aliases": [],
   "mc": 86,
   "ign": 9.0,
@@ -19957,12 +20748,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:bionic-commando-rearmed",
   "name": "Bionic Commando: Rearmed",
-  "nameZh": "",
+  "nameZh": "生化尖兵：重装上阵",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -19977,12 +20769,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1102190,
   "name": "Monster Train",
-  "nameZh": "Monster Train",
+  "nameZh": "怪物列车",
   "aliases": [],
   "mc": 86,
   "ign": 9.0,
@@ -19998,12 +20791,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 730830,
   "name": "Escape from Monkey Island",
-  "nameZh": "Escape from Monkey Island",
+  "nameZh": "猴岛逃亡4",
   "aliases": [],
   "mc": 86,
   "ign": 8.7,
@@ -20019,12 +20813,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:europa-universalis",
   "name": "Europa Universalis",
-  "nameZh": "",
+  "nameZh": "欧陆风云",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20039,7 +20834,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 242050,
@@ -20066,7 +20862,7 @@ window.GAMES = [
 {
   "id": "mc:the-last-of-us-left-behind",
   "name": "The Last of Us: Left Behind",
-  "nameZh": "",
+  "nameZh": "最后生还者：遗落",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -20079,12 +20875,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 15320,
   "name": "IL-2 Sturmovik: 1946",
-  "nameZh": "IL-2 Sturmovik: 1946",
+  "nameZh": "伊尔-2：1946",
   "aliases": [],
   "mc": 86,
   "ign": 8.1,
@@ -20100,12 +20897,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 627270,
   "name": "Injustice 2",
-  "nameZh": "Injustice 2",
+  "nameZh": "不义联盟2",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -20122,12 +20920,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:xcom-enemy-within-expansion",
   "name": "XCOM: Enemy Within Expansion",
-  "nameZh": "",
+  "nameZh": "幽浮：内部敌人扩展包",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20142,7 +20941,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2993780,
@@ -20193,7 +20993,7 @@ window.GAMES = [
 {
   "id": "mc:star-wars-pinball-balance-of-the-force",
   "name": "Star Wars Pinball: Balance of the Force",
-  "nameZh": "",
+  "nameZh": "星球大战弹珠台：原力平衡",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -20206,12 +21006,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:battlefield-3-back-to-karkand",
   "name": "Battlefield 3: Back to Karkand",
-  "nameZh": "",
+  "nameZh": "战地3：重返卡肯",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20226,12 +21027,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fight-night-round-2",
   "name": "Fight Night Round 2",
-  "nameZh": "",
+  "nameZh": "拳击之夜 第2回合",
   "aliases": [],
   "mc": 88,
   "ign": 8.4,
@@ -20244,7 +21046,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1621690,
@@ -20275,7 +21078,7 @@ window.GAMES = [
 {
   "id": "mc:heroes-of-the-storm",
   "name": "Heroes of the Storm",
-  "nameZh": "",
+  "nameZh": "风暴英雄",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20290,12 +21093,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:project-gotham-racing-3",
   "name": "Project Gotham Racing 3",
-  "nameZh": "",
+  "nameZh": "都市赛车计划3",
   "aliases": [],
   "mc": 88,
   "ign": 8.8,
@@ -20308,12 +21112,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:civilization-iii-conquests",
   "name": "Civilization III: Conquests",
-  "nameZh": "",
+  "nameZh": "文明III：征服",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20328,12 +21133,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nba-2k17",
   "name": "NBA 2K17",
-  "nameZh": "",
+  "nameZh": "NBA 2K17：篮球游戏",
   "aliases": [],
   "mc": 88,
   "ign": 8.9,
@@ -20348,12 +21154,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:path-of-exile",
   "name": "Path of Exile",
-  "nameZh": "",
+  "nameZh": "流放之路",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20368,12 +21175,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1647550,
   "name": "NEO: The World Ends with You",
-  "nameZh": "NEO: The World Ends with You",
+  "nameZh": "新美妙世界",
   "aliases": [],
   "mc": 88,
   "ign": 7.0,
@@ -20390,12 +21198,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-world-ends-with-you",
   "name": "The World Ends with You",
-  "nameZh": "",
+  "nameZh": "美妙世界",
   "aliases": [],
   "mc": 88,
   "ign": 8.9,
@@ -20408,12 +21217,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1369630,
   "name": "ENDER LILIES: Quietus of the Knights",
-  "nameZh": "ENDER LILIES: Quietus of the Knights",
+  "nameZh": "终焉之莉莉：骑士们的救赎",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20431,12 +21241,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1384160,
   "name": "GUILTY GEAR -STRIVE-",
-  "nameZh": "GUILTY GEAR -STRIVE-",
+  "nameZh": "罪恶装备 -奋战-",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -20453,12 +21264,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:football-manager-2019",
   "name": "Football Manager 2019",
-  "nameZh": "",
+  "nameZh": "足球经理2019",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20473,7 +21285,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1280930,
@@ -20503,7 +21316,7 @@ window.GAMES = [
 {
   "id": 388210,
   "name": "Day of the Tentacle Remastered",
-  "nameZh": "Day of the Tentacle Remastered",
+  "nameZh": "触手之日：重制版",
   "aliases": [],
   "mc": 86,
   "ign": 8.8,
@@ -20521,12 +21334,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:espn-nhl-hockey",
   "name": "ESPN NHL Hockey",
-  "nameZh": "",
+  "nameZh": "ESPN NHL冰球",
   "aliases": [],
   "mc": 88,
   "ign": 9.3,
@@ -20539,12 +21353,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:injustice-2-legendary-edition",
   "name": "Injustice 2: Legendary Edition",
-  "nameZh": "",
+  "nameZh": "不义联盟2：传奇版",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -20559,12 +21374,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:jsrf-jet-set-radio-future",
   "name": "JSRF: Jet Set Radio Future",
-  "nameZh": "",
+  "nameZh": "涂鸦小子：未来",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -20577,12 +21393,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ncaa-football-2005",
   "name": "NCAA Football 2005",
-  "nameZh": "",
+  "nameZh": "NCAA大学橄榄球2005",
   "aliases": [],
   "mc": 88,
   "ign": 8.5,
@@ -20595,12 +21412,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ratchet-and-clank",
   "name": "Ratchet & Clank",
-  "nameZh": "",
+  "nameZh": "瑞奇与叮当",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -20613,12 +21431,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 20530,
   "name": "Red Faction",
-  "nameZh": "Red Faction",
+  "nameZh": "红色派系",
   "aliases": [],
   "mc": 88,
   "ign": 9.1,
@@ -20634,12 +21453,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3817040,
   "name": "Simogo Legacy Collection",
-  "nameZh": "Simogo Legacy Collection",
+  "nameZh": "Simogo遗产合集",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -20660,7 +21480,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4078430,
@@ -20691,7 +21512,7 @@ window.GAMES = [
 {
   "id": "mc:the-elder-scrolls-iv-shivering-isles",
   "name": "The Elder Scrolls IV: Shivering Isles",
-  "nameZh": "",
+  "nameZh": "上古卷轴IV：战栗孤岛",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20706,12 +21527,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:xcom-enemy-within",
   "name": "XCOM: Enemy Within",
-  "nameZh": "",
+  "nameZh": "幽浮：内部敌人",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -20724,12 +21546,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 812140,
   "name": "Assassin's Creed Odyssey",
-  "nameZh": "Assassin's Creed Odyssey",
+  "nameZh": "刺客信条：奥德赛",
   "aliases": [],
   "mc": 86,
   "ign": 9.2,
@@ -20747,7 +21570,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1588550,
@@ -20777,7 +21601,7 @@ window.GAMES = [
 {
   "id": "mc:dirt-rally",
   "name": "DiRT Rally",
-  "nameZh": "",
+  "nameZh": "尘埃拉力赛",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20792,12 +21616,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rocket-league",
   "name": "Rocket League",
-  "nameZh": "",
+  "nameZh": "火箭联盟",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20812,12 +21637,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:age-of-mythology-retold-immortal-pillars",
   "name": "Age of Mythology: Retold - Immortal Pillars",
-  "nameZh": "",
+  "nameZh": "神话时代：重述——不朽之柱",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20832,12 +21658,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:allegiance",
   "name": "Allegiance",
-  "nameZh": "",
+  "nameZh": "忠诚",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20852,12 +21679,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:f1-2021",
   "name": "F1 2021",
-  "nameZh": "",
+  "nameZh": "F1赛车2021",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20872,12 +21700,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 383100,
   "name": "Fragile Allegiance",
-  "nameZh": "Fragile Allegiance",
+  "nameZh": "脆弱联盟",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -20893,12 +21722,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:fire-emblem-fates-special-edition",
   "name": "Fire Emblem Fates: Special Edition",
-  "nameZh": "",
+  "nameZh": "火焰纹章if 特别版",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -20911,12 +21741,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pinball-fx-2",
   "name": "Pinball FX 2",
-  "nameZh": "",
+  "nameZh": "弹珠FX 2",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -20931,12 +21762,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-tactics",
   "name": "Final Fantasy Tactics",
-  "nameZh": "",
+  "nameZh": "最终幻想战略版",
   "aliases": [],
   "mc": 88,
   "ign": 8.5,
@@ -20949,12 +21781,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1004640,
   "name": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
-  "nameZh": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
+  "nameZh": "最终幻想战略版：伊瓦利斯编年史",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -20971,12 +21804,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nhl-11",
   "name": "NHL 11",
-  "nameZh": "",
+  "nameZh": "NHL 11：冰球",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -20989,12 +21823,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:wario-land-4",
   "name": "Wario Land 4",
-  "nameZh": "",
+  "nameZh": "瓦里奥大陆4",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -21007,12 +21842,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:warioware-twisted",
   "name": "WarioWare: Twisted!",
-  "nameZh": "",
+  "nameZh": "瓦里奥制造：扭转！",
   "aliases": [],
   "mc": 88,
   "ign": 9.5,
@@ -21025,12 +21861,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pokemon-y",
   "name": "Pokemon Y",
-  "nameZh": "",
+  "nameZh": "宝可梦Y",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -21043,12 +21880,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4080220,
   "name": "EA SPORTS FC 27",
-  "nameZh": "EA SPORTS FC 27",
+  "nameZh": "EA SPORTS FC 27：足球俱乐部",
   "aliases": [],
   "mc": null,
   "ign": 7.0,
@@ -21065,12 +21903,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 47,
    "peak": 50985
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2453160,
   "name": "Sword of the Sea",
-  "nameZh": "Sword of the Sea",
+  "nameZh": "海之剑",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -21088,7 +21927,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1092790,
@@ -21140,7 +21980,7 @@ window.GAMES = [
 {
   "id": "mc:nascar-2005-chase-for-the-cup",
   "name": "NASCAR SimRacing",
-  "nameZh": "",
+  "nameZh": "NASCAR模拟赛车",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -21155,12 +21995,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:grand-theft-auto-liberty-city-stories",
   "name": "Grand Theft Auto: Liberty City Stories",
-  "nameZh": "",
+  "nameZh": "侠盗猎车手：自由城故事",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -21173,7 +22014,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 257510,
@@ -21203,7 +22045,7 @@ window.GAMES = [
 {
   "id": 255710,
   "name": "Cities: Skylines",
-  "nameZh": "Cities: Skylines",
+  "nameZh": "城市：天际线",
   "aliases": [
    "城市天际线",
    "天际线"
@@ -21225,7 +22067,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metroid-dread",
@@ -21277,7 +22120,7 @@ window.GAMES = [
 {
   "id": "mc:world-of-warcraft-the-war-within",
   "name": "World of Warcraft: The War Within",
-  "nameZh": "",
+  "nameZh": "魔兽世界：地心之战",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21292,12 +22135,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2364580,
   "name": "Titanium Court",
-  "nameZh": "Titanium Court",
+  "nameZh": "钛金法庭",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21314,7 +22158,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2835570,
@@ -21366,7 +22211,7 @@ window.GAMES = [
 {
   "id": "mc:sly-2-band-of-thieves",
   "name": "Sly 2: Band of Thieves",
-  "nameZh": "",
+  "nameZh": "狡狐大冒险2：盗贼帮",
   "aliases": [],
   "mc": 88,
   "ign": 9.2,
@@ -21379,12 +22224,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:bomberman-tournament",
   "name": "Bomberman Tournament",
-  "nameZh": "",
+  "nameZh": "炸弹人：竞技场",
   "aliases": [],
   "mc": 88,
   "ign": 8.5,
@@ -21397,7 +22243,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 548430,
@@ -21423,7 +22270,7 @@ window.GAMES = [
 {
   "id": "mc:fifa-soccer-2003",
   "name": "FIFA Soccer 2003",
-  "nameZh": "",
+  "nameZh": "FIFA足球2003",
   "aliases": [],
   "mc": 88,
   "ign": 8.4,
@@ -21438,12 +22285,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1991300,
   "name": "Closer the Distance",
-  "nameZh": "Closer the Distance",
+  "nameZh": "渐行渐近",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21461,12 +22309,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 429530,
   "name": "Falcon 4.0",
-  "nameZh": "Falcon 4.0",
+  "nameZh": "猎鹰4.0",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21482,7 +22331,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2097570,
@@ -21511,7 +22361,7 @@ window.GAMES = [
 {
   "id": "mc:tom-clancys-rainbow-six",
   "name": "Tom Clancy's Rainbow Six",
-  "nameZh": "",
+  "nameZh": "汤姆·克兰西之彩虹六号",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21526,12 +22376,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 19830,
   "name": "Tom Clancy's Rainbow Six 3 Gold",
-  "nameZh": "Tom Clancy's Rainbow Six 3 Gold",
+  "nameZh": "汤姆·克兰西之彩虹六号3：黄金版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21547,12 +22398,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tekken-5-dark-resurrection",
   "name": "Tekken 5: Dark Resurrection",
-  "nameZh": "",
+  "nameZh": "铁拳5：暗黑复苏",
   "aliases": [],
   "mc": 88,
   "ign": 8.2,
@@ -21565,12 +22417,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:god-of-war-ragnarok-valhalla",
   "name": "God of War: Ragnarok - Valhalla",
-  "nameZh": "",
+  "nameZh": "战神：诸神黄昏——英灵殿",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -21585,12 +22438,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 719040,
   "name": "Wasteland 3",
-  "nameZh": "Wasteland 3",
+  "nameZh": "废土3",
   "aliases": [],
   "mc": 85,
   "ign": 8.0,
@@ -21609,12 +22463,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 251730,
   "name": "Legend of Grimrock 2",
-  "nameZh": "Legend of Grimrock 2",
+  "nameZh": "魔岩山传说2",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21633,7 +22488,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3070390,
@@ -21661,7 +22517,7 @@ window.GAMES = [
 {
   "id": "mc:sam-and-max-episode-205-whats-new-beelzebub",
   "name": "Sam & Max Episode 205: What's New, Beelzebub?",
-  "nameZh": "",
+  "nameZh": "山姆与麦克斯 第205集：贝尔泽布的新消息？",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21676,12 +22532,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:espn-nhl-2k5",
   "name": "ESPN NHL 2K5",
-  "nameZh": "",
+  "nameZh": "ESPN NHL冰球2K5",
   "aliases": [],
   "mc": 88,
   "ign": 9.2,
@@ -21694,7 +22551,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1222690,
@@ -21723,7 +22581,7 @@ window.GAMES = [
 {
   "id": "mc:fire-emblem",
   "name": "Fire Emblem",
-  "nameZh": "",
+  "nameZh": "火焰纹章",
   "aliases": [],
   "mc": 88,
   "ign": 9.5,
@@ -21736,12 +22594,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tales-from-the-borderlands-a-telltale-game-series",
   "name": "Tales from the Borderlands: A Telltale Game Series",
-  "nameZh": "",
+  "nameZh": "无主之地传说：Telltale游戏系列",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21756,12 +22615,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fire-emblem-fates-revelation",
   "name": "Fire Emblem Fates: Revelation",
-  "nameZh": "",
+  "nameZh": "火焰纹章if：透魔王国",
   "aliases": [],
   "mc": 88,
   "ign": 9.5,
@@ -21774,12 +22634,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:hearthstone-heroes-of-warcraft-whispers-of-the-old",
   "name": "Hearthstone: Heroes of Warcraft - Whispers of the Old Gods",
-  "nameZh": "",
+  "nameZh": "炉石传说：上古之神的低语",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21794,12 +22655,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:city-of-heroes",
   "name": "City of Heroes",
-  "nameZh": "",
+  "nameZh": "英雄之城",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21814,7 +22676,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:paper-mario-the-thousand-year-door",
@@ -21841,7 +22704,7 @@ window.GAMES = [
 {
   "id": "mc:kingdom-hearts-collection-i-iii",
   "name": "Kingdom Hearts Collection I ~ III",
-  "nameZh": "",
+  "nameZh": "王国之心I至III合集",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -21856,12 +22719,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 571310,
   "name": "SteamWorld Dig 2",
-  "nameZh": "SteamWorld Dig 2",
+  "nameZh": "蒸汽世界：挖掘2",
   "aliases": [],
   "mc": 88,
   "ign": 8.8,
@@ -21882,12 +22746,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:blazblue-chrono-phantasma-extend",
   "name": "BlazBlue: Chrono Phantasma Extend",
-  "nameZh": "",
+  "nameZh": "苍翼默示录：时刻幻象 扩展版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21902,12 +22767,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 205710,
   "name": "EverQuest",
-  "nameZh": "EverQuest",
+  "nameZh": "无尽任务",
   "aliases": [],
   "mc": 85,
   "ign": 8.4,
@@ -21925,12 +22791,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:swat-4",
   "name": "SWAT 4",
-  "nameZh": "",
+  "nameZh": "特警4",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -21945,12 +22812,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1716740,
   "name": "Starfield",
-  "nameZh": "Starfield",
+  "nameZh": "星空",
   "aliases": [],
   "mc": 85,
   "ign": 7.0,
@@ -21966,12 +22834,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo-iii-eternal-collection",
   "name": "Diablo III: Eternal Collection",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神III：永恒收藏版",
   "aliases": [],
   "mc": 88,
   "ign": 9.0,
@@ -21986,12 +22855,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:warhammer-40-000-dawn-of-war-ii",
   "name": "Warhammer 40,000: Dawn of War II",
-  "nameZh": "",
+  "nameZh": "战锤40,000：战争黎明II",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22006,12 +22876,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 285190,
   "name": "Warhammer 40,000: Dawn of War III",
-  "nameZh": "Warhammer 40,000: Dawn of War III",
+  "nameZh": "战锤40,000：战争黎明III",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22031,12 +22902,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 15750,
   "name": "Oddworld: Stranger's Wrath HD",
-  "nameZh": "Oddworld: Stranger's Wrath HD",
+  "nameZh": "奇异世界：陌生人的愤怒 HD",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -22054,12 +22926,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 600370,
   "name": "Paradigm",
-  "nameZh": "Paradigm",
+  "nameZh": "范式",
   "aliases": [],
   "mc": 85,
   "ign": 8.0,
@@ -22078,12 +22951,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-sims-4-realm-of-magic",
   "name": "The Sims 4: Realm of Magic",
-  "nameZh": "",
+  "nameZh": "模拟人生4：魔法世界",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22098,12 +22972,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 504370,
   "name": "Battlerite",
-  "nameZh": "Battlerite",
+  "nameZh": "战斗仪式",
   "aliases": [],
   "mc": 85,
   "ign": 8.2,
@@ -22120,7 +22995,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4530370,
@@ -22194,7 +23070,7 @@ window.GAMES = [
 {
   "id": 218060,
   "name": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien",
-  "nameZh": "BIT.TRIP Presents... Runner2: Future Legend of Rhythm Alien",
+  "nameZh": "BIT.TRIP呈献：节奏旅程2——节奏外星人传奇",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22214,12 +23090,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:fifa-soccer-11",
   "name": "FIFA Soccer 11",
-  "nameZh": "",
+  "nameZh": "FIFA足球11",
   "aliases": [],
   "mc": 88,
   "ign": 9.5,
@@ -22234,12 +23111,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:littlebigplanet-ps-vita",
   "name": "LittleBigPlanet PS Vita",
-  "nameZh": "",
+  "nameZh": "小小大星球：PS Vita",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -22252,7 +23130,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 219150,
@@ -22281,7 +23160,7 @@ window.GAMES = [
 {
   "id": "mc:aliens-versus-predator-2",
   "name": "Aliens Versus Predator 2",
-  "nameZh": "",
+  "nameZh": "异形大战铁血战士2",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22296,12 +23175,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-xv-royal-edition",
   "name": "Final Fantasy XV: Royal Edition",
-  "nameZh": "",
+  "nameZh": "最终幻想XV：皇家版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22316,12 +23196,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 557750,
   "name": "Giants: Citizen Kabuto",
-  "nameZh": "Giants: Citizen Kabuto",
+  "nameZh": "巨人：公民卡布托",
   "aliases": [],
   "mc": 85,
   "ign": 9.2,
@@ -22340,12 +23221,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:metro-exodus-enhanced-edition",
   "name": "Metro Exodus: Enhanced Edition",
-  "nameZh": "",
+  "nameZh": "地铁：离去 增强版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22360,12 +23242,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1910600,
   "name": "ONE BTN BOSSES",
-  "nameZh": "ONE BTN BOSSES",
+  "nameZh": "一键Boss",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22382,12 +23265,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:operation-flashpoint-cold-war-crisis",
   "name": "Operation Flashpoint: Cold War Crisis",
-  "nameZh": "",
+  "nameZh": "闪点行动：冷战危机",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22402,12 +23286,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:out-of-the-park-baseball-13",
   "name": "Out of the Park Baseball 13",
-  "nameZh": "",
+  "nameZh": "公园之外棒球13",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22422,12 +23307,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:tropico",
   "name": "Tropico",
-  "nameZh": "",
+  "nameZh": "海岛大亨",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22442,12 +23328,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 33520,
   "name": "Tropico Reloaded",
-  "nameZh": "Tropico Reloaded",
+  "nameZh": "海岛大亨：重装上阵",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22464,12 +23351,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 245450,
   "name": "Wizardry 8",
-  "nameZh": "Wizardry 8",
+  "nameZh": "巫术8",
   "aliases": [],
   "mc": 85,
   "ign": 7.5,
@@ -22487,12 +23375,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:art-of-balance-touch",
   "name": "Art of Balance",
-  "nameZh": "",
+  "nameZh": "平衡艺术",
   "aliases": [],
   "mc": 88,
   "ign": 8.0,
@@ -22505,12 +23394,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:joe-danger-special-edition",
   "name": "Joe Danger: Special Edition",
-  "nameZh": "",
+  "nameZh": "乔危险：特别版",
   "aliases": [],
   "mc": 88,
   "ign": 9.5,
@@ -22523,12 +23413,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:cave-story-plus",
   "name": "Cave Story Plus",
-  "nameZh": "",
+  "nameZh": "洞窟物语 Plus",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -22543,12 +23434,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:crimson-skies-high-road-to-revenge",
   "name": "Crimson Skies: High Road to Revenge",
-  "nameZh": "",
+  "nameZh": "赤色天空：复仇之路",
   "aliases": [],
   "mc": 88,
   "ign": 9.1,
@@ -22561,12 +23453,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nascar-thunder-2004",
   "name": "NASCAR Thunder 2004",
-  "nameZh": "",
+  "nameZh": "NASCAR雷霆2004",
   "aliases": [],
   "mc": 88,
   "ign": 8.5,
@@ -22579,7 +23472,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1072420,
@@ -22608,7 +23502,7 @@ window.GAMES = [
 {
   "id": 2947440,
   "name": "SILENT HILL f",
-  "nameZh": "SILENT HILL f",
+  "nameZh": "寂静岭f",
   "aliases": [],
   "mc": 86,
   "ign": 7.0,
@@ -22625,12 +23519,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-lord-of-the-rings-online-mines-of-moria",
   "name": "The Lord of the Rings Online: Mines of Moria",
-  "nameZh": "",
+  "nameZh": "指环王Online：莫瑞亚矿坑",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22645,12 +23540,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3017860,
   "name": "DOOM: The Dark Ages",
-  "nameZh": "DOOM: The Dark Ages",
+  "nameZh": "毁灭战士：黑暗时代",
   "aliases": [],
   "mc": 85,
   "ign": 9.0,
@@ -22666,7 +23562,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 874260,
@@ -22717,7 +23614,7 @@ window.GAMES = [
 {
   "id": "mc:the-binding-of-isaac-afterbirth",
   "name": "The Binding of Isaac: Afterbirth",
-  "nameZh": "",
+  "nameZh": "以撒的结合：胎衣",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22732,12 +23629,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 57300,
   "name": "Amnesia: The Dark Descent",
-  "nameZh": "Amnesia: The Dark Descent",
+  "nameZh": "失忆症：黑暗后裔",
   "aliases": [],
   "mc": 85,
   "ign": 8.5,
@@ -22757,12 +23655,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 319050,
   "name": "Chaos Reborn",
-  "nameZh": "Chaos Reborn",
+  "nameZh": "混沌重生",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22782,12 +23681,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4733110,
   "name": "G-MODE Archives+ RIDGE RACER",
-  "nameZh": "G-MODE Archives+ RIDGE RACER",
+  "nameZh": "G-MODE档案+：山脊赛车",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -22803,12 +23703,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 598550,
   "name": "HUNTDOWN",
-  "nameZh": "HUNTDOWN",
+  "nameZh": "猎杀",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22827,12 +23728,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ridge-racer",
   "name": "Ridge Racer",
-  "nameZh": "",
+  "nameZh": "山脊赛车",
   "aliases": [],
   "mc": 88,
   "ign": 7.5,
@@ -22845,12 +23747,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:gtr-fia-racing",
   "name": "GTR FIA Racing",
-  "nameZh": "",
+  "nameZh": "GTR：FIA赛车",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22865,12 +23768,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nex-machina-death-machine",
   "name": "Nex Machina: Death Machine",
-  "nameZh": "",
+  "nameZh": "Nex Machina：死亡机器",
   "aliases": [],
   "mc": 88,
   "ign": 8.0,
@@ -22886,7 +23790,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 485510,
@@ -22914,7 +23819,7 @@ window.GAMES = [
 {
   "id": "mc:animal-crossing-new-leaf",
   "name": "Animal Crossing: New Leaf",
-  "nameZh": "",
+  "nameZh": "来吧！动物森友会",
   "aliases": [],
   "mc": 88,
   "ign": 9.6,
@@ -22927,7 +23832,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 870780,
@@ -22955,7 +23861,7 @@ window.GAMES = [
 {
   "id": 1893810,
   "name": "Solium Infernum",
-  "nameZh": "Solium Infernum",
+  "nameZh": "地狱统治",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22972,12 +23878,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:football-manager-2011",
   "name": "Football Manager 2011",
-  "nameZh": "",
+  "nameZh": "足球经理2011",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -22992,12 +23899,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mortal-kombat-11-ultimate",
   "name": "Mortal Kombat 11 Ultimate",
-  "nameZh": "",
+  "nameZh": "真人快打11：终极版",
   "aliases": [],
   "mc": 88,
   "ign": null,
@@ -23012,12 +23920,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nba-2k13",
   "name": "NBA 2K13",
-  "nameZh": "",
+  "nameZh": "NBA 2K13：篮球游戏",
   "aliases": [],
   "mc": 88,
   "ign": 9.1,
@@ -23030,12 +23939,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:need-for-speed-iii-hot-pursuit",
   "name": "Need for Speed III: Hot Pursuit",
-  "nameZh": "",
+  "nameZh": "极品飞车III：热力追踪",
   "aliases": [],
   "mc": 88,
   "ign": 7.3,
@@ -23048,12 +23958,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 15710,
   "name": "Oddworld: Abe's Exoddus",
-  "nameZh": "Oddworld: Abe's Exoddus",
+  "nameZh": "奇异世界：阿比的逃亡",
   "aliases": [],
   "mc": 88,
   "ign": 7.8,
@@ -23069,12 +23980,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 678950,
   "name": "DRAGON BALL FighterZ",
-  "nameZh": "DRAGON BALL FighterZ",
+  "nameZh": "龙珠斗士Z",
   "aliases": [],
   "mc": 87,
   "ign": 8.5,
@@ -23091,12 +24003,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 236090,
   "name": "Dust: An Elysian Tail",
-  "nameZh": "Dust: An Elysian Tail",
+  "nameZh": "尘埃：伊利西恩传说",
   "aliases": [],
   "mc": 85,
   "ign": 8.5,
@@ -23117,12 +24030,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 213670,
   "name": "South Park : The Stick of Truth",
-  "nameZh": "",
+  "nameZh": "南方公园：真理之杖",
   "aliases": [],
   "mc": 85,
   "ign": 9.0,
@@ -23140,12 +24054,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2510710,
   "name": "Kunitsu-Gami: Path of the Goddess",
-  "nameZh": "Kunitsu-Gami: Path of the Goddess",
+  "nameZh": "祇：女神之道",
   "aliases": [],
   "mc": 85,
   "ign": 8.0,
@@ -23162,12 +24077,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:clive-barkers-undying",
   "name": "Clive Barker's Undying",
-  "nameZh": "",
+  "nameZh": "克莱夫·巴克的《不朽》",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23182,12 +24098,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1696770,
   "name": "The Mermaid Mask",
-  "nameZh": "The Mermaid Mask",
+  "nameZh": "美人鱼面具",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23206,12 +24123,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:dark-souls-prepare-to-die-edition",
   "name": "Dark Souls: Prepare to Die Edition",
-  "nameZh": "",
+  "nameZh": "黑暗之魂：受死版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23226,12 +24144,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 294860,
   "name": "Valkyria Chronicles",
-  "nameZh": "Valkyria Chronicles",
+  "nameZh": "战场女武神",
   "aliases": [],
   "mc": 86,
   "ign": 9.0,
@@ -23249,12 +24168,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dragons-dogma-2-dark-arisen",
   "name": "Dragon's Dogma 2: Dark Arisen",
-  "nameZh": "",
+  "nameZh": "龙之信条2：黑暗觉者",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23269,12 +24189,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 553420,
   "name": "TUNIC",
-  "nameZh": "TUNIC",
+  "nameZh": "狐狸斗篷",
   "aliases": [],
   "mc": 85,
   "ign": 9.0,
@@ -23293,12 +24214,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 418240,
   "name": "Shadow Tactics: Blades of the Shogun",
-  "nameZh": "Shadow Tactics: Blades of the Shogun",
+  "nameZh": "影子战术：将军之刃",
   "aliases": [],
   "mc": 85,
   "ign": 8.2,
@@ -23317,12 +24239,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:medieval-ii-total-war-kingdoms",
   "name": "Medieval II: Total War Kingdoms",
-  "nameZh": "",
+  "nameZh": "中世纪II：全面战争：王国",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23337,12 +24260,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 220440,
   "name": "DmC: Devil May Cry",
-  "nameZh": "DmC: Devil May Cry",
+  "nameZh": "DmC：鬼泣",
   "aliases": [],
   "mc": 85,
   "ign": 8.9,
@@ -23359,12 +24283,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3597580,
   "name": "Earthion",
-  "nameZh": "Earthion",
+  "nameZh": "地球纪元",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23380,12 +24305,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1677310,
   "name": "In Stars And Time",
-  "nameZh": "In Stars And Time",
+  "nameZh": "星辰与时光",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23401,12 +24327,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:monopoly-tycoon-2001",
   "name": "Monopoly Tycoon",
-  "nameZh": "",
+  "nameZh": "大富翁大亨",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23421,12 +24348,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:shovel-knight",
   "name": "Shovel Knight",
-  "nameZh": "",
+  "nameZh": "铲子骑士",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23441,7 +24369,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1416050,
@@ -23520,7 +24449,7 @@ window.GAMES = [
 {
   "id": 312840,
   "name": "Fahrenheit: Indigo Prophecy Remastered",
-  "nameZh": "Fahrenheit: Indigo Prophecy Remastered",
+  "nameZh": "幻象杀手：重制版",
   "aliases": [],
   "mc": 85,
   "ign": 6.2,
@@ -23539,12 +24468,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:indigo-prophecy",
   "name": "Indigo Prophecy",
-  "nameZh": "",
+  "nameZh": "幻象杀手",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23559,7 +24489,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2442460,
@@ -23588,7 +24519,7 @@ window.GAMES = [
 {
   "id": 13530,
   "name": "Prince of Persia: The Two Thrones",
-  "nameZh": "Prince of Persia: The Two Thrones",
+  "nameZh": "波斯王子：王者无双",
   "aliases": [],
   "mc": 85,
   "ign": 9.0,
@@ -23605,12 +24536,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sam-and-max-episode-204-chariots-of-the-dogs",
   "name": "Sam & Max Episode 204: Chariots of the Dogs",
-  "nameZh": "",
+  "nameZh": "山姆与麦克斯 第204集：狗之战车",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23625,12 +24557,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:lies-of-p-overture",
   "name": "Lies of P: Overture",
-  "nameZh": "",
+  "nameZh": "匹诺曹的谎言：序曲",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23645,7 +24578,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 40700,
@@ -23673,7 +24607,7 @@ window.GAMES = [
 {
   "id": 98200,
   "name": "Frozen Synapse",
-  "nameZh": "Frozen Synapse",
+  "nameZh": "冻结突触",
   "aliases": [],
   "mc": 85,
   "ign": 8.5,
@@ -23692,12 +24626,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:mvp-baseball-2005",
   "name": "MVP Baseball 2005",
-  "nameZh": "",
+  "nameZh": "MVP棒球2005",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -23712,7 +24647,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3681010,
@@ -23739,7 +24675,7 @@ window.GAMES = [
 {
   "id": "mc:freelancer",
   "name": "Freelancer",
-  "nameZh": "",
+  "nameZh": "自由枪骑兵",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23754,12 +24690,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2360310,
   "name": "Freelancer Simulator",
-  "nameZh": "Freelancer Simulator",
+  "nameZh": "自由职业者模拟器",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23776,12 +24713,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:galactic-civilizations-iii-crusade",
   "name": "Galactic Civilizations III: Crusade",
-  "nameZh": "",
+  "nameZh": "银河文明III：十字军东征",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23796,7 +24734,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 275390,
@@ -23825,7 +24764,7 @@ window.GAMES = [
 {
   "id": "mc:the-wolf-among-us-episode-1-faith",
   "name": "The Wolf Among Us: Episode 1 - Faith",
-  "nameZh": "",
+  "nameZh": "与狼同行：第1集——信仰",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23840,12 +24779,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:robo-recall",
   "name": "Robo Recall",
-  "nameZh": "",
+  "nameZh": "机器人召回",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23860,7 +24800,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1201270,
@@ -23887,7 +24828,7 @@ window.GAMES = [
 {
   "id": 363440,
   "name": "Mega Man Legacy Collection",
-  "nameZh": "Mega Man Legacy Collection",
+  "nameZh": "洛克人传奇合集",
   "aliases": [],
   "mc": 85,
   "ign": 9.0,
@@ -23903,12 +24844,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:halo-4",
   "name": "Halo 4",
-  "nameZh": "",
+  "nameZh": "光环4",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -23921,12 +24863,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:football-manager-2022",
   "name": "Football Manager 2022",
-  "nameZh": "",
+  "nameZh": "足球经理2022",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -23941,7 +24884,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 457140,
@@ -23970,7 +24914,7 @@ window.GAMES = [
 {
   "id": "mc:bloodborne-the-old-hunters",
   "name": "Bloodborne: The Old Hunters",
-  "nameZh": "",
+  "nameZh": "血源诅咒：老猎人",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -23985,12 +24929,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 19900,
   "name": "Far Cry 2",
-  "nameZh": "Far Cry 2",
+  "nameZh": "孤岛惊魂2",
   "aliases": [],
   "mc": 85,
   "ign": 8.9,
@@ -24006,12 +24951,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4000,
   "name": "Garry's Mod",
-  "nameZh": "Garry's Mod",
+  "nameZh": "Garry的模组",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -24031,12 +24977,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 50,
    "peak": 37214
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 12900,
   "name": "AudioSurf",
-  "nameZh": "AudioSurf",
+  "nameZh": "音频冲浪",
   "aliases": [],
   "mc": 85,
   "ign": 8.6,
@@ -24052,12 +24999,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-walking-dead-episode-3-long-road-ahead",
   "name": "The Walking Dead: Episode 3 - Long Road Ahead",
-  "nameZh": "",
+  "nameZh": "行尸走肉：第3集——漫漫长路",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24072,7 +25020,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1568970,
@@ -24099,7 +25048,7 @@ window.GAMES = [
 {
   "id": 1426010,
   "name": "STASIS: BONE TOTEM",
-  "nameZh": "STASIS: BONE TOTEM",
+  "nameZh": "STASIS：骨图腾",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24117,12 +25066,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 238460,
   "name": "BattleBlock Theater",
-  "nameZh": "BattleBlock Theater",
+  "nameZh": "战斗方块剧场",
   "aliases": [],
   "mc": 85,
   "ign": 7.8,
@@ -24142,12 +25092,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:socom-ii-u-s-navy-seals",
   "name": "SOCOM II: U.S. Navy SEALs",
-  "nameZh": "",
+  "nameZh": "SOCOM II：美国海军海豹突击队",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24160,12 +25111,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rallisport-challenge-2",
   "name": "RalliSport Challenge 2",
-  "nameZh": "",
+  "nameZh": "拉力运动挑战赛2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24178,12 +25130,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:star-wars-knights-of-the-old-republic-ii-the-sit",
   "name": "Star Wars: Knights of the Old Republic II - The Sith Lords",
-  "nameZh": "",
+  "nameZh": "星球大战：旧共和国武士II——西斯领主",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24198,7 +25151,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 894020,
@@ -24227,7 +25181,7 @@ window.GAMES = [
 {
   "id": 673130,
   "name": "AMID EVIL",
-  "nameZh": "AMID EVIL",
+  "nameZh": "邪恶之中",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24245,12 +25199,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:batman-the-enemy-within-episode-5-same-stitch",
   "name": "Batman: The Enemy Within - Episode 5: Same Stitch",
-  "nameZh": "",
+  "nameZh": "蝙蝠侠：敌人内部 第5章：同一条缝线",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24265,12 +25220,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:pokemon-white-version",
   "name": "Pokemon White Version",
-  "nameZh": "",
+  "nameZh": "宝可梦 白版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24283,12 +25239,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dragon-quest-ix-sentinels-of-the-starry-skies",
   "name": "Dragon Quest IX: Sentinels of the Starry Skies",
-  "nameZh": "",
+  "nameZh": "勇者斗恶龙IX：星空守护者",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24301,12 +25258,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pokemon-x",
   "name": "Pokemon X",
-  "nameZh": "",
+  "nameZh": "宝可梦X",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24319,12 +25277,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1263240,
   "name": "Skate Story",
-  "nameZh": "Skate Story",
+  "nameZh": "滑板故事",
   "aliases": [],
   "mc": 85,
   "ign": 8.0,
@@ -24345,12 +25304,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1695830,
   "name": "Baldur's Gate: Dark Alliance",
-  "nameZh": "Baldur's Gate: Dark Alliance",
+  "nameZh": "博德之门：黑暗联盟",
   "aliases": [],
   "mc": 87,
   "ign": 9.4,
@@ -24369,12 +25329,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 416600,
   "name": "Full Metal Furies",
-  "nameZh": "Full Metal Furies",
+  "nameZh": "全金属怒兽",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24395,12 +25356,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:metropolis-street-racer",
   "name": "Metropolis Street Racer",
-  "nameZh": "",
+  "nameZh": "都市街头赛车",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24413,12 +25375,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:power-stone-2",
   "name": "Power Stone 2",
-  "nameZh": "",
+  "nameZh": "力量之石2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24431,7 +25394,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1601570,
@@ -24457,7 +25421,7 @@ window.GAMES = [
 {
   "id": "mc:the-elder-scrolls-iii-bloodmoon",
   "name": "The Elder Scrolls III: Bloodmoon",
-  "nameZh": "",
+  "nameZh": "上古卷轴III：血月",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24472,12 +25436,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 241600,
   "name": "Rogue Legacy",
-  "nameZh": "Rogue Legacy",
+  "nameZh": "盗贼遗产",
   "aliases": [],
   "mc": 85,
   "ign": 9.0,
@@ -24498,12 +25463,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fifa-soccer-09",
   "name": "FIFA Soccer 09",
-  "nameZh": "",
+  "nameZh": "FIFA足球09",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24516,12 +25482,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3432480,
   "name": "Shards of Order",
-  "nameZh": "Shards of Order",
+  "nameZh": "秩序碎片",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24540,12 +25507,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:jeanne-darc",
   "name": "Jeanne d'Arc",
-  "nameZh": "",
+  "nameZh": "圣女贞德",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24558,12 +25526,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2716400,
   "name": "The Rise of the Golden Idol",
-  "nameZh": "The Rise of the Golden Idol",
+  "nameZh": "黄金偶像崛起",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24581,12 +25550,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 6980,
   "name": "Thief: Deadly Shadows",
-  "nameZh": "Thief: Deadly Shadows",
+  "nameZh": "神偷：致命阴影",
   "aliases": [],
   "mc": 85,
   "ign": 8.3,
@@ -24602,12 +25572,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:street-fighter-v-arcade-edition",
   "name": "Street Fighter V: Arcade Edition",
-  "nameZh": "",
+  "nameZh": "街头霸王V：街机版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24622,12 +25593,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2912430,
   "name": "Platypus Reclayed",
-  "nameZh": "Platypus Reclayed",
+  "nameZh": "鸭嘴兽：重铸版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24645,12 +25617,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:astral-chain",
   "name": "Astral Chain",
-  "nameZh": "",
+  "nameZh": "异界锁链",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24665,12 +25638,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:football-manager-2014",
   "name": "Football Manager 2014",
-  "nameZh": "",
+  "nameZh": "足球经理2014",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24685,12 +25659,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 61730,
   "name": "Critter Crunch",
-  "nameZh": "Critter Crunch",
+  "nameZh": "小动物大爆破",
   "aliases": [],
   "mc": 87,
   "ign": 8.6,
@@ -24709,12 +25684,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:everquest-gates-of-discord",
   "name": "EverQuest: Gates of Discord",
-  "nameZh": "",
+  "nameZh": "无尽任务：不和之门",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24729,12 +25705,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:fifa-2001-major-league-soccer",
   "name": "FIFA 2001 Major League Soccer",
-  "nameZh": "",
+  "nameZh": "FIFA 2001美国职业足球大联盟",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24749,12 +25726,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 410710,
   "name": "System Shock: Enhanced Edition",
-  "nameZh": "System Shock: Enhanced Edition",
+  "nameZh": "网络奇兵：增强版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24772,12 +25750,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:atelier-ryza-3-alchemist-of-the-end-and-the-secret",
   "name": "Atelier Ryza 3: Alchemist of the End & the Secret Key",
-  "nameZh": "",
+  "nameZh": "莱莎的炼金工房3：终结之炼金术士与秘密钥匙",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24792,7 +25771,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3365050,
@@ -24822,7 +25802,7 @@ window.GAMES = [
 {
   "id": 1898500,
   "name": "Worldless",
-  "nameZh": "Worldless",
+  "nameZh": "无界",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24841,12 +25821,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:sid-meiers-civilization-v-brave-new-world",
   "name": "Sid Meier's Civilization V: Brave New World",
-  "nameZh": "",
+  "nameZh": "席德·梅尔的文明V：美丽新世界",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24861,12 +25842,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3450310,
   "name": "Europa Universalis V",
-  "nameZh": "Europa Universalis V",
+  "nameZh": "欧陆风云V",
   "aliases": [],
   "mc": 85,
   "ign": 8.0,
@@ -24882,12 +25864,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:football-manager-2021",
   "name": "Football Manager 2021",
-  "nameZh": "",
+  "nameZh": "足球经理2021",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24902,12 +25885,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pokemon-sun",
   "name": "Pokemon Sun",
-  "nameZh": "",
+  "nameZh": "宝可梦：太阳",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -24920,7 +25904,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 779340,
@@ -24949,7 +25934,7 @@ window.GAMES = [
 {
   "id": "mc:the-last-door-season-2",
   "name": "The Last Door: Season 2",
-  "nameZh": "",
+  "nameZh": "最后之门：第二季",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24964,12 +25949,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 402530,
   "name": "The Last Door: Season 2 - Collector's Edition",
-  "nameZh": "",
+  "nameZh": "最后之门：第二季 收藏版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -24987,7 +25973,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 960910,
@@ -25014,7 +26001,7 @@ window.GAMES = [
 {
   "id": 973760,
   "name": "Thronebreaker: The Witcher Tales",
-  "nameZh": "Thronebreaker: The Witcher Tales",
+  "nameZh": "王权的陨落：巫师故事",
   "aliases": [],
   "mc": 85,
   "ign": 9.4,
@@ -25031,12 +26018,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3527290,
   "name": "PEAK",
-  "nameZh": "PEAK",
+  "nameZh": "PEAK：登峰",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -25054,7 +26042,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 49,
    "peak": 26677
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1545560,
@@ -25081,7 +26070,7 @@ window.GAMES = [
 {
   "id": "mc:final-fantasy-xi",
   "name": "Final Fantasy XI",
-  "nameZh": "",
+  "nameZh": "最终幻想XI",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25096,12 +26085,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-monkey-ball-2",
   "name": "Super Monkey Ball 2",
-  "nameZh": "",
+  "nameZh": "超级猴球2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25114,12 +26104,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:american-mcgees-alice",
   "name": "American McGee's Alice",
-  "nameZh": "",
+  "nameZh": "爱丽丝惊魂记",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25134,12 +26125,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 41014,
   "name": "Serious Sam HD: The Second Encounter",
-  "nameZh": "Serious Sam HD: The Second Encounter",
+  "nameZh": "英雄萨姆HD：二次遭遇",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25156,12 +26148,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-sims-hot-date",
   "name": "The Sims: Hot Date",
-  "nameZh": "",
+  "nameZh": "模拟人生：热恋时光",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25176,12 +26169,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 3405690,
   "name": "EA SPORTS FC 26",
-  "nameZh": "EA SPORTS FC 26",
+  "nameZh": "EA SPORTS FC 26：足球俱乐部",
   "aliases": [],
   "mc": null,
   "ign": 7.0,
@@ -25198,12 +26192,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 51,
    "peak": 32205
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:tactics-ogre-1995",
   "name": "Tactics Ogre: Let Us Cling Together",
-  "nameZh": "",
+  "nameZh": "皇家骑士团：携手齐心",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25216,12 +26211,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 326520,
   "name": "Chime Sharp",
-  "nameZh": "Chime Sharp",
+  "nameZh": "Chime Sharp：钟鸣进阶版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25239,7 +26235,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:pikmin-4",
@@ -25266,7 +26263,7 @@ window.GAMES = [
 {
   "id": "mc:kentucky-route-zero-tv-edition",
   "name": "Kentucky Route Zero: TV Edition",
-  "nameZh": "",
+  "nameZh": "肯塔基零号公路：电视版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25281,12 +26278,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:warhammer-40-000-dawn-of-war-winter-assault",
   "name": "Warhammer 40,000: Dawn of War - Winter Assault",
-  "nameZh": "",
+  "nameZh": "战锤40,000：战争黎明——冬季突袭",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25301,12 +26299,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2515020,
   "name": "FINAL FANTASY XVI",
-  "nameZh": "FINAL FANTASY XVI",
+  "nameZh": "最终幻想XVI",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -25324,12 +26323,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 753640,
   "name": "Outer Wilds",
-  "nameZh": "Outer Wilds",
+  "nameZh": "星际拓荒",
   "aliases": [],
   "mc": 85,
   "ign": 8.4,
@@ -25346,7 +26346,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1085660,
@@ -25374,7 +26375,7 @@ window.GAMES = [
 {
   "id": "mc:starcraft-remastered",
   "name": "Starcraft Remastered",
-  "nameZh": "",
+  "nameZh": "星际争霸：重制版",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25389,7 +26390,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2751000,
@@ -25439,7 +26441,7 @@ window.GAMES = [
 {
   "id": "mc:tony-hawks-underground-2",
   "name": "Tony Hawk's Underground 2 Remix",
-  "nameZh": "",
+  "nameZh": "托尼·霍克：地下世界2 Remix",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25454,12 +26456,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 261550,
   "name": "Mount & Blade II: Bannerlord",
-  "nameZh": "Mount & Blade II: Bannerlord",
+  "nameZh": "骑马与砍杀2：霸主",
   "aliases": [],
   "mc": 77,
   "ign": null,
@@ -25479,12 +26482,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 80,
    "peak": 35056
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 473950,
   "name": "Manifold Garden",
-  "nameZh": "Manifold Garden",
+  "nameZh": "多面花园",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25501,12 +26505,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 239030,
   "name": "Papers, Please",
-  "nameZh": "Papers, Please",
+  "nameZh": "请出示证件",
   "aliases": [],
   "mc": 85,
   "ign": 8.7,
@@ -25525,12 +26530,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:syphon-filter-dark-mirror",
   "name": "Syphon Filter: Dark Mirror",
-  "nameZh": "",
+  "nameZh": "虹吸战士：暗镜",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25543,12 +26549,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 379720,
   "name": "DOOM",
-  "nameZh": "DOOM",
+  "nameZh": "毁灭战士",
   "aliases": [],
   "mc": 85,
   "ign": 7.1,
@@ -25564,7 +26571,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3768760,
@@ -25592,7 +26600,7 @@ window.GAMES = [
 {
   "id": 1286830,
   "name": "STAR WARS : The Old Republic",
-  "nameZh": "",
+  "nameZh": "星球大战：旧共和国",
   "aliases": [],
   "mc": 85,
   "ign": 9.0,
@@ -25610,7 +26618,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2057760,
@@ -25637,7 +26646,7 @@ window.GAMES = [
 {
   "id": "mc:anarchy-online-shadowlands",
   "name": "Anarchy Online: Shadowlands",
-  "nameZh": "",
+  "nameZh": "无政府在线：暗影之地",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25652,12 +26661,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:dark-age-of-camelot-shrouded-isles",
   "name": "Dark Age of Camelot: Shrouded Isles",
-  "nameZh": "",
+  "nameZh": "卡美洛的黑暗时代：迷雾群岛",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25672,12 +26682,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:kingdom-come-deliverance-ii-mysteria-ecclesiae",
   "name": "Kingdom Come: Deliverance II - Mysteria Ecclesiae",
-  "nameZh": "",
+  "nameZh": "天国：拯救2—教会秘闻",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25692,12 +26703,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2471130,
   "name": "Obsidian",
-  "nameZh": "Obsidian",
+  "nameZh": "黑曜石",
   "aliases": [],
   "mc": 85,
   "ign": null,
@@ -25715,12 +26727,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:super-mario-galaxy-plus-super-mario-galaxy-2",
   "name": "Super Mario Galaxy + Super Mario Galaxy 2",
-  "nameZh": "",
+  "nameZh": "超级马力欧银河 + 超级马力欧银河2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25735,12 +26748,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1058830,
   "name": "Spin Rhythm XD",
-  "nameZh": "Spin Rhythm XD",
+  "nameZh": "旋律节奏 XD",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25761,12 +26775,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:pokemon-soulsilver-version",
   "name": "Pokemon SoulSilver Version",
-  "nameZh": "",
+  "nameZh": "宝可梦：魂银版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25779,12 +26794,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:castlevania-harmony-of-dissonance",
   "name": "Castlevania: Harmony of Dissonance",
-  "nameZh": "",
+  "nameZh": "恶魔城：白夜协奏曲",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25797,7 +26813,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-links-awakening",
@@ -25825,7 +26842,7 @@ window.GAMES = [
 {
   "id": "mc:ultimate-card-games",
   "name": "Ultimate Card Games",
-  "nameZh": "",
+  "nameZh": "终极纸牌游戏",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25838,12 +26855,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 208650,
   "name": "Batman : Arkham Knight",
-  "nameZh": "",
+  "nameZh": "蝙蝠侠：阿卡姆骑士",
   "aliases": [],
   "mc": 87,
   "ign": 9.2,
@@ -25861,12 +26879,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:dead-or-alive-3",
   "name": "Dead or Alive 3",
-  "nameZh": "",
+  "nameZh": "生死格斗3",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25879,12 +26898,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:jak-ii",
   "name": "Jak II",
-  "nameZh": "",
+  "nameZh": "杰克II",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25897,12 +26917,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mario-kart-8-dlc-pack-1",
   "name": "Mario Kart 8 DLC Pack 1",
-  "nameZh": "",
+  "nameZh": "马力欧赛车8：DLC包1",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25915,12 +26936,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-tactics-advance",
   "name": "Final Fantasy Tactics Advance",
-  "nameZh": "",
+  "nameZh": "最终幻想战略版 Advance",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25933,12 +26955,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ncaa-football-06",
   "name": "NCAA Football 06",
-  "nameZh": "",
+  "nameZh": "NCAA大学橄榄球06",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25951,12 +26974,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:red-dead-redemption-undead-nightmare-pack",
   "name": "Red Dead Redemption: Undead Nightmare Pack",
-  "nameZh": "",
+  "nameZh": "荒野大镖客：救赎：不死梦魇包",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25969,12 +26993,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:new-super-mario-bros-wii",
   "name": "New Super Mario Bros. Wii",
-  "nameZh": "",
+  "nameZh": "新超级马力欧兄弟 Wii",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -25987,12 +27012,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pokemon-moon",
   "name": "Pokemon Moon",
-  "nameZh": "",
+  "nameZh": "宝可梦：月亮",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26005,12 +27031,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:elite-beat-agents",
   "name": "Elite Beat Agents",
-  "nameZh": "",
+  "nameZh": "精英节拍特工",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26023,12 +27050,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mario-kart-double-dash",
   "name": "Mario Kart: Double Dash!!",
-  "nameZh": "",
+  "nameZh": "马力欧赛车：双重冲刺",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26041,12 +27069,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:bangai-o",
   "name": "Bangai-O",
-  "nameZh": "",
+  "nameZh": "爆裂合体 Bangai-O",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26059,12 +27088,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:rallisport-challenge",
   "name": "RalliSport Challenge",
-  "nameZh": "",
+  "nameZh": "拉力运动挑战赛",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26077,12 +27107,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 690790,
   "name": "DiRT Rally 2.0",
-  "nameZh": "DiRT Rally 2.0",
+  "nameZh": "尘埃拉力赛2.0",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26100,12 +27131,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:forza-motorsport-6",
   "name": "Forza Motorsport 6",
-  "nameZh": "",
+  "nameZh": "极限竞速：赛车运动6",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26120,12 +27152,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:donkey-kong-country-returns",
   "name": "Donkey Kong Country Returns",
-  "nameZh": "",
+  "nameZh": "大金刚：回归",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26138,12 +27171,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:warhammer-40-000-dawn-of-war-ii-chaos-rising",
   "name": "Warhammer 40,000: Dawn of War II - Chaos Rising",
-  "nameZh": "",
+  "nameZh": "战锤40,000：战争黎明II——混沌崛起",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26158,12 +27192,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-walking-dead-episode-2-starved-for-help",
   "name": "The Walking Dead: Episode 2 - Starved for Help",
-  "nameZh": "",
+  "nameZh": "行尸走肉：第2集——饥饿求生",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26178,12 +27213,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:bully",
   "name": "Bully",
-  "nameZh": "",
+  "nameZh": "恶霸鲁尼",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26196,12 +27232,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 12200,
   "name": "Bully: Scholarship Edition",
-  "nameZh": "Bully: Scholarship Edition",
+  "nameZh": "恶霸鲁尼：奖学金版",
   "aliases": [],
   "mc": 87,
   "ign": 8.9,
@@ -26218,12 +27255,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 55230,
   "name": "Saints Row: The Third",
-  "nameZh": "Saints Row: The Third",
+  "nameZh": "黑道圣徒：第三章",
   "aliases": [],
   "mc": 84,
   "ign": 8.5,
@@ -26240,12 +27278,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 42700,
   "name": "Call of Duty : Black Ops",
-  "nameZh": "",
+  "nameZh": "使命召唤：黑色行动",
   "aliases": [],
   "mc": 87,
   "ign": 8.5,
@@ -26261,7 +27300,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4126040,
@@ -26293,7 +27333,7 @@ window.GAMES = [
 {
   "id": 22380,
   "name": "Fallout: New Vegas",
-  "nameZh": "Fallout: New Vegas",
+  "nameZh": "辐射：新维加斯",
   "aliases": [],
   "mc": 84,
   "ign": 8.5,
@@ -26310,12 +27350,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fire-emblem-if",
   "name": "Fire Emblem Fates: Conquest",
-  "nameZh": "",
+  "nameZh": "火焰纹章if：暗夜王国",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26328,12 +27369,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 922540,
   "name": "Amazing VR - All The Movies",
-  "nameZh": "",
+  "nameZh": "Amazing VR：所有电影",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26349,12 +27391,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-movies",
   "name": "The Movies",
-  "nameZh": "",
+  "nameZh": "电影大亨",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26369,7 +27412,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3274580,
@@ -26396,7 +27440,7 @@ window.GAMES = [
 {
   "id": "mc:tearaway",
   "name": "Tearaway",
-  "nameZh": "",
+  "nameZh": "撕纸小邮差",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26409,7 +27453,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2229870,
@@ -26436,7 +27481,7 @@ window.GAMES = [
 {
   "id": "mc:neverwinter-nights-hordes-of-the-underdark",
   "name": "Neverwinter Nights: Hordes of the Underdark",
-  "nameZh": "",
+  "nameZh": "无冬之夜：幽城魔影",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26451,12 +27496,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sid-meiers-simgolf",
   "name": "Sid Meier's SimGolf",
-  "nameZh": "",
+  "nameZh": "席德·梅尔的模拟高尔夫",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26471,12 +27517,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1451090,
   "name": "Tactics Ogre: Reborn",
-  "nameZh": "Tactics Ogre: Reborn",
+  "nameZh": "皇家骑士团：重生",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26493,12 +27540,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid-portable-ops",
   "name": "Metal Gear Solid: Portable Ops",
-  "nameZh": "",
+  "nameZh": "合金装备：便携行动",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26511,12 +27559,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:theatrhythm-final-bar-line",
   "name": "Theatrhythm Final Bar Line",
-  "nameZh": "",
+  "nameZh": "最终幻想：节奏剧场 Final Bar Line",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26531,12 +27580,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:zack-and-wiki-quest-for-barbaros-treasure",
   "name": "Zack & Wiki: Quest for Barbaros' Treasure",
-  "nameZh": "",
+  "nameZh": "扎克与维基：巴巴罗斯的宝藏任务",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26549,12 +27599,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:mlb-13-the-show",
   "name": "MLB 13: The Show",
-  "nameZh": "",
+  "nameZh": "MLB 13：棒球大联盟",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26567,7 +27618,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2185060,
@@ -26598,7 +27650,7 @@ window.GAMES = [
 {
   "id": "mc:mechassault",
   "name": "MechAssault",
-  "nameZh": "",
+  "nameZh": "机甲突击",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26611,12 +27663,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 241930,
   "name": "Middle-earth : Shadow of Mordor",
-  "nameZh": "",
+  "nameZh": "中土世界：魔多之影",
   "aliases": [],
   "mc": 84,
   "ign": 9.3,
@@ -26630,12 +27683,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:nfl-2k2",
   "name": "NFL 2K2",
-  "nameZh": "",
+  "nameZh": "NFL 2K2：美式橄榄球",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26648,12 +27702,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2756920,
   "name": "Keep Driving",
-  "nameZh": "Keep Driving",
+  "nameZh": "继续驾驶",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26673,12 +27728,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 92800,
   "name": "SpaceChem",
-  "nameZh": "SpaceChem",
+  "nameZh": "太空化学",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26697,12 +27753,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:atelier-ryza-2-lost-legends-and-the-secret-fairy",
   "name": "Atelier Ryza 2: Lost Legends & the Secret Fairy",
-  "nameZh": "",
+  "nameZh": "莱莎的炼金工房2：失落传说与秘密妖精",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26717,7 +27774,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3365040,
@@ -26747,7 +27805,7 @@ window.GAMES = [
 {
   "id": "mc:olliolli-world-void-riders",
   "name": "OlliOlli World: VOID Riders",
-  "nameZh": "",
+  "nameZh": "碗池世界：虚空骑士",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26762,12 +27820,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:animal-crossing",
   "name": "Animal Crossing",
-  "nameZh": "",
+  "nameZh": "动物森友会",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26780,12 +27839,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fight-night-round-4",
   "name": "Fight Night Round 4",
-  "nameZh": "",
+  "nameZh": "拳击之夜 第4回合",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26798,7 +27858,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2062430,
@@ -26826,7 +27887,7 @@ window.GAMES = [
 {
   "id": "mc:saros",
   "name": "SAROS",
-  "nameZh": "",
+  "nameZh": "萨罗斯",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26841,12 +27902,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1041920,
   "name": "If Found...",
-  "nameZh": "If Found...",
+  "nameZh": "如果找到……",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26864,12 +27926,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-legend-of-zelda-spirit-tracks",
   "name": "The Legend of Zelda: Spirit Tracks",
-  "nameZh": "",
+  "nameZh": "塞尔达传说：大地汽笛",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26882,12 +27945,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1151640,
   "name": "Horizon Zero Dawn Complete Edition",
-  "nameZh": "Horizon Zero Dawn Complete Edition",
+  "nameZh": "地平线：零之曙光 完全版",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -26905,12 +27969,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pokemon-heartgold-version",
   "name": "Pokemon HeartGold Version",
-  "nameZh": "",
+  "nameZh": "宝可梦：心金版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -26923,12 +27988,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 218230,
   "name": "PlanetSide 2",
-  "nameZh": "PlanetSide 2",
+  "nameZh": "行星边境2",
   "aliases": [],
   "mc": 84,
   "ign": 9.0,
@@ -26946,7 +28012,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 493340,
@@ -26977,7 +28044,7 @@ window.GAMES = [
 {
   "id": 390310,
   "name": "Little King's Story",
-  "nameZh": "Little King's Story",
+  "nameZh": "小国王故事",
   "aliases": [],
   "mc": 87,
   "ign": 9.1,
@@ -26995,7 +28062,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2075800,
@@ -27025,7 +28093,7 @@ window.GAMES = [
 {
   "id": 1366800,
   "name": "Crosshair X",
-  "nameZh": "Crosshair X",
+  "nameZh": "准星X",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -27045,7 +28113,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 65,
    "peak": 60977
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1206070,
@@ -27074,7 +28143,7 @@ window.GAMES = [
 {
   "id": "mc:pro-evolution-soccer-2016",
   "name": "Pro Evolution Soccer 2016",
-  "nameZh": "",
+  "nameZh": "实况足球2016",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27089,12 +28158,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 44690,
   "name": "GT Legends",
-  "nameZh": "GT Legends",
+  "nameZh": "GT传奇",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27112,12 +28182,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:humanity",
   "name": "Humanity",
-  "nameZh": "",
+  "nameZh": "人类",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27132,12 +28203,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:metal-gear-solid-2-substance",
   "name": "Metal Gear Solid 2: Substance",
-  "nameZh": "",
+  "nameZh": "合金装备2：实体",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27150,12 +28222,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 559210,
   "name": "Rakuen",
-  "nameZh": "Rakuen",
+  "nameZh": "乐园",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27171,12 +28244,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:shogun-total-war-warlord-edition",
   "name": "Shogun: Total War Warlord Edition",
-  "nameZh": "",
+  "nameZh": "幕府将军：全面战争 军阀版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27191,12 +28265,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-sims-4-island-living",
   "name": "The Sims 4: Island Living",
-  "nameZh": "",
+  "nameZh": "模拟人生4：岛屿生活",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27211,12 +28286,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 477740,
   "name": "Zero Escape: The Nonary Games",
-  "nameZh": "Zero Escape: The Nonary Games",
+  "nameZh": "极限脱出：九人游戏合集",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27233,7 +28309,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 740130,
@@ -27261,7 +28338,7 @@ window.GAMES = [
 {
   "id": "mc:hearthstone-heroes-of-warcraft-goblins-vs-gnomes",
   "name": "Hearthstone: Heroes of Warcraft - Goblins Vs. Gnomes",
-  "nameZh": "",
+  "nameZh": "炉石传说：地精大战侏儒",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27276,7 +28353,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2215200,
@@ -27303,7 +28381,7 @@ window.GAMES = [
 {
   "id": "mc:mlb-12-the-show",
   "name": "MLB 12: The Show",
-  "nameZh": "",
+  "nameZh": "MLB 12：棒球大联盟",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27316,12 +28394,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pokemon-black-version",
   "name": "Pokemon Black Version",
-  "nameZh": "",
+  "nameZh": "宝可梦 黑版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27334,12 +28413,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1677770,
   "name": "The Case of the Golden Idol",
-  "nameZh": "The Case of the Golden Idol",
+  "nameZh": "黄金偶像案",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27358,12 +28438,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:space-rangers-2-rise-of-the-dominators",
   "name": "Space Rangers 2: Rise of the Dominators",
-  "nameZh": "",
+  "nameZh": "太空游侠2：支配者崛起",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27378,12 +28459,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:borderlands-a-telltale-game-series",
   "name": "Tales From The Borderlands: Episode 1 - Zer0 Sum",
-  "nameZh": "",
+  "nameZh": "无主之地传说：第1集——零之和",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27398,12 +28480,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sprint-vector",
   "name": "Sprint Vector",
-  "nameZh": "",
+  "nameZh": "冲刺向量",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27418,12 +28501,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:puzzle-quest-challenge-of-the-warlords",
   "name": "Puzzle Quest: Challenge of the Warlords",
-  "nameZh": "",
+  "nameZh": "战神的挑战",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27438,12 +28522,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 12500,
   "name": "PuzzleQuest: Challenge of the Warlords",
-  "nameZh": "PuzzleQuest: Challenge of the Warlords",
+  "nameZh": "战神的挑战",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27459,12 +28544,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:destiny-2-forsaken",
   "name": "Destiny 2: Forsaken",
-  "nameZh": "",
+  "nameZh": "命运2：遗落之族",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27479,12 +28565,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:odin-sphere-leifdrasir",
   "name": "Odin Sphere Leifthrasir",
-  "nameZh": "",
+  "nameZh": "奥丁领域：里普特拉西尔",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27499,7 +28586,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2229850,
@@ -27526,7 +28614,7 @@ window.GAMES = [
 {
   "id": "mc:command-and-conquer-red-alert-2",
   "name": "Command & Conquer: Red Alert 2",
-  "nameZh": "",
+  "nameZh": "命令与征服：红色警戒2",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27541,12 +28629,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:heroes-of-might-and-magic-iv",
   "name": "Heroes of Might and Magic IV",
-  "nameZh": "",
+  "nameZh": "魔法门之英雄无敌4",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27561,12 +28650,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 345240,
   "name": "SHOGUN: Total War - Collection",
-  "nameZh": "",
+  "nameZh": "幕府将军：全面战争合集",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27583,12 +28673,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:wipeout-hd",
   "name": "Wipeout HD",
-  "nameZh": "",
+  "nameZh": "反重力赛车HD",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27601,12 +28692,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2284240,
   "name": "The Grindstone",
-  "nameZh": "The Grindstone",
+  "nameZh": "磨石",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27623,12 +28715,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:lost-records-bloom-and-rage-tape-1",
   "name": "Lost Records: Bloom & Rage Tape 1",
-  "nameZh": "",
+  "nameZh": "失落的记录：绽放与愤怒 磁带1",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27643,7 +28736,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 3751950,
@@ -27670,7 +28764,7 @@ window.GAMES = [
 {
   "id": "mc:dirt",
   "name": "DiRT",
-  "nameZh": "",
+  "nameZh": "尘埃",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27685,12 +28779,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 5275590,
   "name": "Dirt Town",
-  "nameZh": "Dirt Town",
+  "nameZh": "尘土小镇",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27709,12 +28804,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:super-street-fighter-iv-arcade-edition",
   "name": "Super Street Fighter IV: Arcade Edition",
-  "nameZh": "",
+  "nameZh": "超级街头霸王IV：街机版",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27729,7 +28825,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 499170,
@@ -27757,7 +28854,7 @@ window.GAMES = [
 {
   "id": 3187540,
   "name": "OutRUN",
-  "nameZh": "OutRUN",
+  "nameZh": "OutRun：极速赛车",
   "aliases": [],
   "mc": 87,
   "ign": 5.5,
@@ -27776,12 +28873,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:football-manager-2012",
   "name": "Football Manager 2012",
-  "nameZh": "",
+  "nameZh": "足球经理2012",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27796,12 +28894,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 848350,
   "name": "Katamari Damacy REROLL",
-  "nameZh": "Katamari Damacy REROLL",
+  "nameZh": "块魂：滚起来",
   "aliases": [],
   "mc": 87,
   "ign": 8.8,
@@ -27819,7 +28918,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1184760,
@@ -27848,7 +28948,7 @@ window.GAMES = [
 {
   "id": "mc:guild-wars-factions",
   "name": "Guild Wars Factions",
-  "nameZh": "",
+  "nameZh": "激战：派系",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -27863,12 +28963,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 557600,
   "name": "Gorogoa",
-  "nameZh": "Gorogoa",
+  "nameZh": "画中世界",
   "aliases": [],
   "mc": 84,
   "ign": 8.5,
@@ -27887,7 +28988,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 262060,
@@ -27917,7 +29019,7 @@ window.GAMES = [
 {
   "id": 381780,
   "name": "80 Days",
-  "nameZh": "80 Days",
+  "nameZh": "八十天",
   "aliases": [],
   "mc": 84,
   "ign": 9.0,
@@ -27936,12 +29038,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sin-and-punishment-star-successor",
   "name": "Sin & Punishment: Star Successor",
-  "nameZh": "",
+  "nameZh": "罪与罚：星之继承者",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27954,12 +29057,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:forza-horizon-3-blizzard-mountain",
   "name": "Forza Horizon 3: Blizzard Mountain",
-  "nameZh": "",
+  "nameZh": "极限竞速：地平线3 暴风雪山",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27974,12 +29078,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:super-monkey-ball",
   "name": "Super Monkey Ball",
-  "nameZh": "",
+  "nameZh": "超级猴球",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -27992,7 +29097,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1316910,
@@ -28018,7 +29124,7 @@ window.GAMES = [
 {
   "id": 17390,
   "name": "SPORE",
-  "nameZh": "SPORE",
+  "nameZh": "孢子",
   "aliases": [],
   "mc": 84,
   "ign": 8.8,
@@ -28039,12 +29145,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:unity-of-command",
   "name": "Unity of Command",
-  "nameZh": "",
+  "nameZh": "统一指挥",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28059,12 +29166,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:hearthstone-heroes-of-warcraft-the-grand",
   "name": "Hearthstone: Heroes of Warcraft - The Grand Tournament",
-  "nameZh": "",
+  "nameZh": "炉石传说：冠军的试炼",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28079,12 +29187,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2081470,
   "name": "Red Matter 2",
-  "nameZh": "Red Matter 2",
+  "nameZh": "红色物质2",
   "aliases": [],
   "mc": 84,
   "ign": 8.0,
@@ -28102,7 +29211,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4240610,
@@ -28134,7 +29244,7 @@ window.GAMES = [
 {
   "id": "mc:velocity-2012",
   "name": "Velocity",
-  "nameZh": "",
+  "nameZh": "速度",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28147,12 +29257,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:pinball-fx-2-star-wars-pinball",
   "name": "Pinball FX 2: Star Wars Pinball",
-  "nameZh": "",
+  "nameZh": "弹珠FX 2：星球大战弹珠",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28165,12 +29276,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1163060,
   "name": "The Making of Karateka",
-  "nameZh": "The Making of Karateka",
+  "nameZh": "Karateka的诞生",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -28187,12 +29299,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 716500,
   "name": "Eliza",
-  "nameZh": "Eliza",
+  "nameZh": "伊丽莎",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28210,7 +29323,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 286690,
@@ -28238,7 +29352,7 @@ window.GAMES = [
 {
   "id": "mc:metro-redux",
   "name": "Metro Redux",
-  "nameZh": "",
+  "nameZh": "地铁：归来",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28253,7 +29367,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 311690,
@@ -28282,7 +29397,7 @@ window.GAMES = [
 {
   "id": 335300,
   "name": "DARK SOULS II: Scholar of the First Sin",
-  "nameZh": "DARK SOULS II: Scholar of the First Sin",
+  "nameZh": "黑暗之魂II：原罪学者",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -28300,12 +29415,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:time-gentlemen-please",
   "name": "Time Gentlemen, Please!",
-  "nameZh": "",
+  "nameZh": "先生们，时间到了！",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28320,12 +29436,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2585890,
   "name": "Demon Tides",
-  "nameZh": "Demon Tides",
+  "nameZh": "恶魔潮汐",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28342,7 +29459,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 3378300,
@@ -28371,7 +29489,7 @@ window.GAMES = [
 {
   "id": "mc:resistance-2",
   "name": "Resistance 2",
-  "nameZh": "",
+  "nameZh": "抵抗2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28384,12 +29502,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:total-war-warhammer-ii-rise-of-the-tomb-kings",
   "name": "Total War: WARHAMMER II - Rise of the Tomb Kings",
-  "nameZh": "",
+  "nameZh": "全面战争：战锤II——古墓王崛起",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28404,12 +29523,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 377160,
   "name": "Fallout 4",
-  "nameZh": "Fallout 4",
+  "nameZh": "辐射4",
   "aliases": [
    "辐射4"
   ],
@@ -28428,12 +29548,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:flower",
   "name": "flower",
-  "nameZh": "",
+  "nameZh": "花",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28446,7 +29567,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3641000,
@@ -28474,7 +29596,7 @@ window.GAMES = [
 {
   "id": 5221510,
   "name": "Tidy Up the Flower Shop",
-  "nameZh": "Tidy Up the Flower Shop",
+  "nameZh": "整理花店",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28491,12 +29613,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1812370,
   "name": "Little Goody Two Shoes",
-  "nameZh": "Little Goody Two Shoes",
+  "nameZh": "乖乖女",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28513,7 +29636,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1809540,
@@ -28542,7 +29666,7 @@ window.GAMES = [
 {
   "id": "mc:sonic-mania-plus",
   "name": "Sonic Mania Plus",
-  "nameZh": "",
+  "nameZh": "音速小子狂热 Plus",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28557,12 +29681,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:disciples-ii-dark-prophecy",
   "name": "Disciples II: Dark Prophecy",
-  "nameZh": "",
+  "nameZh": "门徒II：黑暗预言",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28577,12 +29702,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:europa-universalis-iv-wealth-of-nations",
   "name": "Europa Universalis IV: Wealth of Nations",
-  "nameZh": "",
+  "nameZh": "欧陆风云IV：列国财富",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28597,12 +29723,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 374190,
   "name": "Infernax",
-  "nameZh": "Infernax",
+  "nameZh": "地狱神罚",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28621,12 +29748,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:mass-effect-3-citadel",
   "name": "Mass Effect 3: Citadel",
-  "nameZh": "",
+  "nameZh": "质量效应3：神堡",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28641,12 +29769,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1931240,
   "name": "MOTHERGUNSHIP: FORGE",
-  "nameZh": "MOTHERGUNSHIP: FORGE",
+  "nameZh": "母舰：熔炉",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28663,12 +29792,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:nba-2k16",
   "name": "NBA 2K16",
-  "nameZh": "",
+  "nameZh": "NBA 2K16：篮球游戏",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28683,12 +29813,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pikmin-3",
   "name": "Pikmin 3",
-  "nameZh": "",
+  "nameZh": "皮克敏3",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28701,12 +29832,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:resident-evil-7-biohazard-gold-edition",
   "name": "Resident Evil 7: biohazard - Gold Edition",
-  "nameZh": "",
+  "nameZh": "生化危机7 黄金版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28721,12 +29853,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1905180,
   "name": "OBS Studio",
-  "nameZh": "OBS Studio",
+  "nameZh": "OBS Studio：直播与录制",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -28744,7 +29877,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 60,
    "peak": 34993
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 323190,
@@ -28771,7 +29905,7 @@ window.GAMES = [
 {
   "id": "mc:driver",
   "name": "Driver",
-  "nameZh": "",
+  "nameZh": "车神",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28784,12 +29918,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 920490,
   "name": "Driver Booster for Steam",
-  "nameZh": "Driver Booster for Steam",
+  "nameZh": "Driver Booster Steam版：驱动更新工具",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28805,12 +29940,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 8190,
   "name": "Just Cause 2",
-  "nameZh": "Just Cause 2",
+  "nameZh": "正当防卫2",
   "aliases": [],
   "mc": 84,
   "ign": 8.8,
@@ -28827,12 +29963,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:football-manager-2020",
   "name": "Football Manager 2020",
-  "nameZh": "",
+  "nameZh": "足球经理2020",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28847,7 +29984,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 985890,
@@ -28876,7 +30014,7 @@ window.GAMES = [
 {
   "id": 17330,
   "name": "Crysis Warhead",
-  "nameZh": "Crysis Warhead",
+  "nameZh": "孤岛危机：弹头",
   "aliases": [],
   "mc": 84,
   "ign": 9.4,
@@ -28892,12 +30030,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo-iv-lord-of-hatred",
   "name": "Diablo IV: Lord of Hatred",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神IV：憎恨之王",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -28912,7 +30051,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 601840,
@@ -28940,7 +30080,7 @@ window.GAMES = [
 {
   "id": 244890,
   "name": "Velocity Ultra",
-  "nameZh": "Velocity Ultra",
+  "nameZh": "极速",
   "aliases": [],
   "mc": 87,
   "ign": 8.4,
@@ -28957,12 +30097,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:forza-horizon-3-hot-wheels",
   "name": "Forza Horizon 3: Hot Wheels",
-  "nameZh": "",
+  "nameZh": "极限竞速：地平线3 风火轮",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -28977,12 +30118,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 257850,
   "name": "Hyper Light Drifter",
-  "nameZh": "Hyper Light Drifter",
+  "nameZh": "光明旅者",
   "aliases": [],
   "mc": 84,
   "ign": 7.6,
@@ -29003,7 +30145,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3751260,
@@ -29031,7 +30174,7 @@ window.GAMES = [
 {
   "id": "mc:hitman-episode-2-sapienza",
   "name": "Hitman - Episode 2: Sapienza",
-  "nameZh": "",
+  "nameZh": "杀手：第二集—萨皮恩扎",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29046,7 +30189,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2799860,
@@ -29098,7 +30242,7 @@ window.GAMES = [
 {
   "id": 1240440,
   "name": "Halo Infinite",
-  "nameZh": "Halo Infinite",
+  "nameZh": "光环：无限",
   "aliases": [],
   "mc": 87,
   "ign": 9.0,
@@ -29116,12 +30260,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:age-of-mythology-the-titans",
   "name": "Age of Mythology: The Titans",
-  "nameZh": "",
+  "nameZh": "神话时代：泰坦",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29136,12 +30281,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1771360,
   "name": "Gerda: A Flame in Winter",
-  "nameZh": "Gerda: A Flame in Winter",
+  "nameZh": "格尔达：冬日之火",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29160,12 +30306,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:microsoft-train-simulator",
   "name": "Microsoft Train Simulator",
-  "nameZh": "",
+  "nameZh": "微软模拟列车",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29180,12 +30327,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 255870,
   "name": "PixelJunk Shooter",
-  "nameZh": "PixelJunk Shooter",
+  "nameZh": "像素垃圾射击",
   "aliases": [],
   "mc": 87,
   "ign": 9.1,
@@ -29203,12 +30351,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 24780,
   "name": "SimCity 4 Deluxe Edition",
-  "nameZh": "SimCity 4 Deluxe Edition",
+  "nameZh": "模拟城市4：豪华版",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29226,12 +30375,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:xenoblade-chronicles-x-definitive-edition",
   "name": "Xenoblade Chronicles X: Definitive Edition",
-  "nameZh": "",
+  "nameZh": "异度神剑X：终极版",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29246,7 +30396,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 594650,
@@ -29272,7 +30423,7 @@ window.GAMES = [
 {
   "id": "mc:dark-cloud-2",
   "name": "Dark Cloud 2",
-  "nameZh": "",
+  "nameZh": "暗云2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29285,12 +30436,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:magic-the-gathering-arena",
   "name": "Magic: The Gathering Arena",
-  "nameZh": "",
+  "nameZh": "万智牌：竞技场",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29305,7 +30457,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 981430,
@@ -29334,7 +30487,7 @@ window.GAMES = [
 {
   "id": 1060600,
   "name": "Lair of the Clockwork God",
-  "nameZh": "Lair of the Clockwork God",
+  "nameZh": "发条上帝之巢",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29355,12 +30508,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:kingdom-hearts-ii",
   "name": "Kingdom Hearts II",
-  "nameZh": "",
+  "nameZh": "王国之心2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29373,12 +30527,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:guilty-gear-x2",
   "name": "Guilty Gear X2",
-  "nameZh": "",
+  "nameZh": "罪恶装备X2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29391,12 +30546,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 314030,
   "name": "Guilty Gear X2 #Reload",
-  "nameZh": "Guilty Gear X2 #Reload",
+  "nameZh": "罪恶装备X2 #Reload",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29412,12 +30568,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:motogp-2",
   "name": "MotoGP 2",
-  "nameZh": "",
+  "nameZh": "摩托GP 2",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29430,12 +30587,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:ratchet-and-clank-future-a-crack-in-time",
   "name": "Ratchet & Clank Future: A Crack in Time",
-  "nameZh": "",
+  "nameZh": "瑞奇与叮当Future：时间裂缝",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29448,12 +30606,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sonic-advance",
   "name": "Sonic Advance",
-  "nameZh": "",
+  "nameZh": "音速小子Advance",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29466,12 +30625,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:spider-man-2000",
   "name": "Spider-Man",
-  "nameZh": "",
+  "nameZh": "蜘蛛侠（2000）",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29484,12 +30644,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:tenchu-stealth-assassins",
   "name": "Tenchu: Stealth Assassins",
-  "nameZh": "",
+  "nameZh": "天诛：暗杀者",
   "aliases": [],
   "mc": 87,
   "ign": null,
@@ -29502,7 +30663,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1357860,
@@ -29530,7 +30692,7 @@ window.GAMES = [
 {
   "id": 1456880,
   "name": "ElecHead",
-  "nameZh": "ElecHead",
+  "nameZh": "电头",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29548,7 +30710,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1337520,
@@ -29597,7 +30760,7 @@ window.GAMES = [
 {
   "id": 362890,
   "name": "Black Mesa",
-  "nameZh": "Black Mesa",
+  "nameZh": "黑山",
   "aliases": [],
   "mc": 84,
   "ign": 8.0,
@@ -29616,12 +30779,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:rise-of-nations-rise-of-legends",
   "name": "Rise of Nations: Rise of Legends",
-  "nameZh": "",
+  "nameZh": "国家崛起：传奇之崛起",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29636,12 +30800,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:toca-race-driver-3-challenge",
   "name": "TOCA Race Driver 3 Challenge",
-  "nameZh": "",
+  "nameZh": "TOCA赛车手3：挑战赛",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29656,12 +30821,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 212680,
   "name": "FTL: Faster Than Light",
-  "nameZh": "FTL: Faster Than Light",
+  "nameZh": "超越光速",
   "aliases": [],
   "mc": 84,
   "ign": 9.6,
@@ -29681,12 +30847,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:diablo-iv-vessel-of-hatred",
   "name": "Diablo IV: Vessel of Hatred",
-  "nameZh": "",
+  "nameZh": "暗黑破坏神IV：憎恨之躯",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29701,7 +30868,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3489700,
@@ -29752,7 +30920,7 @@ window.GAMES = [
 {
   "id": 1382070,
   "name": "Viewfinder",
-  "nameZh": "Viewfinder",
+  "nameZh": "取景器",
   "aliases": [],
   "mc": 84,
   "ign": 8.0,
@@ -29769,12 +30937,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1222670,
   "name": "The Sims 4",
-  "nameZh": "The Sims 4",
+  "nameZh": "模拟人生4",
   "aliases": [],
   "mc": null,
   "ign": 8.0,
@@ -29793,12 +30962,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 62,
    "peak": 33009
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 282140,
   "name": "SOMA",
-  "nameZh": "SOMA",
+  "nameZh": "索玛",
   "aliases": [],
   "mc": 84,
   "ign": 8.1,
@@ -29818,12 +30988,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:defcon-everybody-dies",
   "name": "DEFCON: Everybody Dies",
-  "nameZh": "",
+  "nameZh": "DEFCON：人人皆亡",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29838,7 +31009,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2221490,
@@ -29866,7 +31038,7 @@ window.GAMES = [
 {
   "id": 327740,
   "name": "TRON 2.0",
-  "nameZh": "TRON 2.0",
+  "nameZh": "创：2.0",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29882,12 +31054,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:stalker-2-heart-of-chornobyl-cost-of-hope",
   "name": "S.T.A.L.K.E.R. 2: Heart of Chornobyl - Cost of Hope",
-  "nameZh": "",
+  "nameZh": "潜行者2：切尔诺贝利之心——希望之价",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29902,12 +31075,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2111550,
   "name": "Schrodinger's Cat Burglar",
-  "nameZh": "Schrodinger's Cat Burglar",
+  "nameZh": "薛定谔的猫贼",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -29925,12 +31099,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 19800,
   "name": "Brothers in Arms: Earned in Blood",
-  "nameZh": "Brothers in Arms: Earned in Blood",
+  "nameZh": "兄弟连：浴血奋战",
   "aliases": [],
   "mc": 84,
   "ign": 8.8,
@@ -29946,12 +31121,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3884860,
   "name": "The Wolf Among Us Remastered",
-  "nameZh": "The Wolf Among Us Remastered",
+  "nameZh": "与狼同行：重制版",
   "aliases": [],
   "mc": 84,
   "ign": 8.0,
@@ -29969,12 +31145,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1449850,
   "name": "Yu-Gi-Oh! Master Duel",
-  "nameZh": "Yu-Gi-Oh! Master Duel",
+  "nameZh": "游戏王：大师决斗",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -29992,12 +31169,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 59,
    "peak": 21647
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:broken-sword-shadow-of-the-templars-reforged",
   "name": "Broken Sword - Shadow of the Templars: Reforged",
-  "nameZh": "",
+  "nameZh": "断剑：圣殿骑士之影 重铸版",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30012,12 +31190,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 795420,
   "name": "The Darkside Detective: A Fumble in the Dark",
-  "nameZh": "The Darkside Detective: A Fumble in the Dark",
+  "nameZh": "黑暗侦探：黑暗中的摸索",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30037,12 +31216,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 553640,
   "name": "ICEY",
-  "nameZh": "ICEY",
+  "nameZh": "艾希",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30061,7 +31241,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2378620,
@@ -30091,7 +31272,7 @@ window.GAMES = [
 {
   "id": "mc:spiritfarer",
   "name": "Spiritfarer",
-  "nameZh": "",
+  "nameZh": "灵魂摆渡人",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30106,7 +31287,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 972660,
@@ -30136,7 +31318,7 @@ window.GAMES = [
 {
   "id": 569860,
   "name": "Thimbleweed Park",
-  "nameZh": "Thimbleweed Park",
+  "nameZh": "银莲公园",
   "aliases": [],
   "mc": 84,
   "ign": 8.5,
@@ -30155,12 +31337,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2300320,
   "name": "Farming Simulator 25",
-  "nameZh": "Farming Simulator 25",
+  "nameZh": "模拟农场25",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -30177,12 +31360,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 68,
    "peak": 47666
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-lord-of-the-rings-the-battle-for-middle-earth-2006",
   "name": "The Lord of the Rings: The Battle for Middle-Earth II",
-  "nameZh": "",
+  "nameZh": "指环王：中土之战II",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30197,12 +31381,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:battlefield-vietnam",
   "name": "Battlefield Vietnam",
-  "nameZh": "",
+  "nameZh": "战地：越南",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30217,12 +31402,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:medieval-total-war-viking-invasion",
   "name": "Medieval: Total War - Viking Invasion",
-  "nameZh": "",
+  "nameZh": "中世纪：全面战争—维京入侵",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30237,12 +31423,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:shin-megami-tensei-persona-3",
   "name": "Shin Megami Tensei: Persona 3",
-  "nameZh": "",
+  "nameZh": "女神异闻录3",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30255,12 +31442,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:guild-wars-nightfall",
   "name": "Guild Wars Nightfall",
-  "nameZh": "",
+  "nameZh": "激战：暗夜",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30275,12 +31463,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:pixeljunk-monsters-deluxe",
   "name": "PixelJunk Monsters Deluxe",
-  "nameZh": "",
+  "nameZh": "像素垃圾怪兽：豪华版",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30293,12 +31482,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1170570,
   "name": "The Drifter",
-  "nameZh": "The Drifter",
+  "nameZh": "漂泊者",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30317,12 +31507,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2725260,
   "name": "ENDER MAGNOLIA: Bloom in the Mist",
-  "nameZh": "ENDER MAGNOLIA: Bloom in the Mist",
+  "nameZh": "终焉之玛格诺莉亚：雾中绽放",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30339,12 +31530,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 447800,
   "name": "LostWinds 2: Winter of the Melodias",
-  "nameZh": "LostWinds 2: Winter of the Melodias",
+  "nameZh": "失落之风2：梅洛迪亚斯之冬",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30360,12 +31552,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:lostwinds-winter-of-the-melodias",
   "name": "LostWinds: Winter of the Melodias",
-  "nameZh": "",
+  "nameZh": "失落之风：梅洛迪亚斯之冬",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30378,7 +31571,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2713000,
@@ -30405,7 +31599,7 @@ window.GAMES = [
 {
   "id": "mc:enemy-territory-quake-wars",
   "name": "Enemy Territory: Quake Wars",
-  "nameZh": "",
+  "nameZh": "敌占区：雷神之战",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30420,12 +31614,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2103680,
   "name": "Mediterranea Inferno",
-  "nameZh": "Mediterranea Inferno",
+  "nameZh": "地中海炼狱",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30442,12 +31637,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1727180,
   "name": "NeverAwake",
-  "nameZh": "NeverAwake",
+  "nameZh": "永不醒来",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30464,12 +31660,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1260520,
   "name": "Patrick's Parabox",
-  "nameZh": "Patrick's Parabox",
+  "nameZh": "帕特里克的箱子谜题",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30489,12 +31686,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 113200,
   "name": "The Binding of Isaac",
-  "nameZh": "The Binding of Isaac",
+  "nameZh": "以撒的结合",
   "aliases": [],
   "mc": 84,
   "ign": 7.5,
@@ -30514,12 +31712,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:bomberman-blast",
   "name": "Bomberman Blast",
-  "nameZh": "",
+  "nameZh": "炸弹人：爆裂",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30532,12 +31731,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1494470,
   "name": "BUSTAFELLOWS",
-  "nameZh": "BUSTAFELLOWS",
+  "nameZh": "BUSTAFELLOWS：命运搭档",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30554,12 +31754,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:kirbys-epic-yarn",
   "name": "Kirby's Epic Yarn",
-  "nameZh": "",
+  "nameZh": "毛线卡比",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30572,12 +31773,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 944430,
   "name": "The Last Friend",
-  "nameZh": "The Last Friend",
+  "nameZh": "最后的朋友",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30596,7 +31798,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2384580,
@@ -30624,7 +31827,7 @@ window.GAMES = [
 {
   "id": "mc:fifa-17",
   "name": "FIFA 17",
-  "nameZh": "",
+  "nameZh": "FIFA 17 足球",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30639,7 +31842,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1747760,
@@ -30667,7 +31871,7 @@ window.GAMES = [
 {
   "id": "mc:uncharted-the-nathan-drake-collection",
   "name": "Uncharted: The Nathan Drake Collection",
-  "nameZh": "",
+  "nameZh": "神秘海域：内森·德雷克合集",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30682,12 +31886,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:trine-2",
   "name": "Trine 2",
-  "nameZh": "",
+  "nameZh": "三位一体2",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30702,12 +31907,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 35720,
   "name": "Trine 2: Complete Story",
-  "nameZh": "Trine 2: Complete Story",
+  "nameZh": "三位一体2：完整故事",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30729,12 +31935,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 39120,
   "name": "RIFT",
-  "nameZh": "RIFT",
+  "nameZh": "裂隙",
   "aliases": [],
   "mc": 84,
   "ign": 8.5,
@@ -30754,7 +31961,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2486820,
@@ -30782,7 +31990,7 @@ window.GAMES = [
 {
   "id": 1158850,
   "name": "The Great Ace Attorney Chronicles",
-  "nameZh": "The Great Ace Attorney Chronicles",
+  "nameZh": "大逆转裁判编年史",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30799,12 +32007,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 762830,
   "name": "Telling Lies",
-  "nameZh": "Telling Lies",
+  "nameZh": "说谎游戏",
   "aliases": [],
   "mc": 84,
   "ign": 9.0,
@@ -30823,12 +32032,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:mario-kart-8-deluxe-booster-course-pass-wave-4",
   "name": "Mario Kart 8 Deluxe: Booster Course Pass - Wave 4",
-  "nameZh": "",
+  "nameZh": "马力欧赛车8 豪华版：加速票券 第4波",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30843,12 +32053,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:silent-hill-1999",
   "name": "Silent Hill",
-  "nameZh": "",
+  "nameZh": "寂静岭",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -30861,12 +32072,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:project-cars-2",
   "name": "Project CARS 2",
-  "nameZh": "",
+  "nameZh": "竞速计划2",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30881,12 +32093,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1318970,
   "name": "This Way Madness Lies",
-  "nameZh": "This Way Madness Lies",
+  "nameZh": "此路通往疯狂",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30902,12 +32115,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:the-wolf-among-us-episode-5-cry-wolf",
   "name": "The Wolf Among Us: Episode 5 - Cry Wolf",
-  "nameZh": "",
+  "nameZh": "与狼同行：第5集——狼来了",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30922,12 +32136,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 47920,
   "name": "Shift 2 Unleashed",
-  "nameZh": "Shift 2 Unleashed",
+  "nameZh": "极品飞车：变速2",
   "aliases": [],
   "mc": 84,
   "ign": 8.5,
@@ -30943,12 +32158,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 583470,
   "name": "The End Is Nigh",
-  "nameZh": "The End Is Nigh",
+  "nameZh": "末日将至",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30968,12 +32184,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:sid-meiers-civilization-iv-warlords",
   "name": "Sid Meier's Civilization IV: Warlords",
-  "nameZh": "",
+  "nameZh": "席德·梅尔的文明IV：军阀",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -30988,12 +32205,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1996010,
   "name": "Crow Country",
-  "nameZh": "Crow Country",
+  "nameZh": "乌鸦国度",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31010,12 +32228,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:kirby-canvas-curse",
   "name": "Kirby: Canvas Curse",
-  "nameZh": "",
+  "nameZh": "星之卡比：触摸卡比",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31028,12 +32247,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:battlefield-1942-the-road-to-rome",
   "name": "Battlefield 1942: The Road to Rome",
-  "nameZh": "",
+  "nameZh": "战地1942：通往罗马之路",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31048,12 +32268,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:burnout-legends",
   "name": "Burnout Legends",
-  "nameZh": "",
+  "nameZh": "火爆狂飙：传奇",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31066,12 +32287,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:master-of-orion-ii-battle-at-antares",
   "name": "Master of Orion II: Battle at Antares",
-  "nameZh": "",
+  "nameZh": "星际之王II：安塔雷斯之战",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31086,12 +32308,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1649950,
   "name": "News Tower",
-  "nameZh": "News Tower",
+  "nameZh": "新闻大厦",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31109,12 +32332,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1307960,
   "name": "Quartet",
-  "nameZh": "Quartet",
+  "nameZh": "四重奏",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31134,12 +32358,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 207140,
   "name": "SpeedRunners",
-  "nameZh": "SpeedRunners",
+  "nameZh": "极速奔跑者",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31161,12 +32386,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1062110,
   "name": "UNSIGHTED",
-  "nameZh": "UNSIGHTED",
+  "nameZh": "失明",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31185,12 +32411,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:zeus-master-of-olympus-poseidon",
   "name": "Zeus: Master of Olympus - Poseidon",
-  "nameZh": "",
+  "nameZh": "宙斯：奥林匹斯之主——波塞冬",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31205,12 +32432,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1546920,
   "name": "Overboard!",
-  "nameZh": "Overboard!",
+  "nameZh": "落水！",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31229,12 +32457,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 683320,
   "name": "GRIS",
-  "nameZh": "GRIS",
+  "nameZh": "格莉斯",
   "aliases": [],
   "mc": 84,
   "ign": 6.5,
@@ -31252,12 +32481,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1116780,
   "name": "Shovel Knight: King of Cards",
-  "nameZh": "Shovel Knight: King of Cards",
+  "nameZh": "铲子骑士：纸牌之王",
   "aliases": [],
   "mc": 84,
   "ign": 8.5,
@@ -31277,12 +32507,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:f1-2010",
   "name": "F1 2010",
-  "nameZh": "",
+  "nameZh": "F1赛车2010",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31297,7 +32528,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 582160,
@@ -31325,7 +32557,7 @@ window.GAMES = [
 {
   "id": "mc:unicorn-overlord",
   "name": "Unicorn Overlord",
-  "nameZh": "",
+  "nameZh": "圣兽之王",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31340,7 +32572,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1937230,
@@ -31390,7 +32623,7 @@ window.GAMES = [
 {
   "id": 1500,
   "name": "Darwinia",
-  "nameZh": "Darwinia",
+  "nameZh": "达尔文岛",
   "aliases": [],
   "mc": 84,
   "ign": 8.8,
@@ -31409,12 +32642,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:football-manager-2024",
   "name": "Football Manager 2024",
-  "nameZh": "",
+  "nameZh": "足球经理2024",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31429,12 +32663,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:velocity-2x",
   "name": "Velocity 2X",
-  "nameZh": "",
+  "nameZh": "速度2X",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31449,12 +32684,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:killer-instinct-season-3",
   "name": "Killer Instinct Season 3",
-  "nameZh": "",
+  "nameZh": "杀手本能：第3季",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31469,7 +32705,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:genshin-impact",
@@ -31496,7 +32733,7 @@ window.GAMES = [
 {
   "id": 964800,
   "name": "Prodeus",
-  "nameZh": "Prodeus",
+  "nameZh": "普罗迪斯",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31516,7 +32753,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2071280,
@@ -31543,7 +32781,7 @@ window.GAMES = [
 {
   "id": 306660,
   "name": "Ultimate General: Gettysburg",
-  "nameZh": "Ultimate General: Gettysburg",
+  "nameZh": "终极将军：葛底斯堡",
   "aliases": [],
   "mc": 84,
   "ign": null,
@@ -31563,12 +32801,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 334940,
   "name": "Yoku's Island Express",
-  "nameZh": "Yoku's Island Express",
+  "nameZh": "优库的小岛快递",
   "aliases": [],
   "mc": 84,
   "ign": 8.0,
@@ -31585,7 +32824,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 764790,
@@ -31613,7 +32853,7 @@ window.GAMES = [
 {
   "id": "mc:resistance-fall-of-man",
   "name": "Resistance: Fall of Man",
-  "nameZh": "",
+  "nameZh": "抵抗：人类灭绝",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31626,12 +32866,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:boom-blox-bash-party",
   "name": "Boom Blox Bash Party",
-  "nameZh": "",
+  "nameZh": "轰隆方块：派对狂欢",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31644,12 +32885,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 221100,
   "name": "DayZ",
-  "nameZh": "DayZ",
+  "nameZh": "DayZ：末日生存",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -31667,7 +32909,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 73,
    "peak": 53163
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2213300,
@@ -31696,7 +32939,7 @@ window.GAMES = [
 {
   "id": 263300,
   "name": "BlazBlue: Calamity Trigger",
-  "nameZh": "BlazBlue: Calamity Trigger",
+  "nameZh": "苍翼默示录：灾厄扳机",
   "aliases": [],
   "mc": 86,
   "ign": 9.4,
@@ -31712,7 +32955,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 449610,
@@ -31741,7 +32985,7 @@ window.GAMES = [
 {
   "id": "mc:street-fighter-6-years-1-2-fighters-edition",
   "name": "Street Fighter 6: Years 1-2 Fighters Edition",
-  "nameZh": "",
+  "nameZh": "街头霸王6：第1-2年格斗家版",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31756,7 +33000,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3678970,
@@ -31785,7 +33030,7 @@ window.GAMES = [
 {
   "id": "mc:mercenaries-playground-of-destruction",
   "name": "Mercenaries: Playground of Destruction",
-  "nameZh": "",
+  "nameZh": "雇佣兵：毁灭游乐场",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31798,12 +33043,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:golden-sun-the-lost-age",
   "name": "Golden Sun: The Lost Age",
-  "nameZh": "",
+  "nameZh": "黄金太阳：失落的时代",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31816,12 +33062,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:test-drive-v-rally",
   "name": "Test Drive V-Rally",
-  "nameZh": "",
+  "nameZh": "测试驾驶：V拉力赛",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31834,12 +33081,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:monster-hunter-4-ultimate",
   "name": "Monster Hunter 4 Ultimate",
-  "nameZh": "",
+  "nameZh": "怪物猎人4：终极版",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31852,12 +33100,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:patapon",
   "name": "Patapon",
-  "nameZh": "",
+  "nameZh": "啪嗒砰",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31870,12 +33119,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 819030,
   "name": "STEINS;GATE ELITE",
-  "nameZh": "STEINS;GATE ELITE",
+  "nameZh": "命运石之门 ELITE",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31892,7 +33142,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2638890,
@@ -31920,7 +33171,7 @@ window.GAMES = [
 {
   "id": 1561340,
   "name": "Berserk Boy",
-  "nameZh": "Berserk Boy",
+  "nameZh": "狂战士男孩",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -31938,12 +33189,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:final-fantasy-xi-treasures-of-aht-urhgan",
   "name": "Final Fantasy XI: Treasures of Aht Urhgan",
-  "nameZh": "",
+  "nameZh": "最终幻想XI：阿特尔冈的秘宝",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -31958,12 +33210,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:fluidity",
   "name": "Fluidity",
-  "nameZh": "",
+  "nameZh": "流动",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -31976,7 +33229,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 535930,
@@ -32005,7 +33259,7 @@ window.GAMES = [
 {
   "id": 617830,
   "name": "SUPERHOT VR",
-  "nameZh": "SUPERHOT VR",
+  "nameZh": "燥热VR",
   "aliases": [],
   "mc": 83,
   "ign": 9.0,
@@ -32022,12 +33276,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 5185890,
   "name": "Zombies Aren't Real",
-  "nameZh": "Zombies Aren't Real",
+  "nameZh": "僵尸不是真的",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -32044,12 +33299,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 219990,
   "name": "Grim Dawn",
-  "nameZh": "Grim Dawn",
+  "nameZh": "恐怖黎明",
   "aliases": [],
   "mc": 83,
   "ign": 8.7,
@@ -32068,12 +33324,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:atelier-ryza-secret-trilogy-deluxe-pack",
   "name": "Atelier Ryza Secret Trilogy Deluxe Pack",
-  "nameZh": "",
+  "nameZh": "莱莎的炼金工房 秘密三部曲豪华合集",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32088,12 +33345,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:picross-3d-round-2",
   "name": "Picross 3D: Round 2",
-  "nameZh": "",
+  "nameZh": "立体绘图方块：第二回",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -32106,12 +33364,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 595520,
   "name": "FINAL FANTASY XII THE ZODIAC AGE",
-  "nameZh": "FINAL FANTASY XII THE ZODIAC AGE",
+  "nameZh": "最终幻想XII：黄道年代",
   "aliases": [],
   "mc": 83,
   "ign": 8.8,
@@ -32127,12 +33386,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 213350,
   "name": "MDK2 HD",
-  "nameZh": "MDK2 HD",
+  "nameZh": "MDK2高清版",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32148,12 +33408,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:asgards-wrath-2",
   "name": "Asgard's Wrath 2",
-  "nameZh": "",
+  "nameZh": "阿斯加德之怒2",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -32166,12 +33427,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:borderlands-2-tiny-tinas-assault-on-dragon-keep",
   "name": "Borderlands 2: Tiny Tina's Assault on Dragon Keep",
-  "nameZh": "",
+  "nameZh": "无主之地2：小缇娜强袭龙堡",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -32184,12 +33446,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 206190,
   "name": "Gunpoint",
-  "nameZh": "Gunpoint",
+  "nameZh": "枪口",
   "aliases": [],
   "mc": 83,
   "ign": 9.0,
@@ -32209,7 +33472,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4384550,
@@ -32235,7 +33499,7 @@ window.GAMES = [
 {
   "id": "mc:detention",
   "name": "Detention",
-  "nameZh": "",
+  "nameZh": "返校",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32250,12 +33514,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:alundra",
   "name": "Alundra",
-  "nameZh": "",
+  "nameZh": "阿兰多拉",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -32268,12 +33533,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:beyond-good-and-evil",
   "name": "Beyond Good & Evil",
-  "nameZh": "",
+  "nameZh": "超越善恶",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32288,12 +33554,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2556990,
   "name": "Beyond Good & Evil - 20th Anniversary Edition",
-  "nameZh": "Beyond Good & Evil - 20th Anniversary Edition",
+  "nameZh": "超越善恶 20周年纪念版",
   "aliases": [],
   "mc": 83,
   "ign": 9.0,
@@ -32310,12 +33577,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 692850,
   "name": "Bloodstained: Ritual of the Night",
-  "nameZh": "Bloodstained: Ritual of the Night",
+  "nameZh": "赤痕：夜之仪式",
   "aliases": [],
   "mc": 83,
   "ign": 8.8,
@@ -32333,12 +33601,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:lunar-2-eternal-blue",
   "name": "Lunar 2: Eternal Blue",
-  "nameZh": "",
+  "nameZh": "Lunar 2：永恒之蓝",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -32351,12 +33620,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 798460,
   "name": "Ni no Kuni Wrath of the White Witch Remastered",
-  "nameZh": "Ni no Kuni Wrath of the White Witch Remastered",
+  "nameZh": "二之国：白色圣灰的女王 重制版",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -32375,7 +33645,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2183900,
@@ -32403,7 +33674,7 @@ window.GAMES = [
 {
   "id": 1229380,
   "name": "Everhood",
-  "nameZh": "Everhood",
+  "nameZh": "永恒之境",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32422,7 +33693,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1623730,
@@ -32454,7 +33726,7 @@ window.GAMES = [
 {
   "id": 48240,
   "name": "Anno 2070",
-  "nameZh": "Anno 2070",
+  "nameZh": "纪元2070",
   "aliases": [],
   "mc": 83,
   "ign": 8.5,
@@ -32470,12 +33742,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:guilty-gear-xrd-revelator-",
   "name": "Guilty Gear Xrd -REVELATOR-",
-  "nameZh": "",
+  "nameZh": "罪恶装备Xrd -REVELATOR-",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -32490,7 +33763,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2291020,
@@ -32517,7 +33791,7 @@ window.GAMES = [
 {
   "id": "mc:pinball-fx-2-marvel-pinball",
   "name": "Pinball FX 2: Marvel Pinball",
-  "nameZh": "",
+  "nameZh": "弹珠FX 2：漫威弹珠",
   "aliases": [],
   "mc": 86,
   "ign": null,
@@ -32530,12 +33804,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 386360,
   "name": "SMITE",
-  "nameZh": "SMITE",
+  "nameZh": "神之浩劫",
   "aliases": [],
   "mc": 83,
   "ign": 8.5,
@@ -32559,12 +33834,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:life-is-strange-2-episode-5-wolves",
   "name": "Life is Strange 2: Episode 5 - Wolves",
-  "nameZh": "",
+  "nameZh": "奇异人生2：第5集—狼群",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32579,7 +33855,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1796220,
@@ -32606,7 +33883,7 @@ window.GAMES = [
 {
   "id": "mc:final-fantasy-iv-pixel-remaster",
   "name": "Final Fantasy IV Pixel Remaster",
-  "nameZh": "",
+  "nameZh": "最终幻想IV 像素复刻版",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32621,12 +33898,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:final-fantasy-x-x-2-hd-remaster",
   "name": "Final Fantasy X / X-2 HD Remaster",
-  "nameZh": "",
+  "nameZh": "最终幻想X / X-2 HD复刻版",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32641,12 +33919,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1729740,
   "name": "Luto",
-  "nameZh": "Luto",
+  "nameZh": "卢托",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32663,7 +33942,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 790820,
@@ -32691,7 +33971,7 @@ window.GAMES = [
 {
   "id": "mc:guild-wars-2-path-of-fire",
   "name": "Guild Wars 2: Path of Fire",
-  "nameZh": "",
+  "nameZh": "激战2：烈焰之路",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32706,12 +33986,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1499120,
   "name": "I Expect You To Die 2: The Spy and the Liar",
-  "nameZh": "I Expect You To Die 2: The Spy and the Liar",
+  "nameZh": "我希望你死2：间谍与骗子",
   "aliases": [],
   "mc": 83,
   "ign": 8.0,
@@ -32727,12 +34008,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1850510,
   "name": "TRIANGLE STRATEGY",
-  "nameZh": "TRIANGLE STRATEGY",
+  "nameZh": "三角战略",
   "aliases": [],
   "mc": 83,
   "ign": 8.0,
@@ -32750,12 +34032,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:command-and-conquer-generals-zero-hour",
   "name": "Command & Conquer: Generals - Zero Hour",
-  "nameZh": "",
+  "nameZh": "命令与征服：将军 绝命时刻",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32770,12 +34053,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1378990,
   "name": "Crash Bandicoot 4: It’s About Time",
-  "nameZh": "Crash Bandicoot 4: It’s About Time",
+  "nameZh": "古惑狼4：时机已到",
   "aliases": [],
   "mc": 83,
   "ign": 8.0,
@@ -32791,12 +34075,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:everquest-the-shadows-of-luclin",
   "name": "EverQuest: The Shadows of Luclin",
-  "nameZh": "",
+  "nameZh": "无尽任务：鲁克林暗影",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32811,12 +34096,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:galactic-civilizations",
   "name": "Galactic Civilizations",
-  "nameZh": "",
+  "nameZh": "银河文明",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32831,12 +34117,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 214150,
   "name": "Galactic Civilizations I: Ultimate Edition",
-  "nameZh": "Galactic Civilizations I: Ultimate Edition",
+  "nameZh": "银河文明I：终极版",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32853,12 +34140,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:homeworld-2",
   "name": "Homeworld 2",
-  "nameZh": "",
+  "nameZh": "家园2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32873,12 +34161,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 254960,
   "name": "Silent Storm Gold Edition",
-  "nameZh": "Silent Storm Gold Edition",
+  "nameZh": "寂静风暴：黄金版",
   "aliases": [],
   "mc": 83,
   "ign": 8.1,
@@ -32896,12 +34185,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:zero-parades-for-dead-spies",
   "name": "ZERO PARADES: For Dead Spies",
-  "nameZh": "",
+  "nameZh": "零号游行：亡命间谍",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -32916,12 +34206,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1669000,
   "name": "Age of Wonders 4",
-  "nameZh": "Age of Wonders 4",
+  "nameZh": "奇迹时代4",
   "aliases": [],
   "mc": 83,
   "ign": 8.0,
@@ -32938,7 +34229,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2114740,
@@ -32966,7 +34258,7 @@ window.GAMES = [
 {
   "id": 102600,
   "name": "Orcs Must Die!",
-  "nameZh": "Orcs Must Die!",
+  "nameZh": "兽人必须死！",
   "aliases": [],
   "mc": 83,
   "ign": 9.0,
@@ -32984,12 +34276,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1265920,
   "name": "Life is Strange Remastered",
-  "nameZh": "Life is Strange Remastered",
+  "nameZh": "奇异人生：重制版",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33006,12 +34299,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 204030,
   "name": "Fable - The Lost Chapters",
-  "nameZh": "Fable - The Lost Chapters",
+  "nameZh": "神鬼寓言：失落之章",
   "aliases": [],
   "mc": 83,
   "ign": 8.6,
@@ -33029,7 +34323,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1942280,
@@ -33060,7 +34355,7 @@ window.GAMES = [
 {
   "id": "mc:call-of-duty-black-ops-4",
   "name": "Call of Duty: Black Ops 4",
-  "nameZh": "",
+  "nameZh": "使命召唤：黑色行动4",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33075,12 +34370,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1954200,
   "name": "Kena: Bridge of Spirits",
-  "nameZh": "Kena: Bridge of Spirits",
+  "nameZh": "凯娜：精神之桥",
   "aliases": [],
   "mc": 83,
   "ign": 8.0,
@@ -33098,7 +34394,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1971650,
@@ -33124,7 +34421,7 @@ window.GAMES = [
 {
   "id": 785790,
   "name": "WHAT THE GOLF?",
-  "nameZh": "WHAT THE GOLF?",
+  "nameZh": "这也算高尔夫？",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33146,12 +34443,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 337000,
   "name": "Deus Ex: Mankind Divided",
-  "nameZh": "Deus Ex: Mankind Divided",
+  "nameZh": "杀出重围：人类分裂",
   "aliases": [],
   "mc": 83,
   "ign": 9.2,
@@ -33170,12 +34468,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 396350,
   "name": "Bleed 2",
-  "nameZh": "Bleed 2",
+  "nameZh": "流血2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33194,12 +34493,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 453090,
   "name": "Parkitect",
-  "nameZh": "Parkitect",
+  "nameZh": "公园建造师",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33220,12 +34520,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:unreal-tournament-iii",
   "name": "Unreal Tournament III",
-  "nameZh": "",
+  "nameZh": "虚幻竞技场III",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33240,12 +34541,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 282070,
   "name": "This War of Mine",
-  "nameZh": "This War of Mine",
+  "nameZh": "这是我的战争",
   "aliases": [],
   "mc": 83,
   "ign": 8.4,
@@ -33264,12 +34566,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 422970,
   "name": "Devil Daggers",
-  "nameZh": "Devil Daggers",
+  "nameZh": "恶魔匕首",
   "aliases": [],
   "mc": 83,
   "ign": 8.5,
@@ -33288,12 +34591,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1574580,
   "name": "Strange Horticulture",
-  "nameZh": "Strange Horticulture",
+  "nameZh": "奇异园艺",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33312,12 +34616,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:red-dead-redemption-featuring-undead-nightmare",
   "name": "Red Dead Redemption Featuring Undead Nightmare",
-  "nameZh": "",
+  "nameZh": "荒野大镖客：救赎——不死梦魇",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33332,12 +34637,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:blackwell-epiphany",
   "name": "The Blackwell Epiphany",
-  "nameZh": "",
+  "nameZh": "布莱克威尔：顿悟",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33352,12 +34658,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-elder-scrolls-online-summerset",
   "name": "The Elder Scrolls Online: Summerset",
-  "nameZh": "",
+  "nameZh": "上古卷轴Online：夏暮群岛",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33372,12 +34679,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:the-lord-of-the-rings-online-siege-of-mirkwood",
   "name": "The Lord of the Rings Online: Siege of Mirkwood",
-  "nameZh": "",
+  "nameZh": "指环王Online：幽暗密林之围",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33392,7 +34700,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 990080,
@@ -33423,7 +34732,7 @@ window.GAMES = [
 {
   "id": 980300,
   "name": "One Finger Death Punch 2",
-  "nameZh": "One Finger Death Punch 2",
+  "nameZh": "一指死亡拳2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33441,12 +34750,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:out-of-the-park-baseball-10",
   "name": "Out of the Park Baseball 10",
-  "nameZh": "",
+  "nameZh": "公园之外棒球10",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33461,12 +34771,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:metal-gear-solid-delta-snake-eater",
   "name": "Metal Gear Solid Delta: Snake Eater",
-  "nameZh": "",
+  "nameZh": "合金装备Δ：食蛇者",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33481,7 +34792,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1321440,
@@ -33509,7 +34821,7 @@ window.GAMES = [
 {
   "id": 242760,
   "name": "The Forest",
-  "nameZh": "The Forest",
+  "nameZh": "森林",
   "aliases": [],
   "mc": 83,
   "ign": 8.4,
@@ -33528,7 +34840,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 5175310,
@@ -33558,7 +34871,7 @@ window.GAMES = [
 {
   "id": "mc:need-for-speed-shift",
   "name": "Need for Speed: Shift",
-  "nameZh": "",
+  "nameZh": "极品飞车：变速",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33573,12 +34886,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:hearts-of-iron-ii",
   "name": "Hearts of Iron II",
-  "nameZh": "",
+  "nameZh": "钢铁雄心2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33593,12 +34907,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 25890,
   "name": "Hearts of Iron III",
-  "nameZh": "Hearts of Iron III",
+  "nameZh": "钢铁雄心3",
   "aliases": [],
   "mc": 83,
   "ign": 8.5,
@@ -33615,7 +34930,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2308630,
@@ -33690,7 +35006,7 @@ window.GAMES = [
 {
   "id": "mc:project-cars",
   "name": "Project CARS",
-  "nameZh": "",
+  "nameZh": "竞速计划",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33705,12 +35021,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 2400430,
   "name": "Capcom Fighting Collection 2",
-  "nameZh": "Capcom Fighting Collection 2",
+  "nameZh": "卡普空格斗游戏合集2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33726,12 +35043,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:crimson-desert-charting-the-unknown",
   "name": "Crimson Desert: Charting the Unknown",
-  "nameZh": "",
+  "nameZh": "红色沙漠：探索未知",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33746,12 +35064,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": "mc:riven-the-sequel-to-myst",
   "name": "Riven: The Sequel to Myst",
-  "nameZh": "",
+  "nameZh": "瑞文：神秘岛续篇",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33766,12 +35085,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:total-war-warhammer-ii-curse-of-the-vampire-coast",
   "name": "Total War: WARHAMMER II - Curse of the Vampire Coast",
-  "nameZh": "",
+  "nameZh": "全面战争：战锤II——吸血鬼海岸诅咒",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33786,7 +35106,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1649080,
@@ -33817,7 +35138,7 @@ window.GAMES = [
 {
   "id": 1017900,
   "name": "Age of Empires: Definitive Edition",
-  "nameZh": "Age of Empires: Definitive Edition",
+  "nameZh": "帝国时代：决定版",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33833,12 +35154,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:icewind-dale-ii",
   "name": "Icewind Dale II",
-  "nameZh": "",
+  "nameZh": "冰风谷2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33853,12 +35175,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3859630,
   "name": "METAL GEAR SOLID: MASTER COLLECTION Vol.2",
-  "nameZh": "METAL GEAR SOLID: MASTER COLLECTION Vol.2",
+  "nameZh": "合金装备：大师合集 Vol.2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33875,12 +35198,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": "mc:everquest-ii-echoes-of-faydwer",
   "name": "EverQuest II: Echoes of Faydwer",
-  "nameZh": "",
+  "nameZh": "无尽任务II：法伊德沃回响",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33895,12 +35219,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1135690,
   "name": "Unpacking",
-  "nameZh": "Unpacking",
+  "nameZh": "拆箱",
   "aliases": [],
   "mc": 83,
   "ign": 8.0,
@@ -33920,12 +35245,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1044720,
   "name": "Farthest Frontier",
-  "nameZh": "Farthest Frontier",
+  "nameZh": "遥远边境",
   "aliases": [],
   "mc": 83,
   "ign": 7.0,
@@ -33943,12 +35269,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 2272250,
   "name": "Forgive Me Father 2",
-  "nameZh": "Forgive Me Father 2",
+  "nameZh": "父亲，请原谅我2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33965,12 +35292,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 1796580,
   "name": "Sorry We're Closed",
-  "nameZh": "Sorry We're Closed",
+  "nameZh": "抱歉，我们关门了",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -33988,12 +35316,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1386900,
   "name": "Observer: System Redux",
-  "nameZh": "Observer: System Redux",
+  "nameZh": "观察者：系统重制版",
   "aliases": [],
   "mc": 83,
   "ign": 8.0,
@@ -34010,12 +35339,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3385670,
   "name": "World of Goo 2",
-  "nameZh": "World of Goo 2",
+  "nameZh": "粘粘世界2",
   "aliases": [],
   "mc": 83,
   "ign": null,
@@ -34035,12 +35365,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 201230,
   "name": "EverQuest II",
-  "nameZh": "EverQuest II",
+  "nameZh": "无尽任务II",
   "aliases": [],
   "mc": 83,
   "ign": 8.5,
@@ -34058,12 +35389,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 5335510,
   "name": "Moon Sweepers",
-  "nameZh": "Moon Sweepers",
+  "nameZh": "月球清扫者",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34083,7 +35415,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 76,
    "peak": 36187
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 3321460,
@@ -34137,7 +35470,7 @@ window.GAMES = [
 {
   "id": 251570,
   "name": "7 Days to Die",
-  "nameZh": "7 Days to Die",
+  "nameZh": "七日杀",
   "aliases": [],
   "mc": null,
   "ign": 4.9,
@@ -34160,12 +35493,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 88,
    "peak": 31502
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 291550,
   "name": "Brawlhalla",
-  "nameZh": "Brawlhalla",
+  "nameZh": "英灵乱战",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34184,7 +35518,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 82,
    "peak": 12523
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 949230,
@@ -34233,7 +35568,7 @@ window.GAMES = [
 {
   "id": 714010,
   "name": "Aimlabs",
-  "nameZh": "Aimlabs",
+  "nameZh": "Aimlabs 瞄准训练",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34254,12 +35589,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 89,
    "peak": 5821
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1304930,
   "name": "The Outlast Trials",
-  "nameZh": "The Outlast Trials",
+  "nameZh": "逃生：试炼",
   "aliases": [],
   "mc": null,
   "ign": 7.0,
@@ -34277,12 +35613,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 94,
    "peak": 17138
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 3932890,
   "name": "Escape from Tarkov",
-  "nameZh": "Escape from Tarkov",
+  "nameZh": "逃离塔科夫",
   "aliases": [],
   "mc": null,
   "ign": 6.0,
@@ -34301,12 +35638,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 100,
    "peak": 34981
-  }
+  },
+  "nameZhType": "common"
  },
 {
   "id": 4957240,
   "name": "Airport 7",
-  "nameZh": "Airport 7",
+  "nameZh": "机场7",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34325,12 +35663,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5319020,
   "name": "Art Shop: Tidy Up!",
-  "nameZh": "Art Shop: Tidy Up!",
+  "nameZh": "艺术商店：整理收纳",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34350,12 +35689,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5367320,
   "name": "AuxPipe",
-  "nameZh": "AuxPipe",
+  "nameZh": "AuxPipe：辅助管道",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34372,12 +35712,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5480840,
   "name": "BeatSlayer",
-  "nameZh": "BeatSlayer",
+  "nameZh": "节拍杀手",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34394,12 +35735,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4950060,
   "name": "Bid Wars",
-  "nameZh": "Bid Wars",
+  "nameZh": "拍卖战争",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34416,12 +35758,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4938490,
   "name": "Black Pyramid",
-  "nameZh": "Black Pyramid",
+  "nameZh": "黑色金字塔",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34438,12 +35781,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4673230,
   "name": "Breeze Of Adventure",
-  "nameZh": "Breeze Of Adventure",
+  "nameZh": "冒险微风",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34461,12 +35805,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5445850,
   "name": "Commander's Dilemma",
-  "nameZh": "Commander's Dilemma",
+  "nameZh": "指挥官的困境",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34484,12 +35829,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5086490,
   "name": "Computer Sillow: Jobcersize",
-  "nameZh": "Computer Sillow: Jobcersize",
+  "nameZh": "Computer Sillow：工作健身",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34506,12 +35852,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5408030,
   "name": "Cycle of the First Dawn",
-  "nameZh": "Cycle of the First Dawn",
+  "nameZh": "初晓轮回",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34532,12 +35879,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5300300,
   "name": "Elementys",
-  "nameZh": "Elementys",
+  "nameZh": "元素之地",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34558,12 +35906,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5308360,
   "name": "Gestalt Journey",
-  "nameZh": "Gestalt Journey",
+  "nameZh": "格式塔旅程",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34580,12 +35929,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5450860,
   "name": "How Many Tickets Does It Take To Win The Lottery?",
-  "nameZh": "How Many Tickets Does It Take To Win The Lottery?",
+  "nameZh": "赢得彩票要买多少张票？",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34602,7 +35952,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5275070,
@@ -34628,7 +35979,7 @@ window.GAMES = [
 {
   "id": 2677970,
   "name": "Intergalactic Defenders",
-  "nameZh": "Intergalactic Defenders",
+  "nameZh": "星际守护者",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34646,12 +35997,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5350040,
   "name": "Manafest",
-  "nameZh": "Manafest",
+  "nameZh": "玛纳节",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34669,12 +36021,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5503180,
   "name": "Olympegs",
-  "nameZh": "Olympegs",
+  "nameZh": "奥林佩格斯",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34691,12 +36044,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5097300,
   "name": "PUSH MID",
-  "nameZh": "PUSH MID",
+  "nameZh": "推向中路",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34713,12 +36067,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5244680,
   "name": "Ray Ray Zombies",
-  "nameZh": "Ray Ray Zombies",
+  "nameZh": "雷雷僵尸",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34734,12 +36089,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5455640,
   "name": "RSP Ultimate Battle",
-  "nameZh": "RSP Ultimate Battle",
+  "nameZh": "RSP终极战斗",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34755,7 +36111,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5471970,
@@ -34782,7 +36139,7 @@ window.GAMES = [
 {
   "id": 5482710,
   "name": "Silicon Tycoon",
-  "nameZh": "Silicon Tycoon",
+  "nameZh": "硅谷大亨",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34803,12 +36160,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5413320,
   "name": "Silver Service: Tidy Up the Grand Buffet",
-  "nameZh": "Silver Service: Tidy Up the Grand Buffet",
+  "nameZh": "银色服务：整理大宴会厅",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34825,12 +36183,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4538060,
   "name": "Subsurface",
-  "nameZh": "Subsurface",
+  "nameZh": "地下表层",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34848,12 +36207,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4366550,
   "name": "Tenrei",
-  "nameZh": "Tenrei",
+  "nameZh": "天铃",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34875,12 +36235,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 4212960,
   "name": "Tisuland",
-  "nameZh": "Tisuland",
+  "nameZh": "提苏兰",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34898,7 +36259,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5355990,
@@ -34971,7 +36333,7 @@ window.GAMES = [
 {
   "id": 629520,
   "name": "Soundpad",
-  "nameZh": "Soundpad",
+  "nameZh": "声音板",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -34988,7 +36350,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": 97,
    "peak": 19133
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 1329410,
@@ -35063,7 +36426,7 @@ window.GAMES = [
 {
   "id": 3687090,
   "name": "Dice Hoarder",
-  "nameZh": "Dice Hoarder",
+  "nameZh": "骰子囤积者",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -35080,7 +36443,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 3629430,
@@ -35111,7 +36475,7 @@ window.GAMES = [
 {
   "id": 5378110,
   "name": "One More Lawn",
-  "nameZh": "One More Lawn",
+  "nameZh": "再来一片草坪",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -35129,12 +36493,13 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  },
 {
   "id": 5266240,
   "name": "Potato Please",
-  "nameZh": "Potato Please",
+  "nameZh": "土豆请",
   "aliases": [],
   "mc": null,
   "ign": null,
@@ -35152,7 +36517,8 @@ window.GAMES = [
   "popDetail": {
    "chartRank": null,
    "peak": null
-  }
+  },
+  "nameZhType": "reference"
  }
 ];
-window.GAMES_META = {"generatedAt": "2026-11-15T10:08:15Z", "sources": ["Steam Most Played (100 entries)", "Steam Top Sellers (8) / New Releases (30)", "Metacritic all-time best (all 20 pages/1000 entries; pc 20 pages/999 entries)", "Steam storesearch matching (844 matched)", "Steam storesearch l=schinese (830 names)", "Metacritic-only catalogue (793 console/f2p titles)", "IGN review scores (857)", "Steam appdetails l=english (857)"], "count": 1650};
+window.GAMES_META = {"generatedAt": "2026-11-15T10:08:15Z", "sources": ["Steam Most Played (100 entries)", "Steam Top Sellers (8) / New Releases (30)", "Metacritic all-time best (all 20 pages/1000 entries; pc 20 pages/999 entries)", "Steam storesearch matching (844 matched)", "Steam storesearch l=schinese (830 names)", "Metacritic-only catalogue (793 console/f2p titles)", "IGN review scores (857)", "Steam appdetails l=english (857)"], "count": 1650, "localization": {"source": "data/game_names_zh.json", "total": 1650, "translated": 1650, "common": 1072, "reference": 294, "missing": 0, "updatedAt": "2026-11-15T17:24:01Z"}};

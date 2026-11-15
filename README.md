@@ -82,7 +82,15 @@ sudo -u gamerank python3 -c "import sqlite3; source=sqlite3.connect('/var/lib/ga
 python scripts/build_games.py
 ```
 
-构建脚本会更新页面资源版本号。部分主机独占游戏没有中文译名，可使用英文搜索。游戏库快照与榜单的实时同步是两套独立功能。
+中文显示名补充表保存在 `data/game_names_zh.json`，按游戏 ID 匹配。已有中文名称继续保留；缺失名称优先使用通用译名，冷门作品使用标注为 `reference` 的参考译名，英文原名始终保留。参考译名可以在名称的悬停提示中识别。
+
+只把补充表应用到现有游戏库，无需重新抓取评分、封面或热度：
+
+```bash
+python scripts/build_games.py --localize-only
+```
+
+完整重建也会自动应用这份补充表。构建脚本会更新页面资源版本号，已有榜单按游戏 ID 关联，名称更新后排名不会改变。游戏库快照与榜单的实时同步是两套独立功能。
 
 ## 验证与接口
 

@@ -1,0 +1,5469 @@
+{
+  "version": 1,
+  "names": {
+    "730": {
+      "nameZh": "反恐精英2",
+      "type": "common"
+    },
+    "570": {
+      "nameZh": "刀塔2",
+      "type": "common"
+    },
+    "578080": {
+      "nameZh": "绝地求生：大逃杀",
+      "type": "common"
+    },
+    "1172470": {
+      "nameZh": "Apex英雄",
+      "type": "common"
+    },
+    "4262460": {
+      "nameZh": "罗布快跑",
+      "type": "reference"
+    },
+    "440": {
+      "nameZh": "军团要塞2",
+      "type": "common"
+    },
+    "413150": {
+      "nameZh": "星露谷物语",
+      "type": "common"
+    },
+    "2868840": {
+      "nameZh": "杀戮尖塔2",
+      "type": "common"
+    },
+    "1174180": {
+      "nameZh": "荒野大镖客：救赎2",
+      "type": "common"
+    },
+    "489830": {
+      "nameZh": "上古卷轴V：天际 特别版",
+      "type": "common"
+    },
+    "550": {
+      "nameZh": "求生之路2",
+      "type": "common"
+    },
+    "250900": {
+      "nameZh": "以撒的结合：重生",
+      "type": "common"
+    },
+    "1364780": {
+      "nameZh": "街头霸王6",
+      "type": "common"
+    },
+    "4435490": {
+      "nameZh": "使命召唤：现代战争4",
+      "type": "reference"
+    },
+    "1422450": {
+      "nameZh": "死锁",
+      "type": "common"
+    },
+    "227300": {
+      "nameZh": "欧洲卡车模拟2",
+      "type": "common"
+    },
+    "289070": {
+      "nameZh": "席德·梅尔的文明VI",
+      "type": "common"
+    },
+    "mc:soulcalibur": {
+      "nameZh": "灵魂能力",
+      "type": "common"
+    },
+    "12210": {
+      "nameZh": "侠盗猎车手4：完全版",
+      "type": "common"
+    },
+    "632470": {
+      "nameZh": "极乐迪斯科：最终剪辑版",
+      "type": "common"
+    },
+    "mc:perfect-dark-2000": {
+      "nameZh": "完美黑暗",
+      "type": "common"
+    },
+    "mc:tony-hawks-pro-skater-3": {
+      "nameZh": "托尼·霍克职业滑板3",
+      "type": "common"
+    },
+    "2545710": {
+      "nameZh": "托尼·霍克职业滑板3 + 4",
+      "type": "common"
+    },
+    "mc:metroid-prime": {
+      "nameZh": "密特罗德Prime",
+      "type": "common"
+    },
+    "1546970": {
+      "nameZh": "侠盗猎车手3：最终版",
+      "type": "common"
+    },
+    "mc:halo-combat-evolved": {
+      "nameZh": "光环：战斗进化",
+      "type": "common"
+    },
+    "mc:nfl-2k1": {
+      "nameZh": "NFL 2K1：美式橄榄球",
+      "type": "common"
+    },
+    "252490": {
+      "nameZh": "腐蚀",
+      "type": "common"
+    },
+    "1867240": {
+      "nameZh": "战犬",
+      "type": "reference"
+    },
+    "220": {
+      "nameZh": "半条命2",
+      "type": "common"
+    },
+    "mc:the-orange-box": {
+      "nameZh": "橙盒",
+      "type": "common"
+    },
+    "70": {
+      "nameZh": "半条命",
+      "type": "common"
+    },
+    "7670": {
+      "nameZh": "生化奇兵",
+      "type": "common"
+    },
+    "mc:mass-effect-2": {
+      "nameZh": "质量效应2",
+      "type": "common"
+    },
+    "2362420": {
+      "nameZh": "质量效应2（2010版）",
+      "type": "common"
+    },
+    "mc:goldeneye-007": {
+      "nameZh": "007：黄金眼",
+      "type": "common"
+    },
+    "mc:uncharted-2-among-thieves": {
+      "nameZh": "神秘海域2：纵横贼海",
+      "type": "common"
+    },
+    "2050650": {
+      "nameZh": "生化危机4",
+      "type": "common"
+    },
+    "mc:tekken-3": {
+      "nameZh": "铁拳3",
+      "type": "common"
+    },
+    "mc:the-house-in-fata-morgana-dreams-of-the-revenants": {
+      "nameZh": "海市蜃楼之馆：亡灵之梦版",
+      "type": "common"
+    },
+    "mc:baldurs-gate-ii-shadows-of-amn": {
+      "nameZh": "博德之门II：安姆的阴影",
+      "type": "common"
+    },
+    "mc:gran-turismo": {
+      "nameZh": "GT赛车",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-2-sons-of-liberty": {
+      "nameZh": "合金装备2：自由之子",
+      "type": "common"
+    },
+    "2131640": {
+      "nameZh": "合金装备2：自由之子—大师合集版",
+      "type": "common"
+    },
+    "620": {
+      "nameZh": "传送门2",
+      "type": "common"
+    },
+    "mc:grand-theft-auto-double-pack": {
+      "nameZh": "侠盗猎车手：双重组合包",
+      "type": "common"
+    },
+    "1145350": {
+      "nameZh": "哈迪斯2",
+      "type": "common"
+    },
+    "1546990": {
+      "nameZh": "侠盗猎车手：罪恶都市最终版",
+      "type": "common"
+    },
+    "mc:portal-companion-collection": {
+      "nameZh": "传送门：同伴合集",
+      "type": "common"
+    },
+    "1547000": {
+      "nameZh": "侠盗猎车手：圣安地列斯最终版",
+      "type": "common"
+    },
+    "mc:sid-meiers-civilization-ii": {
+      "nameZh": "席德·梅尔的文明II",
+      "type": "common"
+    },
+    "3910": {
+      "nameZh": "席德·梅尔的文明III 完全版",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-tears-of-the-kingdom-nintendo": {
+      "nameZh": "塞尔达传说：王国之泪 Nintendo Switch 2 Edition",
+      "type": "common"
+    },
+    "2310": {
+      "nameZh": "雷神之锤",
+      "type": "common"
+    },
+    "mc:littlebigplanet": {
+      "nameZh": "小小大星球",
+      "type": "common"
+    },
+    "2623190": {
+      "nameZh": "上古卷轴IV：湮灭 重制版",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-collectors-edition": {
+      "nameZh": "塞尔达传说：收藏版",
+      "type": "common"
+    },
+    "316790": {
+      "nameZh": "冥界狂想曲：重制版",
+      "type": "common"
+    },
+    "mc:halo-2": {
+      "nameZh": "光环2",
+      "type": "common"
+    },
+    "mc:gran-turismo-3-a-spec": {
+      "nameZh": "GT赛车3：A-Spec",
+      "type": "common"
+    },
+    "mc:diablo": {
+      "nameZh": "暗黑破坏神",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-a-link-to-the-past-four-swords": {
+      "nameZh": "塞尔达传说：众神的三角神力 / 四支剑",
+      "type": "common"
+    },
+    "3900": {
+      "nameZh": "席德·梅尔的文明IV",
+      "type": "common"
+    },
+    "mc:the-last-of-us": {
+      "nameZh": "最后生还者",
+      "type": "common"
+    },
+    "1888930": {
+      "nameZh": "最后生还者 第一部",
+      "type": "common"
+    },
+    "mc:madden-nfl-2003": {
+      "nameZh": "麦登NFL 2003",
+      "type": "common"
+    },
+    "1593500": {
+      "nameZh": "战神",
+      "type": "common"
+    },
+    "mc:the-last-of-us-remastered": {
+      "nameZh": "最后生还者：复刻版",
+      "type": "common"
+    },
+    "2668510": {
+      "nameZh": "荒野大镖客：救赎",
+      "type": "common"
+    },
+    "32370": {
+      "nameZh": "星球大战：旧共和国武士",
+      "type": "common"
+    },
+    "mc:call-of-duty-4-modern-warfare": {
+      "nameZh": "使命召唤4：现代战争",
+      "type": "common"
+    },
+    "228200": {
+      "nameZh": "英雄连",
+      "type": "common"
+    },
+    "546560": {
+      "nameZh": "半条命：艾莉克斯",
+      "type": "common"
+    },
+    "mc:unreal-tournament-2004": {
+      "nameZh": "虚幻竞技场2004",
+      "type": "common"
+    },
+    "mc:starcraft-ii-wings-of-liberty": {
+      "nameZh": "星际争霸II：自由之翼",
+      "type": "common"
+    },
+    "1672970": {
+      "nameZh": "我的世界：地下城",
+      "type": "common"
+    },
+    "mc:elden-ring-shadow-of-the-erdtree": {
+      "nameZh": "艾尔登法环：黄金树幽影",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-breath-of-the-wild-nintendo": {
+      "nameZh": "塞尔达传说：旷野之息 Nintendo Switch 2 Edition",
+      "type": "common"
+    },
+    "244160": {
+      "nameZh": "家园：重制合集",
+      "type": "common"
+    },
+    "mc:final-fantasy-ix": {
+      "nameZh": "最终幻想IX",
+      "type": "common"
+    },
+    "620980": {
+      "nameZh": "节奏光剑",
+      "type": "common"
+    },
+    "1145360": {
+      "nameZh": "哈迪斯",
+      "type": "common"
+    },
+    "mc:tony-hawks-pro-skater-4": {
+      "nameZh": "托尼·霍克职业滑板4",
+      "type": "common"
+    },
+    "631510": {
+      "nameZh": "鬼泣高清合集",
+      "type": "common"
+    },
+    "mc:world-of-warcraft": {
+      "nameZh": "魔兽世界",
+      "type": "common"
+    },
+    "mc:madden-nfl-2002": {
+      "nameZh": "麦登NFL 2002",
+      "type": "common"
+    },
+    "2105620": {
+      "nameZh": "塞克托里",
+      "type": "reference"
+    },
+    "mc:batman-arkham-city": {
+      "nameZh": "蝙蝠侠：阿卡姆之城",
+      "type": "common"
+    },
+    "200260": {
+      "nameZh": "蝙蝠侠：阿卡姆之城 年度版",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-ocarina-of-time-3d": {
+      "nameZh": "塞尔达传说：时之笛3D",
+      "type": "common"
+    },
+    "mc:chrono-cross": {
+      "nameZh": "时空之轮：次元交错",
+      "type": "common"
+    },
+    "1133760": {
+      "nameZh": "时空之轮：次元交错 激进梦想家版",
+      "type": "reference"
+    },
+    "mc:madden-nfl-2004": {
+      "nameZh": "麦登NFL 2004",
+      "type": "common"
+    },
+    "mc:gears-of-war": {
+      "nameZh": "战争机器",
+      "type": "common"
+    },
+    "3010850": {
+      "nameZh": "战争机器：E日",
+      "type": "reference"
+    },
+    "mc:world-soccer-winning-eleven-7-international": {
+      "nameZh": "实况足球7 国际版",
+      "type": "common"
+    },
+    "mc:halo-3": {
+      "nameZh": "光环3",
+      "type": "common"
+    },
+    "mc:ninja-gaiden-black": {
+      "nameZh": "忍者龙剑传 黑之章",
+      "type": "common"
+    },
+    "mc:jet-set-radio-2000": {
+      "nameZh": "涂鸦小子",
+      "type": "common"
+    },
+    "mc:metal-gear-solid": {
+      "nameZh": "合金装备",
+      "type": "common"
+    },
+    "2417610": {
+      "nameZh": "合金装备Δ：食蛇者",
+      "type": "common"
+    },
+    "mc:super-mario-advance-4-super-mario-bros-3": {
+      "nameZh": "超级马力欧Advance 4：超级马力欧兄弟3",
+      "type": "common"
+    },
+    "587620": {
+      "nameZh": "大神 HD",
+      "type": "common"
+    },
+    "2322010": {
+      "nameZh": "战神：诸神黄昏",
+      "type": "common"
+    },
+    "mc:resident-evil-code-veronica": {
+      "nameZh": "生化危机 代号：维罗妮卡",
+      "type": "common"
+    },
+    "mc:burnout-3-takedown": {
+      "nameZh": "火爆狂飙3：撞击",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-3-subsistence": {
+      "nameZh": "合金装备3：生存",
+      "type": "common"
+    },
+    "mc:call-of-duty-modern-warfare-2": {
+      "nameZh": "使命召唤：现代战争2",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-4-guns-of-the-patriots": {
+      "nameZh": "合金装备4：爱国者之枪",
+      "type": "common"
+    },
+    "2492670": {
+      "nameZh": "合金装备4：爱国者之枪—大师合集版",
+      "type": "common"
+    },
+    "3764200": {
+      "nameZh": "生化危机：安魂曲",
+      "type": "common"
+    },
+    "mc:warcraft-iii-reign-of-chaos": {
+      "nameZh": "魔兽争霸III：混乱之治",
+      "type": "common"
+    },
+    "mc:sid-meiers-gettysburg": {
+      "nameZh": "席德·梅尔的葛底斯堡！",
+      "type": "reference"
+    },
+    "mc:the-sims": {
+      "nameZh": "模拟人生",
+      "type": "common"
+    },
+    "mc:virtua-fighter-4": {
+      "nameZh": "VR战士4",
+      "type": "common"
+    },
+    "mc:system-shock-2": {
+      "nameZh": "网络奇兵2",
+      "type": "common"
+    },
+    "866570": {
+      "nameZh": "网络奇兵2：25周年重制版",
+      "type": "common"
+    },
+    "105600": {
+      "nameZh": "泰拉瑞亚",
+      "type": "common"
+    },
+    "mc:rome-total-war": {
+      "nameZh": "罗马：全面战争",
+      "type": "common"
+    },
+    "391540": {
+      "nameZh": "传说之下",
+      "type": "common"
+    },
+    "4200960": {
+      "nameZh": "神偷：黑暗计划 重制版",
+      "type": "common"
+    },
+    "mc:age-of-empires-ii-the-age-of-kings": {
+      "nameZh": "帝国时代II：帝王时代",
+      "type": "common"
+    },
+    "mc:sid-meiers-alpha-centauri": {
+      "nameZh": "席德·梅尔的半人马座阿尔法星",
+      "type": "common"
+    },
+    "mc:unreal-tournament-1999": {
+      "nameZh": "虚幻竞技场",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-v-the-phantom-pain": {
+      "nameZh": "合金装备V：幻痛",
+      "type": "common"
+    },
+    "mc:galactic-civilizations-ii-twilight-of-the-arnor": {
+      "nameZh": "银河文明II：阿诺之暮",
+      "type": "reference"
+    },
+    "mc:final-fantasy-xiv-endwalker": {
+      "nameZh": "最终幻想XIV：晓月之终途",
+      "type": "common"
+    },
+    "mc:out-of-the-park-baseball-17": {
+      "nameZh": "公园之外棒球17",
+      "type": "reference"
+    },
+    "mc:the-witcher-3-wild-hunt-blood-and-wine": {
+      "nameZh": "巫师3：狂猎——血与酒",
+      "type": "common"
+    },
+    "mc:tiger-woods-pga-tour-2003": {
+      "nameZh": "泰格·伍兹PGA巡回赛2003",
+      "type": "common"
+    },
+    "mc:super-smash-bros-brawl": {
+      "nameZh": "任天堂明星大乱斗X",
+      "type": "common"
+    },
+    "mc:gran-turismo-2": {
+      "nameZh": "GT赛车2",
+      "type": "common"
+    },
+    "2531310": {
+      "nameZh": "最后生还者 第二部 重制版",
+      "type": "common"
+    },
+    "3929740": {
+      "nameZh": "汤姆·克兰西之细胞分裂：明日潘多拉",
+      "type": "common"
+    },
+    "mc:grand-theft-auto-chinatown-wars": {
+      "nameZh": "侠盗猎车手：唐人街战争",
+      "type": "common"
+    },
+    "236450": {
+      "nameZh": "吃豆人：冠军版DX+",
+      "type": "common"
+    },
+    "mc:street-fighter-iv": {
+      "nameZh": "街头霸王IV",
+      "type": "common"
+    },
+    "22300": {
+      "nameZh": "辐射3",
+      "type": "common"
+    },
+    "499180": {
+      "nameZh": "时空幻境 纪念版",
+      "type": "common"
+    },
+    "mc:god-of-war-ii": {
+      "nameZh": "战神II",
+      "type": "common"
+    },
+    "mc:ssx-2000": {
+      "nameZh": "SSX极限滑雪",
+      "type": "common"
+    },
+    "mc:persona-5": {
+      "nameZh": "女神异闻录5",
+      "type": "common"
+    },
+    "2200": {
+      "nameZh": "雷神之锤III竞技场",
+      "type": "common"
+    },
+    "mc:ssx-3": {
+      "nameZh": "SSX 3极限滑雪",
+      "type": "common"
+    },
+    "1147860": {
+      "nameZh": "UFO 50合集",
+      "type": "reference"
+    },
+    "205100": {
+      "nameZh": "羞辱",
+      "type": "common"
+    },
+    "mc:medal-of-honor-allied-assault": {
+      "nameZh": "荣誉勋章：联合袭击",
+      "type": "common"
+    },
+    "mc:myth-the-fallen-lords": {
+      "nameZh": "神话：堕落领主",
+      "type": "common"
+    },
+    "mc:microsoft-flight-simulator": {
+      "nameZh": "微软模拟飞行",
+      "type": "common"
+    },
+    "2537590": {
+      "nameZh": "微软模拟飞行2024",
+      "type": "common"
+    },
+    "mc:batman-arkham-asylum": {
+      "nameZh": "蝙蝠侠：阿卡姆疯人院",
+      "type": "common"
+    },
+    "mc:gears-of-war-2": {
+      "nameZh": "战争机器2",
+      "type": "common"
+    },
+    "mc:world-of-warcraft-wrath-of-the-lich-king": {
+      "nameZh": "魔兽世界：巫妖王之怒",
+      "type": "common"
+    },
+    "1148760": {
+      "nameZh": "我曾是青少年外星殖民者",
+      "type": "reference"
+    },
+    "mc:pro-evolution-soccer-2": {
+      "nameZh": "实况足球2",
+      "type": "common"
+    },
+    "mc:soulcalibur-ii": {
+      "nameZh": "灵魂能力II",
+      "type": "common"
+    },
+    "228280": {
+      "nameZh": "博德之门：增强版",
+      "type": "common"
+    },
+    "mc:f1-career-challenge": {
+      "nameZh": "F1生涯挑战",
+      "type": "reference"
+    },
+    "mc:mass-effect-3": {
+      "nameZh": "质量效应3",
+      "type": "common"
+    },
+    "1238020": {
+      "nameZh": "质量效应3 N7数字豪华版",
+      "type": "common"
+    },
+    "1478500": {
+      "nameZh": "大步漫游",
+      "type": "reference"
+    },
+    "mc:skies-of-arcadia": {
+      "nameZh": "永恒的阿卡迪亚",
+      "type": "common"
+    },
+    "mc:mario-kart-super-circuit": {
+      "nameZh": "马力欧赛车：超级赛道",
+      "type": "common"
+    },
+    "273620": {
+      "nameZh": "自由空间2",
+      "type": "common"
+    },
+    "mc:il-2-sturmovik": {
+      "nameZh": "伊尔-2：强击机",
+      "type": "reference"
+    },
+    "mc:rock-band-3": {
+      "nameZh": "摇滚乐队3",
+      "type": "common"
+    },
+    "mc:nba-2k1": {
+      "nameZh": "NBA 2K1：篮球游戏",
+      "type": "common"
+    },
+    "mc:viewtiful-joe": {
+      "nameZh": "红侠乔伊",
+      "type": "common"
+    },
+    "975370": {
+      "nameZh": "矮人要塞",
+      "type": "common"
+    },
+    "mc:kentucky-route-zero-act-iii": {
+      "nameZh": "肯塔基零号公路：第三幕",
+      "type": "common"
+    },
+    "mc:virtua-fighter-4-evolution": {
+      "nameZh": "VR战士4：进化",
+      "type": "common"
+    },
+    "1715130": {
+      "nameZh": "孤岛危机：复刻版",
+      "type": "common"
+    },
+    "281610": {
+      "nameZh": "家园：卡拉克沙漠",
+      "type": "common"
+    },
+    "mc:world-of-warcraft-the-burning-crusade": {
+      "nameZh": "魔兽世界：燃烧的远征",
+      "type": "common"
+    },
+    "mc:paper-mario": {
+      "nameZh": "纸片马力欧",
+      "type": "common"
+    },
+    "32380": {
+      "nameZh": "星球大战：绝地武士：黑暗力量II",
+      "type": "common"
+    },
+    "6310": {
+      "nameZh": "最长的旅程",
+      "type": "common"
+    },
+    "mc:tiger-woods-pga-tour-2005": {
+      "nameZh": "泰格·伍兹PGA巡回赛2005",
+      "type": "common"
+    },
+    "2395210": {
+      "nameZh": "托尼·霍克职业滑板1 + 2",
+      "type": "common"
+    },
+    "mc:tony-hawks-pro-skater-2": {
+      "nameZh": "托尼·霍克职业滑板2",
+      "type": "common"
+    },
+    "mc:wipeout-xl": {
+      "nameZh": "反重力赛车XL",
+      "type": "common"
+    },
+    "304430": {
+      "nameZh": "INSIDE：深入",
+      "type": "reference"
+    },
+    "mc:flipnote-studio": {
+      "nameZh": "翻页笔记工作室",
+      "type": "reference"
+    },
+    "mc:galactic-civilizations-ii-dark-avatar": {
+      "nameZh": "银河文明II：黑暗化身",
+      "type": "reference"
+    },
+    "mc:the-operative-no-one-lives-forever": {
+      "nameZh": "特工：无人永生",
+      "type": "common"
+    },
+    "2246340": {
+      "nameZh": "怪物猎人：荒野",
+      "type": "common"
+    },
+    "1158310": {
+      "nameZh": "十字军之王III",
+      "type": "common"
+    },
+    "mc:battlefield-2": {
+      "nameZh": "战地2",
+      "type": "common"
+    },
+    "224760": {
+      "nameZh": "FEZ：立方谜城",
+      "type": "common"
+    },
+    "466300": {
+      "nameZh": "异域镇魂曲：增强版",
+      "type": "common"
+    },
+    "704450": {
+      "nameZh": "无冬之夜：增强版",
+      "type": "common"
+    },
+    "mc:no-one-lives-forever-2-a-spy-in-h-a-r-m-s-way": {
+      "nameZh": "无人永生2：哈姆组织特工之道",
+      "type": "common"
+    },
+    "2406770": {
+      "nameZh": "随身摄像头",
+      "type": "reference"
+    },
+    "47810": {
+      "nameZh": "龙腾世纪：起源 终极版",
+      "type": "common"
+    },
+    "214560": {
+      "nameZh": "忍者印记",
+      "type": "common"
+    },
+    "mc:disco-elysium": {
+      "nameZh": "极乐迪斯科",
+      "type": "common"
+    },
+    "236430": {
+      "nameZh": "黑暗之魂II",
+      "type": "common"
+    },
+    "418530": {
+      "nameZh": "洞穴探险2",
+      "type": "common"
+    },
+    "2909400": {
+      "nameZh": "最终幻想VII 重生",
+      "type": "common"
+    },
+    "333640": {
+      "nameZh": "Qud洞窟",
+      "type": "reference"
+    },
+    "mc:forza-horizon-4": {
+      "nameZh": "极限竞速：地平线4",
+      "type": "common"
+    },
+    "mc:nfl-2k3": {
+      "nameZh": "NFL 2K3：美式橄榄球",
+      "type": "common"
+    },
+    "mc:nhl-2002": {
+      "nameZh": "NHL 2002：冰球",
+      "type": "common"
+    },
+    "mc:ssx-tricky": {
+      "nameZh": "SSX 疯狂",
+      "type": "reference"
+    },
+    "13600": {
+      "nameZh": "波斯王子：时之沙",
+      "type": "common"
+    },
+    "mc:uncharted-3-drakes-deception": {
+      "nameZh": "神秘海域3：德雷克的诡计",
+      "type": "common"
+    },
+    "mc:rock-band": {
+      "nameZh": "摇滚乐队",
+      "type": "common"
+    },
+    "4697880": {
+      "nameZh": "摇滚乐队模拟器",
+      "type": "reference"
+    },
+    "mc:xenoblade-chronicles-3-expansion-pass-wave-4": {
+      "nameZh": "异度神剑3：扩展票第4波——未来的遗响",
+      "type": "common"
+    },
+    "mc:eternal-darkness-sanitys-requiem": {
+      "nameZh": "永恒黑暗：理智的安魂曲",
+      "type": "reference"
+    },
+    "mc:banjo-kazooie": {
+      "nameZh": "班卓熊大冒险",
+      "type": "common"
+    },
+    "504230": {
+      "nameZh": "蔚蓝",
+      "type": "common"
+    },
+    "813230": {
+      "nameZh": "动物井",
+      "type": "reference"
+    },
+    "2379780": {
+      "nameZh": "小丑牌",
+      "type": "common"
+    },
+    "mc:advance-wars": {
+      "nameZh": "高级战争",
+      "type": "common"
+    },
+    "mc:vagrant-story": {
+      "nameZh": "放浪冒险谭",
+      "type": "common"
+    },
+    "mc:final-fantasy-xiv-shadowbringers": {
+      "nameZh": "最终幻想XIV：暗影之逆焰",
+      "type": "common"
+    },
+    "mc:world-of-warcraft-cataclysm": {
+      "nameZh": "魔兽世界：大灾变",
+      "type": "common"
+    },
+    "22000": {
+      "nameZh": "粘粘世界",
+      "type": "common"
+    },
+    "mc:final-fantasy-xii": {
+      "nameZh": "最终幻想XII",
+      "type": "common"
+    },
+    "1030300": {
+      "nameZh": "空洞骑士：丝之歌",
+      "type": "common"
+    },
+    "mc:slay-the-princess": {
+      "nameZh": "杀死公主",
+      "type": "reference"
+    },
+    "1989270": {
+      "nameZh": "杀死公主：纯粹剪辑版",
+      "type": "reference"
+    },
+    "427520": {
+      "nameZh": "异星工厂",
+      "type": "common"
+    },
+    "mc:super-mario-world-super-mario-advance-2": {
+      "nameZh": "超级马力欧世界：超级马力欧Advance 2",
+      "type": "common"
+    },
+    "mc:espn-nfl-2k5": {
+      "nameZh": "ESPN NFL 2K5 美式橄榄球",
+      "type": "reference"
+    },
+    "239350": {
+      "nameZh": "洞穴探险",
+      "type": "common"
+    },
+    "mc:super-smash-bros-melee": {
+      "nameZh": "任天堂明星大乱斗DX",
+      "type": "common"
+    },
+    "mc:virtua-tennis": {
+      "nameZh": "VR网球",
+      "type": "common"
+    },
+    "400": {
+      "nameZh": "传送门",
+      "type": "common"
+    },
+    "mc:forza-motorsport-3": {
+      "nameZh": "极限竞速：赛车运动3",
+      "type": "common"
+    },
+    "mc:tetris-effect": {
+      "nameZh": "俄罗斯方块效应",
+      "type": "common"
+    },
+    "1003590": {
+      "nameZh": "俄罗斯方块效应：连接",
+      "type": "common"
+    },
+    "mc:nhl-2001": {
+      "nameZh": "NHL 2001：冰球",
+      "type": "common"
+    },
+    "3131640": {
+      "nameZh": "杀出重围：重制版",
+      "type": "reference"
+    },
+    "353540": {
+      "nameZh": "斯蒂芬的香肠卷",
+      "type": "reference"
+    },
+    "mc:super-mario-sunshine": {
+      "nameZh": "超级马力欧阳光",
+      "type": "common"
+    },
+    "mc:tony-hawks-pro-skater": {
+      "nameZh": "托尼·霍克职业滑板",
+      "type": "common"
+    },
+    "mc:fire-emblem-awakening": {
+      "nameZh": "火焰纹章：觉醒",
+      "type": "common"
+    },
+    "mc:half-life-2-episode-two": {
+      "nameZh": "半条命2：第二章",
+      "type": "common"
+    },
+    "mc:final-fantasy-x": {
+      "nameZh": "最终幻想X",
+      "type": "common"
+    },
+    "mc:the-chronicles-of-riddick-escape-from-butcher-bay": {
+      "nameZh": "星际传奇：逃离屠夫湾",
+      "type": "common"
+    },
+    "1967430": {
+      "nameZh": "幽灵诡计：幻影侦探",
+      "type": "common"
+    },
+    "2079180": {
+      "nameZh": "视频宇宙",
+      "type": "reference"
+    },
+    "mc:wave-race-64": {
+      "nameZh": "波浪竞速64",
+      "type": "common"
+    },
+    "1817230": {
+      "nameZh": "完美音浪",
+      "type": "common"
+    },
+    "mc:super-smash-bros-for-nintendo-3ds-wii-u": {
+      "nameZh": "任天堂明星大乱斗：任天堂3DS / Wii U",
+      "type": "common"
+    },
+    "mc:guitar-hero-ii": {
+      "nameZh": "吉他英雄2",
+      "type": "common"
+    },
+    "3837340": {
+      "nameZh": "最终幻想VII",
+      "type": "common"
+    },
+    "15210": {
+      "nameZh": "猎杀潜航III",
+      "type": "common"
+    },
+    "460790": {
+      "nameZh": "猎天使魔女",
+      "type": "common"
+    },
+    "613830": {
+      "nameZh": "时空之轮",
+      "type": "common"
+    },
+    "8930": {
+      "nameZh": "席德·梅尔的文明V",
+      "type": "common"
+    },
+    "mc:falcon-4-0-allied-force": {
+      "nameZh": "猎鹰4.0：联军力量",
+      "type": "reference"
+    },
+    "638230": {
+      "nameZh": "风之旅人",
+      "type": "common"
+    },
+    "883710": {
+      "nameZh": "生化危机2",
+      "type": "common"
+    },
+    "1703340": {
+      "nameZh": "史丹利的寓言：超豪华版",
+      "type": "common"
+    },
+    "mc:conkers-bad-fur-day": {
+      "nameZh": "松鼠康克的糟糕一天",
+      "type": "reference"
+    },
+    "47790": {
+      "nameZh": "荣誉勋章",
+      "type": "common"
+    },
+    "322170": {
+      "nameZh": "几何冲刺",
+      "type": "common"
+    },
+    "mc:rock-band-2": {
+      "nameZh": "摇滚乐队2",
+      "type": "common"
+    },
+    "mc:flight-simulator-2002": {
+      "nameZh": "微软模拟飞行2002",
+      "type": "common"
+    },
+    "225080": {
+      "nameZh": "兄弟：双子传说",
+      "type": "common"
+    },
+    "mc:the-ico-and-shadow-of-the-colossus-collection": {
+      "nameZh": "ICO与旺达与巨像合集",
+      "type": "common"
+    },
+    "mc:metroid-prime-2-echoes": {
+      "nameZh": "密特罗德Prime 2：回声",
+      "type": "common"
+    },
+    "1284210": {
+      "nameZh": "激战2",
+      "type": "common"
+    },
+    "mc:metroid-fusion": {
+      "nameZh": "密特罗德：融合",
+      "type": "common"
+    },
+    "mc:deus-ex-human-revolution": {
+      "nameZh": "杀出重围：人类革命",
+      "type": "common"
+    },
+    "238010": {
+      "nameZh": "杀出重围：人类革命 导演剪辑版",
+      "type": "common"
+    },
+    "1173820": {
+      "nameZh": "最终幻想VI",
+      "type": "common"
+    },
+    "mc:freedom-force": {
+      "nameZh": "自由力量",
+      "type": "reference"
+    },
+    "590380": {
+      "nameZh": "陷阵之志",
+      "type": "common"
+    },
+    "242550": {
+      "nameZh": "雷曼：传奇",
+      "type": "common"
+    },
+    "1123450": {
+      "nameZh": "菊苣：多彩物语",
+      "type": "reference"
+    },
+    "mc:gtr-2": {
+      "nameZh": "GTR 2：GT赛车",
+      "type": "common"
+    },
+    "8790": {
+      "nameZh": "GTR 2：FIA GT赛车",
+      "type": "reference"
+    },
+    "mc:empire-total-war": {
+      "nameZh": "帝国：全面战争",
+      "type": "common"
+    },
+    "10500": {
+      "nameZh": "帝国：全面战争 终极版",
+      "type": "common"
+    },
+    "mc:command-and-conquer-red-alert": {
+      "nameZh": "命令与征服：红色警戒",
+      "type": "common"
+    },
+    "mc:kentucky-route-zero-act-iv": {
+      "nameZh": "肯塔基零号公路：第四幕",
+      "type": "common"
+    },
+    "1668510": {
+      "nameZh": "英雄传说：零之轨迹",
+      "type": "common"
+    },
+    "1973530": {
+      "nameZh": "边狱公司",
+      "type": "common"
+    },
+    "17460": {
+      "nameZh": "质量效应",
+      "type": "common"
+    },
+    "mc:madden-nfl-2005": {
+      "nameZh": "麦登NFL 2005",
+      "type": "common"
+    },
+    "mc:littlebigplanet-2": {
+      "nameZh": "小小大星球2",
+      "type": "common"
+    },
+    "mc:guitar-hero": {
+      "nameZh": "吉他英雄",
+      "type": "common"
+    },
+    "4076840": {
+      "nameZh": "吉他英雄之路",
+      "type": "reference"
+    },
+    "mc:the-witcher-3-wild-hunt-hearts-of-stone": {
+      "nameZh": "巫师3：狂猎——石之心",
+      "type": "common"
+    },
+    "mc:alan-wake-ii": {
+      "nameZh": "心灵杀手2",
+      "type": "common"
+    },
+    "mc:metroid-prime-trilogy": {
+      "nameZh": "密特罗德Prime三部曲",
+      "type": "common"
+    },
+    "6030": {
+      "nameZh": "星球大战：绝地武士II：绝地放逐",
+      "type": "common"
+    },
+    "mc:madden-nfl-2001": {
+      "nameZh": "麦登NFL 2001",
+      "type": "common"
+    },
+    "3375780": {
+      "nameZh": "英雄传说：空之轨迹 1st Chapter",
+      "type": "common"
+    },
+    "601150": {
+      "nameZh": "鬼泣5",
+      "type": "common"
+    },
+    "mc:bayonetta-2": {
+      "nameZh": "猎天使魔女2",
+      "type": "common"
+    },
+    "1533420": {
+      "nameZh": "霓虹白",
+      "type": "reference"
+    },
+    "mc:age-of-mythology": {
+      "nameZh": "神话时代",
+      "type": "common"
+    },
+    "1934680": {
+      "nameZh": "神话时代：重述",
+      "type": "common"
+    },
+    "414340": {
+      "nameZh": "地狱之刃：塞娜的献祭",
+      "type": "common"
+    },
+    "mc:sacrifice-2000": {
+      "nameZh": "牺牲",
+      "type": "reference"
+    },
+    "mc:the-walking-dead-a-telltale-games-series": {
+      "nameZh": "行尸走肉：Telltale游戏系列",
+      "type": "common"
+    },
+    "mc:klonoa-2-lunateas-veil": {
+      "nameZh": "风之克罗诺亚2：月之国度面纱",
+      "type": "reference"
+    },
+    "mc:colony-wars": {
+      "nameZh": "殖民战争",
+      "type": "reference"
+    },
+    "mc:mario-tennis": {
+      "nameZh": "马力欧网球",
+      "type": "common"
+    },
+    "374320": {
+      "nameZh": "黑暗之魂III",
+      "type": "common"
+    },
+    "2367820": {
+      "nameZh": "Despelote：混乱",
+      "type": "reference"
+    },
+    "mc:ratchet-and-clank-up-your-arsenal": {
+      "nameZh": "瑞奇与叮当：武装到牙齿",
+      "type": "common"
+    },
+    "291650": {
+      "nameZh": "永恒之柱",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-3-snake-eater": {
+      "nameZh": "合金装备3：食蛇者",
+      "type": "common"
+    },
+    "2131650": {
+      "nameZh": "合金装备3：食蛇者—大师合集版",
+      "type": "common"
+    },
+    "mc:the-elder-scrolls-iii-morrowind": {
+      "nameZh": "上古卷轴III：晨风",
+      "type": "common"
+    },
+    "22320": {
+      "nameZh": "上古卷轴III：晨风年度游戏版",
+      "type": "common"
+    },
+    "mc:dragon-quest-xi-s-echoes-of-an-elusive-age": {
+      "nameZh": "勇者斗恶龙XI S：寻觅逝去的时光 终极版",
+      "type": "common"
+    },
+    "mc:fallout": {
+      "nameZh": "辐射",
+      "type": "common"
+    },
+    "1151340": {
+      "nameZh": "辐射76",
+      "type": "common"
+    },
+    "mc:rocksmith-2014-edition": {
+      "nameZh": "摇滚史密斯2014版",
+      "type": "common"
+    },
+    "221680": {
+      "nameZh": "摇滚史密斯2014版：重制版 学习与演奏",
+      "type": "common"
+    },
+    "mc:spyro-year-of-the-dragon": {
+      "nameZh": "小龙斯派罗：龙年",
+      "type": "common"
+    },
+    "8000": {
+      "nameZh": "古墓丽影：周年纪念版",
+      "type": "common"
+    },
+    "mc:twisted-metal-black": {
+      "nameZh": "扭曲金属：黑色",
+      "type": "reference"
+    },
+    "2231450": {
+      "nameZh": "披萨塔",
+      "type": "common"
+    },
+    "mc:forza-horizon-3": {
+      "nameZh": "极限竞速：地平线3",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-ocarina-of-time-master-quest-2002": {
+      "nameZh": "塞尔达传说：时之笛 / 大师任务",
+      "type": "common"
+    },
+    "mc:world-soccer-winning-eleven-9": {
+      "nameZh": "实况足球9",
+      "type": "common"
+    },
+    "mc:ncaa-football-2003": {
+      "nameZh": "NCAA大学橄榄球2003",
+      "type": "common"
+    },
+    "mc:worldwide-soccer-manager-2005": {
+      "nameZh": "世界足球经理2005",
+      "type": "reference"
+    },
+    "588650": {
+      "nameZh": "重生细胞",
+      "type": "common"
+    },
+    "mc:there-is-no-game-wrong-dimension": {
+      "nameZh": "这不是游戏：错误维度",
+      "type": "common"
+    },
+    "646570": {
+      "nameZh": "杀戮尖塔",
+      "type": "common"
+    },
+    "500": {
+      "nameZh": "求生之路",
+      "type": "common"
+    },
+    "mc:ninja-gaiden-2004": {
+      "nameZh": "忍者龙剑传",
+      "type": "common"
+    },
+    "mc:doom-the-dark-ages-revelations": {
+      "nameZh": "毁灭战士：黑暗时代——启示录",
+      "type": "reference"
+    },
+    "mc:god-of-war-chains-of-olympus": {
+      "nameZh": "战神：奥林匹斯之链",
+      "type": "common"
+    },
+    "mc:doa2-hardcore": {
+      "nameZh": "生死格斗2：硬核版",
+      "type": "common"
+    },
+    "mc:f1-2017": {
+      "nameZh": "F1赛车2017",
+      "type": "common"
+    },
+    "mc:nascar-racing-2002-season": {
+      "nameZh": "NASCAR赛车2002赛季",
+      "type": "common"
+    },
+    "mc:mlb-10-the-show": {
+      "nameZh": "MLB 10：棒球大联盟",
+      "type": "common"
+    },
+    "758870": {
+      "nameZh": "奇恩之籽",
+      "type": "reference"
+    },
+    "mc:shadow-of-the-colossus": {
+      "nameZh": "旺达与巨像",
+      "type": "common"
+    },
+    "2366980": {
+      "nameZh": "谢天谢地，你们来了！",
+      "type": "common"
+    },
+    "mc:yoshis-island-super-mario-advance-3": {
+      "nameZh": "耀西岛：超级马力欧Advance 3",
+      "type": "common"
+    },
+    "mc:espn-nfl-football": {
+      "nameZh": "ESPN美式橄榄球",
+      "type": "reference"
+    },
+    "mc:fifa-soccer-12": {
+      "nameZh": "FIFA足球12",
+      "type": "common"
+    },
+    "607080": {
+      "nameZh": "脑航员2",
+      "type": "common"
+    },
+    "3843560": {
+      "nameZh": "战斗任务2：巴巴罗萨至柏林",
+      "type": "reference"
+    },
+    "mc:combat-mission-barbarossa-to-berlin": {
+      "nameZh": "战斗任务：巴巴罗萨至柏林",
+      "type": "reference"
+    },
+    "mc:homeworld-cataclysm": {
+      "nameZh": "家园：灾难",
+      "type": "common"
+    },
+    "mc:cyberpunk-2077-phantom-liberty": {
+      "nameZh": "赛博朋克2077：往日之影",
+      "type": "common"
+    },
+    "mc:guild-wars": {
+      "nameZh": "激战",
+      "type": "common"
+    },
+    "29720": {
+      "nameZh": "激战：重铸",
+      "type": "reference"
+    },
+    "mc:killzone-2": {
+      "nameZh": "杀戮地带2",
+      "type": "common"
+    },
+    "mc:the-walking-dead-episode-5-no-time-left": {
+      "nameZh": "行尸走肉：第5集——没有时间了",
+      "type": "common"
+    },
+    "mc:halo-reach": {
+      "nameZh": "光环：致远星",
+      "type": "common"
+    },
+    "1395520": {
+      "nameZh": "布莱克庄园降灵会",
+      "type": "reference"
+    },
+    "49520": {
+      "nameZh": "无主之地2",
+      "type": "common"
+    },
+    "mc:max-payne": {
+      "nameZh": "马克思·佩恩",
+      "type": "common"
+    },
+    "mc:football-manager-handheld": {
+      "nameZh": "足球经理 掌上版",
+      "type": "reference"
+    },
+    "mc:out-of-the-park-baseball-15": {
+      "nameZh": "公园之外棒球15",
+      "type": "reference"
+    },
+    "4249120": {
+      "nameZh": "生化危机3：复仇女神",
+      "type": "common"
+    },
+    "mc:resident-evil-4-separate-ways": {
+      "nameZh": "生化危机4：艾达篇",
+      "type": "common"
+    },
+    "mc:forza-motorsport-4": {
+      "nameZh": "极限竞速：赛车运动4",
+      "type": "common"
+    },
+    "304240": {
+      "nameZh": "生化危机",
+      "type": "common"
+    },
+    "5540250": {
+      "nameZh": "前线：冲突世界",
+      "type": "common"
+    },
+    "mc:world-in-conflict": {
+      "nameZh": "冲突世界",
+      "type": "common"
+    },
+    "mc:quake-ii-enhanced-edition": {
+      "nameZh": "雷神之锤II：增强版",
+      "type": "common"
+    },
+    "mc:destiny-2-the-final-shape": {
+      "nameZh": "命运2：最终形态",
+      "type": "common"
+    },
+    "mc:duke-nukem-3d": {
+      "nameZh": "毁灭公爵3D",
+      "type": "common"
+    },
+    "434050": {
+      "nameZh": "毁灭公爵3D：20周年巡回版",
+      "type": "common"
+    },
+    "mc:nascar-racing-4": {
+      "nameZh": "NASCAR赛车4",
+      "type": "common"
+    },
+    "13520": {
+      "nameZh": "孤岛惊魂",
+      "type": "common"
+    },
+    "mc:gears-of-war-3": {
+      "nameZh": "战争机器3",
+      "type": "common"
+    },
+    "mc:castlevania-aria-of-sorrow": {
+      "nameZh": "恶魔城：晓月圆舞曲",
+      "type": "common"
+    },
+    "242680": {
+      "nameZh": "核子王座",
+      "type": "common"
+    },
+    "mc:cuphead-in-the-delicious-last-course": {
+      "nameZh": "茶杯头：最后的美味佳肴",
+      "type": "common"
+    },
+    "mc:legacy-of-kain-soul-reaver": {
+      "nameZh": "凯恩的遗产：灵魂掠夺者",
+      "type": "common"
+    },
+    "224940": {
+      "nameZh": "凯恩的遗产：灵魂掠夺者2",
+      "type": "common"
+    },
+    "mc:golden-sun": {
+      "nameZh": "黄金太阳",
+      "type": "common"
+    },
+    "mc:lone-echo": {
+      "nameZh": "孤独回声",
+      "type": "common"
+    },
+    "200510": {
+      "nameZh": "幽浮：未知敌人",
+      "type": "common"
+    },
+    "mc:world-soccer-winning-eleven-8-international": {
+      "nameZh": "实况足球8 国际版",
+      "type": "common"
+    },
+    "mc:rise-of-nations-2003": {
+      "nameZh": "国家崛起",
+      "type": "common"
+    },
+    "287450": {
+      "nameZh": "国家崛起：扩展版",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-a-link-between-worlds": {
+      "nameZh": "塞尔达传说：众神的三角神力2",
+      "type": "common"
+    },
+    "273590": {
+      "nameZh": "坠落3",
+      "type": "reference"
+    },
+    "mc:nascar-racing-2003-season": {
+      "nameZh": "NASCAR赛车2003赛季",
+      "type": "common"
+    },
+    "mc:nier-automata-game-of-the-yorha-edition": {
+      "nameZh": "尼尔：机械纪元—寄叶版",
+      "type": "common"
+    },
+    "730820": {
+      "nameZh": "猴岛的诅咒",
+      "type": "common"
+    },
+    "mc:castlevania-circle-of-the-moon": {
+      "nameZh": "恶魔城：月轮",
+      "type": "common"
+    },
+    "mc:donkey-kong-bananza": {
+      "nameZh": "咚奇刚：蕉力全开",
+      "type": "common"
+    },
+    "636450": {
+      "nameZh": "雷兹无限",
+      "type": "common"
+    },
+    "1238820": {
+      "nameZh": "战地3",
+      "type": "common"
+    },
+    "mc:battlefield-1942": {
+      "nameZh": "战地1942",
+      "type": "common"
+    },
+    "814380": {
+      "nameZh": "只狼：影逝二度 年度游戏版",
+      "type": "common"
+    },
+    "48000": {
+      "nameZh": "地狱边境",
+      "type": "common"
+    },
+    "250760": {
+      "nameZh": "铲子骑士：宝藏合集",
+      "type": "common"
+    },
+    "mc:crash-bandicoot-warped": {
+      "nameZh": "古惑狼3：扭曲",
+      "type": "common"
+    },
+    "mc:mario-golf": {
+      "nameZh": "马力欧高尔夫",
+      "type": "common"
+    },
+    "mc:mario-kart-ds": {
+      "nameZh": "马力欧赛车DS",
+      "type": "common"
+    },
+    "mc:dirt-2": {
+      "nameZh": "尘埃2",
+      "type": "common"
+    },
+    "653530": {
+      "nameZh": "奥伯拉丁号归来",
+      "type": "common"
+    },
+    "mc:railroad-tycoon-ii": {
+      "nameZh": "铁路大亨2",
+      "type": "common"
+    },
+    "1057090": {
+      "nameZh": "奥日与萤火意志",
+      "type": "common"
+    },
+    "mc:assassins-creed-ii": {
+      "nameZh": "刺客信条II",
+      "type": "common"
+    },
+    "mc:project-gotham-racing-2": {
+      "nameZh": "都市赛车计划2",
+      "type": "common"
+    },
+    "mc:asgards-wrath": {
+      "nameZh": "阿斯加德之怒",
+      "type": "common"
+    },
+    "mc:xcom-2-war-of-the-chosen": {
+      "nameZh": "幽浮2：天选者之战",
+      "type": "common"
+    },
+    "mc:diablo-iii-ultimate-evil-edition": {
+      "nameZh": "暗黑破坏神III：终极邪恶版",
+      "type": "common"
+    },
+    "mc:tiger-woods-pga-tour-2004": {
+      "nameZh": "泰格·伍兹PGA巡回赛2004",
+      "type": "common"
+    },
+    "519860": {
+      "nameZh": "DUSK：黄昏",
+      "type": "reference"
+    },
+    "mc:ico": {
+      "nameZh": "ICO：古堡迷踪",
+      "type": "common"
+    },
+    "3472510": {
+      "nameZh": "IcoNick Duster：行星守护者",
+      "type": "reference"
+    },
+    "345260": {
+      "nameZh": "中世纪：全面战争合集",
+      "type": "common"
+    },
+    "mc:microsoft-flight-simulator-2004-a-century-of-flig": {
+      "nameZh": "微软模拟飞行2004：飞行世纪",
+      "type": "common"
+    },
+    "mc:tom-clancys-ghost-recon-advanced-warfighter": {
+      "nameZh": "汤姆·克兰西之幽灵行动：尖峰战士",
+      "type": "common"
+    },
+    "mc:mario-and-luigi-superstar-saga": {
+      "nameZh": "马力欧与路易吉：超级明星传奇",
+      "type": "common"
+    },
+    "mc:ape-escape": {
+      "nameZh": "捉猴啦",
+      "type": "common"
+    },
+    "mc:marvel-vs-capcom-2": {
+      "nameZh": "漫威VS卡普空2",
+      "type": "common"
+    },
+    "mc:syphon-filter": {
+      "nameZh": "虹吸战士",
+      "type": "common"
+    },
+    "mc:tony-hawks-underground": {
+      "nameZh": "托尼·霍克：地下世界",
+      "type": "common"
+    },
+    "1035890": {
+      "nameZh": "vApe逃脱",
+      "type": "reference"
+    },
+    "mc:crusader-kings-ii-the-old-gods": {
+      "nameZh": "十字军之王II：旧神",
+      "type": "common"
+    },
+    "1497440": {
+      "nameZh": "茧",
+      "type": "common"
+    },
+    "mc:mario-and-luigi-bowsers-inside-story": {
+      "nameZh": "马力欧与路易吉：库巴体内冒险",
+      "type": "common"
+    },
+    "mc:superbike-2001": {
+      "nameZh": "超级摩托车2001",
+      "type": "reference"
+    },
+    "21090": {
+      "nameZh": "极度恐慌",
+      "type": "common"
+    },
+    "220160": {
+      "nameZh": "进化摩托：黄金版",
+      "type": "common"
+    },
+    "mc:grand-theft-auto-iv-the-lost-and-damned": {
+      "nameZh": "侠盗猎车手4：失落与诅咒",
+      "type": "common"
+    },
+    "220200": {
+      "nameZh": "坎巴拉太空计划",
+      "type": "common"
+    },
+    "mc:age-of-empires-ii-the-conquerors-expansion": {
+      "nameZh": "帝国时代II：征服者资料片",
+      "type": "common"
+    },
+    "mc:tribes-2": {
+      "nameZh": "部落2",
+      "type": "common"
+    },
+    "mc:fifa-soccer-10": {
+      "nameZh": "FIFA足球10",
+      "type": "common"
+    },
+    "mc:nba-street-vol-2": {
+      "nameZh": "NBA街头篮球Vol. 2",
+      "type": "common"
+    },
+    "mc:ratchet-and-clank-going-commando": {
+      "nameZh": "瑞奇与叮当：深入战场",
+      "type": "common"
+    },
+    "2054970": {
+      "nameZh": "龙之信条2",
+      "type": "common"
+    },
+    "mc:ai-the-somnium-files-nirvana-initiative": {
+      "nameZh": "AI：梦境档案 涅槃计划",
+      "type": "common"
+    },
+    "mc:streets-of-rage-4-mr-x-nightmare": {
+      "nameZh": "怒之铁拳4：X先生噩梦",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-the-wind-waker-hd": {
+      "nameZh": "塞尔达传说：风之杖 HD",
+      "type": "common"
+    },
+    "2142790": {
+      "nameZh": "米斯特里亚田园",
+      "type": "reference"
+    },
+    "3476660": {
+      "nameZh": "星球工匠",
+      "type": "reference"
+    },
+    "mc:starcraft": {
+      "nameZh": "星际争霸",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-phantom-hourglass": {
+      "nameZh": "塞尔达传说：幻影沙漏",
+      "type": "common"
+    },
+    "mc:warcraft-iii-the-frozen-throne": {
+      "nameZh": "魔兽争霸III：冰封王座",
+      "type": "common"
+    },
+    "mc:dance-dance-revolution": {
+      "nameZh": "跳舞革命",
+      "type": "common"
+    },
+    "mc:jack-jeanne": {
+      "nameZh": "杰克珍妮",
+      "type": "reference"
+    },
+    "582010": {
+      "nameZh": "怪物猎人：世界",
+      "type": "common"
+    },
+    "1205520": {
+      "nameZh": "隐迹渐现",
+      "type": "common"
+    },
+    "mc:advance-wars-dual-strike": {
+      "nameZh": "高级战争：双重打击",
+      "type": "common"
+    },
+    "220240": {
+      "nameZh": "孤岛惊魂3",
+      "type": "common"
+    },
+    "2651280": {
+      "nameZh": "漫威蜘蛛侠2",
+      "type": "common"
+    },
+    "mc:dead-cells-return-to-castlevania": {
+      "nameZh": "重生细胞：重返恶魔城",
+      "type": "common"
+    },
+    "mc:mlb-11-the-show": {
+      "nameZh": "MLB 11：棒球大联盟",
+      "type": "common"
+    },
+    "mc:nier-automata-become-as-gods-edition": {
+      "nameZh": "尼尔：机械纪元—众神版",
+      "type": "common"
+    },
+    "1253920": {
+      "nameZh": "盗贼遗产2",
+      "type": "common"
+    },
+    "mc:jak-and-daxter-the-precursor-legacy": {
+      "nameZh": "杰克与达斯特：先驱者遗产",
+      "type": "common"
+    },
+    "2008920": {
+      "nameZh": "洛雷莱与激光之眼",
+      "type": "reference"
+    },
+    "mc:star-wars-rogue-leader-rogue-squadron-ii": {
+      "nameZh": "星球大战：侠盗中队II——侠盗领袖",
+      "type": "common"
+    },
+    "200710": {
+      "nameZh": "火炬之光II",
+      "type": "common"
+    },
+    "mc:donkey-kong-64": {
+      "nameZh": "大金刚64",
+      "type": "common"
+    },
+    "mc:ncaa-football-2002": {
+      "nameZh": "NCAA大学橄榄球2002",
+      "type": "common"
+    },
+    "mc:tsukihime-a-piece-of-blue-glass-moon": {
+      "nameZh": "月姬：一片蓝色玻璃之月",
+      "type": "reference"
+    },
+    "268500": {
+      "nameZh": "幽浮2",
+      "type": "common"
+    },
+    "268910": {
+      "nameZh": "茶杯头",
+      "type": "common"
+    },
+    "2111190": {
+      "nameZh": "狂野马尾杰克",
+      "type": "common"
+    },
+    "mc:myth-ii-soulblighter": {
+      "nameZh": "神话II：灵魂粉碎者",
+      "type": "common"
+    },
+    "1098770": {
+      "nameZh": "赤红钻石",
+      "type": "reference"
+    },
+    "mc:panzer-dragoon-orta": {
+      "nameZh": "铁甲飞龙：奥尔塔",
+      "type": "common"
+    },
+    "mc:portal-still-alive": {
+      "nameZh": "传送门：仍然活着",
+      "type": "common"
+    },
+    "mc:elden-ring-tarnished-edition": {
+      "nameZh": "艾尔登法环：褪色者版",
+      "type": "reference"
+    },
+    "mc:shin-megami-tensei-persona-4": {
+      "nameZh": "女神异闻录4",
+      "type": "common"
+    },
+    "367520": {
+      "nameZh": "空洞骑士",
+      "type": "common"
+    },
+    "mc:mlb-09-the-show": {
+      "nameZh": "MLB 09：棒球大联盟",
+      "type": "common"
+    },
+    "9010": {
+      "nameZh": "重返德军总部",
+      "type": "common"
+    },
+    "mc:blast-corps": {
+      "nameZh": "爆破兵团",
+      "type": "common"
+    },
+    "610860": {
+      "nameZh": "Shogo：机动装甲师",
+      "type": "reference"
+    },
+    "mc:mvp-baseball-2004": {
+      "nameZh": "MVP棒球2004",
+      "type": "common"
+    },
+    "214700": {
+      "nameZh": "爱的三十次飞行",
+      "type": "reference"
+    },
+    "mc:wwf-smackdown-2-know-your-role": {
+      "nameZh": "WWF SmackDown! 2：认清你的定位",
+      "type": "reference"
+    },
+    "1817190": {
+      "nameZh": "漫威蜘蛛侠：迈尔斯·莫拉莱斯",
+      "type": "common"
+    },
+    "40800": {
+      "nameZh": "超级食肉男孩",
+      "type": "common"
+    },
+    "2157560": {
+      "nameZh": "碧蓝幻想Versus：崛起",
+      "type": "common"
+    },
+    "mc:hearthstone-heroes-of-warcraft": {
+      "nameZh": "炉石传说：魔兽英雄传",
+      "type": "common"
+    },
+    "mc:medieval-ii-total-war": {
+      "nameZh": "中世纪II：全面战争",
+      "type": "common"
+    },
+    "4700": {
+      "nameZh": "中世纪II：全面战争 终极版",
+      "type": "common"
+    },
+    "mc:f1-2002": {
+      "nameZh": "F1赛车2002",
+      "type": "common"
+    },
+    "3241660": {
+      "nameZh": "R.E.P.O.：回收公司",
+      "type": "reference"
+    },
+    "221910": {
+      "nameZh": "史丹利的寓言",
+      "type": "common"
+    },
+    "47780": {
+      "nameZh": "死亡空间2",
+      "type": "common"
+    },
+    "mc:pikmin-2": {
+      "nameZh": "皮克敏2",
+      "type": "common"
+    },
+    "8850": {
+      "nameZh": "生化奇兵2",
+      "type": "common"
+    },
+    "240": {
+      "nameZh": "反恐精英：起源",
+      "type": "common"
+    },
+    "mc:geometry-wars-retro-evolved-2": {
+      "nameZh": "几何战争：复古进化2",
+      "type": "reference"
+    },
+    "1238840": {
+      "nameZh": "战地1",
+      "type": "common"
+    },
+    "mc:super-mario-3d-land": {
+      "nameZh": "超级马力欧3D大陆",
+      "type": "common"
+    },
+    "mc:mario-kart-8-dlc-pack-2": {
+      "nameZh": "马力欧赛车8：DLC包2",
+      "type": "common"
+    },
+    "mc:starcraft-ii-legacy-of-the-void": {
+      "nameZh": "星际争霸II：虚空之遗",
+      "type": "common"
+    },
+    "mc:diablo-iii": {
+      "nameZh": "暗黑破坏神III",
+      "type": "common"
+    },
+    "mc:f1-2020": {
+      "nameZh": "F1赛车2020",
+      "type": "common"
+    },
+    "mc:metroid-prime-3-corruption": {
+      "nameZh": "密特罗德Prime 3：腐蚀",
+      "type": "common"
+    },
+    "mc:rise-of-nations-thrones-and-patriots": {
+      "nameZh": "国家崛起：王朝与爱国者",
+      "type": "common"
+    },
+    "3920": {
+      "nameZh": "席德·梅尔的海盗！",
+      "type": "common"
+    },
+    "mc:eve-online-special-edition": {
+      "nameZh": "星战前夜：特别版",
+      "type": "common"
+    },
+    "mc:armadillo-run": {
+      "nameZh": "犰狳跑酷",
+      "type": "reference"
+    },
+    "mc:timesplitters-2": {
+      "nameZh": "时间分裂者2",
+      "type": "common"
+    },
+    "mc:world-of-warcraft-legion": {
+      "nameZh": "魔兽世界：军团再临",
+      "type": "common"
+    },
+    "560130": {
+      "nameZh": "永恒之柱II：死亡之火",
+      "type": "common"
+    },
+    "782330": {
+      "nameZh": "毁灭战士：永恒",
+      "type": "common"
+    },
+    "mc:forza-motorsport-2": {
+      "nameZh": "极限竞速：赛车运动2",
+      "type": "common"
+    },
+    "mc:baldurs-gate-ii-throne-of-bhaal": {
+      "nameZh": "博德之门II：巴尔王座",
+      "type": "common"
+    },
+    "10": {
+      "nameZh": "反恐精英",
+      "type": "common"
+    },
+    "mc:dark-age-of-camelot": {
+      "nameZh": "卡美洛的黑暗时代",
+      "type": "reference"
+    },
+    "1743850": {
+      "nameZh": "超级恶魔",
+      "type": "reference"
+    },
+    "mc:pushmo": {
+      "nameZh": "推推乐",
+      "type": "common"
+    },
+    "mc:fifa-soccer-13": {
+      "nameZh": "FIFA足球13",
+      "type": "common"
+    },
+    "481510": {
+      "nameZh": "林中之夜",
+      "type": "common"
+    },
+    "261570": {
+      "nameZh": "奥日与迷失森林",
+      "type": "common"
+    },
+    "mc:diablo-ii": {
+      "nameZh": "暗黑破坏神II",
+      "type": "common"
+    },
+    "1150690": {
+      "nameZh": "OMORI：奥莫里",
+      "type": "common"
+    },
+    "3357650": {
+      "nameZh": "识质存在",
+      "type": "common"
+    },
+    "1799840": {
+      "nameZh": "女王领域",
+      "type": "reference"
+    },
+    "20920": {
+      "nameZh": "巫师2：国王刺客 增强版",
+      "type": "common"
+    },
+    "mc:astro-bot-rescue-mission": {
+      "nameZh": "宇宙机器人：救援任务",
+      "type": "common"
+    },
+    "mc:bayonetta-plus-bayonetta-2": {
+      "nameZh": "猎天使魔女 + 猎天使魔女2",
+      "type": "common"
+    },
+    "mc:beetle-adventure-racing": {
+      "nameZh": "甲壳虫冒险赛车",
+      "type": "common"
+    },
+    "mc:final-fantasy-viii": {
+      "nameZh": "最终幻想VIII",
+      "type": "common"
+    },
+    "mc:nba-2k12": {
+      "nameZh": "NBA 2K12：篮球游戏",
+      "type": "common"
+    },
+    "1238080": {
+      "nameZh": "火爆狂飙：天堂 重制版",
+      "type": "common"
+    },
+    "mc:battlefield-bad-company-2": {
+      "nameZh": "战地：叛逆连队2",
+      "type": "common"
+    },
+    "3419430": {
+      "nameZh": "邦戈猫",
+      "type": "reference"
+    },
+    "3590": {
+      "nameZh": "植物大战僵尸：年度版",
+      "type": "common"
+    },
+    "208200": {
+      "nameZh": "毁灭战士3",
+      "type": "common"
+    },
+    "mc:football-manager-2010": {
+      "nameZh": "足球经理2010",
+      "type": "common"
+    },
+    "mc:halo-2-multiplayer-map-pack": {
+      "nameZh": "光环2：多人游戏地图包",
+      "type": "common"
+    },
+    "mc:wipeout-hd-fury": {
+      "nameZh": "反重力赛车HD：狂怒",
+      "type": "common"
+    },
+    "mc:final-fantasy-xiv-stormblood": {
+      "nameZh": "最终幻想XIV：红莲之狂潮",
+      "type": "common"
+    },
+    "mc:hitman-3": {
+      "nameZh": "杀手3",
+      "type": "common"
+    },
+    "mc:nba-2k18": {
+      "nameZh": "NBA 2K18：篮球游戏",
+      "type": "common"
+    },
+    "mc:shin-megami-tensei-persona-3-portable": {
+      "nameZh": "女神异闻录3 携带版",
+      "type": "common"
+    },
+    "mc:europa-universalis-ii": {
+      "nameZh": "欧陆风云II",
+      "type": "common"
+    },
+    "25800": {
+      "nameZh": "欧陆风云III 完全版",
+      "type": "common"
+    },
+    "mc:xenoblade-chronicles-definitive-edition": {
+      "nameZh": "异度神剑：终极版",
+      "type": "common"
+    },
+    "mc:burnout-revenge": {
+      "nameZh": "火爆狂飙：复仇",
+      "type": "common"
+    },
+    "2630": {
+      "nameZh": "使命召唤2",
+      "type": "common"
+    },
+    "mc:dragon-quest-viii-journey-of-the-cursed-king": {
+      "nameZh": "勇者斗恶龙VIII：天空、海洋、大地与被诅咒的公主",
+      "type": "common"
+    },
+    "mc:metroid-zero-mission": {
+      "nameZh": "密特罗德：零点任务",
+      "type": "common"
+    },
+    "412830": {
+      "nameZh": "命运石之门",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-majoras-mask-3d": {
+      "nameZh": "塞尔达传说：姆吉拉的假面3D",
+      "type": "common"
+    },
+    "1462040": {
+      "nameZh": "最终幻想VII 重制版 INTERGRADE",
+      "type": "common"
+    },
+    "mc:grid-2008": {
+      "nameZh": "超级房车赛",
+      "type": "common"
+    },
+    "1307710": {
+      "nameZh": "超级房车赛：传奇",
+      "type": "common"
+    },
+    "mc:pikmin": {
+      "nameZh": "皮克敏",
+      "type": "common"
+    },
+    "mc:wipeout-3": {
+      "nameZh": "反重力赛车3",
+      "type": "common"
+    },
+    "2742830": {
+      "nameZh": "怪物列车2",
+      "type": "common"
+    },
+    "1395030": {
+      "nameZh": "凯西·雷恩：导演剪辑版",
+      "type": "common"
+    },
+    "1043810": {
+      "nameZh": "战术破门巫师",
+      "type": "reference"
+    },
+    "mc:legends-of-runeterra": {
+      "nameZh": "符文之地传说",
+      "type": "common"
+    },
+    "mc:sins-of-a-solar-empire": {
+      "nameZh": "太阳帝国的罪恶",
+      "type": "common"
+    },
+    "1252330": {
+      "nameZh": "死亡循环",
+      "type": "common"
+    },
+    "2638370": {
+      "nameZh": "玩具熊的五夜后宫：进入深坑",
+      "type": "common"
+    },
+    "mc:monster-hunter-world-iceborne": {
+      "nameZh": "怪物猎人：世界—冰原",
+      "type": "common"
+    },
+    "15190": {
+      "nameZh": "兄弟连：30高地之路",
+      "type": "common"
+    },
+    "mc:crusader-kings-iii-roads-to-power": {
+      "nameZh": "十字军之王III：权力之路",
+      "type": "reference"
+    },
+    "mc:mechwarrior-4-vengeance": {
+      "nameZh": "机甲战士4：复仇",
+      "type": "common"
+    },
+    "2124490": {
+      "nameZh": "寂静岭2",
+      "type": "common"
+    },
+    "211740": {
+      "nameZh": "神偷II：金属时代",
+      "type": "common"
+    },
+    "mc:diablo-ii-lord-of-destruction": {
+      "nameZh": "暗黑破坏神II：毁灭之王",
+      "type": "common"
+    },
+    "32460": {
+      "nameZh": "猴岛小英雄2特别版：勒恰克的复仇",
+      "type": "common"
+    },
+    "mc:rez": {
+      "nameZh": "雷兹",
+      "type": "common"
+    },
+    "mc:half-life-2-episode-one": {
+      "nameZh": "半条命2：第一章",
+      "type": "common"
+    },
+    "231160": {
+      "nameZh": "交换者",
+      "type": "reference"
+    },
+    "736260": {
+      "nameZh": "巴巴是你",
+      "type": "common"
+    },
+    "mc:castlevania-symphony-of-the-night": {
+      "nameZh": "恶魔城：月下夜想曲",
+      "type": "common"
+    },
+    "mc:fable-ii": {
+      "nameZh": "神鬼寓言II",
+      "type": "common"
+    },
+    "6850": {
+      "nameZh": "杀手2：沉默刺客",
+      "type": "common"
+    },
+    "1127500": {
+      "nameZh": "迷你高速公路",
+      "type": "common"
+    },
+    "mc:final-fantasy-chronicles": {
+      "nameZh": "最终幻想编年史",
+      "type": "reference"
+    },
+    "mc:nhl-2k3": {
+      "nameZh": "NHL 2K3：冰球",
+      "type": "common"
+    },
+    "269050": {
+      "nameZh": "年之漫步",
+      "type": "reference"
+    },
+    "1350200": {
+      "nameZh": "不朽",
+      "type": "common"
+    },
+    "2870350": {
+      "nameZh": "皮皮斯特雷洛与诅咒悠悠球",
+      "type": "reference"
+    },
+    "204100": {
+      "nameZh": "马克思·佩恩3",
+      "type": "common"
+    },
+    "251470": {
+      "nameZh": "塔楼坠落：飞升",
+      "type": "reference"
+    },
+    "mc:battlefield-3-armored-kill": {
+      "nameZh": "战地3：装甲杀戮",
+      "type": "common"
+    },
+    "321800": {
+      "nameZh": "冰风谷：增强版",
+      "type": "common"
+    },
+    "3830": {
+      "nameZh": "脑航员",
+      "type": "common"
+    },
+    "1237970": {
+      "nameZh": "泰坦陨落2",
+      "type": "common"
+    },
+    "210970": {
+      "nameZh": "见证者",
+      "type": "common"
+    },
+    "mc:gunstar-heroes": {
+      "nameZh": "银河快枪手",
+      "type": "reference"
+    },
+    "7110": {
+      "nameZh": "翡翠帝国：特别版",
+      "type": "common"
+    },
+    "97110": {
+      "nameZh": "科汉：永恒君主",
+      "type": "reference"
+    },
+    "mc:nba-2k3": {
+      "nameZh": "NBA 2K3：篮球游戏",
+      "type": "common"
+    },
+    "mc:phantasy-star-online": {
+      "nameZh": "梦幻之星Online",
+      "type": "common"
+    },
+    "mc:tekken-2": {
+      "nameZh": "铁拳2",
+      "type": "common"
+    },
+    "mc:raw-data": {
+      "nameZh": "原始数据",
+      "type": "common"
+    },
+    "mc:diablo-iii-reaper-of-souls": {
+      "nameZh": "暗黑破坏神III：夺魂之镰",
+      "type": "common"
+    },
+    "mc:grand-prix-3": {
+      "nameZh": "大奖赛3",
+      "type": "reference"
+    },
+    "41000": {
+      "nameZh": "英雄萨姆HD：初次遭遇",
+      "type": "common"
+    },
+    "mc:f-zero-gx": {
+      "nameZh": "F-Zero GX：零式赛车",
+      "type": "reference"
+    },
+    "mc:super-mario-3d-world-plus-bowsers-fury": {
+      "nameZh": "超级马力欧3D世界 + 库巴之怒",
+      "type": "common"
+    },
+    "570940": {
+      "nameZh": "黑暗之魂：重制版",
+      "type": "common"
+    },
+    "mc:final-fantasy-vi-pixel-remaster": {
+      "nameZh": "最终幻想VI 像素复刻版",
+      "type": "common"
+    },
+    "2640": {
+      "nameZh": "使命召唤：联合进攻",
+      "type": "common"
+    },
+    "mc:pokemon-pokopia": {
+      "nameZh": "宝可梦Pokopia",
+      "type": "reference"
+    },
+    "2408350": {
+      "nameZh": "隐士与猪",
+      "type": "reference"
+    },
+    "mc:nba-street-v3": {
+      "nameZh": "NBA街头篮球V3",
+      "type": "common"
+    },
+    "mc:need-for-speed-hot-pursuit-2": {
+      "nameZh": "极品飞车：热力追踪2",
+      "type": "common"
+    },
+    "mc:grand-theft-auto-iv-the-ballad-of-gay-tony": {
+      "nameZh": "侠盗猎车手4：夜生活之曲",
+      "type": "common"
+    },
+    "336140": {
+      "nameZh": "未立誓者",
+      "type": "reference"
+    },
+    "9340": {
+      "nameZh": "英雄连：抵抗前线",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-the-minish-cap": {
+      "nameZh": "塞尔达传说：缩小帽",
+      "type": "common"
+    },
+    "mc:worldwide-soccer-manager-2007": {
+      "nameZh": "世界足球经理2007",
+      "type": "reference"
+    },
+    "mc:ncaa-football-2004": {
+      "nameZh": "NCAA大学橄榄球2004",
+      "type": "common"
+    },
+    "438100": {
+      "nameZh": "VRChat虚拟社交",
+      "type": "common"
+    },
+    "mc:out-of-the-park-baseball-4": {
+      "nameZh": "公园之外棒球4",
+      "type": "reference"
+    },
+    "mc:f1-2019": {
+      "nameZh": "F1赛车2019",
+      "type": "common"
+    },
+    "200900": {
+      "nameZh": "洞窟物语+",
+      "type": "common"
+    },
+    "2370000": {
+      "nameZh": "Lumines：崛起",
+      "type": "reference"
+    },
+    "236850": {
+      "nameZh": "欧陆风云IV",
+      "type": "common"
+    },
+    "1919470": {
+      "nameZh": "雅达利50周年纪念合集",
+      "type": "common"
+    },
+    "mc:ace-combat-04-shattered-skies": {
+      "nameZh": "皇牌空战04：破碎的天空",
+      "type": "common"
+    },
+    "2420660": {
+      "nameZh": "尼瓦",
+      "type": "reference"
+    },
+    "mc:sunless-skies": {
+      "nameZh": "无光之空",
+      "type": "common"
+    },
+    "596970": {
+      "nameZh": "无光之空：君主版",
+      "type": "common"
+    },
+    "mc:hollow-knight-voidheart-edition": {
+      "nameZh": "空洞骑士：虚空之心版",
+      "type": "common"
+    },
+    "mc:streets-of-rage-2": {
+      "nameZh": "怒之铁拳2",
+      "type": "common"
+    },
+    "mc:nhl-2004": {
+      "nameZh": "NHL 2004：冰球",
+      "type": "common"
+    },
+    "mc:zeus-master-of-olympus": {
+      "nameZh": "宙斯：奥林匹斯之主",
+      "type": "common"
+    },
+    "1817070": {
+      "nameZh": "漫威蜘蛛侠：重制版",
+      "type": "common"
+    },
+    "2582320": {
+      "nameZh": "混音带",
+      "type": "reference"
+    },
+    "mc:nier-automata-the-end-of-yorha-edition": {
+      "nameZh": "尼尔：机械纪元—寄叶终结版",
+      "type": "common"
+    },
+    "mc:hex-shards-of-fate": {
+      "nameZh": "Hex：命运碎片",
+      "type": "reference"
+    },
+    "mc:castlevania-dawn-of-sorrow": {
+      "nameZh": "恶魔城：苍月十字架",
+      "type": "common"
+    },
+    "mc:world-of-warcraft-warlords-of-draenor": {
+      "nameZh": "魔兽世界：德拉诺之王",
+      "type": "common"
+    },
+    "mc:warhammer-40-000-dawn-of-war-dark-crusade": {
+      "nameZh": "战锤40,000：战争黎明——黑暗十字军",
+      "type": "common"
+    },
+    "597220": {
+      "nameZh": "憎恶之西",
+      "type": "common"
+    },
+    "393520": {
+      "nameZh": "圣像破坏者",
+      "type": "reference"
+    },
+    "6830": {
+      "nameZh": "盟军敢死队2：勇往直前",
+      "type": "common"
+    },
+    "2545360": {
+      "nameZh": "孤山雪地骑手",
+      "type": "reference"
+    },
+    "mc:teenage-mutant-ninja-turtles-shredders-revenge-2023": {
+      "nameZh": "忍者神龟：施莱德的复仇——次元震荡",
+      "type": "common"
+    },
+    "mc:fire-emblem-fortunes-weave": {
+      "nameZh": "火焰纹章：命运编织",
+      "type": "reference"
+    },
+    "2634890": {
+      "nameZh": "漫威VS卡普空格斗合集：街机经典",
+      "type": "common"
+    },
+    "mc:shin-megami-tensei-persona-3-fes": {
+      "nameZh": "女神异闻录3 FES",
+      "type": "common"
+    },
+    "mc:world-series-baseball-2k3": {
+      "nameZh": "世界大赛棒球2K3",
+      "type": "reference"
+    },
+    "mc:dark-souls-artorias-of-the-abyss": {
+      "nameZh": "黑暗之魂：亚尔特留斯的深渊",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-hd-collection": {
+      "nameZh": "合金装备高清合集",
+      "type": "common"
+    },
+    "1446780": {
+      "nameZh": "怪物猎人：崛起",
+      "type": "common"
+    },
+    "885000": {
+      "nameZh": "合成骑士",
+      "type": "common"
+    },
+    "mc:dreams": {
+      "nameZh": "梦境",
+      "type": "common"
+    },
+    "4282500": {
+      "nameZh": "hololive 梦想",
+      "type": "reference"
+    },
+    "mc:einhander": {
+      "nameZh": "独臂战机",
+      "type": "common"
+    },
+    "mc:wwf-no-mercy": {
+      "nameZh": "WWF：无情",
+      "type": "reference"
+    },
+    "mc:gran-turismo-4": {
+      "nameZh": "GT赛车4",
+      "type": "common"
+    },
+    "2366970": {
+      "nameZh": "阿尔科",
+      "type": "reference"
+    },
+    "mc:the-beatles-rock-band": {
+      "nameZh": "披头士：摇滚乐队",
+      "type": "common"
+    },
+    "mc:advance-wars-2-black-hole-rising": {
+      "nameZh": "高级战争2：黑洞升起",
+      "type": "common"
+    },
+    "mc:tales-from-the-borderlands-episode-5-the-vault-of": {
+      "nameZh": "无主之地传说：第5集——旅行者秘库",
+      "type": "common"
+    },
+    "mc:cult-of-the-lamb-woolhaven": {
+      "nameZh": "咩咩启示录：伍尔黑文",
+      "type": "reference"
+    },
+    "107100": {
+      "nameZh": "堡垒",
+      "type": "common"
+    },
+    "851670": {
+      "nameZh": "Lumines：重制版",
+      "type": "common"
+    },
+    "110800": {
+      "nameZh": "黑色洛城",
+      "type": "common"
+    },
+    "232430": {
+      "nameZh": "回家",
+      "type": "common"
+    },
+    "mc:ratchet-and-clank-future-tools-of-destruction": {
+      "nameZh": "瑞奇与叮当Future：破坏工具",
+      "type": "common"
+    },
+    "3480": {
+      "nameZh": "弹珠豪华版",
+      "type": "common"
+    },
+    "1328350": {
+      "nameZh": "涡轮超杀",
+      "type": "reference"
+    },
+    "9350": {
+      "nameZh": "最高指挥官",
+      "type": "common"
+    },
+    "mc:new-super-mario-bros": {
+      "nameZh": "新超级马力欧兄弟",
+      "type": "common"
+    },
+    "2369900": {
+      "nameZh": "恶魔城 Dominus 合集",
+      "type": "reference"
+    },
+    "mc:enemy-engaged-rah-66-comanche-versus-ka-52-hokum": {
+      "nameZh": "武装直升机交锋：科曼奇对阵霍克姆",
+      "type": "reference"
+    },
+    "mc:fallout-2": {
+      "nameZh": "辐射2",
+      "type": "common"
+    },
+    "38410": {
+      "nameZh": "辐射2：核战后的角色扮演游戏",
+      "type": "reference"
+    },
+    "2088810": {
+      "nameZh": "完美潮汐：站到站",
+      "type": "reference"
+    },
+    "243040": {
+      "nameZh": "星托邦",
+      "type": "common"
+    },
+    "mc:total-war-shogun-2-fall-of-the-samurai": {
+      "nameZh": "全面战争：幕府将军2——武士的陨落",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-peace-walker": {
+      "nameZh": "合金装备：和平行者",
+      "type": "common"
+    },
+    "2492660": {
+      "nameZh": "合金装备：和平行者—大师合集版",
+      "type": "common"
+    },
+    "mc:warioware-inc-mega-microgame": {
+      "nameZh": "瓦里奥制造：超级迷你游戏$!",
+      "type": "common"
+    },
+    "mc:grandia": {
+      "nameZh": "格兰蒂亚",
+      "type": "common"
+    },
+    "mc:nba-2k2": {
+      "nameZh": "NBA 2K2：篮球游戏",
+      "type": "common"
+    },
+    "4356430": {
+      "nameZh": "NBA 2K27：篮球游戏",
+      "type": "reference"
+    },
+    "mc:oddworld-abes-oddysee-new-n-tasty": {
+      "nameZh": "奇异世界：阿比的奥德赛—美味全新",
+      "type": "common"
+    },
+    "mc:colors-3d": {
+      "nameZh": "色彩！3D",
+      "type": "reference"
+    },
+    "403640": {
+      "nameZh": "羞辱2",
+      "type": "common"
+    },
+    "mc:final-fantasy-xiv-heavensward": {
+      "nameZh": "最终幻想XIV：苍穹之禁城",
+      "type": "common"
+    },
+    "mc:football-manager-2013": {
+      "nameZh": "足球经理2013",
+      "type": "common"
+    },
+    "mc:nba-2k11": {
+      "nameZh": "NBA 2K11：篮球游戏",
+      "type": "common"
+    },
+    "mc:out-of-the-park-baseball-14": {
+      "nameZh": "公园之外棒球14",
+      "type": "reference"
+    },
+    "mc:warhammer-40000-rogue-trader-void-shadows": {
+      "nameZh": "战锤40,000：行商浪人——虚空阴影",
+      "type": "common"
+    },
+    "mc:the-witcher-enhanced-edition": {
+      "nameZh": "巫师：增强版",
+      "type": "common"
+    },
+    "20900": {
+      "nameZh": "巫师：增强版 导演剪辑版",
+      "type": "common"
+    },
+    "mc:the-binding-of-isaac-repentance-plus-online": {
+      "nameZh": "以撒的结合：忏悔 + 在线模式",
+      "type": "common"
+    },
+    "mc:borderlands-the-secret-armory-of-general-knoxx": {
+      "nameZh": "无主之地：诺克斯将军的秘密军火库",
+      "type": "common"
+    },
+    "283680": {
+      "nameZh": "Astebreed：决定版",
+      "type": "reference"
+    },
+    "32360": {
+      "nameZh": "猴岛的秘密：特别版",
+      "type": "common"
+    },
+    "mc:ground-control": {
+      "nameZh": "地面控制",
+      "type": "common"
+    },
+    "254820": {
+      "nameZh": "地面控制：合集",
+      "type": "common"
+    },
+    "mc:espn-nba-basketball": {
+      "nameZh": "ESPN NBA篮球",
+      "type": "reference"
+    },
+    "mc:nba-street": {
+      "nameZh": "NBA街头篮球",
+      "type": "common"
+    },
+    "mc:soul-edge": {
+      "nameZh": "刀魂",
+      "type": "common"
+    },
+    "mc:top-spin": {
+      "nameZh": "顶旋网球",
+      "type": "common"
+    },
+    "mc:kentucky-route-zero": {
+      "nameZh": "肯塔基零号公路",
+      "type": "common"
+    },
+    "945360": {
+      "nameZh": "Among Us：太空狼人杀",
+      "type": "common"
+    },
+    "391220": {
+      "nameZh": "古墓丽影：崛起",
+      "type": "common"
+    },
+    "mc:monster-hunter-rise-sunbreak": {
+      "nameZh": "怪物猎人：崛起—曙光",
+      "type": "common"
+    },
+    "21690": {
+      "nameZh": "生化危机5",
+      "type": "common"
+    },
+    "mc:saints-row-iv": {
+      "nameZh": "黑道圣徒IV",
+      "type": "common"
+    },
+    "206420": {
+      "nameZh": "黑道圣徒IV：重新当选版",
+      "type": "common"
+    },
+    "mc:dave-the-diver-in-the-jungle": {
+      "nameZh": "潜水员戴夫：丛林",
+      "type": "common"
+    },
+    "1871460": {
+      "nameZh": "钢铁巨兽",
+      "type": "reference"
+    },
+    "mc:everquest-omens-of-war": {
+      "nameZh": "无尽任务：战争预兆",
+      "type": "reference"
+    },
+    "mc:steel-beasts": {
+      "nameZh": "钢铁猛兽",
+      "type": "reference"
+    },
+    "298030": {
+      "nameZh": "横扫千军",
+      "type": "common"
+    },
+    "mc:mass-effect-2-lair-of-the-shadow-broker": {
+      "nameZh": "质量效应2：影子经纪人巢穴",
+      "type": "common"
+    },
+    "813780": {
+      "nameZh": "帝国时代II：决定版",
+      "type": "common"
+    },
+    "mc:sid-meiers-civilization-iv-beyond-the-sword": {
+      "nameZh": "席德·梅尔的文明IV：超越刀锋",
+      "type": "common"
+    },
+    "47890": {
+      "nameZh": "模拟人生3",
+      "type": "common"
+    },
+    "mc:freedom-force-vs-the-3rd-reich": {
+      "nameZh": "自由力量对抗第三帝国",
+      "type": "reference"
+    },
+    "mc:death-stranding": {
+      "nameZh": "死亡搁浅",
+      "type": "common"
+    },
+    "1850570": {
+      "nameZh": "死亡搁浅 导演剪辑版",
+      "type": "common"
+    },
+    "mc:destiny-2-the-witch-queen": {
+      "nameZh": "命运2：邪姬魅影",
+      "type": "common"
+    },
+    "mc:yakuza-0": {
+      "nameZh": "如龙0",
+      "type": "common"
+    },
+    "mc:tribes-ascend": {
+      "nameZh": "部落：崛起",
+      "type": "common"
+    },
+    "mc:titanfall": {
+      "nameZh": "泰坦陨落",
+      "type": "common"
+    },
+    "292060": {
+      "nameZh": "泰坦陨落：最后时刻",
+      "type": "common"
+    },
+    "mc:gears-of-war-4": {
+      "nameZh": "战争机器4",
+      "type": "common"
+    },
+    "600130": {
+      "nameZh": "瓦尔法瑞斯",
+      "type": "common"
+    },
+    "612880": {
+      "nameZh": "德军总部II：新巨像",
+      "type": "common"
+    },
+    "mc:1000xresist": {
+      "nameZh": "千倍抵抗",
+      "type": "reference"
+    },
+    "mc:wipeout-pure": {
+      "nameZh": "反重力赛车：纯粹",
+      "type": "common"
+    },
+    "1055540": {
+      "nameZh": "短途徒步",
+      "type": "common"
+    },
+    "1072040": {
+      "nameZh": "装甲军团2",
+      "type": "common"
+    },
+    "368370": {
+      "nameZh": "她的故事",
+      "type": "common"
+    },
+    "mc:starcraft-ii-heart-of-the-swarm": {
+      "nameZh": "星际争霸II：虫群之心",
+      "type": "common"
+    },
+    "39190": {
+      "nameZh": "地牢围攻",
+      "type": "common"
+    },
+    "mc:excitebike-64": {
+      "nameZh": "越野摩托64",
+      "type": "common"
+    },
+    "mc:lego-star-wars-ii-the-original-trilogy": {
+      "nameZh": "乐高星球大战II：正传三部曲",
+      "type": "common"
+    },
+    "mc:r4-ridge-racer-type-4": {
+      "nameZh": "R4：山脊赛车4",
+      "type": "common"
+    },
+    "1712350": {
+      "nameZh": "瑞文",
+      "type": "common"
+    },
+    "mc:shenmue": {
+      "nameZh": "莎木",
+      "type": "common"
+    },
+    "1668520": {
+      "nameZh": "英雄传说：碧之轨迹",
+      "type": "common"
+    },
+    "108600": {
+      "nameZh": "僵尸毁灭工程",
+      "type": "common"
+    },
+    "mc:dirt-3": {
+      "nameZh": "尘埃3",
+      "type": "common"
+    },
+    "2096600": {
+      "nameZh": "孤岛危机2：复刻版",
+      "type": "common"
+    },
+    "385560": {
+      "nameZh": "暗影帝国：重制版",
+      "type": "common"
+    },
+    "42680": {
+      "nameZh": "使命召唤：现代战争3",
+      "type": "common"
+    },
+    "12150": {
+      "nameZh": "马克思·佩恩2：马克思·佩恩的陨落",
+      "type": "common"
+    },
+    "501300": {
+      "nameZh": "艾迪·芬奇的记忆",
+      "type": "common"
+    },
+    "368340": {
+      "nameZh": "远星物语",
+      "type": "common"
+    },
+    "mc:arc-raiders": {
+      "nameZh": "ARC Raiders：方舟突袭者",
+      "type": "reference"
+    },
+    "mc:ctr-crash-team-racing": {
+      "nameZh": "CTR：古惑狼赛车",
+      "type": "common"
+    },
+    "mc:galactic-civilizations-ii-dread-lords": {
+      "nameZh": "银河文明II：恐怖领主",
+      "type": "reference"
+    },
+    "284160": {
+      "nameZh": "BeamNG.drive：软体碰撞驾驶模拟",
+      "type": "reference"
+    },
+    "mc:battlefield-bad-company-2-vietnam": {
+      "nameZh": "战地：叛逆连队2 越南",
+      "type": "common"
+    },
+    "mc:pinball-fx-2-marvel-pinball-avengers-chronicles": {
+      "nameZh": "弹珠FX 2：漫威弹珠—复仇者编年史",
+      "type": "common"
+    },
+    "mc:star-trek-voyager-elite-force": {
+      "nameZh": "星际迷航：航海家 精英力量",
+      "type": "common"
+    },
+    "mc:medal-of-honor-frontline": {
+      "nameZh": "荣誉勋章：前线",
+      "type": "common"
+    },
+    "mc:ultimate-fighting-championship": {
+      "nameZh": "终极格斗冠军赛",
+      "type": "common"
+    },
+    "824600": {
+      "nameZh": "HROT：尖峰",
+      "type": "reference"
+    },
+    "mc:mario-kart-8": {
+      "nameZh": "马力欧赛车8",
+      "type": "common"
+    },
+    "mc:worldwide-soccer-manager-2008": {
+      "nameZh": "世界足球经理2008",
+      "type": "reference"
+    },
+    "mc:il-2-sturmovik-forgotten-battles": {
+      "nameZh": "伊尔-2：遗忘的战斗",
+      "type": "reference"
+    },
+    "mc:super-mario-maker": {
+      "nameZh": "超级马力欧制造",
+      "type": "common"
+    },
+    "mc:tekken-5": {
+      "nameZh": "铁拳5",
+      "type": "common"
+    },
+    "mc:f1-2016": {
+      "nameZh": "F1赛车2016",
+      "type": "common"
+    },
+    "718590": {
+      "nameZh": "黑暗献祭",
+      "type": "reference"
+    },
+    "mc:devotion": {
+      "nameZh": "还愿",
+      "type": "common"
+    },
+    "mc:nhl-10": {
+      "nameZh": "NHL 10：冰球",
+      "type": "common"
+    },
+    "1649240": {
+      "nameZh": "死亡回归",
+      "type": "common"
+    },
+    "1326470": {
+      "nameZh": "森林之子",
+      "type": "common"
+    },
+    "61510": {
+      "nameZh": "奇迹时代II：巫师王座",
+      "type": "reference"
+    },
+    "mc:everquest-the-ruins-of-kunark": {
+      "nameZh": "无尽任务：昆纳克废墟",
+      "type": "reference"
+    },
+    "228360": {
+      "nameZh": "极速天龙：重制版",
+      "type": "reference"
+    },
+    "mc:links-2001": {
+      "nameZh": "Links 2001：高尔夫",
+      "type": "reference"
+    },
+    "mc:unreal-tournament-2003": {
+      "nameZh": "虚幻竞技场2003",
+      "type": "common"
+    },
+    "mc:diddy-kong-racing": {
+      "nameZh": "迪迪刚赛车",
+      "type": "reference"
+    },
+    "mc:star-fox-64": {
+      "nameZh": "星际火狐64",
+      "type": "common"
+    },
+    "mc:nhl-09": {
+      "nameZh": "NHL 09：冰球",
+      "type": "common"
+    },
+    "mc:the-lord-of-the-rings-online-shadows-of-angmar": {
+      "nameZh": "指环王Online：安格玛之影",
+      "type": "common"
+    },
+    "mc:sea-of-stars-throes-of-the-watchmaker": {
+      "nameZh": "星之海：钟表匠的苦难",
+      "type": "common"
+    },
+    "610370": {
+      "nameZh": "赏金奇兵III",
+      "type": "common"
+    },
+    "524220": {
+      "nameZh": "尼尔：机械纪元",
+      "type": "common"
+    },
+    "mc:meteos": {
+      "nameZh": "陨石方块",
+      "type": "common"
+    },
+    "2892490": {
+      "nameZh": "流星风暴",
+      "type": "reference"
+    },
+    "405640": {
+      "nameZh": "小马岛",
+      "type": "common"
+    },
+    "3556750": {
+      "nameZh": "战锤40,000：战争黎明 终极版",
+      "type": "common"
+    },
+    "mc:pokemon-pokopia-bubbly-basin": {
+      "nameZh": "宝可梦Pokopia：欢快盆地",
+      "type": "reference"
+    },
+    "mc:rise-of-the-tomb-raider-20-year-celebration": {
+      "nameZh": "古墓丽影：崛起 20周年纪念版",
+      "type": "common"
+    },
+    "mc:warhammer-online-age-of-reckoning": {
+      "nameZh": "战锤Online：纷争时代",
+      "type": "common"
+    },
+    "mc:uncharted-drakes-fortune": {
+      "nameZh": "神秘海域：德雷克的宝藏",
+      "type": "common"
+    },
+    "mc:playerunknowns-battlegrounds": {
+      "nameZh": "绝地求生：大逃杀",
+      "type": "common"
+    },
+    "13540": {
+      "nameZh": "汤姆·克兰西之彩虹六号：维加斯",
+      "type": "common"
+    },
+    "mc:super-street-fighter-ii-turbo-hd-remix": {
+      "nameZh": "超级街头霸王II Turbo HD Remix",
+      "type": "common"
+    },
+    "mc:tactics-ogre-the-knight-of-lodis": {
+      "nameZh": "皇家骑士团：洛迪斯骑士",
+      "type": "common"
+    },
+    "356400": {
+      "nameZh": "重击",
+      "type": "reference"
+    },
+    "mc:bionic-commando-rearmed": {
+      "nameZh": "生化尖兵：重装上阵",
+      "type": "common"
+    },
+    "1102190": {
+      "nameZh": "怪物列车",
+      "type": "common"
+    },
+    "730830": {
+      "nameZh": "猴岛逃亡4",
+      "type": "common"
+    },
+    "mc:europa-universalis": {
+      "nameZh": "欧陆风云",
+      "type": "common"
+    },
+    "mc:the-last-of-us-left-behind": {
+      "nameZh": "最后生还者：遗落",
+      "type": "common"
+    },
+    "15320": {
+      "nameZh": "伊尔-2：1946",
+      "type": "common"
+    },
+    "627270": {
+      "nameZh": "不义联盟2",
+      "type": "common"
+    },
+    "mc:xcom-enemy-within-expansion": {
+      "nameZh": "幽浮：内部敌人扩展包",
+      "type": "common"
+    },
+    "mc:star-wars-pinball-balance-of-the-force": {
+      "nameZh": "星球大战弹珠台：原力平衡",
+      "type": "common"
+    },
+    "mc:battlefield-3-back-to-karkand": {
+      "nameZh": "战地3：重返卡肯",
+      "type": "common"
+    },
+    "mc:fight-night-round-2": {
+      "nameZh": "拳击之夜 第2回合",
+      "type": "common"
+    },
+    "mc:heroes-of-the-storm": {
+      "nameZh": "风暴英雄",
+      "type": "common"
+    },
+    "mc:project-gotham-racing-3": {
+      "nameZh": "都市赛车计划3",
+      "type": "common"
+    },
+    "mc:civilization-iii-conquests": {
+      "nameZh": "文明III：征服",
+      "type": "common"
+    },
+    "mc:nba-2k17": {
+      "nameZh": "NBA 2K17：篮球游戏",
+      "type": "common"
+    },
+    "mc:path-of-exile": {
+      "nameZh": "流放之路",
+      "type": "common"
+    },
+    "1647550": {
+      "nameZh": "新美妙世界",
+      "type": "common"
+    },
+    "mc:the-world-ends-with-you": {
+      "nameZh": "美妙世界",
+      "type": "common"
+    },
+    "1369630": {
+      "nameZh": "终焉之莉莉：骑士们的救赎",
+      "type": "common"
+    },
+    "1384160": {
+      "nameZh": "罪恶装备 -奋战-",
+      "type": "common"
+    },
+    "mc:football-manager-2019": {
+      "nameZh": "足球经理2019",
+      "type": "common"
+    },
+    "388210": {
+      "nameZh": "触手之日：重制版",
+      "type": "reference"
+    },
+    "mc:espn-nhl-hockey": {
+      "nameZh": "ESPN NHL冰球",
+      "type": "reference"
+    },
+    "mc:injustice-2-legendary-edition": {
+      "nameZh": "不义联盟2：传奇版",
+      "type": "common"
+    },
+    "mc:jsrf-jet-set-radio-future": {
+      "nameZh": "涂鸦小子：未来",
+      "type": "common"
+    },
+    "mc:ncaa-football-2005": {
+      "nameZh": "NCAA大学橄榄球2005",
+      "type": "common"
+    },
+    "mc:ratchet-and-clank": {
+      "nameZh": "瑞奇与叮当",
+      "type": "common"
+    },
+    "20530": {
+      "nameZh": "红色派系",
+      "type": "common"
+    },
+    "3817040": {
+      "nameZh": "Simogo遗产合集",
+      "type": "reference"
+    },
+    "mc:the-elder-scrolls-iv-shivering-isles": {
+      "nameZh": "上古卷轴IV：战栗孤岛",
+      "type": "common"
+    },
+    "mc:xcom-enemy-within": {
+      "nameZh": "幽浮：内部敌人",
+      "type": "common"
+    },
+    "812140": {
+      "nameZh": "刺客信条：奥德赛",
+      "type": "common"
+    },
+    "mc:dirt-rally": {
+      "nameZh": "尘埃拉力赛",
+      "type": "common"
+    },
+    "mc:rocket-league": {
+      "nameZh": "火箭联盟",
+      "type": "common"
+    },
+    "mc:age-of-mythology-retold-immortal-pillars": {
+      "nameZh": "神话时代：重述——不朽之柱",
+      "type": "reference"
+    },
+    "mc:allegiance": {
+      "nameZh": "忠诚",
+      "type": "reference"
+    },
+    "mc:f1-2021": {
+      "nameZh": "F1赛车2021",
+      "type": "common"
+    },
+    "383100": {
+      "nameZh": "脆弱联盟",
+      "type": "reference"
+    },
+    "mc:fire-emblem-fates-special-edition": {
+      "nameZh": "火焰纹章if 特别版",
+      "type": "common"
+    },
+    "mc:pinball-fx-2": {
+      "nameZh": "弹珠FX 2",
+      "type": "common"
+    },
+    "mc:final-fantasy-tactics": {
+      "nameZh": "最终幻想战略版",
+      "type": "common"
+    },
+    "1004640": {
+      "nameZh": "最终幻想战略版：伊瓦利斯编年史",
+      "type": "common"
+    },
+    "mc:nhl-11": {
+      "nameZh": "NHL 11：冰球",
+      "type": "common"
+    },
+    "mc:wario-land-4": {
+      "nameZh": "瓦里奥大陆4",
+      "type": "common"
+    },
+    "mc:warioware-twisted": {
+      "nameZh": "瓦里奥制造：扭转！",
+      "type": "common"
+    },
+    "mc:pokemon-y": {
+      "nameZh": "宝可梦Y",
+      "type": "common"
+    },
+    "4080220": {
+      "nameZh": "EA SPORTS FC 27：足球俱乐部",
+      "type": "reference"
+    },
+    "2453160": {
+      "nameZh": "海之剑",
+      "type": "reference"
+    },
+    "mc:nascar-2005-chase-for-the-cup": {
+      "nameZh": "NASCAR模拟赛车",
+      "type": "reference"
+    },
+    "mc:grand-theft-auto-liberty-city-stories": {
+      "nameZh": "侠盗猎车手：自由城故事",
+      "type": "common"
+    },
+    "255710": {
+      "nameZh": "城市：天际线",
+      "type": "common"
+    },
+    "mc:world-of-warcraft-the-war-within": {
+      "nameZh": "魔兽世界：地心之战",
+      "type": "common"
+    },
+    "2364580": {
+      "nameZh": "钛金法庭",
+      "type": "reference"
+    },
+    "mc:sly-2-band-of-thieves": {
+      "nameZh": "狡狐大冒险2：盗贼帮",
+      "type": "common"
+    },
+    "mc:bomberman-tournament": {
+      "nameZh": "炸弹人：竞技场",
+      "type": "reference"
+    },
+    "mc:fifa-soccer-2003": {
+      "nameZh": "FIFA足球2003",
+      "type": "common"
+    },
+    "1991300": {
+      "nameZh": "渐行渐近",
+      "type": "reference"
+    },
+    "429530": {
+      "nameZh": "猎鹰4.0",
+      "type": "common"
+    },
+    "mc:tom-clancys-rainbow-six": {
+      "nameZh": "汤姆·克兰西之彩虹六号",
+      "type": "common"
+    },
+    "19830": {
+      "nameZh": "汤姆·克兰西之彩虹六号3：黄金版",
+      "type": "common"
+    },
+    "mc:tekken-5-dark-resurrection": {
+      "nameZh": "铁拳5：暗黑复苏",
+      "type": "common"
+    },
+    "mc:god-of-war-ragnarok-valhalla": {
+      "nameZh": "战神：诸神黄昏——英灵殿",
+      "type": "common"
+    },
+    "719040": {
+      "nameZh": "废土3",
+      "type": "common"
+    },
+    "251730": {
+      "nameZh": "魔岩山传说2",
+      "type": "common"
+    },
+    "mc:sam-and-max-episode-205-whats-new-beelzebub": {
+      "nameZh": "山姆与麦克斯 第205集：贝尔泽布的新消息？",
+      "type": "common"
+    },
+    "mc:espn-nhl-2k5": {
+      "nameZh": "ESPN NHL冰球2K5",
+      "type": "reference"
+    },
+    "mc:fire-emblem": {
+      "nameZh": "火焰纹章",
+      "type": "common"
+    },
+    "mc:tales-from-the-borderlands-a-telltale-game-series": {
+      "nameZh": "无主之地传说：Telltale游戏系列",
+      "type": "common"
+    },
+    "mc:fire-emblem-fates-revelation": {
+      "nameZh": "火焰纹章if：透魔王国",
+      "type": "common"
+    },
+    "mc:hearthstone-heroes-of-warcraft-whispers-of-the-old": {
+      "nameZh": "炉石传说：上古之神的低语",
+      "type": "common"
+    },
+    "mc:city-of-heroes": {
+      "nameZh": "英雄之城",
+      "type": "common"
+    },
+    "mc:kingdom-hearts-collection-i-iii": {
+      "nameZh": "王国之心I至III合集",
+      "type": "common"
+    },
+    "571310": {
+      "nameZh": "蒸汽世界：挖掘2",
+      "type": "common"
+    },
+    "mc:blazblue-chrono-phantasma-extend": {
+      "nameZh": "苍翼默示录：时刻幻象 扩展版",
+      "type": "reference"
+    },
+    "205710": {
+      "nameZh": "无尽任务",
+      "type": "common"
+    },
+    "mc:swat-4": {
+      "nameZh": "特警4",
+      "type": "common"
+    },
+    "1716740": {
+      "nameZh": "星空",
+      "type": "common"
+    },
+    "mc:diablo-iii-eternal-collection": {
+      "nameZh": "暗黑破坏神III：永恒收藏版",
+      "type": "common"
+    },
+    "mc:warhammer-40-000-dawn-of-war-ii": {
+      "nameZh": "战锤40,000：战争黎明II",
+      "type": "common"
+    },
+    "285190": {
+      "nameZh": "战锤40,000：战争黎明III",
+      "type": "common"
+    },
+    "15750": {
+      "nameZh": "奇异世界：陌生人的愤怒 HD",
+      "type": "common"
+    },
+    "600370": {
+      "nameZh": "范式",
+      "type": "reference"
+    },
+    "mc:the-sims-4-realm-of-magic": {
+      "nameZh": "模拟人生4：魔法世界",
+      "type": "common"
+    },
+    "504370": {
+      "nameZh": "战斗仪式",
+      "type": "common"
+    },
+    "218060": {
+      "nameZh": "BIT.TRIP呈献：节奏旅程2——节奏外星人传奇",
+      "type": "reference"
+    },
+    "mc:fifa-soccer-11": {
+      "nameZh": "FIFA足球11",
+      "type": "common"
+    },
+    "mc:littlebigplanet-ps-vita": {
+      "nameZh": "小小大星球：PS Vita",
+      "type": "common"
+    },
+    "mc:aliens-versus-predator-2": {
+      "nameZh": "异形大战铁血战士2",
+      "type": "common"
+    },
+    "mc:final-fantasy-xv-royal-edition": {
+      "nameZh": "最终幻想XV：皇家版",
+      "type": "common"
+    },
+    "557750": {
+      "nameZh": "巨人：公民卡布托",
+      "type": "reference"
+    },
+    "mc:metro-exodus-enhanced-edition": {
+      "nameZh": "地铁：离去 增强版",
+      "type": "common"
+    },
+    "1910600": {
+      "nameZh": "一键Boss",
+      "type": "reference"
+    },
+    "mc:operation-flashpoint-cold-war-crisis": {
+      "nameZh": "闪点行动：冷战危机",
+      "type": "common"
+    },
+    "mc:out-of-the-park-baseball-13": {
+      "nameZh": "公园之外棒球13",
+      "type": "reference"
+    },
+    "mc:tropico": {
+      "nameZh": "海岛大亨",
+      "type": "common"
+    },
+    "33520": {
+      "nameZh": "海岛大亨：重装上阵",
+      "type": "common"
+    },
+    "245450": {
+      "nameZh": "巫术8",
+      "type": "common"
+    },
+    "mc:art-of-balance-touch": {
+      "nameZh": "平衡艺术",
+      "type": "reference"
+    },
+    "mc:joe-danger-special-edition": {
+      "nameZh": "乔危险：特别版",
+      "type": "reference"
+    },
+    "mc:cave-story-plus": {
+      "nameZh": "洞窟物语 Plus",
+      "type": "common"
+    },
+    "mc:crimson-skies-high-road-to-revenge": {
+      "nameZh": "赤色天空：复仇之路",
+      "type": "reference"
+    },
+    "mc:nascar-thunder-2004": {
+      "nameZh": "NASCAR雷霆2004",
+      "type": "common"
+    },
+    "2947440": {
+      "nameZh": "寂静岭f",
+      "type": "common"
+    },
+    "mc:the-lord-of-the-rings-online-mines-of-moria": {
+      "nameZh": "指环王Online：莫瑞亚矿坑",
+      "type": "common"
+    },
+    "3017860": {
+      "nameZh": "毁灭战士：黑暗时代",
+      "type": "common"
+    },
+    "mc:the-binding-of-isaac-afterbirth": {
+      "nameZh": "以撒的结合：胎衣",
+      "type": "common"
+    },
+    "57300": {
+      "nameZh": "失忆症：黑暗后裔",
+      "type": "common"
+    },
+    "319050": {
+      "nameZh": "混沌重生",
+      "type": "reference"
+    },
+    "4733110": {
+      "nameZh": "G-MODE档案+：山脊赛车",
+      "type": "reference"
+    },
+    "598550": {
+      "nameZh": "猎杀",
+      "type": "common"
+    },
+    "mc:ridge-racer": {
+      "nameZh": "山脊赛车",
+      "type": "common"
+    },
+    "mc:gtr-fia-racing": {
+      "nameZh": "GTR：FIA赛车",
+      "type": "reference"
+    },
+    "mc:nex-machina-death-machine": {
+      "nameZh": "Nex Machina：死亡机器",
+      "type": "reference"
+    },
+    "mc:animal-crossing-new-leaf": {
+      "nameZh": "来吧！动物森友会",
+      "type": "common"
+    },
+    "1893810": {
+      "nameZh": "地狱统治",
+      "type": "reference"
+    },
+    "mc:football-manager-2011": {
+      "nameZh": "足球经理2011",
+      "type": "common"
+    },
+    "mc:mortal-kombat-11-ultimate": {
+      "nameZh": "真人快打11：终极版",
+      "type": "common"
+    },
+    "mc:nba-2k13": {
+      "nameZh": "NBA 2K13：篮球游戏",
+      "type": "common"
+    },
+    "mc:need-for-speed-iii-hot-pursuit": {
+      "nameZh": "极品飞车III：热力追踪",
+      "type": "common"
+    },
+    "15710": {
+      "nameZh": "奇异世界：阿比的逃亡",
+      "type": "common"
+    },
+    "678950": {
+      "nameZh": "龙珠斗士Z",
+      "type": "common"
+    },
+    "236090": {
+      "nameZh": "尘埃：伊利西恩传说",
+      "type": "reference"
+    },
+    "213670": {
+      "nameZh": "南方公园：真理之杖",
+      "type": "common"
+    },
+    "2510710": {
+      "nameZh": "祇：女神之道",
+      "type": "common"
+    },
+    "mc:clive-barkers-undying": {
+      "nameZh": "克莱夫·巴克的《不朽》",
+      "type": "reference"
+    },
+    "1696770": {
+      "nameZh": "美人鱼面具",
+      "type": "reference"
+    },
+    "mc:dark-souls-prepare-to-die-edition": {
+      "nameZh": "黑暗之魂：受死版",
+      "type": "common"
+    },
+    "294860": {
+      "nameZh": "战场女武神",
+      "type": "common"
+    },
+    "mc:dragons-dogma-2-dark-arisen": {
+      "nameZh": "龙之信条2：黑暗觉者",
+      "type": "reference"
+    },
+    "553420": {
+      "nameZh": "狐狸斗篷",
+      "type": "reference"
+    },
+    "418240": {
+      "nameZh": "影子战术：将军之刃",
+      "type": "common"
+    },
+    "mc:medieval-ii-total-war-kingdoms": {
+      "nameZh": "中世纪II：全面战争：王国",
+      "type": "common"
+    },
+    "220440": {
+      "nameZh": "DmC：鬼泣",
+      "type": "common"
+    },
+    "3597580": {
+      "nameZh": "地球纪元",
+      "type": "reference"
+    },
+    "1677310": {
+      "nameZh": "星辰与时光",
+      "type": "reference"
+    },
+    "mc:monopoly-tycoon-2001": {
+      "nameZh": "大富翁大亨",
+      "type": "common"
+    },
+    "mc:shovel-knight": {
+      "nameZh": "铲子骑士",
+      "type": "common"
+    },
+    "312840": {
+      "nameZh": "幻象杀手：重制版",
+      "type": "common"
+    },
+    "mc:indigo-prophecy": {
+      "nameZh": "幻象杀手",
+      "type": "common"
+    },
+    "13530": {
+      "nameZh": "波斯王子：王者无双",
+      "type": "common"
+    },
+    "mc:sam-and-max-episode-204-chariots-of-the-dogs": {
+      "nameZh": "山姆与麦克斯 第204集：狗之战车",
+      "type": "common"
+    },
+    "mc:lies-of-p-overture": {
+      "nameZh": "匹诺曹的谎言：序曲",
+      "type": "common"
+    },
+    "98200": {
+      "nameZh": "冻结突触",
+      "type": "reference"
+    },
+    "mc:mvp-baseball-2005": {
+      "nameZh": "MVP棒球2005",
+      "type": "common"
+    },
+    "mc:freelancer": {
+      "nameZh": "自由枪骑兵",
+      "type": "common"
+    },
+    "2360310": {
+      "nameZh": "自由职业者模拟器",
+      "type": "reference"
+    },
+    "mc:galactic-civilizations-iii-crusade": {
+      "nameZh": "银河文明III：十字军东征",
+      "type": "common"
+    },
+    "mc:the-wolf-among-us-episode-1-faith": {
+      "nameZh": "与狼同行：第1集——信仰",
+      "type": "common"
+    },
+    "mc:robo-recall": {
+      "nameZh": "机器人召回",
+      "type": "common"
+    },
+    "363440": {
+      "nameZh": "洛克人传奇合集",
+      "type": "common"
+    },
+    "mc:halo-4": {
+      "nameZh": "光环4",
+      "type": "common"
+    },
+    "mc:football-manager-2022": {
+      "nameZh": "足球经理2022",
+      "type": "common"
+    },
+    "mc:bloodborne-the-old-hunters": {
+      "nameZh": "血源诅咒：老猎人",
+      "type": "common"
+    },
+    "19900": {
+      "nameZh": "孤岛惊魂2",
+      "type": "common"
+    },
+    "4000": {
+      "nameZh": "Garry的模组",
+      "type": "common"
+    },
+    "12900": {
+      "nameZh": "音频冲浪",
+      "type": "common"
+    },
+    "mc:the-walking-dead-episode-3-long-road-ahead": {
+      "nameZh": "行尸走肉：第3集——漫漫长路",
+      "type": "common"
+    },
+    "1426010": {
+      "nameZh": "STASIS：骨图腾",
+      "type": "reference"
+    },
+    "238460": {
+      "nameZh": "战斗方块剧场",
+      "type": "common"
+    },
+    "mc:socom-ii-u-s-navy-seals": {
+      "nameZh": "SOCOM II：美国海军海豹突击队",
+      "type": "common"
+    },
+    "mc:rallisport-challenge-2": {
+      "nameZh": "拉力运动挑战赛2",
+      "type": "common"
+    },
+    "mc:star-wars-knights-of-the-old-republic-ii-the-sit": {
+      "nameZh": "星球大战：旧共和国武士II——西斯领主",
+      "type": "common"
+    },
+    "673130": {
+      "nameZh": "邪恶之中",
+      "type": "reference"
+    },
+    "mc:batman-the-enemy-within-episode-5-same-stitch": {
+      "nameZh": "蝙蝠侠：敌人内部 第5章：同一条缝线",
+      "type": "reference"
+    },
+    "mc:pokemon-white-version": {
+      "nameZh": "宝可梦 白版",
+      "type": "common"
+    },
+    "mc:dragon-quest-ix-sentinels-of-the-starry-skies": {
+      "nameZh": "勇者斗恶龙IX：星空守护者",
+      "type": "common"
+    },
+    "mc:pokemon-x": {
+      "nameZh": "宝可梦X",
+      "type": "common"
+    },
+    "1263240": {
+      "nameZh": "滑板故事",
+      "type": "common"
+    },
+    "1695830": {
+      "nameZh": "博德之门：黑暗联盟",
+      "type": "common"
+    },
+    "416600": {
+      "nameZh": "全金属怒兽",
+      "type": "reference"
+    },
+    "mc:metropolis-street-racer": {
+      "nameZh": "都市街头赛车",
+      "type": "reference"
+    },
+    "mc:power-stone-2": {
+      "nameZh": "力量之石2",
+      "type": "common"
+    },
+    "mc:the-elder-scrolls-iii-bloodmoon": {
+      "nameZh": "上古卷轴III：血月",
+      "type": "common"
+    },
+    "241600": {
+      "nameZh": "盗贼遗产",
+      "type": "common"
+    },
+    "mc:fifa-soccer-09": {
+      "nameZh": "FIFA足球09",
+      "type": "common"
+    },
+    "3432480": {
+      "nameZh": "秩序碎片",
+      "type": "reference"
+    },
+    "mc:jeanne-darc": {
+      "nameZh": "圣女贞德",
+      "type": "common"
+    },
+    "2716400": {
+      "nameZh": "黄金偶像崛起",
+      "type": "common"
+    },
+    "6980": {
+      "nameZh": "神偷：致命阴影",
+      "type": "common"
+    },
+    "mc:street-fighter-v-arcade-edition": {
+      "nameZh": "街头霸王V：街机版",
+      "type": "common"
+    },
+    "2912430": {
+      "nameZh": "鸭嘴兽：重铸版",
+      "type": "reference"
+    },
+    "mc:astral-chain": {
+      "nameZh": "异界锁链",
+      "type": "common"
+    },
+    "mc:football-manager-2014": {
+      "nameZh": "足球经理2014",
+      "type": "common"
+    },
+    "61730": {
+      "nameZh": "小动物大爆破",
+      "type": "reference"
+    },
+    "mc:everquest-gates-of-discord": {
+      "nameZh": "无尽任务：不和之门",
+      "type": "reference"
+    },
+    "mc:fifa-2001-major-league-soccer": {
+      "nameZh": "FIFA 2001美国职业足球大联盟",
+      "type": "reference"
+    },
+    "410710": {
+      "nameZh": "网络奇兵：增强版",
+      "type": "common"
+    },
+    "mc:atelier-ryza-3-alchemist-of-the-end-and-the-secret": {
+      "nameZh": "莱莎的炼金工房3：终结之炼金术士与秘密钥匙",
+      "type": "common"
+    },
+    "1898500": {
+      "nameZh": "无界",
+      "type": "reference"
+    },
+    "mc:sid-meiers-civilization-v-brave-new-world": {
+      "nameZh": "席德·梅尔的文明V：美丽新世界",
+      "type": "common"
+    },
+    "3450310": {
+      "nameZh": "欧陆风云V",
+      "type": "common"
+    },
+    "mc:football-manager-2021": {
+      "nameZh": "足球经理2021",
+      "type": "common"
+    },
+    "mc:pokemon-sun": {
+      "nameZh": "宝可梦：太阳",
+      "type": "common"
+    },
+    "mc:the-last-door-season-2": {
+      "nameZh": "最后之门：第二季",
+      "type": "common"
+    },
+    "402530": {
+      "nameZh": "最后之门：第二季 收藏版",
+      "type": "common"
+    },
+    "973760": {
+      "nameZh": "王权的陨落：巫师故事",
+      "type": "common"
+    },
+    "3527290": {
+      "nameZh": "PEAK：登峰",
+      "type": "reference"
+    },
+    "mc:final-fantasy-xi": {
+      "nameZh": "最终幻想XI",
+      "type": "common"
+    },
+    "mc:super-monkey-ball-2": {
+      "nameZh": "超级猴球2",
+      "type": "common"
+    },
+    "mc:american-mcgees-alice": {
+      "nameZh": "爱丽丝惊魂记",
+      "type": "common"
+    },
+    "41014": {
+      "nameZh": "英雄萨姆HD：二次遭遇",
+      "type": "common"
+    },
+    "mc:the-sims-hot-date": {
+      "nameZh": "模拟人生：热恋时光",
+      "type": "reference"
+    },
+    "3405690": {
+      "nameZh": "EA SPORTS FC 26：足球俱乐部",
+      "type": "reference"
+    },
+    "mc:tactics-ogre-1995": {
+      "nameZh": "皇家骑士团：携手齐心",
+      "type": "common"
+    },
+    "326520": {
+      "nameZh": "Chime Sharp：钟鸣进阶版",
+      "type": "reference"
+    },
+    "mc:kentucky-route-zero-tv-edition": {
+      "nameZh": "肯塔基零号公路：电视版",
+      "type": "common"
+    },
+    "mc:warhammer-40-000-dawn-of-war-winter-assault": {
+      "nameZh": "战锤40,000：战争黎明——冬季突袭",
+      "type": "common"
+    },
+    "2515020": {
+      "nameZh": "最终幻想XVI",
+      "type": "common"
+    },
+    "753640": {
+      "nameZh": "星际拓荒",
+      "type": "common"
+    },
+    "mc:starcraft-remastered": {
+      "nameZh": "星际争霸：重制版",
+      "type": "common"
+    },
+    "mc:tony-hawks-underground-2": {
+      "nameZh": "托尼·霍克：地下世界2 Remix",
+      "type": "common"
+    },
+    "261550": {
+      "nameZh": "骑马与砍杀2：霸主",
+      "type": "common"
+    },
+    "473950": {
+      "nameZh": "多面花园",
+      "type": "reference"
+    },
+    "239030": {
+      "nameZh": "请出示证件",
+      "type": "common"
+    },
+    "mc:syphon-filter-dark-mirror": {
+      "nameZh": "虹吸战士：暗镜",
+      "type": "common"
+    },
+    "379720": {
+      "nameZh": "毁灭战士",
+      "type": "common"
+    },
+    "1286830": {
+      "nameZh": "星球大战：旧共和国",
+      "type": "common"
+    },
+    "mc:anarchy-online-shadowlands": {
+      "nameZh": "无政府在线：暗影之地",
+      "type": "reference"
+    },
+    "mc:dark-age-of-camelot-shrouded-isles": {
+      "nameZh": "卡美洛的黑暗时代：迷雾群岛",
+      "type": "reference"
+    },
+    "mc:kingdom-come-deliverance-ii-mysteria-ecclesiae": {
+      "nameZh": "天国：拯救2—教会秘闻",
+      "type": "reference"
+    },
+    "2471130": {
+      "nameZh": "黑曜石",
+      "type": "reference"
+    },
+    "mc:super-mario-galaxy-plus-super-mario-galaxy-2": {
+      "nameZh": "超级马力欧银河 + 超级马力欧银河2",
+      "type": "common"
+    },
+    "1058830": {
+      "nameZh": "旋律节奏 XD",
+      "type": "reference"
+    },
+    "mc:pokemon-soulsilver-version": {
+      "nameZh": "宝可梦：魂银版",
+      "type": "common"
+    },
+    "mc:castlevania-harmony-of-dissonance": {
+      "nameZh": "恶魔城：白夜协奏曲",
+      "type": "common"
+    },
+    "mc:ultimate-card-games": {
+      "nameZh": "终极纸牌游戏",
+      "type": "reference"
+    },
+    "208650": {
+      "nameZh": "蝙蝠侠：阿卡姆骑士",
+      "type": "common"
+    },
+    "mc:dead-or-alive-3": {
+      "nameZh": "生死格斗3",
+      "type": "common"
+    },
+    "mc:jak-ii": {
+      "nameZh": "杰克II",
+      "type": "common"
+    },
+    "mc:mario-kart-8-dlc-pack-1": {
+      "nameZh": "马力欧赛车8：DLC包1",
+      "type": "common"
+    },
+    "mc:final-fantasy-tactics-advance": {
+      "nameZh": "最终幻想战略版 Advance",
+      "type": "common"
+    },
+    "mc:ncaa-football-06": {
+      "nameZh": "NCAA大学橄榄球06",
+      "type": "reference"
+    },
+    "mc:red-dead-redemption-undead-nightmare-pack": {
+      "nameZh": "荒野大镖客：救赎：不死梦魇包",
+      "type": "common"
+    },
+    "mc:new-super-mario-bros-wii": {
+      "nameZh": "新超级马力欧兄弟 Wii",
+      "type": "common"
+    },
+    "mc:pokemon-moon": {
+      "nameZh": "宝可梦：月亮",
+      "type": "common"
+    },
+    "mc:elite-beat-agents": {
+      "nameZh": "精英节拍特工",
+      "type": "common"
+    },
+    "mc:mario-kart-double-dash": {
+      "nameZh": "马力欧赛车：双重冲刺",
+      "type": "common"
+    },
+    "mc:bangai-o": {
+      "nameZh": "爆裂合体 Bangai-O",
+      "type": "reference"
+    },
+    "mc:rallisport-challenge": {
+      "nameZh": "拉力运动挑战赛",
+      "type": "common"
+    },
+    "690790": {
+      "nameZh": "尘埃拉力赛2.0",
+      "type": "common"
+    },
+    "mc:forza-motorsport-6": {
+      "nameZh": "极限竞速：赛车运动6",
+      "type": "common"
+    },
+    "mc:donkey-kong-country-returns": {
+      "nameZh": "大金刚：回归",
+      "type": "common"
+    },
+    "mc:warhammer-40-000-dawn-of-war-ii-chaos-rising": {
+      "nameZh": "战锤40,000：战争黎明II——混沌崛起",
+      "type": "common"
+    },
+    "mc:the-walking-dead-episode-2-starved-for-help": {
+      "nameZh": "行尸走肉：第2集——饥饿求生",
+      "type": "common"
+    },
+    "mc:bully": {
+      "nameZh": "恶霸鲁尼",
+      "type": "common"
+    },
+    "12200": {
+      "nameZh": "恶霸鲁尼：奖学金版",
+      "type": "common"
+    },
+    "55230": {
+      "nameZh": "黑道圣徒：第三章",
+      "type": "common"
+    },
+    "42700": {
+      "nameZh": "使命召唤：黑色行动",
+      "type": "common"
+    },
+    "22380": {
+      "nameZh": "辐射：新维加斯",
+      "type": "common"
+    },
+    "mc:fire-emblem-if": {
+      "nameZh": "火焰纹章if：暗夜王国",
+      "type": "common"
+    },
+    "922540": {
+      "nameZh": "Amazing VR：所有电影",
+      "type": "reference"
+    },
+    "mc:the-movies": {
+      "nameZh": "电影大亨",
+      "type": "common"
+    },
+    "mc:tearaway": {
+      "nameZh": "撕纸小邮差",
+      "type": "common"
+    },
+    "mc:neverwinter-nights-hordes-of-the-underdark": {
+      "nameZh": "无冬之夜：幽城魔影",
+      "type": "common"
+    },
+    "mc:sid-meiers-simgolf": {
+      "nameZh": "席德·梅尔的模拟高尔夫",
+      "type": "reference"
+    },
+    "1451090": {
+      "nameZh": "皇家骑士团：重生",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-portable-ops": {
+      "nameZh": "合金装备：便携行动",
+      "type": "common"
+    },
+    "mc:theatrhythm-final-bar-line": {
+      "nameZh": "最终幻想：节奏剧场 Final Bar Line",
+      "type": "common"
+    },
+    "mc:zack-and-wiki-quest-for-barbaros-treasure": {
+      "nameZh": "扎克与维基：巴巴罗斯的宝藏任务",
+      "type": "reference"
+    },
+    "mc:mlb-13-the-show": {
+      "nameZh": "MLB 13：棒球大联盟",
+      "type": "common"
+    },
+    "mc:mechassault": {
+      "nameZh": "机甲突击",
+      "type": "reference"
+    },
+    "241930": {
+      "nameZh": "中土世界：魔多之影",
+      "type": "common"
+    },
+    "mc:nfl-2k2": {
+      "nameZh": "NFL 2K2：美式橄榄球",
+      "type": "common"
+    },
+    "2756920": {
+      "nameZh": "继续驾驶",
+      "type": "reference"
+    },
+    "92800": {
+      "nameZh": "太空化学",
+      "type": "reference"
+    },
+    "mc:atelier-ryza-2-lost-legends-and-the-secret-fairy": {
+      "nameZh": "莱莎的炼金工房2：失落传说与秘密妖精",
+      "type": "common"
+    },
+    "mc:olliolli-world-void-riders": {
+      "nameZh": "碗池世界：虚空骑士",
+      "type": "common"
+    },
+    "mc:animal-crossing": {
+      "nameZh": "动物森友会",
+      "type": "common"
+    },
+    "mc:fight-night-round-4": {
+      "nameZh": "拳击之夜 第4回合",
+      "type": "common"
+    },
+    "mc:saros": {
+      "nameZh": "萨罗斯",
+      "type": "reference"
+    },
+    "1041920": {
+      "nameZh": "如果找到……",
+      "type": "common"
+    },
+    "mc:the-legend-of-zelda-spirit-tracks": {
+      "nameZh": "塞尔达传说：大地汽笛",
+      "type": "common"
+    },
+    "1151640": {
+      "nameZh": "地平线：零之曙光 完全版",
+      "type": "common"
+    },
+    "mc:pokemon-heartgold-version": {
+      "nameZh": "宝可梦：心金版",
+      "type": "common"
+    },
+    "218230": {
+      "nameZh": "行星边境2",
+      "type": "common"
+    },
+    "390310": {
+      "nameZh": "小国王故事",
+      "type": "common"
+    },
+    "1366800": {
+      "nameZh": "准星X",
+      "type": "reference"
+    },
+    "mc:pro-evolution-soccer-2016": {
+      "nameZh": "实况足球2016",
+      "type": "common"
+    },
+    "44690": {
+      "nameZh": "GT传奇",
+      "type": "reference"
+    },
+    "mc:humanity": {
+      "nameZh": "人类",
+      "type": "common"
+    },
+    "mc:metal-gear-solid-2-substance": {
+      "nameZh": "合金装备2：实体",
+      "type": "common"
+    },
+    "559210": {
+      "nameZh": "乐园",
+      "type": "common"
+    },
+    "mc:shogun-total-war-warlord-edition": {
+      "nameZh": "幕府将军：全面战争 军阀版",
+      "type": "common"
+    },
+    "mc:the-sims-4-island-living": {
+      "nameZh": "模拟人生4：岛屿生活",
+      "type": "common"
+    },
+    "477740": {
+      "nameZh": "极限脱出：九人游戏合集",
+      "type": "common"
+    },
+    "mc:hearthstone-heroes-of-warcraft-goblins-vs-gnomes": {
+      "nameZh": "炉石传说：地精大战侏儒",
+      "type": "common"
+    },
+    "mc:mlb-12-the-show": {
+      "nameZh": "MLB 12：棒球大联盟",
+      "type": "common"
+    },
+    "mc:pokemon-black-version": {
+      "nameZh": "宝可梦 黑版",
+      "type": "common"
+    },
+    "1677770": {
+      "nameZh": "黄金偶像案",
+      "type": "common"
+    },
+    "mc:space-rangers-2-rise-of-the-dominators": {
+      "nameZh": "太空游侠2：支配者崛起",
+      "type": "reference"
+    },
+    "mc:borderlands-a-telltale-game-series": {
+      "nameZh": "无主之地传说：第1集——零之和",
+      "type": "common"
+    },
+    "mc:sprint-vector": {
+      "nameZh": "冲刺向量",
+      "type": "reference"
+    },
+    "mc:puzzle-quest-challenge-of-the-warlords": {
+      "nameZh": "战神的挑战",
+      "type": "common"
+    },
+    "12500": {
+      "nameZh": "战神的挑战",
+      "type": "common"
+    },
+    "mc:destiny-2-forsaken": {
+      "nameZh": "命运2：遗落之族",
+      "type": "common"
+    },
+    "mc:odin-sphere-leifdrasir": {
+      "nameZh": "奥丁领域：里普特拉西尔",
+      "type": "common"
+    },
+    "mc:command-and-conquer-red-alert-2": {
+      "nameZh": "命令与征服：红色警戒2",
+      "type": "common"
+    },
+    "mc:heroes-of-might-and-magic-iv": {
+      "nameZh": "魔法门之英雄无敌4",
+      "type": "common"
+    },
+    "345240": {
+      "nameZh": "幕府将军：全面战争合集",
+      "type": "common"
+    },
+    "mc:wipeout-hd": {
+      "nameZh": "反重力赛车HD",
+      "type": "common"
+    },
+    "2284240": {
+      "nameZh": "磨石",
+      "type": "reference"
+    },
+    "mc:lost-records-bloom-and-rage-tape-1": {
+      "nameZh": "失落的记录：绽放与愤怒 磁带1",
+      "type": "reference"
+    },
+    "mc:dirt": {
+      "nameZh": "尘埃",
+      "type": "common"
+    },
+    "5275590": {
+      "nameZh": "尘土小镇",
+      "type": "reference"
+    },
+    "mc:super-street-fighter-iv-arcade-edition": {
+      "nameZh": "超级街头霸王IV：街机版",
+      "type": "common"
+    },
+    "3187540": {
+      "nameZh": "OutRun：极速赛车",
+      "type": "reference"
+    },
+    "mc:football-manager-2012": {
+      "nameZh": "足球经理2012",
+      "type": "common"
+    },
+    "848350": {
+      "nameZh": "块魂：滚起来",
+      "type": "common"
+    },
+    "mc:guild-wars-factions": {
+      "nameZh": "激战：派系",
+      "type": "common"
+    },
+    "557600": {
+      "nameZh": "画中世界",
+      "type": "common"
+    },
+    "381780": {
+      "nameZh": "八十天",
+      "type": "common"
+    },
+    "mc:sin-and-punishment-star-successor": {
+      "nameZh": "罪与罚：星之继承者",
+      "type": "common"
+    },
+    "mc:forza-horizon-3-blizzard-mountain": {
+      "nameZh": "极限竞速：地平线3 暴风雪山",
+      "type": "common"
+    },
+    "mc:super-monkey-ball": {
+      "nameZh": "超级猴球",
+      "type": "common"
+    },
+    "17390": {
+      "nameZh": "孢子",
+      "type": "common"
+    },
+    "mc:unity-of-command": {
+      "nameZh": "统一指挥",
+      "type": "reference"
+    },
+    "mc:hearthstone-heroes-of-warcraft-the-grand": {
+      "nameZh": "炉石传说：冠军的试炼",
+      "type": "common"
+    },
+    "2081470": {
+      "nameZh": "红色物质2",
+      "type": "common"
+    },
+    "mc:velocity-2012": {
+      "nameZh": "速度",
+      "type": "reference"
+    },
+    "mc:pinball-fx-2-star-wars-pinball": {
+      "nameZh": "弹珠FX 2：星球大战弹珠",
+      "type": "common"
+    },
+    "1163060": {
+      "nameZh": "Karateka的诞生",
+      "type": "common"
+    },
+    "716500": {
+      "nameZh": "伊丽莎",
+      "type": "reference"
+    },
+    "mc:metro-redux": {
+      "nameZh": "地铁：归来",
+      "type": "common"
+    },
+    "335300": {
+      "nameZh": "黑暗之魂II：原罪学者",
+      "type": "common"
+    },
+    "mc:time-gentlemen-please": {
+      "nameZh": "先生们，时间到了！",
+      "type": "reference"
+    },
+    "2585890": {
+      "nameZh": "恶魔潮汐",
+      "type": "reference"
+    },
+    "mc:resistance-2": {
+      "nameZh": "抵抗2",
+      "type": "common"
+    },
+    "mc:total-war-warhammer-ii-rise-of-the-tomb-kings": {
+      "nameZh": "全面战争：战锤II——古墓王崛起",
+      "type": "common"
+    },
+    "377160": {
+      "nameZh": "辐射4",
+      "type": "common"
+    },
+    "mc:flower": {
+      "nameZh": "花",
+      "type": "common"
+    },
+    "5221510": {
+      "nameZh": "整理花店",
+      "type": "reference"
+    },
+    "1812370": {
+      "nameZh": "乖乖女",
+      "type": "reference"
+    },
+    "mc:sonic-mania-plus": {
+      "nameZh": "音速小子狂热 Plus",
+      "type": "common"
+    },
+    "mc:disciples-ii-dark-prophecy": {
+      "nameZh": "门徒II：黑暗预言",
+      "type": "reference"
+    },
+    "mc:europa-universalis-iv-wealth-of-nations": {
+      "nameZh": "欧陆风云IV：列国财富",
+      "type": "common"
+    },
+    "374190": {
+      "nameZh": "地狱神罚",
+      "type": "common"
+    },
+    "mc:mass-effect-3-citadel": {
+      "nameZh": "质量效应3：神堡",
+      "type": "common"
+    },
+    "1931240": {
+      "nameZh": "母舰：熔炉",
+      "type": "reference"
+    },
+    "mc:nba-2k16": {
+      "nameZh": "NBA 2K16：篮球游戏",
+      "type": "common"
+    },
+    "mc:pikmin-3": {
+      "nameZh": "皮克敏3",
+      "type": "common"
+    },
+    "mc:resident-evil-7-biohazard-gold-edition": {
+      "nameZh": "生化危机7 黄金版",
+      "type": "common"
+    },
+    "1905180": {
+      "nameZh": "OBS Studio：直播与录制",
+      "type": "reference"
+    },
+    "mc:driver": {
+      "nameZh": "车神",
+      "type": "common"
+    },
+    "920490": {
+      "nameZh": "Driver Booster Steam版：驱动更新工具",
+      "type": "reference"
+    },
+    "8190": {
+      "nameZh": "正当防卫2",
+      "type": "common"
+    },
+    "mc:football-manager-2020": {
+      "nameZh": "足球经理2020",
+      "type": "common"
+    },
+    "17330": {
+      "nameZh": "孤岛危机：弹头",
+      "type": "common"
+    },
+    "mc:diablo-iv-lord-of-hatred": {
+      "nameZh": "暗黑破坏神IV：憎恨之王",
+      "type": "common"
+    },
+    "244890": {
+      "nameZh": "极速",
+      "type": "reference"
+    },
+    "mc:forza-horizon-3-hot-wheels": {
+      "nameZh": "极限竞速：地平线3 风火轮",
+      "type": "common"
+    },
+    "257850": {
+      "nameZh": "光明旅者",
+      "type": "common"
+    },
+    "mc:hitman-episode-2-sapienza": {
+      "nameZh": "杀手：第二集—萨皮恩扎",
+      "type": "common"
+    },
+    "1240440": {
+      "nameZh": "光环：无限",
+      "type": "common"
+    },
+    "mc:age-of-mythology-the-titans": {
+      "nameZh": "神话时代：泰坦",
+      "type": "common"
+    },
+    "1771360": {
+      "nameZh": "格尔达：冬日之火",
+      "type": "reference"
+    },
+    "mc:microsoft-train-simulator": {
+      "nameZh": "微软模拟列车",
+      "type": "common"
+    },
+    "255870": {
+      "nameZh": "像素垃圾射击",
+      "type": "common"
+    },
+    "24780": {
+      "nameZh": "模拟城市4：豪华版",
+      "type": "common"
+    },
+    "mc:xenoblade-chronicles-x-definitive-edition": {
+      "nameZh": "异度神剑X：终极版",
+      "type": "common"
+    },
+    "mc:dark-cloud-2": {
+      "nameZh": "暗云2",
+      "type": "common"
+    },
+    "mc:magic-the-gathering-arena": {
+      "nameZh": "万智牌：竞技场",
+      "type": "common"
+    },
+    "1060600": {
+      "nameZh": "发条上帝之巢",
+      "type": "reference"
+    },
+    "mc:kingdom-hearts-ii": {
+      "nameZh": "王国之心2",
+      "type": "common"
+    },
+    "mc:guilty-gear-x2": {
+      "nameZh": "罪恶装备X2",
+      "type": "common"
+    },
+    "314030": {
+      "nameZh": "罪恶装备X2 #Reload",
+      "type": "common"
+    },
+    "mc:motogp-2": {
+      "nameZh": "摩托GP 2",
+      "type": "common"
+    },
+    "mc:ratchet-and-clank-future-a-crack-in-time": {
+      "nameZh": "瑞奇与叮当Future：时间裂缝",
+      "type": "common"
+    },
+    "mc:sonic-advance": {
+      "nameZh": "音速小子Advance",
+      "type": "common"
+    },
+    "mc:spider-man-2000": {
+      "nameZh": "蜘蛛侠（2000）",
+      "type": "common"
+    },
+    "mc:tenchu-stealth-assassins": {
+      "nameZh": "天诛：暗杀者",
+      "type": "common"
+    },
+    "1456880": {
+      "nameZh": "电头",
+      "type": "reference"
+    },
+    "362890": {
+      "nameZh": "黑山",
+      "type": "common"
+    },
+    "mc:rise-of-nations-rise-of-legends": {
+      "nameZh": "国家崛起：传奇之崛起",
+      "type": "common"
+    },
+    "mc:toca-race-driver-3-challenge": {
+      "nameZh": "TOCA赛车手3：挑战赛",
+      "type": "common"
+    },
+    "212680": {
+      "nameZh": "超越光速",
+      "type": "common"
+    },
+    "mc:diablo-iv-vessel-of-hatred": {
+      "nameZh": "暗黑破坏神IV：憎恨之躯",
+      "type": "common"
+    },
+    "1382070": {
+      "nameZh": "取景器",
+      "type": "common"
+    },
+    "1222670": {
+      "nameZh": "模拟人生4",
+      "type": "common"
+    },
+    "282140": {
+      "nameZh": "索玛",
+      "type": "common"
+    },
+    "mc:defcon-everybody-dies": {
+      "nameZh": "DEFCON：人人皆亡",
+      "type": "reference"
+    },
+    "327740": {
+      "nameZh": "创：2.0",
+      "type": "reference"
+    },
+    "mc:stalker-2-heart-of-chornobyl-cost-of-hope": {
+      "nameZh": "潜行者2：切尔诺贝利之心——希望之价",
+      "type": "reference"
+    },
+    "2111550": {
+      "nameZh": "薛定谔的猫贼",
+      "type": "reference"
+    },
+    "19800": {
+      "nameZh": "兄弟连：浴血奋战",
+      "type": "common"
+    },
+    "3884860": {
+      "nameZh": "与狼同行：重制版",
+      "type": "common"
+    },
+    "1449850": {
+      "nameZh": "游戏王：大师决斗",
+      "type": "common"
+    },
+    "mc:broken-sword-shadow-of-the-templars-reforged": {
+      "nameZh": "断剑：圣殿骑士之影 重铸版",
+      "type": "reference"
+    },
+    "795420": {
+      "nameZh": "黑暗侦探：黑暗中的摸索",
+      "type": "common"
+    },
+    "553640": {
+      "nameZh": "艾希",
+      "type": "common"
+    },
+    "mc:spiritfarer": {
+      "nameZh": "灵魂摆渡人",
+      "type": "common"
+    },
+    "569860": {
+      "nameZh": "银莲公园",
+      "type": "common"
+    },
+    "2300320": {
+      "nameZh": "模拟农场25",
+      "type": "common"
+    },
+    "mc:the-lord-of-the-rings-the-battle-for-middle-earth-2006": {
+      "nameZh": "指环王：中土之战II",
+      "type": "common"
+    },
+    "mc:battlefield-vietnam": {
+      "nameZh": "战地：越南",
+      "type": "common"
+    },
+    "mc:medieval-total-war-viking-invasion": {
+      "nameZh": "中世纪：全面战争—维京入侵",
+      "type": "common"
+    },
+    "mc:shin-megami-tensei-persona-3": {
+      "nameZh": "女神异闻录3",
+      "type": "common"
+    },
+    "mc:guild-wars-nightfall": {
+      "nameZh": "激战：暗夜",
+      "type": "common"
+    },
+    "mc:pixeljunk-monsters-deluxe": {
+      "nameZh": "像素垃圾怪兽：豪华版",
+      "type": "common"
+    },
+    "1170570": {
+      "nameZh": "漂泊者",
+      "type": "reference"
+    },
+    "2725260": {
+      "nameZh": "终焉之玛格诺莉亚：雾中绽放",
+      "type": "common"
+    },
+    "447800": {
+      "nameZh": "失落之风2：梅洛迪亚斯之冬",
+      "type": "common"
+    },
+    "mc:lostwinds-winter-of-the-melodias": {
+      "nameZh": "失落之风：梅洛迪亚斯之冬",
+      "type": "common"
+    },
+    "mc:enemy-territory-quake-wars": {
+      "nameZh": "敌占区：雷神之战",
+      "type": "common"
+    },
+    "2103680": {
+      "nameZh": "地中海炼狱",
+      "type": "reference"
+    },
+    "1727180": {
+      "nameZh": "永不醒来",
+      "type": "reference"
+    },
+    "1260520": {
+      "nameZh": "帕特里克的箱子谜题",
+      "type": "reference"
+    },
+    "113200": {
+      "nameZh": "以撒的结合",
+      "type": "common"
+    },
+    "mc:bomberman-blast": {
+      "nameZh": "炸弹人：爆裂",
+      "type": "reference"
+    },
+    "1494470": {
+      "nameZh": "BUSTAFELLOWS：命运搭档",
+      "type": "reference"
+    },
+    "mc:kirbys-epic-yarn": {
+      "nameZh": "毛线卡比",
+      "type": "common"
+    },
+    "944430": {
+      "nameZh": "最后的朋友",
+      "type": "common"
+    },
+    "mc:fifa-17": {
+      "nameZh": "FIFA 17 足球",
+      "type": "common"
+    },
+    "mc:uncharted-the-nathan-drake-collection": {
+      "nameZh": "神秘海域：内森·德雷克合集",
+      "type": "common"
+    },
+    "mc:trine-2": {
+      "nameZh": "三位一体2",
+      "type": "common"
+    },
+    "35720": {
+      "nameZh": "三位一体2：完整故事",
+      "type": "common"
+    },
+    "39120": {
+      "nameZh": "裂隙",
+      "type": "common"
+    },
+    "1158850": {
+      "nameZh": "大逆转裁判编年史",
+      "type": "common"
+    },
+    "762830": {
+      "nameZh": "说谎游戏",
+      "type": "reference"
+    },
+    "mc:mario-kart-8-deluxe-booster-course-pass-wave-4": {
+      "nameZh": "马力欧赛车8 豪华版：加速票券 第4波",
+      "type": "common"
+    },
+    "mc:silent-hill-1999": {
+      "nameZh": "寂静岭",
+      "type": "common"
+    },
+    "mc:project-cars-2": {
+      "nameZh": "竞速计划2",
+      "type": "common"
+    },
+    "1318970": {
+      "nameZh": "此路通往疯狂",
+      "type": "reference"
+    },
+    "mc:the-wolf-among-us-episode-5-cry-wolf": {
+      "nameZh": "与狼同行：第5集——狼来了",
+      "type": "common"
+    },
+    "47920": {
+      "nameZh": "极品飞车：变速2",
+      "type": "common"
+    },
+    "583470": {
+      "nameZh": "末日将至",
+      "type": "common"
+    },
+    "mc:sid-meiers-civilization-iv-warlords": {
+      "nameZh": "席德·梅尔的文明IV：军阀",
+      "type": "common"
+    },
+    "1996010": {
+      "nameZh": "乌鸦国度",
+      "type": "reference"
+    },
+    "mc:kirby-canvas-curse": {
+      "nameZh": "星之卡比：触摸卡比",
+      "type": "common"
+    },
+    "mc:battlefield-1942-the-road-to-rome": {
+      "nameZh": "战地1942：通往罗马之路",
+      "type": "common"
+    },
+    "mc:burnout-legends": {
+      "nameZh": "火爆狂飙：传奇",
+      "type": "common"
+    },
+    "mc:master-of-orion-ii-battle-at-antares": {
+      "nameZh": "星际之王II：安塔雷斯之战",
+      "type": "common"
+    },
+    "1649950": {
+      "nameZh": "新闻大厦",
+      "type": "reference"
+    },
+    "1307960": {
+      "nameZh": "四重奏",
+      "type": "reference"
+    },
+    "207140": {
+      "nameZh": "极速奔跑者",
+      "type": "common"
+    },
+    "1062110": {
+      "nameZh": "失明",
+      "type": "reference"
+    },
+    "mc:zeus-master-of-olympus-poseidon": {
+      "nameZh": "宙斯：奥林匹斯之主——波塞冬",
+      "type": "common"
+    },
+    "1546920": {
+      "nameZh": "落水！",
+      "type": "common"
+    },
+    "683320": {
+      "nameZh": "格莉斯",
+      "type": "common"
+    },
+    "1116780": {
+      "nameZh": "铲子骑士：纸牌之王",
+      "type": "common"
+    },
+    "mc:f1-2010": {
+      "nameZh": "F1赛车2010",
+      "type": "common"
+    },
+    "mc:unicorn-overlord": {
+      "nameZh": "圣兽之王",
+      "type": "common"
+    },
+    "1500": {
+      "nameZh": "达尔文岛",
+      "type": "reference"
+    },
+    "mc:football-manager-2024": {
+      "nameZh": "足球经理2024",
+      "type": "common"
+    },
+    "mc:velocity-2x": {
+      "nameZh": "速度2X",
+      "type": "reference"
+    },
+    "mc:killer-instinct-season-3": {
+      "nameZh": "杀手本能：第3季",
+      "type": "common"
+    },
+    "964800": {
+      "nameZh": "普罗迪斯",
+      "type": "common"
+    },
+    "306660": {
+      "nameZh": "终极将军：葛底斯堡",
+      "type": "common"
+    },
+    "334940": {
+      "nameZh": "优库的小岛快递",
+      "type": "reference"
+    },
+    "mc:resistance-fall-of-man": {
+      "nameZh": "抵抗：人类灭绝",
+      "type": "common"
+    },
+    "mc:boom-blox-bash-party": {
+      "nameZh": "轰隆方块：派对狂欢",
+      "type": "reference"
+    },
+    "221100": {
+      "nameZh": "DayZ：末日生存",
+      "type": "reference"
+    },
+    "263300": {
+      "nameZh": "苍翼默示录：灾厄扳机",
+      "type": "common"
+    },
+    "mc:street-fighter-6-years-1-2-fighters-edition": {
+      "nameZh": "街头霸王6：第1-2年格斗家版",
+      "type": "common"
+    },
+    "mc:mercenaries-playground-of-destruction": {
+      "nameZh": "雇佣兵：毁灭游乐场",
+      "type": "reference"
+    },
+    "mc:golden-sun-the-lost-age": {
+      "nameZh": "黄金太阳：失落的时代",
+      "type": "common"
+    },
+    "mc:test-drive-v-rally": {
+      "nameZh": "测试驾驶：V拉力赛",
+      "type": "reference"
+    },
+    "mc:monster-hunter-4-ultimate": {
+      "nameZh": "怪物猎人4：终极版",
+      "type": "common"
+    },
+    "mc:patapon": {
+      "nameZh": "啪嗒砰",
+      "type": "common"
+    },
+    "819030": {
+      "nameZh": "命运石之门 ELITE",
+      "type": "common"
+    },
+    "1561340": {
+      "nameZh": "狂战士男孩",
+      "type": "reference"
+    },
+    "mc:final-fantasy-xi-treasures-of-aht-urhgan": {
+      "nameZh": "最终幻想XI：阿特尔冈的秘宝",
+      "type": "common"
+    },
+    "mc:fluidity": {
+      "nameZh": "流动",
+      "type": "reference"
+    },
+    "617830": {
+      "nameZh": "燥热VR",
+      "type": "common"
+    },
+    "5185890": {
+      "nameZh": "僵尸不是真的",
+      "type": "reference"
+    },
+    "219990": {
+      "nameZh": "恐怖黎明",
+      "type": "common"
+    },
+    "mc:atelier-ryza-secret-trilogy-deluxe-pack": {
+      "nameZh": "莱莎的炼金工房 秘密三部曲豪华合集",
+      "type": "reference"
+    },
+    "mc:picross-3d-round-2": {
+      "nameZh": "立体绘图方块：第二回",
+      "type": "common"
+    },
+    "595520": {
+      "nameZh": "最终幻想XII：黄道年代",
+      "type": "common"
+    },
+    "213350": {
+      "nameZh": "MDK2高清版",
+      "type": "reference"
+    },
+    "mc:asgards-wrath-2": {
+      "nameZh": "阿斯加德之怒2",
+      "type": "common"
+    },
+    "mc:borderlands-2-tiny-tinas-assault-on-dragon-keep": {
+      "nameZh": "无主之地2：小缇娜强袭龙堡",
+      "type": "common"
+    },
+    "206190": {
+      "nameZh": "枪口",
+      "type": "reference"
+    },
+    "mc:detention": {
+      "nameZh": "返校",
+      "type": "common"
+    },
+    "mc:alundra": {
+      "nameZh": "阿兰多拉",
+      "type": "reference"
+    },
+    "mc:beyond-good-and-evil": {
+      "nameZh": "超越善恶",
+      "type": "common"
+    },
+    "2556990": {
+      "nameZh": "超越善恶 20周年纪念版",
+      "type": "common"
+    },
+    "692850": {
+      "nameZh": "赤痕：夜之仪式",
+      "type": "common"
+    },
+    "mc:lunar-2-eternal-blue": {
+      "nameZh": "Lunar 2：永恒之蓝",
+      "type": "common"
+    },
+    "798460": {
+      "nameZh": "二之国：白色圣灰的女王 重制版",
+      "type": "common"
+    },
+    "1229380": {
+      "nameZh": "永恒之境",
+      "type": "reference"
+    },
+    "48240": {
+      "nameZh": "纪元2070",
+      "type": "common"
+    },
+    "mc:guilty-gear-xrd-revelator-": {
+      "nameZh": "罪恶装备Xrd -REVELATOR-",
+      "type": "common"
+    },
+    "mc:pinball-fx-2-marvel-pinball": {
+      "nameZh": "弹珠FX 2：漫威弹珠",
+      "type": "common"
+    },
+    "386360": {
+      "nameZh": "神之浩劫",
+      "type": "common"
+    },
+    "mc:life-is-strange-2-episode-5-wolves": {
+      "nameZh": "奇异人生2：第5集—狼群",
+      "type": "common"
+    },
+    "mc:final-fantasy-iv-pixel-remaster": {
+      "nameZh": "最终幻想IV 像素复刻版",
+      "type": "common"
+    },
+    "mc:final-fantasy-x-x-2-hd-remaster": {
+      "nameZh": "最终幻想X / X-2 HD复刻版",
+      "type": "common"
+    },
+    "1729740": {
+      "nameZh": "卢托",
+      "type": "reference"
+    },
+    "mc:guild-wars-2-path-of-fire": {
+      "nameZh": "激战2：烈焰之路",
+      "type": "common"
+    },
+    "1499120": {
+      "nameZh": "我希望你死2：间谍与骗子",
+      "type": "common"
+    },
+    "1850510": {
+      "nameZh": "三角战略",
+      "type": "common"
+    },
+    "mc:command-and-conquer-generals-zero-hour": {
+      "nameZh": "命令与征服：将军 绝命时刻",
+      "type": "common"
+    },
+    "1378990": {
+      "nameZh": "古惑狼4：时机已到",
+      "type": "common"
+    },
+    "mc:everquest-the-shadows-of-luclin": {
+      "nameZh": "无尽任务：鲁克林暗影",
+      "type": "reference"
+    },
+    "mc:galactic-civilizations": {
+      "nameZh": "银河文明",
+      "type": "common"
+    },
+    "214150": {
+      "nameZh": "银河文明I：终极版",
+      "type": "common"
+    },
+    "mc:homeworld-2": {
+      "nameZh": "家园2",
+      "type": "common"
+    },
+    "254960": {
+      "nameZh": "寂静风暴：黄金版",
+      "type": "common"
+    },
+    "mc:zero-parades-for-dead-spies": {
+      "nameZh": "零号游行：亡命间谍",
+      "type": "reference"
+    },
+    "1669000": {
+      "nameZh": "奇迹时代4",
+      "type": "common"
+    },
+    "102600": {
+      "nameZh": "兽人必须死！",
+      "type": "common"
+    },
+    "1265920": {
+      "nameZh": "奇异人生：重制版",
+      "type": "common"
+    },
+    "204030": {
+      "nameZh": "神鬼寓言：失落之章",
+      "type": "common"
+    },
+    "mc:call-of-duty-black-ops-4": {
+      "nameZh": "使命召唤：黑色行动4",
+      "type": "common"
+    },
+    "1954200": {
+      "nameZh": "凯娜：精神之桥",
+      "type": "common"
+    },
+    "785790": {
+      "nameZh": "这也算高尔夫？",
+      "type": "common"
+    },
+    "337000": {
+      "nameZh": "杀出重围：人类分裂",
+      "type": "common"
+    },
+    "396350": {
+      "nameZh": "流血2",
+      "type": "reference"
+    },
+    "453090": {
+      "nameZh": "公园建造师",
+      "type": "reference"
+    },
+    "mc:unreal-tournament-iii": {
+      "nameZh": "虚幻竞技场III",
+      "type": "common"
+    },
+    "282070": {
+      "nameZh": "这是我的战争",
+      "type": "common"
+    },
+    "422970": {
+      "nameZh": "恶魔匕首",
+      "type": "reference"
+    },
+    "1574580": {
+      "nameZh": "奇异园艺",
+      "type": "common"
+    },
+    "mc:red-dead-redemption-featuring-undead-nightmare": {
+      "nameZh": "荒野大镖客：救赎——不死梦魇",
+      "type": "common"
+    },
+    "mc:blackwell-epiphany": {
+      "nameZh": "布莱克威尔：顿悟",
+      "type": "common"
+    },
+    "mc:the-elder-scrolls-online-summerset": {
+      "nameZh": "上古卷轴Online：夏暮群岛",
+      "type": "common"
+    },
+    "mc:the-lord-of-the-rings-online-siege-of-mirkwood": {
+      "nameZh": "指环王Online：幽暗密林之围",
+      "type": "common"
+    },
+    "980300": {
+      "nameZh": "一指死亡拳2",
+      "type": "common"
+    },
+    "mc:out-of-the-park-baseball-10": {
+      "nameZh": "公园之外棒球10",
+      "type": "reference"
+    },
+    "mc:metal-gear-solid-delta-snake-eater": {
+      "nameZh": "合金装备Δ：食蛇者",
+      "type": "common"
+    },
+    "242760": {
+      "nameZh": "森林",
+      "type": "common"
+    },
+    "mc:need-for-speed-shift": {
+      "nameZh": "极品飞车：变速",
+      "type": "common"
+    },
+    "mc:hearts-of-iron-ii": {
+      "nameZh": "钢铁雄心2",
+      "type": "common"
+    },
+    "25890": {
+      "nameZh": "钢铁雄心3",
+      "type": "common"
+    },
+    "mc:project-cars": {
+      "nameZh": "竞速计划",
+      "type": "common"
+    },
+    "2400430": {
+      "nameZh": "卡普空格斗游戏合集2",
+      "type": "common"
+    },
+    "mc:crimson-desert-charting-the-unknown": {
+      "nameZh": "红色沙漠：探索未知",
+      "type": "reference"
+    },
+    "mc:riven-the-sequel-to-myst": {
+      "nameZh": "瑞文：神秘岛续篇",
+      "type": "common"
+    },
+    "mc:total-war-warhammer-ii-curse-of-the-vampire-coast": {
+      "nameZh": "全面战争：战锤II——吸血鬼海岸诅咒",
+      "type": "common"
+    },
+    "1017900": {
+      "nameZh": "帝国时代：决定版",
+      "type": "common"
+    },
+    "mc:icewind-dale-ii": {
+      "nameZh": "冰风谷2",
+      "type": "common"
+    },
+    "3859630": {
+      "nameZh": "合金装备：大师合集 Vol.2",
+      "type": "common"
+    },
+    "mc:everquest-ii-echoes-of-faydwer": {
+      "nameZh": "无尽任务II：法伊德沃回响",
+      "type": "reference"
+    },
+    "1135690": {
+      "nameZh": "拆箱",
+      "type": "common"
+    },
+    "1044720": {
+      "nameZh": "遥远边境",
+      "type": "reference"
+    },
+    "2272250": {
+      "nameZh": "父亲，请原谅我2",
+      "type": "common"
+    },
+    "1796580": {
+      "nameZh": "抱歉，我们关门了",
+      "type": "reference"
+    },
+    "1386900": {
+      "nameZh": "观察者：系统重制版",
+      "type": "common"
+    },
+    "3385670": {
+      "nameZh": "粘粘世界2",
+      "type": "common"
+    },
+    "201230": {
+      "nameZh": "无尽任务II",
+      "type": "common"
+    },
+    "5335510": {
+      "nameZh": "月球清扫者",
+      "type": "reference"
+    },
+    "251570": {
+      "nameZh": "七日杀",
+      "type": "common"
+    },
+    "291550": {
+      "nameZh": "英灵乱战",
+      "type": "common"
+    },
+    "714010": {
+      "nameZh": "Aimlabs 瞄准训练",
+      "type": "reference"
+    },
+    "1304930": {
+      "nameZh": "逃生：试炼",
+      "type": "common"
+    },
+    "3932890": {
+      "nameZh": "逃离塔科夫",
+      "type": "common"
+    },
+    "4957240": {
+      "nameZh": "机场7",
+      "type": "reference"
+    },
+    "5319020": {
+      "nameZh": "艺术商店：整理收纳",
+      "type": "reference"
+    },
+    "5367320": {
+      "nameZh": "AuxPipe：辅助管道",
+      "type": "reference"
+    },
+    "5480840": {
+      "nameZh": "节拍杀手",
+      "type": "reference"
+    },
+    "4950060": {
+      "nameZh": "拍卖战争",
+      "type": "reference"
+    },
+    "4938490": {
+      "nameZh": "黑色金字塔",
+      "type": "reference"
+    },
+    "4673230": {
+      "nameZh": "冒险微风",
+      "type": "reference"
+    },
+    "5445850": {
+      "nameZh": "指挥官的困境",
+      "type": "reference"
+    },
+    "5086490": {
+      "nameZh": "Computer Sillow：工作健身",
+      "type": "reference"
+    },
+    "5408030": {
+      "nameZh": "初晓轮回",
+      "type": "reference"
+    },
+    "5300300": {
+      "nameZh": "元素之地",
+      "type": "reference"
+    },
+    "5308360": {
+      "nameZh": "格式塔旅程",
+      "type": "reference"
+    },
+    "5450860": {
+      "nameZh": "赢得彩票要买多少张票？",
+      "type": "reference"
+    },
+    "2677970": {
+      "nameZh": "星际守护者",
+      "type": "reference"
+    },
+    "5350040": {
+      "nameZh": "玛纳节",
+      "type": "reference"
+    },
+    "5503180": {
+      "nameZh": "奥林佩格斯",
+      "type": "reference"
+    },
+    "5097300": {
+      "nameZh": "推向中路",
+      "type": "reference"
+    },
+    "5244680": {
+      "nameZh": "雷雷僵尸",
+      "type": "reference"
+    },
+    "5455640": {
+      "nameZh": "RSP终极战斗",
+      "type": "reference"
+    },
+    "5482710": {
+      "nameZh": "硅谷大亨",
+      "type": "reference"
+    },
+    "5413320": {
+      "nameZh": "银色服务：整理大宴会厅",
+      "type": "reference"
+    },
+    "4538060": {
+      "nameZh": "地下表层",
+      "type": "reference"
+    },
+    "4366550": {
+      "nameZh": "天铃",
+      "type": "reference"
+    },
+    "4212960": {
+      "nameZh": "提苏兰",
+      "type": "reference"
+    },
+    "629520": {
+      "nameZh": "声音板",
+      "type": "reference"
+    },
+    "3687090": {
+      "nameZh": "骰子囤积者",
+      "type": "reference"
+    },
+    "5378110": {
+      "nameZh": "再来一片草坪",
+      "type": "reference"
+    },
+    "5266240": {
+      "nameZh": "土豆请",
+      "type": "reference"
+    }
+  }
+}

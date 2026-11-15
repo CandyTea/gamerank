@@ -245,6 +245,7 @@
       id: raw.id,
       name: name || nameZh,
       nameZh: nameZh,
+      nameZhType: str(raw.nameZhType).trim(),
       aliases: aliases,
       mc: mc,
       ign: ign,
@@ -1191,6 +1192,11 @@
     if (primary.textContent !== labels.primary) primary.textContent = labels.primary;
     if (secondary.textContent !== labels.secondary) secondary.textContent = labels.secondary;
     secondary.hidden = !labels.secondary;
+    if (game && game.nameZhType === 'reference') {
+      names.title = '中文参考译名：' + str(game.nameZh).trim() + '\n英文原名：' + str(game.name).trim();
+    } else {
+      names.title = labels.primary + (labels.secondary ? '\n' + labels.secondary : '');
+    }
   }
 
   function namesBlock(game, primaryClass, secondaryClass) {
