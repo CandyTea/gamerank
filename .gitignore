@@ -1,0 +1,4 @@
+# build cache (safe to delete; rebuild refetches)
+scripts/.cache/
+scripts/__pycache__/
+*.pyc
