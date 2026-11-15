@@ -1,7 +1,11 @@
 # GameRank
 
+**在线版：https://candytea.github.io/gamerank/** · 仓库：https://github.com/CandyTea/gamerank
+
 给游戏排序的单页网站：中英文搜索游戏 → 加入排行榜 → 拖拽调整顺序，数据存在浏览器本地。
 纯静态、零构建、无依赖，双击 `index.html` 就能用（封面图来自 Steam CDN，需要联网）。
+
+推送 `main` 分支即自动部署到 GitHub Pages（Pages 直接发布仓库根目录，无需 Actions）。
 
 ## 运行
 
