@@ -111,6 +111,7 @@
     activeSaveId: '',   // id of the slot currently shown
     remote: { base: '', token: '' },
     remoteOn: false,    // true once the shared server answered
+    remoteOpen: false,  // server runs without a token (GAMERANK_OPEN=1)
     remoteRev: 0,       // revision of the board currently loaded
     remoteEditAt: 0     // timestamp of the last local change (guards polling)
   };
@@ -385,19 +386,25 @@
     if (!raw) return;
     try {
       var parsed = JSON.parse(raw);
-      if (parsed && parsed.base && parsed.token) {
-        state.remote = { base: normalizeBase(parsed.base), token: String(parsed.token) };
+      if (parsed && parsed.base) {
+        state.remote = { base: normalizeBase(parsed.base), token: String(parsed.token || '') };
+        state.remoteOpen = parsed.open === true;
       }
     } catch (err) { /* ignore broken config */ }
   }
 
   function saveRemoteConfig() {
-    store.set(STORAGE.remote, state.remote.base && state.remote.token
-      ? JSON.stringify(state.remote) : '');
+    store.set(STORAGE.remote, state.remote.base && (state.remote.token || state.remoteOpen)
+      ? JSON.stringify({
+        base: state.remote.base,
+        token: state.remote.token,
+        open: state.remoteOpen === true
+      })
+      : '');
   }
 
   function remoteReady() {
-    return !!(state.remote.base && state.remote.token);
+    return !!state.remote.base && (!!state.remote.token || state.remoteOpen === true);
   }
 
   function encodeInvite(payload) {
@@ -469,7 +476,8 @@
 
   function apiFetch(path, options) {
     var opts = options || {};
-    var headers = { 'X-GameRank-Token': state.remote.token };
+    var headers = {};
+    if (state.remote.token) headers['X-GameRank-Token'] = state.remote.token;
     if (opts.body !== undefined) headers['Content-Type'] = 'application/json';
     return fetch(state.remote.base + '/api' + path, {
       method: opts.method || 'GET',
@@ -561,6 +569,7 @@
       });
     }).catch(function (error) {
       state.remoteOn = false;
+      if (error && error.status === 401) state.remoteOpen = false;
       remoteStatus('连接失败：' + error.message, true);
       toast('共享服务器连接失败');
       return false;
@@ -651,19 +660,44 @@
     }).catch(function () { /* offline is fine, keep local edits */ });
   }
 
+  function probeSameOrigin() {
+    if (!/^https?:$/.test(location.protocol)) return Promise.resolve(false);
+    return fetch(location.origin + '/api/health', { cache: 'no-store' })
+      .then(function (res) { return res.ok ? res.json() : null; })
+      .then(function (data) {
+        if (!data || !data.ok || data.open !== true) return false;
+        state.remote = { base: location.origin, token: '' };
+        state.remoteOpen = true;
+        saveRemoteConfig();
+        if (els.remoteBase) els.remoteBase.value = location.origin;
+        remoteStatus('已自动连接同域服务器');
+        return remoteBootstrap();
+      })
+      .catch(function () { return false; });
+  }
+
   function connectRemote(event) {
     if (event) event.preventDefault();
     var base = normalizeBase(els.remoteBase ? els.remoteBase.value : '');
     if (!base && /^https?:$/.test(location.protocol)) base = location.origin;
     var token = els.remoteToken ? els.remoteToken.value.trim() : '';
-    if (!base || !token) {
-      remoteStatus('请填写服务器地址和口令', true);
+    if (!base) {
+      remoteStatus('请填写服务器地址', true);
       return;
     }
+    // No token is legitimate for a server started with GAMERANK_OPEN=1: try it,
+    // and only complain after the server answers 401.
     state.remote = { base: base, token: token };
+    state.remoteOpen = token === '';
     remoteStatus('正在连接…');
     remoteBootstrap().then(function (ok) {
-      if (!ok) return;
+      if (!ok) {
+        if (state.remoteOpen) {
+          state.remoteOpen = false;
+          remoteStatus('这台服务器需要口令', true);
+        }
+        return;
+      }
       saveRemoteConfig();
       if (els.remoteBase) els.remoteBase.value = base;
       if (els.remoteToken) els.remoteToken.value = token;
@@ -673,6 +707,7 @@
   function disconnectRemote() {
     stopRemotePoll();
     state.remoteOn = false;
+    state.remoteOpen = false;
     state.remote = { base: '', token: '' };
     saveRemoteConfig();
     store.set(STORAGE.remoteActive, '');
@@ -2485,6 +2520,7 @@
     if (els.remoteBase && state.remote.base) els.remoteBase.value = state.remote.base;
     if (els.remoteToken && state.remote.token) els.remoteToken.value = state.remote.token;
     if (remoteReady()) remoteBootstrap();
+    else probeSameOrigin();
   }
 
   if (document.readyState === 'loading') {

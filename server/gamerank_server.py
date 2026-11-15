@@ -40,6 +40,10 @@ MAX_BODY = 1024 * 1024          # 1 MiB per board write
 MAX_ITEMS = 5000                # ranking / customs entries per board
 BOARD_ID = re.compile(r"^[A-Za-z0-9_-]{1,64}$")
 TOKEN = os.environ.get("GAMERANK_TOKEN", "").strip()
+# GAMERANK_OPEN=1 disables authentication: anyone who can reach the server can
+# read and write boards. Use it only on a private/unlisted address (same-origin
+# auto-connect), never on a public domain.
+OPEN_MODE = os.environ.get("GAMERANK_OPEN", "").strip() in ("1", "true", "yes")
 STATIC_DIR = None
 DB_PATH = "boards.db"
 
@@ -194,6 +198,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Access-Control-Max-Age", "86400")
 
     def authorized(self) -> bool:
+        if OPEN_MODE:
+            return True
         given = self.headers.get("X-GameRank-Token", "")
         return bool(TOKEN) and hmac.compare_digest(given, TOKEN)
 
@@ -228,7 +234,7 @@ class Handler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
         path = urlparse(self.path).path
         if path == "/api/health":
-            self.send_json(200, {"ok": True})
+            self.send_json(200, {"ok": True, "open": OPEN_MODE})
             return
         if not path.startswith("/api/"):
             self.serve_static(path)
@@ -352,9 +358,13 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--static", default="", help="optional site directory to serve")
     args = ap.parse_args(argv)
 
-    if not TOKEN:
-        print("GAMERANK_TOKEN is required (shared secret for the API).", file=sys.stderr)
+    if not TOKEN and not OPEN_MODE:
+        print("GAMERANK_TOKEN is required (or set GAMERANK_OPEN=1 for an "
+              "unauthenticated private deployment).", file=sys.stderr)
         return 2
+    if OPEN_MODE:
+        print("WARNING: open mode — anyone who can reach this server can edit boards.",
+              file=sys.stderr)
 
     DB_PATH = args.db
     if args.static:
